@@ -32,3 +32,9 @@ package-model:
 .PHONY: prepare-student
 prepare-student:
 	$(PYTHON) scripts/download_student.py
+
+.PHONY: service-build service-test
+service-build:
+	docker build -t command-parser:task3 -f service/Dockerfile .
+service-test:
+	$(PYTHON) scripts/test_service_docker.py

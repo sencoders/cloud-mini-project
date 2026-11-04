@@ -1,0 +1,295 @@
+$ docker image inspect command-parser:task3
+[
+    {
+        "Id": "sha256:a3c56ef914f86ae5e707d106736580f90f8a1c0ceb701f27c7e90883411af9aa",
+        "RepoTags": [
+            "command-parser:task3"
+        ],
+        "RepoDigests": [
+            "command-parser@sha256:a3c56ef914f86ae5e707d106736580f90f8a1c0ceb701f27c7e90883411af9aa"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-04T13:38:28.665992508Z",
+        "Config": {
+            "User": "65532:65532",
+            "ExposedPorts": {
+                "8000/tcp": {}
+            },
+            "Env": [
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305",
+                "PYTHON_VERSION=3.12.16",
+                "PYTHON_SHA256=b5796915dc45ff745cfb4e990a7e7c93d6f546328a102ce31448d69ebc37575c",
+                "PYTHONUNBUFFERED=1",
+                "PYTHONDONTWRITEBYTECODE=1",
+                "HF_HUB_OFFLINE=1",
+                "TRANSFORMERS_OFFLINE=1",
+                "TOKENIZERS_PARALLELISM=false",
+                "OMP_NUM_THREADS=1",
+                "MKL_NUM_THREADS=1",
+                "OPENBLAS_NUM_THREADS=1",
+                "MALLOC_ARENA_MAX=2",
+                "AWS_EC2_METADATA_DISABLED=true"
+            ],
+            "Cmd": [
+                "uvicorn",
+                "service.app:app",
+                "--host",
+                "0.0.0.0",
+                "--port",
+                "8000",
+                "--workers",
+                "1",
+                "--timeout-graceful-shutdown",
+                "25"
+            ],
+            "WorkingDir": "/app",
+            "ArgsEscaped": true
+        },
+        "Architecture": "arm64",
+        "Os": "linux",
+        "Size": 274895002,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:685889762157cefb6370119253b3c709f70bb2622402052065c92243e3d9105f",
+                "sha256:5c0bc5ee0491a1a68853ceaecd26669d4e40028743b5ae987ee7ca5f9537680f",
+                "sha256:e3af5abbdc37fa9b5b795480004e631040ad0b537c2174d07352e25c43d1d0ed",
+                "sha256:013d8fa6cec40683d59b02f867200c97732ee03b6ce0a5816df5702a353ffedc",
+                "sha256:7c958d88e850691f68cee5334330eb1f5f44c9498f9649296c9e22f1d476209c",
+                "sha256:8662b9b3960fc1f20eaa9ee9a01460b6178024c42e8513ebdd322475b5204d23",
+                "sha256:abcf83814b92747014e78d62d669990981748cfa845032aad61606a83e23c1a4",
+                "sha256:3051cd5c939e5d3ad00d4a0acbb5c494201fd4b4c240951b84f44cc44947bbed",
+                "sha256:3f35f0900d95815ed953e51d5f8dd33c71f26a0c7a773b37c4691f6db82cb286",
+                "sha256:4b63e7f8d77d8fb655fe99212a17241e188b04e76f8e8dfd0f6745cf159c67ad",
+                "sha256:9fe80f95fc25b3dd1204dd23ac34068854138ea19b8ebaf95ef7d76d7fecae8f",
+                "sha256:d9fd2d95896fd1913630592094d97561e276704758ca5cfba46566fb2fa81b7e"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-04T13:38:39.517307763Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:a3c56ef914f86ae5e707d106736580f90f8a1c0ceb701f27c7e90883411af9aa",
+            "size": 856
+        },
+        "Identity": {
+            "Build": [
+                {
+                    "Ref": "s8cbdwiq50zryebyvh1r45f81",
+                    "CreatedAt": "2026-11-04T13:38:42.186909333Z"
+                }
+            ]
+        }
+    }
+]
+$ docker image ls command-parser:task3 --format {{json .}}
+{"Containers":"2","CreatedAt":"2026-11-04 19:08:28 +0530 IST","CreatedSince":"4 minutes ago","Digest":"\u003cnone\u003e","ID":"a3c56ef914f8","Repository":"command-parser","SharedSize":"N/A","Size":"1.33GB","Tag":"task3","UniqueSize":"N/A"}
+$ docker run --rm --entrypoint python command-parser:task3 -c import json,pathlib,torch; p=pathlib.Path('/app'); files=[str(x) for x in p.rglob('*') if x.suffix in ('.safetensors','.bin','.pt','.pth')]; assert not files; assert torch.version.cuda is None; print(json.dumps({'torch':torch.__version__,'cuda':torch.version.cuda,'embedded_weight_files':files}))
+{"torch": "2.8.0+cpu", "cuda": null, "embedded_weight_files": []}
+$ kubectl -n pipeline get secret s3-client -o json
+[private runtime configuration omitted]
+$ docker run -d --name parser-task3-limited-20261104134243 --hostname parser-task3-limited-20261104134243 --network k3d-command-parser --cpus=1 --memory=1g --memory-swap=1g -p 127.0.0.1:18000:8000 --env-file /Users/shreeja/Projects/cloud-mini-project/.local/task3-secret.env -e MODEL_URI=s3://models/v1/ -e MODEL_VERSION=v1 -e S3_ENDPOINT=http://k3d-command-parser-server-0:30333 -e MAX_NEW_TOKENS=128 -e FAULT_INJECT=0 command-parser:task3
+5ced87cbd55fbe91577c432cd4c65c82b6de31274d790385e207737d282a7f2b
+$ docker exec parser-task3-limited-20261104134243 cat /sys/fs/cgroup/memory.peak
+845602816
+$ docker exec parser-task3-limited-20261104134243 cat /sys/fs/cgroup/memory.events
+low 0
+high 0
+max 0
+oom 0
+oom_kill 0
+oom_group_kill 0
+$ docker inspect parser-task3-limited-20261104134243
+[private runtime configuration omitted]
+$ docker logs parser-task3-limited-20261104134243
+{"time": 1793799763.5697396, "event": "model_download_start", "model_uri": "s3://models/v1/"}
+{"time": 1793799763.5803773, "event": "model_file_verified", "file": "config.json", "bytes": 770, "sha256": "0011261bdd0ae8f8f77b9f07bd34325bdaed2fc054ab5964265d0422f5904082"}
+{"time": 1793799763.581301, "event": "model_file_verified", "file": "generation_config.json", "bytes": 111, "sha256": "98f34247dcd75d34c7bfb8e7e508f170c2abc9867b74e9d70db1a70bb2b1a644"}
+INFO:     172.19.0.1:56304 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56312 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:56328 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56330 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:56338 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56350 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:56358 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56366 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+{"time": 1793799763.965462, "event": "model_file_verified", "file": "model.safetensors", "bytes": 281715176, "sha256": "f549d5c34cc91d9d79dbe593f6ab14d50f43d4e49cf0e507894bb306c6cb0ce7"}
+{"time": 1793799763.9667974, "event": "model_file_verified", "file": "special_tokens_map.json", "bytes": 473, "sha256": "57491904f8680d4b52ed440f1f7ba48cad1c31ecf3eb453b03484e6ff4723ae8"}
+{"time": 1793799763.9782763, "event": "model_file_verified", "file": "tokenizer.json", "bytes": 3564303, "sha256": "d4c0d99d84af59e9126913fafe5210822963e9a3065ee43e6833b358b0c2f825"}
+{"time": 1793799763.9792511, "event": "model_file_verified", "file": "tokenizer_config.json", "bytes": 4876, "sha256": "435e0103b15eee9a299ded22f93129ebb7409bc5b6dd93f069bd86bdbc7c44a1"}
+{"time": 1793799763.9800496, "event": "model_file_verified", "file": "training_config.yaml", "bytes": 1915, "sha256": "191c5ceaeffdd1fba13215d951f372f6fbb7e9ced873efd4de2c3290fe4a933d"}
+{"time": 1793799763.9807673, "event": "model_file_verified", "file": "version.json", "bytes": 1745, "sha256": "c7f439277c68529e21cf6271a8f0fa44e9f60652bf8e5b1a38338aaa332d0ada"}
+{"time": 1793799763.9808455, "event": "model_download_complete", "files": 8, "manifest_sha256": "5ca810f5ab7cf55c2daafbfee6c224362641243dfe8c792e88ecea60de0a49ae"}
+INFO:     172.19.0.1:56374 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56382 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:56386 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56396 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:56406 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56414 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:56426 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56428 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:56432 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56444 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:56450 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56454 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:56462 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56464 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:56468 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56478 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:56494 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56502 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:56514 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56518 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:56530 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56538 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:56544 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56550 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:56562 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56564 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+{"time": 1793799765.4872599, "event": "model_loaded", "version": "v1", "device": "cpu", "seconds": 1.968180793001011}
+{"time": 1793799765.4872887, "event": "ready", "version": "v1", "served_by": "parser-task3-limited-20261104134243"}
+INFO:     172.19.0.1:56578 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56586 - "GET /readyz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56598 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56606 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56616 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56632 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56642 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56650 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56654 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56660 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56674 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56676 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56684 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56696 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:56708 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59536 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59552 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59564 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59576 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59580 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59584 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59590 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59600 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59606 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59608 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59624 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59630 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59644 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59646 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59662 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59668 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59680 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59696 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59712 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59724 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59734 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59748 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59760 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:59766 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57116 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57120 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57122 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57136 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57152 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57166 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57174 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57186 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57198 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57204 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57210 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57224 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57238 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57250 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57252 - "GET /readyz HTTP/1.1" 200 OK
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+`torch_dtype` is deprecated! Use `dtype` instead!
+$ docker stop --time 30 parser-task3-limited-20261104134243
+Flag --time has been deprecated, use --timeout instead
+parser-task3-limited-20261104134243
+$ docker inspect parser-task3-limited-20261104134243
+[private runtime configuration omitted]
+$ docker run -d --name parser-task3-fault-20261104134243 --hostname parser-task3-fault-20261104134243 --network k3d-command-parser --cpus=1 --memory=1g --memory-swap=1g -p 127.0.0.1:18000:8000 --env-file /Users/shreeja/Projects/cloud-mini-project/.local/task3-secret.env -e MODEL_URI=s3://models/v1/ -e MODEL_VERSION=v1 -e S3_ENDPOINT=http://k3d-command-parser-server-0:30333 -e MAX_NEW_TOKENS=128 -e FAULT_INJECT=1 command-parser:task3
+463c74abc1a8f9451825c62aee496f89acac8e90fd1fe9325a448f12832d48d1
+$ docker exec parser-task3-fault-20261104134243 cat /sys/fs/cgroup/memory.peak
+845615104
+$ docker exec parser-task3-fault-20261104134243 cat /sys/fs/cgroup/memory.events
+low 0
+high 0
+max 0
+oom 0
+oom_kill 0
+oom_group_kill 0
+$ docker inspect parser-task3-fault-20261104134243
+[private runtime configuration omitted]
+$ docker logs parser-task3-fault-20261104134243
+{"time": 1793799789.4667263, "event": "model_download_start", "model_uri": "s3://models/v1/"}
+{"time": 1793799789.4719877, "event": "model_file_verified", "file": "config.json", "bytes": 770, "sha256": "0011261bdd0ae8f8f77b9f07bd34325bdaed2fc054ab5964265d0422f5904082"}
+{"time": 1793799789.4729595, "event": "model_file_verified", "file": "generation_config.json", "bytes": 111, "sha256": "98f34247dcd75d34c7bfb8e7e508f170c2abc9867b74e9d70db1a70bb2b1a644"}
+INFO:     172.19.0.1:57286 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57294 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:57296 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57304 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:57320 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57322 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+{"time": 1793799789.808081, "event": "model_file_verified", "file": "model.safetensors", "bytes": 281715176, "sha256": "f549d5c34cc91d9d79dbe593f6ab14d50f43d4e49cf0e507894bb306c6cb0ce7"}
+{"time": 1793799789.8093204, "event": "model_file_verified", "file": "special_tokens_map.json", "bytes": 473, "sha256": "57491904f8680d4b52ed440f1f7ba48cad1c31ecf3eb453b03484e6ff4723ae8"}
+{"time": 1793799789.8204002, "event": "model_file_verified", "file": "tokenizer.json", "bytes": 3564303, "sha256": "d4c0d99d84af59e9126913fafe5210822963e9a3065ee43e6833b358b0c2f825"}
+{"time": 1793799789.8212392, "event": "model_file_verified", "file": "tokenizer_config.json", "bytes": 4876, "sha256": "435e0103b15eee9a299ded22f93129ebb7409bc5b6dd93f069bd86bdbc7c44a1"}
+{"time": 1793799789.8220332, "event": "model_file_verified", "file": "training_config.yaml", "bytes": 1915, "sha256": "191c5ceaeffdd1fba13215d951f372f6fbb7e9ced873efd4de2c3290fe4a933d"}
+{"time": 1793799789.8228106, "event": "model_file_verified", "file": "version.json", "bytes": 1745, "sha256": "c7f439277c68529e21cf6271a8f0fa44e9f60652bf8e5b1a38338aaa332d0ada"}
+{"time": 1793799789.822888, "event": "model_download_complete", "files": 8, "manifest_sha256": "5ca810f5ab7cf55c2daafbfee6c224362641243dfe8c792e88ecea60de0a49ae"}
+INFO:     172.19.0.1:57338 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57352 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:57358 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57362 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:57376 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57390 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:57404 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57410 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:57426 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57440 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:57454 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57464 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:57472 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57482 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:57492 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57494 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:57502 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57518 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:57520 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57530 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:57532 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57546 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:57562 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57564 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:57578 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57592 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:57596 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57606 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:57616 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57624 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+{"time": 1793799791.5716484, "event": "model_loaded", "version": "v1", "device": "cpu", "seconds": 2.147764625999116}
+{"time": 1793799791.5716906, "event": "ready", "version": "v1", "served_by": "parser-task3-fault-20261104134243"}
+INFO:     172.19.0.1:57634 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:57650 - "GET /readyz HTTP/1.1" 200 OK
+{"time": 1793799792.2885375, "event": "invalid_model_output", "version": "v1", "served_by": "parser-task3-fault-20261104134243"}
+INFO:     172.19.0.1:57658 - "POST /parse HTTP/1.1" 500 Internal Server Error
+INFO:     172.19.0.1:55830 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55832 - "GET /readyz HTTP/1.1" 200 OK
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+`torch_dtype` is deprecated! Use `dtype` instead!
+$ docker stop --time 30 parser-task3-fault-20261104134243
+Flag --time has been deprecated, use --timeout instead
+parser-task3-fault-20261104134243
+$ docker inspect parser-task3-fault-20261104134243
+[private runtime configuration omitted]

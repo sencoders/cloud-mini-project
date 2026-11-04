@@ -1,0 +1,54 @@
+{"time": 1793799596.0261345, "event": "model_download_start", "model_uri": "s3://models/v1/"}
+{"time": 1793799596.031321, "event": "model_file_verified", "file": "config.json", "bytes": 770, "sha256": "0011261bdd0ae8f8f77b9f07bd34325bdaed2fc054ab5964265d0422f5904082"}
+{"time": 1793799596.032317, "event": "model_file_verified", "file": "generation_config.json", "bytes": 111, "sha256": "98f34247dcd75d34c7bfb8e7e508f170c2abc9867b74e9d70db1a70bb2b1a644"}
+INFO:     172.19.0.1:55226 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55232 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:55236 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55248 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:55258 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55272 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+{"time": 1793799596.35219, "event": "model_file_verified", "file": "model.safetensors", "bytes": 281715176, "sha256": "f549d5c34cc91d9d79dbe593f6ab14d50f43d4e49cf0e507894bb306c6cb0ce7"}
+{"time": 1793799596.3535745, "event": "model_file_verified", "file": "special_tokens_map.json", "bytes": 473, "sha256": "57491904f8680d4b52ed440f1f7ba48cad1c31ecf3eb453b03484e6ff4723ae8"}
+{"time": 1793799596.3647554, "event": "model_file_verified", "file": "tokenizer.json", "bytes": 3564303, "sha256": "d4c0d99d84af59e9126913fafe5210822963e9a3065ee43e6833b358b0c2f825"}
+{"time": 1793799596.3658779, "event": "model_file_verified", "file": "tokenizer_config.json", "bytes": 4876, "sha256": "435e0103b15eee9a299ded22f93129ebb7409bc5b6dd93f069bd86bdbc7c44a1"}
+{"time": 1793799596.3668187, "event": "model_file_verified", "file": "training_config.yaml", "bytes": 1915, "sha256": "191c5ceaeffdd1fba13215d951f372f6fbb7e9ced873efd4de2c3290fe4a933d"}
+{"time": 1793799596.3676121, "event": "model_file_verified", "file": "version.json", "bytes": 1745, "sha256": "c7f439277c68529e21cf6271a8f0fa44e9f60652bf8e5b1a38338aaa332d0ada"}
+{"time": 1793799596.3676963, "event": "model_download_complete", "files": 8, "manifest_sha256": "5ca810f5ab7cf55c2daafbfee6c224362641243dfe8c792e88ecea60de0a49ae"}
+INFO:     172.19.0.1:55284 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55296 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:55300 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55304 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:55316 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55318 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:55322 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55324 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:55332 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55348 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:55356 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55362 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:55370 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55384 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:55392 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55400 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:55412 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55426 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:55436 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55446 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:55458 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55474 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:55488 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55498 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:55504 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55518 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:55534 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55548 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:55550 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55554 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+{"time": 1793799598.082939, "event": "model_loaded", "version": "v1", "device": "cpu", "seconds": 2.1080356259990367}
+{"time": 1793799598.0829694, "event": "ready", "version": "v1", "served_by": "parser-task3-fault-20261104133929"}
+INFO:     172.19.0.1:55556 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55560 - "GET /readyz HTTP/1.1" 200 OK
+{"time": 1793799598.5179663, "event": "invalid_model_output", "version": "v1", "served_by": "parser-task3-fault-20261104133929"}
+INFO:     172.19.0.1:55570 - "POST /parse HTTP/1.1" 500 Internal Server Error
+INFO:     172.19.0.1:55582 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55588 - "GET /readyz HTTP/1.1" 200 OK

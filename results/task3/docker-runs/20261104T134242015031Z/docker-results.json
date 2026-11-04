@@ -1,0 +1,165 @@
+{
+  "image_content_bytes": 274895002,
+  "image_disk_size_display": "1.33GB",
+  "credentials_source": "Kubernetes Secret pipeline/s3-client",
+  "limited": {
+    "requests": 50,
+    "successful_http_200": 50,
+    "statuses": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "cgroup_peak_bytes": 845602816,
+    "cgroup_memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+    "inspection": {
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 21132,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-11-04T13:42:43.182764834Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+      },
+      "limits": {
+        "NanoCpus": 1000000000,
+        "Memory": 1073741824,
+        "MemorySwap": 1073741824
+      },
+      "image_id": "sha256:a3c56ef914f86ae5e707d106736580f90f8a1c0ceb701f27c7e90883411af9aa"
+    },
+    "health_status": 200,
+    "ready_status": 200,
+    "final_inspection": {
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-11-04T13:42:43.182764834Z",
+        "FinishedAt": "2026-11-04T13:43:08.881005638Z"
+      },
+      "limits": {
+        "NanoCpus": 1000000000,
+        "Memory": 1073741824,
+        "MemorySwap": 1073741824
+      },
+      "image_id": "sha256:a3c56ef914f86ae5e707d106736580f90f8a1c0ceb701f27c7e90883411af9aa"
+    }
+  },
+  "evidence_directory": "results/task3/docker-runs/20261104T134242015031Z",
+  "fault": {
+    "requests": 1,
+    "successful_http_200": 0,
+    "statuses": [
+      500
+    ],
+    "cgroup_peak_bytes": 845615104,
+    "cgroup_memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+    "inspection": {
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 21325,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-11-04T13:43:09.137900804Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+      },
+      "limits": {
+        "NanoCpus": 1000000000,
+        "Memory": 1073741824,
+        "MemorySwap": 1073741824
+      },
+      "image_id": "sha256:a3c56ef914f86ae5e707d106736580f90f8a1c0ceb701f27c7e90883411af9aa"
+    },
+    "health_status": 200,
+    "ready_status": 200,
+    "final_inspection": {
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-11-04T13:43:09.137900804Z",
+        "FinishedAt": "2026-11-04T13:43:12.941642375Z"
+      },
+      "limits": {
+        "NanoCpus": 1000000000,
+        "Memory": 1073741824,
+        "MemorySwap": 1073741824
+      },
+      "image_id": "sha256:a3c56ef914f86ae5e707d106736580f90f8a1c0ceb701f27c7e90883411af9aa"
+    }
+  },
+  "task2_prediction_comparison": {
+    "compared": 50,
+    "identical_frames": 50
+  }
+}

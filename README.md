@@ -1,3 +1,48 @@
+# Task 3: FastAPI service verified in Docker
+
+The CPU service is implemented and passed the required Docker test: **50/50 HTTP
+200 responses at 1 CPU / 1 GiB**, peak cgroup memory **806.43 MiB**, no OOM events.
+Image disk size is **1.33 GB**. All 50 response frames match the saved Task 2 V1
+predictions. Fault injection returns exactly `{"error":"invalid_model_output"}`
+with HTTP 500. See [measurements](report/task3-results.md) and [evidence](results/task3/).
+Task 4 deployment and reliability work follows this verified service milestone.
+
+```sh
+.venv312/bin/pip install -r requirements-service-dev.txt
+make service-build
+make service-test
+```
+
+`make service-build` builds `command-parser:task3` with official CPU-only PyTorch
+and pinned dependencies. The build allowlist includes source and schema only;
+no weights, validation labels, private files or training caches enter the image.
+`make service-test` uses an existing k3d cluster and reads credentials from the
+existing `pipeline/s3-client` Kubernetes Secret into an ignored 0600 env file.
+It starts isolated Docker containers at the required limits, downloads the real
+V1 artifacts, measures memory.peak/memory.events, sends 50 sequential validation
+commands, checks real headers/schema, tests fault injection, and stops its test
+containers. Each run keeps its own evidence directory under results/task3/docker-runs/.
+The canonical docker-results.json points to the latest measured run.
+
+The service uses MODEL_URI (s3://models/v1/ or v2/), MODEL_VERSION, S3_ENDPOINT and
+MAX_NEW_TOKENS (128 used for parity with Task 2); FAULT_INJECT defaults to 0.
+AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY must be supplied explicitly from a
+Secret. Kubernetes uses each Pod's actual hostname for X-Served-By; Docker tests
+use the actual container hostname. A background loader keeps /healthz alive while
+/readyz returns 503 until all checksums, model and tokenizer load succeed. Startup
+failures remain unready. Inference is serialized per model and runs off the health
+endpoint event loop. Output is checked against the supplied JSON schema; it is
+never repaired or replaced by a gold/default frame. FAULT_INJECT=1 replaces the
+generated string with `not json` before this check.
+
+All Task 1/2 data, trained artifacts and existing evidence are preserved. Task 3
+unit tests are in tests/test_service.py. Run the combined suite with
+`.venv312/bin/python -m pytest -q`; the current result is 87 passed, one opt-in
+live-storage test skipped. The existing Task 1/2 documentation below records
+those earlier milestones.
+
+---
+
 # Task 2: CPU student training and evaluation
 
 V1 and V2 are trained, uploaded and verified. **65 tests pass.** The timed

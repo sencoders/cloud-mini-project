@@ -1,0 +1,1 @@
+{"id": "V001", "status": 500, "headers": {"date": "Wed, 04 Nov 2026 13:39:57 GMT", "server": "uvicorn", "x-model-version": "v1", "x-served-by": "parser-task3-fault-20261104133929", "content-length": "32", "content-type": "application/json", "Connection": "close"}, "body": "{\"error\":\"invalid_model_output\"}", "seconds": 0.4299448751844466}

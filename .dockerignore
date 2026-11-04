@@ -5,3 +5,16 @@
 !prompts/
 !prompts/**
 **/__pycache__
+!service/
+!service/**
+!student/
+!student/**
+!training/
+!training/__init__.py
+!training/common.py
+!training/data.py
+!training/artifacts.py
+!data/
+!data/schema.json
+**/__pycache__
+**/*.pyc

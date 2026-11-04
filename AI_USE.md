@@ -22,3 +22,11 @@ The teacher, untrained and student raw completions are retained. No manual label
 output repair, gold-label fallback or fabricated measurement was used. Teacher
 validation called the same Task 1 model/prompt/settings. No GitHub Release was
 published and no Git commits were pushed during this work.
+
+
+Task 3: Codex assisted with the FastAPI service, Secret-only S3 startup,
+checksum verification, Docker build, tests and measurement harness. Verification
+uses the real trained V1 model, 50 sequential requests at the assignment limits,
+actual cgroup peaks/OOM counters, response comparisons with stored Task 2 outputs,
+and the explicit fault-injection test. Initial harness failure evidence is retained.
+No model weights or credentials are committed, and no labels are altered.

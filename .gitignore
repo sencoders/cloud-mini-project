@@ -16,3 +16,5 @@ __pycache__/
 *.ckpt
 *.tar.gz
 *.zip
+.venv-*/
+*.whl

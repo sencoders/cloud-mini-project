@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/shreeja/Projects/cloud-mini-project/scripts/test_service_docker.py", line 164, in <module>
+    main()
+  File "/Users/shreeja/Projects/cloud-mini-project/scripts/test_service_docker.py", line 151, in main
+    from student.runtime import extract_json
+ModuleNotFoundError: No module named 'student'

@@ -1,0 +1,10 @@
+{
+  "requests_with_correct_headers": 50,
+  "actual_container_hostname": "parser-task3-limited-20261104134243",
+  "health_live_during_loading": true,
+  "readiness_503_then_200": true,
+  "task2_frames_identical": 50,
+  "cgroup_peak_bytes": 845602816,
+  "cgroup_peak_mib": 806.4296875,
+  "oom_killed": false
+}

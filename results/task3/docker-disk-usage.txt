@@ -1,0 +1,138 @@
+Images space usage:
+
+REPOSITORY                     TAG            IMAGE ID       CREATED              SIZE      SHARED SIZE   UNIQUE SIZE   CONTAINERS
+command-parser                 task3          a3c56ef914f8   About a minute ago   1.33GB    202.8MB       1.132GB       2
+command-teacher                task1          5b6e61700cb8   5 hours ago          270MB     202.8MB       67.64MB       0
+<none>                         <none>         0ae8af61115d   4 days ago           212MB     202.7MB       9.165MB       0
+<none>                         <none>         e52d459575bf   4 days ago           212MB     202.7MB       9.161MB       0
+<none>                         <none>         a943c23762c8   4 days ago           212MB     202.7MB       9.161MB       0
+python                         3.12-slim      aa943ce41142   7 days ago           205MB     202.7MB       2.185MB       0
+backtest_visualizer-frontend   latest         de1275e53fa1   3 months ago         1.2GB     13.49MB       1.185GB       1
+backtest_visualizer-backend    latest         4cc369b3e36b   3 months ago         410MB     409.7MB       330.5kB       1
+backtest-frontend              latest         2af8e857a44d   3 months ago         1.2GB     13.49MB       1.182GB       0
+backtest-backend               latest         f2b864f3ddb3   3 months ago         410MB     409.7MB       701.6kB       0
+clickhouse/clickhouse-server   26.6           1d1f6508eba2   4 months ago         1.14GB    32B           1.137GB       2
+ghcr.io/k3d-io/k3d-tools       5.9.0          c57abce697e6   5 months ago         36.7MB    0B            36.68MB       0
+ghcr.io/k3d-io/k3d-proxy       5.9.0          7be40abfeb6a   5 months ago         105MB     0B            105.1MB       1
+rancher/k3s                    v1.35.5-k3s1   2074403abe1b   5 months ago         315MB     0B            314.9MB       1
+chrislusf/seaweedfs            3.85           49312939c00c   20 months ago        175MB     32B           174.6MB       0
+
+Containers space usage:
+
+CONTAINER ID   IMAGE                               COMMAND                  LOCAL VOLUMES   SIZE      CREATED          STATUS                      NAMES
+63042caa94cb   command-parser:task3                "uvicorn service.app…"   0               285MB     32 seconds ago   Exited (0) 27 seconds ago   parser-task3-fault-20261104133929
+c4233323ae4f   command-parser:task3                "uvicorn service.app…"   0               285MB     58 seconds ago   Exited (0) 31 seconds ago   parser-task3-limited-20261104133929
+49c86725a0f2   ghcr.io/k3d-io/k3d-proxy:5.9.0      "/bin/sh -c nginx-pr…"   1               41kB      6 hours ago      Up 6 hours                  k3d-command-parser-serverlb
+5b7e84b2935f   rancher/k3s:v1.35.5-k3s1            "/bin/k3d-entrypoint…"   5               7.29GB    6 hours ago      Up 6 hours                  k3d-command-parser-server-0
+1f1eaae1dced   backtest_visualizer-frontend        "docker-entrypoint.s…"   0               28.7kB    3 months ago     Exited (143) 3 months ago   backtest-frontend
+27fb916c92bd   backtest_visualizer-backend         "uvicorn main:app --…"   0               4.1kB     3 months ago     Exited (0) 3 months ago     backtest-backend
+b425ff2ba860   clickhouse/clickhouse-server:26.6   "/bin/bash -c 'set -…"   1               8.19kB    3 months ago     Exited (0) 3 months ago     backtest-clickhouse-restore
+955627b9293b   clickhouse/clickhouse-server:26.6   "/entrypoint.sh"         1               85.7MB    3 months ago     Exited (137) 3 months ago   backtest-clickhouse
+
+Local Volumes space usage:
+
+VOLUME NAME                                                        LINKS     SIZE
+7cfc3d6e3f6163ac385a25ffe573d949cb3b4d378e105c85ef9ab2000cf20baf   0         0B
+ef5042dabb2da07f2977f6f88de154a77875124ab05e2a20dd39901f19b78d7c   0         0B
+28fe2a49c0fdcaf25e57c0180980a4a21368f4c13d175e66c1b49efe45d00689   1         20.7kB
+ed0b3806254bfa4dd3923367bd62a010ec271cff683f86863c2ee27443def7da   1         1.388MB
+1b25679276084dc95ae24e8a795540b46227b84873ee9ffde20432cdecc7e747   0         0B
+9d234ce73a08bb16e2853c1445dfd81839333885134e4ec2b54fbf721294212c   0         0B
+backtest_visualizer_clickhouse_data                                1         9.76GB
+e67342bc37598ad9cbaf51efe8dfd5bea8e799d373e5061fc6bac0c37ce604c9   0         0B
+35a9f6949d1aad4a41acc0adb82ce4243ba7167ec88dcf7c63d371d959aaf6df   1         23.74kB
+cca997b30d29d5f928f4f47250d88e660dd31168456a56c113afc34d57b7468d   1         1.43GB
+1720eae143f94370bd01ac3693a24fcb011f801b62662afb0b15638ced3dd445   0         0B
+228a07cd12197dc5fc1469a9cae52e39b7f854505b969fe65645a0013b8df93c   0         0B
+363c9ac034090dd0cc414acbcbe627fdd9f7dbb687f00558c70d68160af81b81   0         0B
+81bc32eb65d83023f78a821724c32546d23817b885934b342e06a1736270e427   0         0B
+f7bb96cc430b255fdfeb3fdb1281532c03a1fc27587031147121c4bf8b2c9915   0         0B
+17de085df9b20200270f33df82c8df701cb3c95da1f26a030bc3379df91e61d8   0         0B
+2f88ee618109d00041203f05f733250d2bca0aa1ac3c4692f8ffff8ade94e638   1         0B
+k3d-command-parser-images                                          2         0B
+
+Build cache usage: 4.15GB
+
+CACHE ID       CACHE TYPE     SIZE      CREATED              LAST USED            USAGE     SHARED
+v2kvpxr3sj4x   regular        139MB     3 months ago         3 months ago         1         true
+mj0o6fvst8r2   regular        6.27MB    3 months ago         3 months ago         1         true
+0s7v8wrh9hlq   regular        56.7MB    3 months ago         3 months ago         1         true
+wtbwenchfrug   regular        16.6kB    3 months ago         3 months ago         1         true
+ar7jney0lyps   regular        12.7kB    3 months ago         3 months ago         1         true
+xxac5r0vp3ab   regular        8.29kB    3 months ago         3 months ago         1         true
+guq8vwy72xfn   regular        207MB     3 months ago         3 months ago         1         true
+j8i1omg5uzhf   regular        13.5MB    3 months ago         3 months ago         1         true
+m961xl9gqvt0   regular        208MB     3 months ago         3 months ago         1         true
+mh7pe9d33070   regular        6.75MB    3 months ago         3 months ago         1         true
+ctaw31whgqp7   regular        537kB     3 months ago         3 months ago         1         true
+mtixe2dj4hoh   regular        20.9kB    3 months ago         3 months ago         1         true
+ozrutiwvbuw0   regular        8.29kB    3 months ago         3 months ago         1         true
+e0g6164dfqvn   regular        12.3MB    3 months ago         3 months ago         1         true
+qtrngi2xzx2k   regular        306kB     3 months ago         3 months ago         1         true
+17rfj5l2v084   regular        954MB     3 months ago         3 months ago         1         true
+ljok4ctbvi3e   regular        537kB     3 months ago         3 months ago         1         false
+idhe2sx97quy   regular        12.3MB    3 months ago         3 months ago         2         false
+vhefmpa0f3k6   regular        537kB     3 months ago         3 months ago         1         false
+li7l0twq5huv   regular        694kB     3 months ago         3 months ago         6         true
+6560oy2xctzt   regular        694kB     3 months ago         3 months ago         3         false
+jlzrw5mig5w7   regular        12.3MB    3 months ago         3 months ago         5         false
+1rc9hvg1lfx2   regular        537kB     3 months ago         3 months ago         1         false
+lpp7hzmmehaa   regular        12.3MB    3 months ago         3 months ago         4         false
+q3429f7bgxk6   regular        537kB     3 months ago         3 months ago         1         false
+uu8r5xvnoqsh   regular        12.3MB    3 months ago         3 months ago         1         false
+qshgpjwr50gk   regular        12.3MB    3 months ago         3 months ago         1         false
+jrlj8j8aupg3   regular        537kB     3 months ago         3 months ago         1         false
+f4guy8tk6403   regular        12.3MB    3 months ago         3 months ago         1         false
+k3r7z7dubwk4   regular        537kB     3 months ago         3 months ago         1         false
+u5kq9somb2x1   regular        208MB     3 months ago         3 months ago         1         true
+p4sealfvrx5f   regular        6.75MB    3 months ago         3 months ago         1         true
+t1otpfn2sqk8   regular        537kB     3 months ago         3 months ago         1         true
+2k6usxv40sjw   regular        8.29kB    3 months ago         3 months ago         1         true
+1l81cv3t9kxt   regular        306kB     3 months ago         3 months ago         1         true
+5pde0vtdock3   regular        20.9kB    3 months ago         3 months ago         1         true
+t07gtrvz9sz3   regular        958MB     3 months ago         3 months ago         1         true
+j0znaocg1t6o   source.local   8.19kB    3 months ago         3 months ago         20        false
+cgg9e34l31d8   source.local   496kB     3 months ago         3 months ago         17        false
+lsy4855e8618   regular        12.3MB    3 months ago         3 months ago         2         true
+k1ypww1r72zl   source.local   8.19kB    3 months ago         3 months ago         17        false
+n4v60ofd9tmz   source.local   8.19kB    3 months ago         3 months ago         22        false
+jsmany4sf07i   source.local   8.19kB    3 months ago         3 months ago         18        false
+738h2wl2b7ic   regular        324kB     3 months ago         3 months ago         9         true
+7kbr6hrrnrau   source.local   274kB     3 months ago         3 months ago         18        false
+mqnm4xnjdm8a   regular        30.2MB    4 days ago           4 days ago           1         true
+gs5unyi6bjp8   regular        1.27MB    4 days ago           4 days ago           1         true
+ywi4xyr1lbg8   regular        12.1MB    4 days ago           4 days ago           1         true
+uv1j7myl2ldk   regular        9.13MB    4 days ago           4 days ago           1         true
+v8fv19kx0i3b   regular        18.4kB    4 days ago           4 days ago           1         true
+n095wah8gtc7   regular        4.13kB    4 days ago           4 days ago           1         true
+vhg4vf3spuy3   regular        9.13MB    4 days ago           4 days ago           1         true
+9sz438mbwkta   regular        18.5kB    4 days ago           4 days ago           1         true
+2uz507xdg9ak   regular        4.13kB    4 days ago           4 days ago           1         true
+r5iu4ecy82b1   regular        18.5kB    4 days ago           4 days ago           1         true
+lr18xt6m7gdq   regular        4.13kB    4 days ago           4 days ago           1         true
+mkfs9ai4ps15   source.local   8.19kB    4 days ago           4 days ago           3         false
+1zycj0lc1psh   source.local   4.1kB     4 days ago           4 days ago           3         false
+d3owea6bhymv   regular        251B      4 days ago           4 days ago           3         true
+krdng00xxe1n   source.local   7.58MB    4 days ago           4 days ago           3         false
+yj2y95rbwga7   regular        9.13MB    4 days ago           4 days ago           1         true
+rpd57g6nuygo   regular        12.5kB    6 hours ago          6 hours ago          1         true
+x6hrxi2opt63   regular        17.3kB    6 hours ago          6 hours ago          1         false
+v3d577h8u3c2   regular        45.3kB    6 hours ago          6 hours ago          1         false
+jf1966qsj09q   regular        45.4kB    5 hours ago          5 hours ago          1         false
+jn73zim5ufac   regular        17.3kB    5 hours ago          5 hours ago          1         false
+i96igb51n32w   regular        45.5kB    5 hours ago          5 hours ago          1         false
+ni7prm6dqctu   regular        17.3kB    5 hours ago          5 hours ago          1         false
+mjncjnr4a2rl   regular        67.8MB    6 hours ago          5 hours ago          4         false
+x13vfszmbbyb   regular        17.3kB    5 hours ago          5 hours ago          1         false
+4nxb6qgr62ka   regular        45.7kB    5 hours ago          5 hours ago          1         false
+kviuxz7tntvu   regular        1.13GB    About a minute ago   About a minute ago   1         false
+j1jn9d2iednw   regular        45.7kB    About a minute ago   About a minute ago   1         false
+pv3zphr2ad2p   regular        37.2kB    About a minute ago   About a minute ago   1         false
+i7z2mnm9cuq3   source.local   8.19kB    6 hours ago          About a minute ago   5         false
+un8mwbnxhcef   regular        8.29kB    6 hours ago          About a minute ago   2         true
+vwqdc6xrmfq1   source.local   115kB     6 hours ago          About a minute ago   5         false
+mug2nxdvfcxi   regular        13kB      6 minutes ago        About a minute ago   1         true
+u6szzumtdcgl   regular        41.6kB    About a minute ago   About a minute ago   1         false
+spxmmc8f4o79   regular        26.4kB    About a minute ago   About a minute ago   1         false
+wt8652ch5zsh   regular        17.1kB    About a minute ago   About a minute ago   1         false
+3ihkg48yrm4s   source.local   8.19kB    6 hours ago          About a minute ago   5         false

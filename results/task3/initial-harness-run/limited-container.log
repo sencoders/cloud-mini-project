@@ -1,0 +1,102 @@
+{"time": 1793799570.107501, "event": "model_download_start", "model_uri": "s3://models/v1/"}
+{"time": 1793799570.1183743, "event": "model_file_verified", "file": "config.json", "bytes": 770, "sha256": "0011261bdd0ae8f8f77b9f07bd34325bdaed2fc054ab5964265d0422f5904082"}
+{"time": 1793799570.1215186, "event": "model_file_verified", "file": "generation_config.json", "bytes": 111, "sha256": "98f34247dcd75d34c7bfb8e7e508f170c2abc9867b74e9d70db1a70bb2b1a644"}
+INFO:     172.19.0.1:58718 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58724 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:58734 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58750 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:58760 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58768 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:58774 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58778 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+{"time": 1793799570.5523083, "event": "model_file_verified", "file": "model.safetensors", "bytes": 281715176, "sha256": "f549d5c34cc91d9d79dbe593f6ab14d50f43d4e49cf0e507894bb306c6cb0ce7"}
+{"time": 1793799570.5537393, "event": "model_file_verified", "file": "special_tokens_map.json", "bytes": 473, "sha256": "57491904f8680d4b52ed440f1f7ba48cad1c31ecf3eb453b03484e6ff4723ae8"}
+{"time": 1793799570.56509, "event": "model_file_verified", "file": "tokenizer.json", "bytes": 3564303, "sha256": "d4c0d99d84af59e9126913fafe5210822963e9a3065ee43e6833b358b0c2f825"}
+{"time": 1793799570.5659068, "event": "model_file_verified", "file": "tokenizer_config.json", "bytes": 4876, "sha256": "435e0103b15eee9a299ded22f93129ebb7409bc5b6dd93f069bd86bdbc7c44a1"}
+{"time": 1793799570.566678, "event": "model_file_verified", "file": "training_config.yaml", "bytes": 1915, "sha256": "191c5ceaeffdd1fba13215d951f372f6fbb7e9ced873efd4de2c3290fe4a933d"}
+{"time": 1793799570.5673974, "event": "model_file_verified", "file": "version.json", "bytes": 1745, "sha256": "c7f439277c68529e21cf6271a8f0fa44e9f60652bf8e5b1a38338aaa332d0ada"}
+{"time": 1793799570.5674794, "event": "model_download_complete", "files": 8, "manifest_sha256": "5ca810f5ab7cf55c2daafbfee6c224362641243dfe8c792e88ecea60de0a49ae"}
+INFO:     172.19.0.1:58786 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58788 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:58798 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58806 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:58812 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58826 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:58840 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58842 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:58846 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58854 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:58868 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58870 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:58882 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58896 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:58910 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58916 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:58932 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58946 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:58954 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58970 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:58984 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:58988 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:61778 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61780 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:61790 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61802 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+INFO:     172.19.0.1:61806 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61822 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+{"time": 1793799572.1820319, "event": "model_loaded", "version": "v1", "device": "cpu", "seconds": 2.1179134599988174}
+{"time": 1793799572.1820562, "event": "ready", "version": "v1", "served_by": "parser-task3-limited-20261104133929"}
+INFO:     172.19.0.1:61824 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61826 - "GET /readyz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61836 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61852 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61866 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61870 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61886 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61900 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61902 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61906 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61912 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61922 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61930 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61944 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61958 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61962 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61968 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61972 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61982 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:61996 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62006 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62020 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62026 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62034 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62042 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62104 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62114 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62118 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62126 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62142 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62144 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62154 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62162 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62176 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62192 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62196 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62200 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62204 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62206 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62214 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62222 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62234 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62250 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62256 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62268 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62284 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62292 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:62294 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55116 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55132 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55148 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55162 - "POST /parse HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55176 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55178 - "GET /readyz HTTP/1.1" 200 OK
