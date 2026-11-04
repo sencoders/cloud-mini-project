@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/shreeja/Projects/cloud-mini-project/.venv312/bin/python",
+    "-m",
+    "ci.evaluate_release",
+    "--archive",
+    ".local/releases/pythia-70m-v1.tar.gz",
+    "--out",
+    "results/task6/local-release-evaluation/predictions.jsonl"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 12.440933250123635,
+  "source": "actual verified local archive; not downloaded from a published GitHub Release; remote CI pending"
+}

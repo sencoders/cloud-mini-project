@@ -1,0 +1,30 @@
+{
+  "untrained": {
+    "command": [
+      "/Users/shreeja/Projects/cloud-mini-project/.venv312/bin/python",
+      "tools/score.py",
+      "results/task2/evaluation/untrained_raw_predictions.jsonl",
+      "data/validation.jsonl",
+      "--min-validity",
+      "95",
+      "--out",
+      "results/task6/local-untrained-gate.json"
+    ],
+    "exit_code": 1,
+    "input": "genuine preserved Task 2 predictions; not a GitHub run"
+  },
+  "student_v1": {
+    "command": [
+      "/Users/shreeja/Projects/cloud-mini-project/.venv312/bin/python",
+      "tools/score.py",
+      "results/task2/evaluation/student_v1_raw_predictions.jsonl",
+      "data/validation.jsonl",
+      "--min-validity",
+      "95",
+      "--out",
+      "results/task6/local-student_v1-gate.json"
+    ],
+    "exit_code": 0,
+    "input": "genuine preserved Task 2 predictions; not a GitHub run"
+  }
+}

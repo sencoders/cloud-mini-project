@@ -1,0 +1,101 @@
+{
+  "source_run": "Task 4 standard fixed-two-replica load-balancing test; no extra load test needed",
+  "performance": {
+    "requests_final_console": 378,
+    "failures_final_console": 4,
+    "failure_percent": 1.0582010582010581,
+    "csv_requests": 377,
+    "csv_failures": 4,
+    "csv_median_ms": 1100.0,
+    "csv_p95_ms": 2000.0,
+    "csv_requests_per_second": 3.331957779810104,
+    "successful_header_count": 374,
+    "headers": {
+      "per_replica": {
+        "command-parser-594c8bd455-wdqlr": 188,
+        "command-parser-594c8bd455-jnzfg": 186
+      },
+      "per_model_version": {
+        "v1": 374
+      }
+    },
+    "replica_success_shares": {
+      "command-parser-594c8bd455-wdqlr": 0.5026737967914439,
+      "command-parser-594c8bd455-jnzfg": 0.49732620320855614
+    },
+    "final_console_and_headers_agree": true,
+    "failures": [
+      {
+        "Method": "POST",
+        "Name": "/parse",
+        "Error": "CatchResponseError('HTTP 500')",
+        "Occurrences": "4"
+      }
+    ],
+    "evidence_directory": "results/task4/load-balancing",
+    "execution": {
+      "returncode": 1,
+      "wall_seconds": 137.77674850006588,
+      "actions": [],
+      "headers_path": "results/loadtest_headers.json",
+      "csv_prefix": "results/loadtest"
+    }
+  },
+  "per_pod_samples": {
+    "command-parser-594c8bd455-jnzfg": {
+      "samples": 39,
+      "cpu_millicores_min": 4.0,
+      "cpu_millicores_max": 998.0,
+      "memory_mib_min": 305.0,
+      "memory_mib_max": 430.0
+    },
+    "command-parser-594c8bd455-wdqlr": {
+      "samples": 39,
+      "cpu_millicores_min": 6.0,
+      "cpu_millicores_max": 998.0,
+      "memory_mib_min": 305.0,
+      "memory_mib_max": 413.0
+    }
+  },
+  "cold_start_run_medians_seconds": [
+    5.0,
+    5.0,
+    4.0
+  ],
+  "cold_start_median_seconds": 5.0,
+  "pricing": {
+    "description": "Hypothetical on-demand prices for the cost-estimation exercise. These are not real provider prices.",
+    "currency": "INR",
+    "vcpu_hour": 3.5,
+    "gib_memory_hour": 0.45,
+    "billing_rule": "A replica is billed for its CPU limit and memory limit for every hour it runs, whether or not it is busy.",
+    "formula": "cost_per_1000_requests = (hourly cost of all running replicas / requests served per hour) * 1000"
+  },
+  "cost_estimate_inr": {
+    "per_replica_hour": "3.95",
+    "all_replicas_hour": "7.90",
+    "requests_per_hour": "11995.048007316374400",
+    "cost_per_1000": "0.6586051173101932047293771211"
+  },
+  "billing_assumptions": {
+    "running_replicas": 2,
+    "cpu_limit_each": 1,
+    "memory_limit_gib_each": 1,
+    "included": "The two app replicas specified by the rate card; excludes storage/control plane/Ollama"
+  },
+  "slo": {
+    "target_success_fraction": "0.99",
+    "requests": 378,
+    "failures": 4,
+    "fractional_failure_budget": "3.78",
+    "whole_failure_budget": 3,
+    "failures_over_budget": 1,
+    "whole_budget_consumed_percent": 133.33333333333334,
+    "success_percent": 98.94179894179894,
+    "slo_met": false
+  },
+  "local_performance_thresholds": {
+    "error_rate_at_most_1_percent": false,
+    "p95_at_most_5000_ms": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "ASSIGNMENT.pdf": true,
+  "data/rate_card.json": true,
+  "data/validation.jsonl": true,
+  "data/schema.json": true,
+  "data/commands_pool.jsonl": true,
+  "tools/locustfile.py": true,
+  "tools/nacl_sim.py": true,
+  "tools/score.py": true,
+  "network/packets_sample.jsonl": true
+}

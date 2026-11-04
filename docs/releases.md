@@ -40,3 +40,25 @@ and uploads the archive, its checksum sidecar and the model checksum manifest.
 It does not push Git commits or create remote tags. `gh release view TAG --json
 url,assets` and a downloaded asset checksum are required before reporting a
 Release as published. This project run does not execute that publication step.
+
+## Both-version Release for CI and fresh bootstrap
+
+The locally verified archives have nine members each and match the committed
+`models/v1/release.sha256` and `models/v2/release.sha256`. Verification evidence is
+`results/task6/release-verification.json`. Each archive includes `version.json`,
+`model.sha256`, weights, tokenizer and model config. No publication is claimed.
+
+`publish-release.yml` prepares **both** versions on the same release tag using a
+self-hosted Mac with access to SeaweedFS. Configure its three S3 secrets; leave
+`publish=false` to inspect the uploaded workflow artifact first. Actual publication
+requires a configured GitHub repository, authenticated runner and an existing tag.
+A locally authenticated equivalent, only after explicit publication authorization:
+
+```sh
+gh release create "$MODEL_RELEASE_TAG" --verify-tag --title 'CPU Pythia-70M V1 and V2' --notes 'Verify the committed archive and member checksums.' .local/releases/pythia-70m-v1.tar.gz .local/releases/pythia-70m-v1.tar.gz.sha256 .local/releases/pythia-70m-v2.tar.gz .local/releases/pythia-70m-v2.tar.gz.sha256
+```
+
+Set GitHub Actions variable `MODEL_RELEASE_TAG`; dispatch `ci.yml`, then
+`bad-model-gate.yml` with that `release_tag`. Obtain the **actual** failed-run URL
+with `gh run list --workflow bad-model-gate.yml`; verify its quality-gate step
+failed with validity below 95 before citing it. No such URL exists locally yet.

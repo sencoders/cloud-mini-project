@@ -1,0 +1,39 @@
+{
+  "cost_estimate_inr": {
+    "per_replica_hour": "3.95",
+    "all_replicas_hour": "7.90",
+    "requests_per_hour": "11995.048007316374400",
+    "cost_per_1000": "0.6586051173101932047293771211"
+  },
+  "slo": {
+    "target_success_fraction": "0.99",
+    "requests": 378,
+    "failures": 4,
+    "fractional_failure_budget": "3.78",
+    "whole_failure_budget": 3,
+    "failures_over_budget": 1,
+    "whole_budget_consumed_percent": 133.33333333333334,
+    "success_percent": 98.94179894179894,
+    "slo_met": false
+  },
+  "per_pod_samples": {
+    "command-parser-594c8bd455-jnzfg": {
+      "samples": 39,
+      "cpu_millicores_min": 4.0,
+      "cpu_millicores_max": 998.0,
+      "memory_mib_min": 305.0,
+      "memory_mib_max": 430.0
+    },
+    "command-parser-594c8bd455-wdqlr": {
+      "samples": 39,
+      "cpu_millicores_min": 6.0,
+      "cpu_millicores_max": 998.0,
+      "memory_mib_min": 305.0,
+      "memory_mib_max": 413.0
+    }
+  },
+  "thresholds": {
+    "error_rate_at_most_1_percent": false,
+    "p95_at_most_5000_ms": true
+  }
+}

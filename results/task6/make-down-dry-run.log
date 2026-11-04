@@ -1,0 +1,2 @@
+PYTHONPATH=. .venv312/bin/python scripts/system.py down --dry-run
+k3d cluster delete command-parser

@@ -2,9 +2,7 @@ PYTHON ?= .venv312/bin/python
 
 .PHONY: up smoke label status clean test down
 up:
-	k3d cluster create --config cluster/k3d.yaml
-	$(PYTHON) scripts/task1.py setup
-	$(PYTHON) scripts/task1.py build
+	PYTHONPATH=. $(PYTHON) scripts/system.py up
 smoke:
 	$(PYTHON) scripts/task1.py smoke
 label:
@@ -16,7 +14,7 @@ clean:
 test:
 	$(PYTHON) -m pytest -q
 down:
-	$(PYTHON) scripts/task1.py down
+	PYTHONPATH=. $(PYTHON) scripts/system.py down
 
 VERSION ?= v1
 .PHONY: train evaluate upload-model package-model
@@ -52,3 +50,13 @@ app-resume:
 	$(PYTHON) scripts/task4.py resume
 app-report:
 	$(PYTHON) scripts/report_task4.py
+
+.PHONY: lint network-check performance-report down-dry-run
+lint:
+	.venv312/bin/ruff check .
+network-check:
+	$(PYTHON) tools/nacl_sim.py network/nacl.json network/packets_sample.jsonl --check
+performance-report:
+	$(PYTHON) scripts/report_task7.py
+down-dry-run:
+	PYTHONPATH=. $(PYTHON) scripts/system.py down --dry-run

@@ -1,0 +1,47 @@
+name: Package both verified versions and optionally publish
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing Git tag to attach both models to
+        type: string
+        required: true
+      publish:
+        description: Explicitly publish a GitHub Release
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: [self-hosted, macOS, ARM64]
+    permissions:
+      contents: write
+    env:
+      S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pinned CPU packaging environment
+        run: |
+          python3.12 -m venv .venv312
+          .venv312/bin/pip install -r requirements-training-lock.txt
+      - name: Verify S3 files and package both versions
+        run: |
+          for version in v1 v2; do
+            .venv312/bin/python -m training.artifacts download --version "$version" --destination ".local/models/$version"
+            make package-model VERSION="$version"
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: both-verified-models
+          path: .local/releases/*
+          include-hidden-files: true
+      - name: Publish only on explicit request
+        if: ${{ inputs.publish }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+        run: |
+          gh release create "$TAG" --verify-tag --title 'CPU Pythia-70M V1 and V2' --notes 'Each archive includes weights, tokenizer, config, version.json and model.sha256. Verify archive checksums against the committed manifests.' .local/releases/pythia-70m-v1.tar.gz .local/releases/pythia-70m-v1.tar.gz.sha256 .local/releases/pythia-70m-v2.tar.gz .local/releases/pythia-70m-v2.tar.gz.sha256

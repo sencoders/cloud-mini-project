@@ -1,0 +1,2 @@
+$ /Users/shreeja/Projects/cloud-mini-project/.venv312/bin/python -m ci.evaluate_release --archive .local/releases/pythia-70m-v1.tar.gz --out results/task6/local-release-evaluation/predictions.jsonl
+`torch_dtype` is deprecated! Use `dtype` instead!

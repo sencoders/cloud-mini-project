@@ -1,0 +1,7 @@
+{
+  "git_remotes": [],
+  "workflows_executed": false,
+  "release_published": false,
+  "failed_run_url": null,
+  "blocker": "No GitHub remote configured; no push authorized. Publish verified assets and run workflows after repository/authentication setup."
+}

@@ -1,0 +1,15 @@
+PYTHONPATH=. .venv312/bin/python scripts/system.py up
+deployment "seaweedfs" successfully rolled out
+deployment "command-parser" successfully rolled out
+NAME                             READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/command-parser   1/1     1            1           108m
+
+NAME                     TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
+service/command-parser   ClusterIP   10.43.16.167   <none>        8000/TCP   108m
+
+NAME                                       CLASS     HOSTS   ADDRESS      PORTS   AGE
+ingress.networking.k8s.io/command-parser   traefik   *       172.19.0.3   80      108m
+
+NAME                                                 REFERENCE                   TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/command-parser   Deployment/command-parser   cpu: 2%/70%   1         2         1          59m
+Existing system ready; storage, models and replica policy preserved.

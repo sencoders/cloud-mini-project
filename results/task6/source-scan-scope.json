@@ -1,0 +1,5 @@
+{
+  "files_copied": 564,
+  "selection": "git ls-files --cached --others --exclude-standard; ignored private caches/weights not included",
+  "snapshot": ".local/task6-source-scan"
+}

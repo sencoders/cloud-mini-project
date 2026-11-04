@@ -1,0 +1,23 @@
+Collecting ruff==0.14.4
+  Downloading ruff-0.14.4-py3-none-macosx_11_0_arm64.whl.metadata (25 kB)
+Collecting reportlab==4.4.4
+  Downloading reportlab-4.4.4-py3-none-any.whl.metadata (1.7 kB)
+Collecting pillow>=9.0.0 (from reportlab==4.4.4)
+  Downloading pillow-13.0.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (9.1 kB)
+Requirement already satisfied: charset-normalizer in ./.venv312/lib/python3.12/site-packages (from reportlab==4.4.4) (3.5.2)
+Downloading ruff-0.14.4-py3-none-macosx_11_0_arm64.whl (11.9 MB)
+   ━━━━━━━━━━━━━━╸                          4.5/11.9 MB 42.7 kB/s eta 0:02:56
+WARNING: Connection interrupted while downloading.
+WARNING: Attempting to resume incomplete download (4.5 MB/11.9 MB, attempt 1)
+Resuming download ruff-0.14.4-py3-none-macosx_11_0_arm64.whl (4.5 MB/11.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.9/11.9 MB 2.7 MB/s  0:00:02
+Downloading reportlab-4.4.4-py3-none-any.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 2.9 MB/s  0:00:00
+Downloading pillow-13.0.0-cp312-cp312-macosx_11_0_arm64.whl (4.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 2.9 MB/s  0:00:01
+Installing collected packages: ruff, pillow, reportlab
+
+Successfully installed pillow-13.0.0 reportlab-4.4.4 ruff-0.14.4
+
+[notice] A new release of pip is available: 26.2.2 -> 26.3
+[notice] To update, run: /Users/shreeja/Projects/cloud-mini-project/.venv312/bin/python3.12 -m pip install --upgrade pip

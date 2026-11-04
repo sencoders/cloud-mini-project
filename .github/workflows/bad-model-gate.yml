@@ -1,0 +1,16 @@
+name: Demonstrate rejection of the real untrained model
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Published verified V1 Release tag (still downloaded and verified)
+        type: string
+        required: true
+permissions:
+  contents: read
+jobs:
+  demonstrate:
+    uses: ./.github/workflows/ci.yml
+    with:
+      release_tag: ${{ inputs.release_tag }}
+      bad_model: true

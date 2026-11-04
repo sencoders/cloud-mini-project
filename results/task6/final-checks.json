@@ -1,0 +1,14 @@
+{
+  "unit_tests_passed": 129,
+  "unit_tests_skipped": 1,
+  "ruff_passed": true,
+  "report_pages": 7,
+  "instructor_files_unchanged": 9,
+  "configured_gitleaks_history_findings": 0,
+  "current_source_findings": 0,
+  "git_diff_check_exit_code": 0,
+  "remote_ci_executed": false,
+  "github_release_published": false,
+  "fresh_clone_bootstrap_executed": false,
+  "destructive_down_executed": false
+}

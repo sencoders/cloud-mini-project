@@ -1,3 +1,95 @@
+# CS3081: Tasks 5–7 deliverables and submission status
+
+Tasks 5–7 local implementation is complete. **GitHub publication/workflow evidence
+and a fresh-clone deployment remain unverified** because no remote is configured.
+The Task 4 rolling error threshold and Task 7 local error-rate threshold remain
+unmet; their genuine measurements are preserved below. No earlier labels, models,
+instructor scripts or expensive experiments were regenerated.
+
+- [Task 5 subnet calculations and stateless rule explanation](network/subnets.md),
+  [NACL](network/nacl.json): supplied simulator **6/6**, networking tests **25 passed**.
+- [Task 7 measurements, cost, SLO and six-row review](report/task7-results.md):
+  p50 **1,100 ms**, p95 **2,000 ms**, **3.33196 req/s**, **4/378 failures (1.058%)**;
+  estimated **₹0.6586/1,000 requests**. The 99% SLO permits **3 whole failures**;
+  four used **133.33%** of that budget. Original Locust files remain in results/.
+- [Task 6 local checks and remaining remote evidence](report/task6-results.md):
+  **129 passed, 1 skipped**, Ruff passes, both actual model archives verified;
+  local gate passes V1 (100% validity) and rejects untrained (0%).
+- [Seven-task PDF report](report/report.pdf), [submission checklist](report/submission-checklist.md).
+
+## Build, deploy, test and shut down
+
+Prerequisites: Python 3.12, Docker, k3d, kubectl; `gh` plus a real model Release for
+fresh bootstrap. Ollama stays native on macOS; no second teacher is loaded.
+For a **fresh clone**, first configure `MODEL_RELEASE_REPOSITORY=owner/repository`
+and `MODEL_RELEASE_TAG=<published-tag-containing-both-models>` in the shell (private
+repositories also require `gh auth login`). Then these three commands:
+
+```sh
+python3.12 -m venv .venv312
+.venv312/bin/pip install -r requirements-service-dev.txt
+make up
+```
+
+Fresh bootstrap verifies downloaded Release archives against committed hashes,
+creates the cluster and storage, builds/imports worker and service images,
+restores both models to S3 and deploys the app/Ingress/HPA. Missing Release
+configuration fails **before cluster creation**. This path is implemented but not
+claimed tested end-to-end until the Release is actually published.
+
+On this existing workspace, `make up` is idempotent: it verifies healthy storage
+and app without changing data, evidence or replica policy. Its successful real
+output is `results/task6/make-up.log`. Kubernetes always uses the project kubeconfig:
+
+```sh
+export KUBECONFIG="$PWD/.local/kubeconfig"
+kubectl get pods,deploy,svc,ingress,hpa -n app
+curl http://localhost:8080/readyz
+make test
+make network-check
+make performance-report
+.venv312/bin/pip install ruff==0.14.4
+make lint
+make down-dry-run
+# Destructive shutdown: deletes the cluster and its local persistent storage.
+# Export/preserve required data first; intentionally NOT run for this verification.
+make down
+```
+
+`make down-dry-run` and a unit test verify the exact teardown command without
+deleting the live cluster. The full unit suite skips the optional live-S3 test;
+this is stated in its saved output. Credentials remain ignored local files or
+Kubernetes Secrets. Models remain ignored local archives and S3 objects.
+
+## CI and Release preparation
+
+`.github/workflows/ci.yml` orders lint → unit tests → actual Release download and
+CPU evaluation → supplied `score.py --min-validity 95` → Gitleaks (also runs on
+prior-job failure). Configure repository variable `MODEL_RELEASE_TAG`. Archives
+and extracted members must match committed checksums; missing assets fail without
+falling back to local weights. `bad-model-gate.yml` evaluates the real pinned
+untrained Pythia model for the deliberate failed-gate demonstration.
+
+Both local archives contain nine verified members: weights, tokenizer, config,
+version metadata and checksum. See `results/task6/release-verification.json` and
+[publication instructions](docs/releases.md). `publish-release.yml` packages both
+versions on a self-hosted Mac; publishing is opt-in. No Release or workflow run is
+claimed, and no failed-run URL is invented. Repository configuration, authentication
+and separately authorized push/publication are still required.
+
+Gitleaks initially flagged six instances of a **public Docker GPG fingerprint**.
+Those diagnostics are retained. The configured full-history scan reports **zero**
+findings with an exception for only that exact public fingerprint; see
+[scan scope](results/task6/secret-scan-notes.md). AI assistance is recorded in AI_USE.md.
+
+To rebuild the seven-page PDF: install `requirements-report.txt`, then run
+`.venv312/bin/python report/build_report.py`. Report-building packages are excluded
+from the inference image.
+
+The sections below preserve the completed Tasks 1–4 setup, evidence and limitations.
+
+---
+
 # Task 4: Kubernetes deployment and measured reliability
 
 Task 4 implementation and experiments are complete; **the rolling-update HTTP
@@ -564,7 +656,7 @@ suspend or finish Jobs first. After exporting everything, permanent teardown is:
 make down
 ```
 
-Do not tag this partial assignment `final`: Tasks 5–7 remain pending; GitHub Release publication and the rolling failure-rate gap remain unresolved.
+Before creating the submission tag `final`, resolve the checklist in report/submission-checklist.md. Tasks 5–7 local deliverables are now present; remote publication/evidence and the rolling failure-rate gap remain unresolved.
 No remote push or GitHub publication is performed.
 
 Implementation references: [k3d configuration](https://k3d.io/stable/usage/configfile/),

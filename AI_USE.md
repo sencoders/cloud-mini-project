@@ -40,3 +40,17 @@ through resumption. Nonzero Locust exits and all HTTP 500s are retained; the
 rolling failure threshold is explicitly unmet. Inference/training code, data and trained artifacts from Tasks 1–3 were preserved.
 Those expensive pipelines were not repeated; combined unit tests were rerun. A single local V2 inference was used only
 to diagnose the failing probe, not to train, relabel or replace a served output.
+
+Tasks 5–7: Codex assisted with VLSM calculations, stateless first-match NACL rules,
+network boundary tests, performance/cost/SLO calculations, Release verification,
+bootstrap/teardown guards, GitHub Actions and the report. Checks used the unchanged
+instructor packet simulator (6/6), new focused tests and the full unit suite,
+original Task 4 Locust/resource/cold-start measurements, Decimal cost calculations,
+actual local Release archive/member hashes and the supplied scorer on preserved
+raw predictions. Ruff and Gitleaks were run locally. Gitleaks initially found a
+public Docker GPG fingerprint; the original diagnostic and narrowly scoped public
+fingerprint exception are documented. Existing measurements and failed thresholds
+remain visible. No remote workflow, failed-run URL or Release publication was
+invented. No teacher labels, training artifacts or instructor scripts were changed.
+The generated report is typeset project evidence, not the mandatory handwritten
+personal reflection, which the student must supply themselves.

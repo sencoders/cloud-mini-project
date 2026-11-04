@@ -1,0 +1,6 @@
+{
+  "version": "8.24.3",
+  "source": "https://github.com/gitleaks/gitleaks/releases/download/v8.24.3/gitleaks_8.24.3_darwin_arm64.tar.gz",
+  "sha256": "b90f13bb8c90ab72083d9b0c842e39dafb82c0e5c3f872f407366b7a58909013",
+  "official_checksum_matches": true
+}
