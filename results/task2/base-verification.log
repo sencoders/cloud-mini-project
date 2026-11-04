@@ -1,0 +1,31 @@
+{
+  "repo": "EleutherAI/pythia-70m",
+  "revision": "a39f36b100fe8a5377810d56c3f4789b9c53ac42",
+  "files": {
+    "config.json": {
+      "sha256": "002050231a9b1ec3ac77aa6b9b3bbdc4d923f4068a7dd33b8da72a9bd6ad9a43",
+      "bytes": 567,
+      "official_lfs_sha256": null
+    },
+    "tokenizer.json": {
+      "sha256": "c24618a1b3e6a38167beff1c72cffd126c3a66254347304b50547d12c5f25624",
+      "bytes": 2113710,
+      "official_lfs_sha256": null
+    },
+    "tokenizer_config.json": {
+      "sha256": "70e38394e494931c6f773ba41e19460dd4436526b852207367f04341b4066d3f",
+      "bytes": 396,
+      "official_lfs_sha256": null
+    },
+    "special_tokens_map.json": {
+      "sha256": "6f50ab5a5a509a1c309d6171f339b196a900dc9c99ad0408ff23bb615fdae7ad",
+      "bytes": 99,
+      "official_lfs_sha256": null
+    },
+    "model.safetensors": {
+      "sha256": "ebfa4e2f18696ebd83716a0d39fe2c025f2ff8483f72a83ca59c475692fc9d15",
+      "bytes": 166029852,
+      "official_lfs_sha256": "ebfa4e2f18696ebd83716a0d39fe2c025f2ff8483f72a83ca59c475692fc9d15"
+    }
+  }
+}

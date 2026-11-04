@@ -1,0 +1,14 @@
+{
+  "id": "EleutherAI/pythia-70m",
+  "sha": "a39f36b100fe8a5377810d56c3f4789b9c53ac42",
+  "files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "model.safetensors",
+    "pytorch_model.bin",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ]
+}

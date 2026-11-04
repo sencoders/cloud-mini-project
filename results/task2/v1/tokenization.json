@@ -1,0 +1,9 @@
+{
+  "examples": 1500,
+  "min_tokens": 28,
+  "max_tokens": 66,
+  "mean_tokens": 36.208666666666666,
+  "truncated_examples": 0,
+  "prompt_loss_masked": true,
+  "padding_loss_masked": true
+}

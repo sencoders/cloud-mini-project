@@ -1,0 +1,57 @@
+{
+  "status": "training_evaluation_and_local_packaging_complete",
+  "tests_passed": 65,
+  "timings": {
+    "smoke": {
+      "whole_command_seconds": 8.07,
+      "maximum_rss_bytes": 2457010176
+    },
+    "v1": {
+      "whole_command_seconds": 147.99,
+      "maximum_rss_bytes": 2165391360
+    },
+    "v2": {
+      "whole_command_seconds": 50.98,
+      "maximum_rss_bytes": 1951580160
+    }
+  },
+  "metrics_raw": {
+    "teacher": {
+      "json_validity": 83.0,
+      "intent_accuracy": 74.0,
+      "date_accuracy": 64.0,
+      "time_accuracy": 64.0,
+      "place_accuracy": 76.0,
+      "full_frame": 44.0,
+      "examples": 100,
+      "missing_predictions": 0
+    },
+    "untrained": {
+      "json_validity": 0.0,
+      "intent_accuracy": 0.0,
+      "date_accuracy": 0.0,
+      "time_accuracy": 0.0,
+      "place_accuracy": 0.0,
+      "full_frame": 0.0,
+      "examples": 100,
+      "missing_predictions": 0
+    },
+    "student_v1": {
+      "json_validity": 100.0,
+      "intent_accuracy": 80.0,
+      "date_accuracy": 66.0,
+      "time_accuracy": 70.0,
+      "place_accuracy": 77.0,
+      "full_frame": 26.0,
+      "examples": 100,
+      "missing_predictions": 0
+    }
+  },
+  "task1_dataset_sha256": "1865c9ddc2a723247e96336c0ef966cd3b669aa904ae03d29f77ef4fe92b03e5",
+  "training_records": 1500,
+  "last_training_id": "C2004",
+  "v1_total_epochs": 3,
+  "v2_total_epochs": 4,
+  "release_published": false,
+  "source_hardware": "Apple M5"
+}

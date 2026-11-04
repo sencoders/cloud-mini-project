@@ -1,0 +1,15 @@
+{
+  "versions": {
+    "v1": {
+      "weight_sha256": "f549d5c34cc91d9d79dbe593f6ab14d50f43d4e49cf0e507894bb306c6cb0ce7",
+      "epochs": 3,
+      "dataset_sha256": "1865c9ddc2a723247e96336c0ef966cd3b669aa904ae03d29f77ef4fe92b03e5"
+    },
+    "v2": {
+      "weight_sha256": "eb82b1e71d1109ee34fddc150bb53c417bf0ae17a9c1c44bd56dc103efdbb6e2",
+      "epochs": 4,
+      "dataset_sha256": "1865c9ddc2a723247e96336c0ef966cd3b669aa904ae03d29f77ef4fe92b03e5"
+    }
+  },
+  "weight_files_distinct": true
+}

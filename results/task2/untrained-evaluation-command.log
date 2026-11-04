@@ -1,0 +1,131 @@
+.venv312/bin/python -m training.evaluate --model untrained
+`torch_dtype` is deprecated! Use `dtype` instead!
+{"event": "evaluated", "model": "untrained", "id": "V001", "seconds": 0.535107625182718}
+{"event": "evaluated", "model": "untrained", "id": "V002", "seconds": 0.5339323750231415}
+{"event": "evaluated", "model": "untrained", "id": "V003", "seconds": 0.5044367499649525}
+{"event": "evaluated", "model": "untrained", "id": "V004", "seconds": 0.5445963749662042}
+{"event": "evaluated", "model": "untrained", "id": "V005", "seconds": 0.5503930419217795}
+{"event": "evaluated", "model": "untrained", "id": "V006", "seconds": 0.5253907919395715}
+{"event": "evaluated", "model": "untrained", "id": "V007", "seconds": 0.5880745828617364}
+{"event": "evaluated", "model": "untrained", "id": "V008", "seconds": 0.5080599170178175}
+{"event": "evaluated", "model": "untrained", "id": "V009", "seconds": 0.5130311669781804}
+{"event": "evaluated", "model": "untrained", "id": "V010", "seconds": 0.5118977909442037}
+{"event": "evaluated", "model": "untrained", "id": "V011", "seconds": 0.50375199993141}
+{"event": "evaluated", "model": "untrained", "id": "V012", "seconds": 0.5194919579662383}
+{"event": "evaluated", "model": "untrained", "id": "V013", "seconds": 0.5124307090882212}
+{"event": "evaluated", "model": "untrained", "id": "V014", "seconds": 0.5119246658869088}
+{"event": "evaluated", "model": "untrained", "id": "V015", "seconds": 0.5196321660187095}
+{"event": "evaluated", "model": "untrained", "id": "V016", "seconds": 0.5035490000154823}
+{"event": "evaluated", "model": "untrained", "id": "V017", "seconds": 0.5112552500795573}
+{"event": "evaluated", "model": "untrained", "id": "V018", "seconds": 0.5099595841020346}
+{"event": "evaluated", "model": "untrained", "id": "V019", "seconds": 0.5114989588037133}
+{"event": "evaluated", "model": "untrained", "id": "V020", "seconds": 0.5047997499350458}
+{"event": "evaluated", "model": "untrained", "id": "V021", "seconds": 0.5044680000282824}
+{"event": "evaluated", "model": "untrained", "id": "V022", "seconds": 0.5066524581052363}
+{"event": "evaluated", "model": "untrained", "id": "V023", "seconds": 0.5034548330586404}
+{"event": "evaluated", "model": "untrained", "id": "V024", "seconds": 0.5270077080931515}
+{"event": "evaluated", "model": "untrained", "id": "V025", "seconds": 0.5226834581699222}
+{"event": "evaluated", "model": "untrained", "id": "V026", "seconds": 0.5444337090011686}
+{"event": "evaluated", "model": "untrained", "id": "V027", "seconds": 0.5968397089745849}
+{"event": "evaluated", "model": "untrained", "id": "V028", "seconds": 0.5029246660415083}
+{"event": "evaluated", "model": "untrained", "id": "V029", "seconds": 0.5091243330389261}
+{"event": "evaluated", "model": "untrained", "id": "V030", "seconds": 0.533818082883954}
+{"event": "evaluated", "model": "untrained", "id": "V031", "seconds": 0.5760832091327757}
+{"event": "evaluated", "model": "untrained", "id": "V032", "seconds": 0.5417140841018409}
+{"event": "evaluated", "model": "untrained", "id": "V033", "seconds": 0.5429147500544786}
+{"event": "evaluated", "model": "untrained", "id": "V034", "seconds": 0.5853288751095533}
+{"event": "evaluated", "model": "untrained", "id": "V035", "seconds": 0.5595839591696858}
+{"event": "evaluated", "model": "untrained", "id": "V036", "seconds": 0.5596908340230584}
+{"event": "evaluated", "model": "untrained", "id": "V037", "seconds": 0.5360730409156531}
+{"event": "evaluated", "model": "untrained", "id": "V038", "seconds": 0.5156765410210937}
+{"event": "evaluated", "model": "untrained", "id": "V039", "seconds": 0.5120978751219809}
+{"event": "evaluated", "model": "untrained", "id": "V040", "seconds": 0.5263319998048246}
+{"event": "evaluated", "model": "untrained", "id": "V041", "seconds": 0.5381137498188764}
+{"event": "evaluated", "model": "untrained", "id": "V042", "seconds": 0.5480818750802428}
+{"event": "evaluated", "model": "untrained", "id": "V043", "seconds": 0.5740254581905901}
+{"event": "evaluated", "model": "untrained", "id": "V044", "seconds": 0.5257543330080807}
+{"event": "evaluated", "model": "untrained", "id": "V045", "seconds": 0.6260397918522358}
+{"event": "evaluated", "model": "untrained", "id": "V046", "seconds": 0.5343510829843581}
+{"event": "evaluated", "model": "untrained", "id": "V047", "seconds": 0.5476771669927984}
+{"event": "evaluated", "model": "untrained", "id": "V048", "seconds": 0.5522539170924574}
+{"event": "evaluated", "model": "untrained", "id": "V049", "seconds": 0.5265224170871079}
+{"event": "evaluated", "model": "untrained", "id": "V050", "seconds": 0.5350682500284165}
+{"event": "evaluated", "model": "untrained", "id": "V051", "seconds": 0.5751667919103056}
+{"event": "evaluated", "model": "untrained", "id": "V052", "seconds": 0.5101420418359339}
+{"event": "evaluated", "model": "untrained", "id": "V053", "seconds": 0.5093116671778262}
+{"event": "evaluated", "model": "untrained", "id": "V054", "seconds": 0.5044850001577288}
+{"event": "evaluated", "model": "untrained", "id": "V055", "seconds": 0.5043717918451875}
+{"event": "evaluated", "model": "untrained", "id": "V056", "seconds": 0.537643084069714}
+{"event": "evaluated", "model": "untrained", "id": "V057", "seconds": 0.5382066671736538}
+{"event": "evaluated", "model": "untrained", "id": "V058", "seconds": 0.5579959170427173}
+{"event": "evaluated", "model": "untrained", "id": "V059", "seconds": 0.5878512088675052}
+{"event": "evaluated", "model": "untrained", "id": "V060", "seconds": 0.5089750830084085}
+{"event": "evaluated", "model": "untrained", "id": "V061", "seconds": 0.5475190419238061}
+{"event": "evaluated", "model": "untrained", "id": "V062", "seconds": 0.580308249918744}
+{"event": "evaluated", "model": "untrained", "id": "V063", "seconds": 0.5163024170324206}
+{"event": "evaluated", "model": "untrained", "id": "V064", "seconds": 0.663114249939099}
+{"event": "evaluated", "model": "untrained", "id": "V065", "seconds": 0.6294902500230819}
+{"event": "evaluated", "model": "untrained", "id": "V066", "seconds": 0.5657815409358591}
+{"event": "evaluated", "model": "untrained", "id": "V067", "seconds": 0.5688529580365866}
+{"event": "evaluated", "model": "untrained", "id": "V068", "seconds": 0.5407032920047641}
+{"event": "evaluated", "model": "untrained", "id": "V069", "seconds": 0.5144649581052363}
+{"event": "evaluated", "model": "untrained", "id": "V070", "seconds": 0.5345755419693887}
+{"event": "evaluated", "model": "untrained", "id": "V071", "seconds": 0.5629670831840485}
+{"event": "evaluated", "model": "untrained", "id": "V072", "seconds": 0.5444039998110384}
+{"event": "evaluated", "model": "untrained", "id": "V073", "seconds": 0.534093749942258}
+{"event": "evaluated", "model": "untrained", "id": "V074", "seconds": 0.6013995839748532}
+{"event": "evaluated", "model": "untrained", "id": "V075", "seconds": 0.5465120000299066}
+{"event": "evaluated", "model": "untrained", "id": "V076", "seconds": 0.5114512499421835}
+{"event": "evaluated", "model": "untrained", "id": "V077", "seconds": 0.5058270408771932}
+{"event": "evaluated", "model": "untrained", "id": "V078", "seconds": 0.5050332080572844}
+{"event": "evaluated", "model": "untrained", "id": "V079", "seconds": 0.5033382081892341}
+{"event": "evaluated", "model": "untrained", "id": "V080", "seconds": 0.5389996250160038}
+{"event": "evaluated", "model": "untrained", "id": "V081", "seconds": 0.5392037909477949}
+{"event": "evaluated", "model": "untrained", "id": "V082", "seconds": 0.5565726249478757}
+{"event": "evaluated", "model": "untrained", "id": "V083", "seconds": 0.5371365419123322}
+{"event": "evaluated", "model": "untrained", "id": "V084", "seconds": 0.5033720831852406}
+{"event": "evaluated", "model": "untrained", "id": "V085", "seconds": 0.5102903749793768}
+{"event": "evaluated", "model": "untrained", "id": "V086", "seconds": 0.5028350839857012}
+{"event": "evaluated", "model": "untrained", "id": "V087", "seconds": 0.5169960830826312}
+{"event": "evaluated", "model": "untrained", "id": "V088", "seconds": 0.5002265840303153}
+{"event": "evaluated", "model": "untrained", "id": "V089", "seconds": 0.5268602499272674}
+{"event": "evaluated", "model": "untrained", "id": "V090", "seconds": 0.5345762919168919}
+{"event": "evaluated", "model": "untrained", "id": "V091", "seconds": 0.5049753750208765}
+{"event": "evaluated", "model": "untrained", "id": "V092", "seconds": 0.5016847911756486}
+{"event": "evaluated", "model": "untrained", "id": "V093", "seconds": 0.5052493750117719}
+{"event": "evaluated", "model": "untrained", "id": "V094", "seconds": 0.5002756249159575}
+{"event": "evaluated", "model": "untrained", "id": "V095", "seconds": 0.4976726670283824}
+{"event": "evaluated", "model": "untrained", "id": "V096", "seconds": 0.5000110832042992}
+{"event": "evaluated", "model": "untrained", "id": "V097", "seconds": 0.5343513749539852}
+{"event": "evaluated", "model": "untrained", "id": "V098", "seconds": 0.49550379114225507}
+{"event": "evaluated", "model": "untrained", "id": "V099", "seconds": 0.5325619580689818}
+{"event": "evaluated", "model": "untrained", "id": "V100", "seconds": 0.5338909160345793}
+{
+  "json_validity": 0.0,
+  "intent_accuracy": 0.0,
+  "date_accuracy": 0.0,
+  "time_accuracy": 0.0,
+  "place_accuracy": 0.0,
+  "full_frame": 0.0,
+  "examples": 100,
+  "missing_predictions": 0
+}
+
+       55.81 real        49.54 user         6.11 sys
+           700645376  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1944167  page reclaims
+               13470  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   1  signals received
+                4559  voluntary context switches
+              844697  involuntary context switches
+            80876952  instructions retired
+            42273542  cycles elapsed
+             1294528  peak memory footprint

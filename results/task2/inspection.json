@@ -1,0 +1,23 @@
+{
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "cpu": "Apple M5",
+  "records": 2225,
+  "keys": [
+    "id",
+    "text",
+    "teacher_raw"
+  ],
+  "first": {
+    "id": "C0001",
+    "text": "do i have any meetings scheduled the weekend after next",
+    "teacher_raw": "{\"intent\":\"calendar_query\",\"date\":\"the weekend after next\",\"time\":null,\"place\":null}"
+  },
+  "last_training_id": "C2004",
+  "sha256": "1865c9ddc2a723247e96336c0ef966cd3b669aa904ae03d29f77ef4fe92b03e5",
+  "checksum": "1865c9ddc2a723247e96336c0ef966cd3b669aa904ae03d29f77ef4fe92b03e5  train.jsonl\n",
+  "buckets": [
+    "datasets",
+    "models"
+  ],
+  "existing_model_objects": 0
+}

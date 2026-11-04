@@ -1,0 +1,7 @@
+{
+  "exact_text_overlap_count": 0,
+  "training_ids_are_C_only": true,
+  "validation_ids_are_V_only": true,
+  "validation_labels_used_for_training": false,
+  "overlapping_texts": []
+}

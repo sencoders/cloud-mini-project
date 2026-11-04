@@ -1,0 +1,19 @@
+{
+  "model": "teacher",
+  "examples": 100,
+  "raw_prediction_sha256": "70b1ff68b89616ccb771188d91ad7daec1e131f0a79354a61d305d7432c4f393",
+  "validation_sha256": "707739170f96f103cbcc41485f92cc4ddf4af903c3939ff717d1f8ccb884bd11",
+  "teacher_prompt_sha256": "6247d95292208dc786296e9b391d9416f6229be38a99d49c994fc950586d65a6",
+  "config_sha256": "191c5ceaeffdd1fba13215d951f372f6fbb7e9ced873efd4de2c3290fe4a933d",
+  "new_evaluation_seconds": 58.26286095799878,
+  "score_input": "raw_predictions",
+  "extraction_schema_valid": null,
+  "generation": {
+    "temperature": 0,
+    "seed": 42,
+    "num_predict": 256,
+    "num_ctx": 2048,
+    "format": "json",
+    "stream": true
+  }
+}

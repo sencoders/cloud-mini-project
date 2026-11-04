@@ -1,0 +1,79 @@
+{
+  "task1_dataset_unchanged": true,
+  "dataset_sha256": "1865c9ddc2a723247e96336c0ef966cd3b669aa904ae03d29f77ef4fe92b03e5",
+  "models_object_count": 18,
+  "models_objects": [
+    {
+      "key": "v1/config.json",
+      "bytes": 770
+    },
+    {
+      "key": "v1/generation_config.json",
+      "bytes": 111
+    },
+    {
+      "key": "v1/model.safetensors",
+      "bytes": 281715176
+    },
+    {
+      "key": "v1/model.sha256",
+      "bytes": 676
+    },
+    {
+      "key": "v1/special_tokens_map.json",
+      "bytes": 473
+    },
+    {
+      "key": "v1/tokenizer.json",
+      "bytes": 3564303
+    },
+    {
+      "key": "v1/tokenizer_config.json",
+      "bytes": 4876
+    },
+    {
+      "key": "v1/training_config.yaml",
+      "bytes": 1915
+    },
+    {
+      "key": "v1/version.json",
+      "bytes": 1745
+    },
+    {
+      "key": "v2/config.json",
+      "bytes": 770
+    },
+    {
+      "key": "v2/generation_config.json",
+      "bytes": 111
+    },
+    {
+      "key": "v2/model.safetensors",
+      "bytes": 281715176
+    },
+    {
+      "key": "v2/model.sha256",
+      "bytes": 676
+    },
+    {
+      "key": "v2/special_tokens_map.json",
+      "bytes": 473
+    },
+    {
+      "key": "v2/tokenizer.json",
+      "bytes": 3564303
+    },
+    {
+      "key": "v2/tokenizer_config.json",
+      "bytes": 4876
+    },
+    {
+      "key": "v2/training_config.yaml",
+      "bytes": 1915
+    },
+    {
+      "key": "v2/version.json",
+      "bytes": 1743
+    }
+  ]
+}

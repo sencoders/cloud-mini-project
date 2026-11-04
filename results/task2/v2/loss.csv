@@ -1,0 +1,2 @@
+version,epoch,examples,loss,target_tokens,steps,seconds,seed
+v2,1,1500,0.3197736657086669,34511,375,48.47167529189028,42

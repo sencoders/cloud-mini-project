@@ -1,0 +1,19 @@
+{
+  "model": "untrained",
+  "examples": 100,
+  "raw_prediction_sha256": "790d066c0c177a64a257f18adfbf6e8a28b15f3b3c77fa97749a246fce937b3b",
+  "validation_sha256": "707739170f96f103cbcc41485f92cc4ddf4af903c3939ff717d1f8ccb884bd11",
+  "teacher_prompt_sha256": null,
+  "config_sha256": "191c5ceaeffdd1fba13215d951f372f6fbb7e9ced873efd4de2c3290fe4a933d",
+  "new_evaluation_seconds": 53.38943241699599,
+  "score_input": "raw_predictions",
+  "extraction_schema_valid": 0,
+  "generation": {
+    "validation_path": "data/validation.jsonl",
+    "max_new_tokens": 128,
+    "max_input_tokens": 256,
+    "do_sample": false,
+    "num_beams": 1,
+    "ollama_url": "http://127.0.0.1:11434"
+  }
+}

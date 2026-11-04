@@ -1,0 +1,6 @@
+{
+  "model_sha256_first": "aca7889f1c6680c7e0773458d27497a768bbeb2f9d959d1de02e768641f3a28c",
+  "model_sha256_second": "aca7889f1c6680c7e0773458d27497a768bbeb2f9d959d1de02e768641f3a28c",
+  "model_weights_identical": true,
+  "epoch_losses_identical": true
+}

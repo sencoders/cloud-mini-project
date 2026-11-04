@@ -1,0 +1,7 @@
+{
+  "path": ".local/releases/pythia-70m-v1.tar.gz",
+  "archive_sha256": "9ad3cdb774d6f88a55205ad4b11f1b3c8163e2e6733fded288ee4cc43cb5a109",
+  "model_manifest_sha256": "5ca810f5ab7cf55c2daafbfee6c224362641243dfe8c792e88ecea60de0a49ae",
+  "archive_members_verified": true,
+  "published": false
+}

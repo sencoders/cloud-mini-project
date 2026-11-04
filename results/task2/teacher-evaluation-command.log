@@ -1,0 +1,130 @@
+.venv312/bin/python -m training.evaluate --model teacher
+{"event": "evaluated", "model": "teacher", "id": "V001", "seconds": 1.5356703330762684}
+{"event": "evaluated", "model": "teacher", "id": "V002", "seconds": 0.7158979999367148}
+{"event": "evaluated", "model": "teacher", "id": "V003", "seconds": 0.6511307498440146}
+{"event": "evaluated", "model": "teacher", "id": "V004", "seconds": 0.6554480420891196}
+{"event": "evaluated", "model": "teacher", "id": "V005", "seconds": 0.5689407910685986}
+{"event": "evaluated", "model": "teacher", "id": "V006", "seconds": 0.5226227920502424}
+{"event": "evaluated", "model": "teacher", "id": "V007", "seconds": 0.6510714159812778}
+{"event": "evaluated", "model": "teacher", "id": "V008", "seconds": 0.5640666671097279}
+{"event": "evaluated", "model": "teacher", "id": "V009", "seconds": 0.573042708914727}
+{"event": "evaluated", "model": "teacher", "id": "V010", "seconds": 0.6526723748538643}
+{"event": "evaluated", "model": "teacher", "id": "V011", "seconds": 1.2644520420581102}
+{"event": "evaluated", "model": "teacher", "id": "V012", "seconds": 0.5889638338703662}
+{"event": "evaluated", "model": "teacher", "id": "V013", "seconds": 0.5970803750678897}
+{"event": "evaluated", "model": "teacher", "id": "V014", "seconds": 0.5617193749640137}
+{"event": "evaluated", "model": "teacher", "id": "V015", "seconds": 0.4677922921255231}
+{"event": "evaluated", "model": "teacher", "id": "V016", "seconds": 0.41271899989806116}
+{"event": "evaluated", "model": "teacher", "id": "V017", "seconds": 0.5455991250928491}
+{"event": "evaluated", "model": "teacher", "id": "V018", "seconds": 0.7282930840738118}
+{"event": "evaluated", "model": "teacher", "id": "V019", "seconds": 0.48511300003156066}
+{"event": "evaluated", "model": "teacher", "id": "V020", "seconds": 0.535045542055741}
+{"event": "evaluated", "model": "teacher", "id": "V021", "seconds": 0.46447800006717443}
+{"event": "evaluated", "model": "teacher", "id": "V022", "seconds": 0.47912366688251495}
+{"event": "evaluated", "model": "teacher", "id": "V023", "seconds": 0.5418681669980288}
+{"event": "evaluated", "model": "teacher", "id": "V024", "seconds": 0.5851519161369652}
+{"event": "evaluated", "model": "teacher", "id": "V025", "seconds": 0.5363159580156207}
+{"event": "evaluated", "model": "teacher", "id": "V026", "seconds": 0.5823220831807703}
+{"event": "evaluated", "model": "teacher", "id": "V027", "seconds": 0.48463287483900785}
+{"event": "evaluated", "model": "teacher", "id": "V028", "seconds": 0.4698898331262171}
+{"event": "evaluated", "model": "teacher", "id": "V029", "seconds": 0.5035403331276029}
+{"event": "evaluated", "model": "teacher", "id": "V030", "seconds": 0.47625229181721807}
+{"event": "evaluated", "model": "teacher", "id": "V031", "seconds": 0.5305121669080108}
+{"event": "evaluated", "model": "teacher", "id": "V032", "seconds": 0.6103038329165429}
+{"event": "evaluated", "model": "teacher", "id": "V033", "seconds": 0.6332117498386651}
+{"event": "evaluated", "model": "teacher", "id": "V034", "seconds": 0.6487299578730017}
+{"event": "evaluated", "model": "teacher", "id": "V035", "seconds": 0.5624313340522349}
+{"event": "evaluated", "model": "teacher", "id": "V036", "seconds": 0.5750705420505255}
+{"event": "evaluated", "model": "teacher", "id": "V037", "seconds": 0.5552727079484612}
+{"event": "evaluated", "model": "teacher", "id": "V038", "seconds": 1.0146367920096964}
+{"event": "evaluated", "model": "teacher", "id": "V039", "seconds": 0.5714114168658853}
+{"event": "evaluated", "model": "teacher", "id": "V040", "seconds": 0.6339709160383791}
+{"event": "evaluated", "model": "teacher", "id": "V041", "seconds": 0.9057572919409722}
+{"event": "evaluated", "model": "teacher", "id": "V042", "seconds": 0.5312614999711514}
+{"event": "evaluated", "model": "teacher", "id": "V043", "seconds": 0.5472709159366786}
+{"event": "evaluated", "model": "teacher", "id": "V044", "seconds": 0.4395734998397529}
+{"event": "evaluated", "model": "teacher", "id": "V045", "seconds": 0.5760045410133898}
+{"event": "evaluated", "model": "teacher", "id": "V046", "seconds": 0.6218791250139475}
+{"event": "evaluated", "model": "teacher", "id": "V047", "seconds": 0.5192940409760922}
+{"event": "evaluated", "model": "teacher", "id": "V048", "seconds": 0.5103672910481691}
+{"event": "evaluated", "model": "teacher", "id": "V049", "seconds": 0.687260250095278}
+{"event": "evaluated", "model": "teacher", "id": "V050", "seconds": 0.5719203329645097}
+{"event": "evaluated", "model": "teacher", "id": "V051", "seconds": 0.5906879589892924}
+{"event": "evaluated", "model": "teacher", "id": "V052", "seconds": 0.5609392498154193}
+{"event": "evaluated", "model": "teacher", "id": "V053", "seconds": 0.5924661250319332}
+{"event": "evaluated", "model": "teacher", "id": "V054", "seconds": 0.599072250071913}
+{"event": "evaluated", "model": "teacher", "id": "V055", "seconds": 0.5612087091431022}
+{"event": "evaluated", "model": "teacher", "id": "V056", "seconds": 0.42729216581210494}
+{"event": "evaluated", "model": "teacher", "id": "V057", "seconds": 0.5268006669357419}
+{"event": "evaluated", "model": "teacher", "id": "V058", "seconds": 0.4473709592130035}
+{"event": "evaluated", "model": "teacher", "id": "V059", "seconds": 0.5572777921333909}
+{"event": "evaluated", "model": "teacher", "id": "V060", "seconds": 0.501636375207454}
+{"event": "evaluated", "model": "teacher", "id": "V061", "seconds": 0.39607516722753644}
+{"event": "evaluated", "model": "teacher", "id": "V062", "seconds": 0.5342742910142988}
+{"event": "evaluated", "model": "teacher", "id": "V063", "seconds": 0.5627430418971926}
+{"event": "evaluated", "model": "teacher", "id": "V064", "seconds": 0.6035697089973837}
+{"event": "evaluated", "model": "teacher", "id": "V065", "seconds": 0.5665849167853594}
+{"event": "evaluated", "model": "teacher", "id": "V066", "seconds": 0.4294727500528097}
+{"event": "evaluated", "model": "teacher", "id": "V067", "seconds": 0.5579608750995249}
+{"event": "evaluated", "model": "teacher", "id": "V068", "seconds": 0.5331961249466985}
+{"event": "evaluated", "model": "teacher", "id": "V069", "seconds": 0.5722606249619275}
+{"event": "evaluated", "model": "teacher", "id": "V070", "seconds": 0.5876711669843644}
+{"event": "evaluated", "model": "teacher", "id": "V071", "seconds": 0.49138770904392004}
+{"event": "evaluated", "model": "teacher", "id": "V072", "seconds": 0.6650219578295946}
+{"event": "evaluated", "model": "teacher", "id": "V073", "seconds": 0.4878191251773387}
+{"event": "evaluated", "model": "teacher", "id": "V074", "seconds": 0.5262312081176788}
+{"event": "evaluated", "model": "teacher", "id": "V075", "seconds": 0.5229196660220623}
+{"event": "evaluated", "model": "teacher", "id": "V076", "seconds": 0.4753538330551237}
+{"event": "evaluated", "model": "teacher", "id": "V077", "seconds": 0.9797201671171933}
+{"event": "evaluated", "model": "teacher", "id": "V078", "seconds": 0.5765332500450313}
+{"event": "evaluated", "model": "teacher", "id": "V079", "seconds": 0.6000090420711786}
+{"event": "evaluated", "model": "teacher", "id": "V080", "seconds": 0.5094247919041663}
+{"event": "evaluated", "model": "teacher", "id": "V081", "seconds": 0.5216007090639323}
+{"event": "evaluated", "model": "teacher", "id": "V082", "seconds": 0.6155028340872377}
+{"event": "evaluated", "model": "teacher", "id": "V083", "seconds": 0.48751058289781213}
+{"event": "evaluated", "model": "teacher", "id": "V084", "seconds": 0.5085602079052478}
+{"event": "evaluated", "model": "teacher", "id": "V085", "seconds": 0.4205776669550687}
+{"event": "evaluated", "model": "teacher", "id": "V086", "seconds": 0.719419333152473}
+{"event": "evaluated", "model": "teacher", "id": "V087", "seconds": 0.64316725009121}
+{"event": "evaluated", "model": "teacher", "id": "V088", "seconds": 0.4834741670638323}
+{"event": "evaluated", "model": "teacher", "id": "V089", "seconds": 0.7179488749243319}
+{"event": "evaluated", "model": "teacher", "id": "V090", "seconds": 0.5821908749639988}
+{"event": "evaluated", "model": "teacher", "id": "V091", "seconds": 0.5176535418722779}
+{"event": "evaluated", "model": "teacher", "id": "V092", "seconds": 0.5733785829506814}
+{"event": "evaluated", "model": "teacher", "id": "V093", "seconds": 0.6212968328036368}
+{"event": "evaluated", "model": "teacher", "id": "V094", "seconds": 0.42068329197354615}
+{"event": "evaluated", "model": "teacher", "id": "V095", "seconds": 0.5946490408387035}
+{"event": "evaluated", "model": "teacher", "id": "V096", "seconds": 0.6195871669333428}
+{"event": "evaluated", "model": "teacher", "id": "V097", "seconds": 0.5084087499417365}
+{"event": "evaluated", "model": "teacher", "id": "V098", "seconds": 0.4808094589971006}
+{"event": "evaluated", "model": "teacher", "id": "V099", "seconds": 0.5657630418427289}
+{"event": "evaluated", "model": "teacher", "id": "V100", "seconds": 0.4025027088355273}
+{
+  "json_validity": 83.0,
+  "intent_accuracy": 74.0,
+  "date_accuracy": 64.0,
+  "time_accuracy": 64.0,
+  "place_accuracy": 76.0,
+  "full_frame": 44.0,
+  "examples": 100,
+  "missing_predictions": 0
+}
+
+       59.10 real         0.81 user         0.24 sys
+           227049472  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               41573  page reclaims
+                 457  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                 202  messages sent
+                2377  messages received
+                   1  signals received
+                 269  voluntary context switches
+                4335  involuntary context switches
+            71517364  instructions retired
+            36033652  cycles elapsed
+             1343680  peak memory footprint

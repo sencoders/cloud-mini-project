@@ -1,0 +1,8 @@
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE    CONTAINERS   IMAGES                                                                                             SELECTOR
+deployment.apps/seaweedfs   1/1     1            1           122m   seaweedfs    chrislusf/seaweedfs:3.85@sha256:49312939c00c01e5ee6afbd7d728b18027821d3764c35a797a72acd4fdf3296a   app=seaweedfs
+
+NAME                             READY   STATUS    RESTARTS   AGE   IP           NODE                          NOMINATED NODE   READINESS GATES
+pod/seaweedfs-767f985fdb-cb8ws   1/1     Running   0          48m   10.42.0.34   k3d-command-parser-server-0   <none>           <none>
+
+NAME                              STATUS   VOLUME            CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE    VOLUMEMODE
+persistentvolumeclaim/seaweedfs   Bound    seaweedfs-local   5Gi        RWO                           <unset>                 118m   Filesystem

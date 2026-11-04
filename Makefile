@@ -17,3 +17,18 @@ test:
 	$(PYTHON) -m pytest -q
 down:
 	$(PYTHON) scripts/task1.py down
+
+VERSION ?= v1
+.PHONY: train evaluate upload-model package-model
+train:
+	$(PYTHON) -m training.train --version $(VERSION) $(if $(SUBSET),--subset $(SUBSET),)
+evaluate:
+	$(PYTHON) -m training.evaluate --model $(MODEL)
+upload-model:
+	$(PYTHON) -m training.artifacts upload --version $(VERSION)
+package-model:
+	$(PYTHON) -m training.artifacts package --version $(VERSION)
+
+.PHONY: prepare-student
+prepare-student:
+	$(PYTHON) scripts/download_student.py

@@ -1,0 +1,11 @@
+$ /Users/shreeja/Projects/cloud-mini-project/.venv312/bin/python tools/score.py /Users/shreeja/Projects/cloud-mini-project/results/task2/evaluation/untrained_raw_predictions.jsonl data/validation.jsonl --out /Users/shreeja/Projects/cloud-mini-project/results/untrained_validation.json
+{
+  "json_validity": 0.0,
+  "intent_accuracy": 0.0,
+  "date_accuracy": 0.0,
+  "time_accuracy": 0.0,
+  "place_accuracy": 0.0,
+  "full_frame": 0.0,
+  "examples": 100,
+  "missing_predictions": 0
+}

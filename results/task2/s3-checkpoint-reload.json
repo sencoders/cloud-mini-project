@@ -1,0 +1,20 @@
+[
+  {
+    "version": "v1",
+    "download_manifest_verified": true,
+    "model_reload_passed": true,
+    "device": "cpu",
+    "parameters": 70426624,
+    "tokenizer_eos_id": 0,
+    "tokenizer_pad_id": 0
+  },
+  {
+    "version": "v2",
+    "download_manifest_verified": true,
+    "model_reload_passed": true,
+    "device": "cpu",
+    "parameters": 70426624,
+    "tokenizer_eos_id": 0,
+    "tokenizer_pad_id": 0
+  }
+]

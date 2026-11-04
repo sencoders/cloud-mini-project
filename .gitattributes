@@ -1,3 +1,5 @@
 *.pdf binary
 # Preserve genuine logs and teacher outputs byte for byte.
 results/** -whitespace
+# Preserve the CSV writer's standard CRLF line endings in measured loss records.
+training/loss.csv whitespace=cr-at-eol

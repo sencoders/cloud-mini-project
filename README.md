@@ -1,3 +1,153 @@
+# Task 2: CPU student training and evaluation
+
+V1 and V2 are trained, uploaded and verified. **65 tests pass.** The timed
+`make train SUBSET=50` smoke test took **8.07 s** and reproduced identical weights
+and epoch losses across two independent runs. Full V1 took **147.99 s** for three
+epochs; V2 took **50.98 s** for one additional epoch (whole-command wall times).
+The execution machine reports **Apple M5**, rather than the M4 in the request;
+training and student evaluation used float32 CPU tensors with four CPU threads.
+
+| Raw predictions, 100 examples | JSON validity | Intent | Date | Time | Place | Full frame |
+|---|---:|---:|---:|---:|---:|---:|
+| phi3.5 teacher | 83% | 74% | 64% | 64% | 76% | 44% |
+| Original Pythia-70M | 0% | 0% | 0% | 0% | 0% | 0% |
+| Student V1 | 100% | 80% | 66% | 70% | 77% | 26% |
+
+These are the supplied score.py's exact metrics on raw, uncorrected completions.
+All 100 IDs are present for each model. The student improves syntax and intent
+accuracy here but remains below the teacher on full-frame accuracy. Hidden-test
+performance is unknown. See [Task 2 measurements](report/task2-results.md),
+[distillation explanation](docs/distillation.md), and [execution evidence](results/task2/).
+
+## Task 2 setup and execution
+
+The existing Task 1 SeaweedFS deployment and buckets are reused. Native Ollama is
+needed only for teacher validation. Use Python 3.12:
+
+```sh
+python3.12 -m venv .venv312
+.venv312/bin/pip install -r requirements-training-lock.txt
+make train SUBSET=50
+```
+
+The trainer downloads the pinned official `EleutherAI/pythia-70m` checkpoint on
+first use and verifies its source hashes. `make prepare-student` can download it
+separately. It reads hyperparameters, CPU settings, data paths, generation limits,
+source revision and exact library versions from `training/config.yaml`.
+Dependencies are locked in `requirements-training-lock.txt`; the shorter
+`requirements-training.txt` lists direct dependencies only.
+
+S3 authentication uses the existing ignored `.local/credentials.json`, or standard
+`AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` environment variables.
+`S3_ENDPOINT` defaults to `http://127.0.0.1:8333`. Credentials are never generated,
+rotated, logged or packaged by Task 2.
+
+For a fresh full run:
+
+```sh
+/usr/bin/time -l caffeinate -i make train
+/usr/bin/time -l caffeinate -i make train VERSION=v2
+make upload-model VERSION=v1
+make upload-model VERSION=v2
+make evaluate MODEL=teacher
+make evaluate MODEL=untrained
+make evaluate MODEL=student_v1
+make package-model VERSION=v1
+make package-model VERSION=v2
+```
+
+Full checkpoints already exist in this workspace, so another full `make train`
+refuses to overwrite them. Smoke runs always use a fresh timestamped directory
+under `.local/smoke/` and cannot overwrite or be published as a full model. On a
+fresh clone where committed evidence exists but local weights are absent, prior
+evidence moves to `results/task2/history/` before training; prior loss rows are
+preserved in `previous-loss.csv`. The current full-run losses are written to
+`training/loss.csv`. Existing weight directories always cause a fail-closed error.
+
+Training downloads `s3://datasets/v1/train.jsonl` and its SHA-256 manifest on each
+run, checks the checksum against the Task 1 digest, requires unique ID ordering,
+and selects exactly the first 1,500 records (C0001–C2004). No validation labels or
+text enter the training selection; measured exact text overlap is zero. Each
+training string is `Command: <text>\nJSON: <teacher_raw>`, followed by EOS.
+The actual teacher-generated target strings are retained unchanged. Fast-tokenizer
+offsets mask the command/prefix loss, and the custom collator masks padding while
+retaining the real EOS target even though EOS and padding share token ID 0.
+Examples over the configured sequence bound fail rather than lose target tokens.
+
+V1 uses three epochs, AdamW, learning rate 0.0003, batch size 4, seed 42 and a
+256-token sequence limit. Dynamic padding reduces work; actual selected examples
+span 28–66 tokens. V2 loads and verifies full V1, then trains one extra epoch with
+a fresh AdamW optimizer using the same data and seed. All model parameters and
+batches are explicitly placed on CPU, deterministic algorithms are enabled, and
+no task-specific adapter is loaded. Per-step timing/RSS and per-epoch target-token
+weighted losses are saved under `results/task2/v1/` and `v2/`. Whole-command
+measurements include Python startup and checkpoint saving; trainer measurements
+are labelled separately. Peak whole-command RSS was about 2.29 GiB for smoke,
+2.02 GiB for V1 and 1.82 GiB for V2.
+
+## Task 2 artifacts and reusable inference
+
+| Location | Contents |
+|---|---|
+| `s3://models/v1/` | Completed V1 model, tokenizer, config, version info and model.sha256 |
+| `s3://models/v2/` | Distinct completed V2 artifacts and model.sha256 |
+| `.local/models/v1/`, `.local/models/v2/` | Ignored local full checkpoints |
+| `models/v1/`, `models/v2/` | Commit-safe checksum/version/release metadata |
+| `results/task2/evaluation/*_raw_predictions.jsonl` | Exact model completions for all 100 validation IDs |
+| `results/teacher_validation.json` | Required teacher score report |
+| `results/untrained_validation.json` | Original Pythia-70M score report |
+| `results/student_v1_validation.json` | Fine-tuned V1 score report |
+| `.local/releases/` | Verified, ignored release archives and archive checksums |
+
+Every S3 file is downloaded and compared after upload. Both model versions were
+then downloaded into separate directories, checksum-verified and loaded on CPU.
+The original Task 1 data checksum remains unchanged. No storage restart or bucket
+deletion was performed for Task 2. Artifact publication refuses smoke checkpoints
+and refuses to replace an existing different object in a version prefix.
+
+```sh
+.venv312/bin/python -m training.artifacts download --version v1 --destination .local/service-model/v1
+(cd .local/service-model/v1 && shasum -a 256 -c model.sha256)
+```
+
+A future service can reuse `training.artifacts.download_version` for verified
+S3 download, and `student.runtime.load_model`, `generate_raw`, and `parse_command`
+for CPU loading, bounded greedy generation, EOS handling and strict validation.
+The loader verifies model.sha256 when present and uses local files only.
+`extract_json` selects one balanced JSON object without changing its characters,
+rejects malformed/ambiguous objects, duplicate keys, wrong keys, invalid intents
+and non-string/non-null slots. `parse_command` raises `InvalidModelOutput` rather
+than fabricating a fallback label. Evaluation retains raw predictions as primary
+score inputs; optional extraction predictions/scores are separate secondary files.
+
+Teacher validation reuses `worker.label.teacher` exactly, verifies the Task 1
+prompt fingerprint and phi3.5 digest, and uses temperature 0, seed 42, JSON mode,
+context 2048 and output bound 256. Student/base evaluation is greedy with a
+128-new-token bound and proper EOS handling. Evaluation resumes only an exact
+saved validation prefix with matching configuration/model provenance.
+
+## Verification and publication status
+
+```sh
+TASK1_S3_TEST=1 .venv312/bin/python -m pytest -q
+.venv312/bin/python -m compileall -q training student scripts tests
+.venv312/bin/python scripts/report_task2.py
+.venv312/bin/python scripts/check_repository.py
+```
+
+Report generation asserts complete predictions, matching full-run loss rows,
+CPU checkpoint reloads and verified S3 uploads before presenting the saved metrics.
+The original dataset and supplied scripts are unchanged. Model weights, caches,
+secrets and archives are ignored by Git.
+
+No GitHub Release has been published, and no Git remote is configured. Verified
+local packages and the manual `.github/workflows/package-model.yml` are ready.
+See [release instructions](docs/releases.md) for the self-hosted runner, network,
+repository secrets, existing tag and optional publication step. No commits are
+pushed, and no `final` tag is created by this work. Tasks 3 onward remain pending.
+
+---
+
 # Task 1 completed
 
 All **3,000 commands** are accounted for exactly once across two 1,500-record
@@ -8,8 +158,7 @@ SHA-256 `1865c9ddc2a723247e96336c0ef966cd3b669aa904ae03d29f77ef4fe92b03e5`.
 
 See [measured results](report/task1-results.md), [sharding design](report/task1-design.md),
 and [evidence](results/full/). SeaweedFS remains running in `data`; both full-run
-Jobs completed in `pipeline`. Native macOS Ollama served both workers. No Task 2
-training, remote push, or `final` tag was performed. Setup and shutdown commands
+Jobs completed in `pipeline`. Native macOS Ollama served both workers. Task 2 training and evaluation are now recorded above. No remote push or `final` tag was performed. Setup and shutdown commands
 are below. The original student-kit README follows this status note.
 
 ---
@@ -38,8 +187,7 @@ https://github.com/pswietojanski/slurp
 # Task 1: object storage and parallel teacher labelling
 
 `ASSIGNMENT.pdf` is authoritative. All 15 pages were read; extracted text is in
-`results/assignment.txt`. Only Task 1 is implemented here. No Task 2 training has
-started. The supplied data, schema, scripts and sample packets are unchanged;
+`results/assignment.txt`. The following section records Task 1. Task 2 setup and measured results are above. The supplied data, schema, scripts and sample packets are unchanged;
 `results/supplied-files.sha256.json` records their checksums.
 
 ## Setup on Apple Silicon
@@ -213,7 +361,7 @@ No validation labels enter this process.
 | `s3://datasets/v1/train.jsonl` | Cleaned records, created after full coverage |
 | `s3://datasets/v1/train.sha256` | SHA-256 of exact train.jsonl bytes |
 | `s3://datasets/v1/counts.json` | Complete cleaning counts and digest |
-| `s3://models/` | Empty bucket reserved for later tasks |
+| `s3://models/` | Trained student artifacts under v1/ and v2/ |
 
 Local exports are in `results/full/`, including raw shards, cleaned records,
 rejection IDs/reasons and counts. `input = a + b + c + d + duplicates + kept` is
@@ -259,7 +407,7 @@ suspend or finish Jobs first. After exporting everything, permanent teardown is:
 make down
 ```
 
-Do not tag this partial assignment `final`: Tasks 2–7 remain outside this work.
+Do not tag this partial assignment `final`: Tasks 3–7 remain outside this work; GitHub Release publication is still pending.
 No remote push or GitHub publication is performed.
 
 Implementation references: [k3d configuration](https://k3d.io/stable/usage/configfile/),

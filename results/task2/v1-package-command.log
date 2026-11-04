@@ -1,0 +1,2 @@
+.venv312/bin/python -m training.artifacts package --version v1
+Packaged and verified /Users/shreeja/Projects/cloud-mini-project/.local/releases/pythia-70m-v1.tar.gz; not published

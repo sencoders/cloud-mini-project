@@ -1,0 +1,56 @@
+name: Package verified student model
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Model version already uploaded to local SeaweedFS
+        type: choice
+        options: [v1, v2]
+        default: v1
+      publish:
+        description: Publish the verified archive to an existing Git tag (explicit opt-in)
+        type: boolean
+        default: false
+      tag:
+        description: Existing Git tag, required only when publishing
+        type: string
+        required: false
+permissions:
+  contents: read
+jobs:
+  package:
+    # Hosted runners cannot reach laptop-local SeaweedFS. Register this runner on
+    # the same Mac/network and configure the three repository secrets below.
+    runs-on: [self-hosted, macOS, ARM64]
+    permissions:
+      contents: write
+    env:
+      S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_KEY }}
+      VERSION: ${{ inputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare pinned Python environment
+        run: |
+          python3.12 -m venv .venv312
+          .venv312/bin/pip install -r requirements-training-lock.txt
+      - name: Download and verify all model files
+        run: .venv312/bin/python -m training.artifacts download --version "$VERSION" --destination ".local/models/$VERSION"
+      - name: Package identical S3 files
+        run: make package-model VERSION="$VERSION"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pythia-70m-${{ inputs.version }}
+          path: |
+            .local/releases/pythia-70m-${{ inputs.version }}.tar.gz
+            .local/releases/pythia-70m-${{ inputs.version }}.tar.gz.sha256
+          include-hidden-files: true
+      - name: Publish only on explicit request
+        if: ${{ inputs.publish }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+        run: |
+          test -n "$TAG"
+          gh release create "$TAG" --verify-tag --title "Pythia-70M $VERSION" --notes "CPU-trained student; verify archive and extracted model.sha256 before use." ".local/releases/pythia-70m-$VERSION.tar.gz" ".local/releases/pythia-70m-$VERSION.tar.gz.sha256" ".local/models/$VERSION/model.sha256"
