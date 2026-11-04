@@ -1,0 +1,89 @@
+Name:             seaweedfs-7c797995b4-9gzlw
+Namespace:        data
+Priority:         0
+Service Account:  default
+Node:             k3d-command-parser-server-0/172.19.0.3
+Start Time:       Wed, 04 Nov 2026 13:43:15 +0530
+Labels:           app=seaweedfs
+                  pod-template-hash=7c797995b4
+Annotations:      kubectl.kubernetes.io/restartedAt: 2026-11-04T13:43:04+05:30
+Status:           Running
+IP:               10.42.0.16
+IPs:
+  IP:           10.42.0.16
+Controlled By:  ReplicaSet/seaweedfs-7c797995b4
+Containers:
+  seaweedfs:
+    Container ID:  containerd://c442ba1516fa6743dad0718691262dbd3a4025cbdde7083fdaf05aa93352eebb
+    Image:         chrislusf/seaweedfs:3.85@sha256:49312939c00c01e5ee6afbd7d728b18027821d3764c35a797a72acd4fdf3296a
+    Image ID:      docker.io/chrislusf/seaweedfs@sha256:49312939c00c01e5ee6afbd7d728b18027821d3764c35a797a72acd4fdf3296a
+    Port:          8333/TCP (s3)
+    Host Port:     0/TCP (s3)
+    Args:
+      server
+      -dir=/data
+      -ip.bind=0.0.0.0
+      -ip=seaweedfs.data.svc.cluster.local
+      -volume.max=4
+      -master.volumeSizeLimitMB=256
+      -filer
+      -s3
+      -s3.port=8333
+      -s3.config=/etc/seaweedfs/s3.json
+    State:          Running
+      Started:      Wed, 04 Nov 2026 14:22:28 +0530
+    Last State:     Terminated
+      Reason:       OOMKilled
+      Exit Code:    137
+      Started:      Wed, 04 Nov 2026 14:21:35 +0530
+      Finished:     Wed, 04 Nov 2026 14:22:05 +0530
+    Ready:          True
+    Restart Count:  3
+    Limits:
+      cpu:     1
+      memory:  768Mi
+    Requests:
+      cpu:        100m
+      memory:     192Mi
+    Liveness:     tcp-socket :s3 delay=45s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    tcp-socket :s3 delay=5s timeout=1s period=3s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /data from storage (rw)
+      /etc/seaweedfs from credentials (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-jwjsp (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  storage:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  seaweedfs
+    ReadOnly:   false
+  credentials:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  seaweedfs-auth
+    Optional:    false
+  kube-api-access-jwjsp:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                 From               Message
+  ----     ------     ----                ----               -------
+  Normal   Scheduled  40m                 default-scheduler  Successfully assigned data/seaweedfs-7c797995b4-9gzlw to k3d-command-parser-server-0
+  Warning  BackOff    72s (x6 over 2m5s)  kubelet            spec.containers{seaweedfs}: Back-off restarting failed container seaweedfs in pod seaweedfs-7c797995b4-9gzlw_data(c905b58c-ce3f-4d5e-b3c0-cfede7c1fa6c)
+  Normal   Pulled     59s (x4 over 40m)   kubelet            spec.containers{seaweedfs}: Container image "chrislusf/seaweedfs:3.85@sha256:49312939c00c01e5ee6afbd7d728b18027821d3764c35a797a72acd4fdf3296a" already present on machine and can be accessed by the pod
+  Normal   Created    59s (x4 over 40m)   kubelet            spec.containers{seaweedfs}: Container created
+  Normal   Started    59s (x4 over 40m)   kubelet            spec.containers{seaweedfs}: Container started
+  Warning  Unhealthy  36s (x19 over 40m)  kubelet            spec.containers{seaweedfs}: Readiness probe failed: dial tcp 10.42.0.16:8333: connect: connection refused

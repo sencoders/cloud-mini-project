@@ -1,3 +1,19 @@
+# Task 1 completed
+
+All **3,000 commands** are accounted for exactly once across two 1,500-record
+shards. Cleaning kept **2,225** records: 2 invalid JSON, 2 wrong keys, 526 invalid
+intents, 202 invalid slots and 43 duplicates were removed. All **39 tests** pass,
+including live S3 checks. Two cleaning runs and offline regeneration agree on
+SHA-256 `1865c9ddc2a723247e96336c0ef966cd3b669aa904ae03d29f77ef4fe92b03e5`.
+
+See [measured results](report/task1-results.md), [sharding design](report/task1-design.md),
+and [evidence](results/full/). SeaweedFS remains running in `data`; both full-run
+Jobs completed in `pipeline`. Native macOS Ollama served both workers. No Task 2
+training, remote push, or `final` tag was performed. Setup and shutdown commands
+are below. The original student-kit README follows this status note.
+
+---
+
 # Student Kit: Cloud Computing Mini Project
 
 Read the project handout first. It explains every file here.
@@ -59,7 +75,7 @@ readiness probe checks the S3 listener; setup performs the authenticated API che
 
 SeaweedFS uses a 5 GiB static local PersistentVolume at `/var/lib/seaweedfs-data`
 inside the k3d node. This avoids dependence on downloading a dynamic provisioner.
-Master, volume and filer metadata live on the mounted volume; `workingDir: /data`
+Master, volume and filer metadata live on the mounted volume; `workingDir: /data/recovered`
 keeps the default filer database there. The Service publishes internal addresses
 before readiness so these components can initialize. This is a single-machine lab,
 without hardware fault tolerance. Pod restarts preserve data; deleting the k3d
@@ -250,8 +266,7 @@ Implementation references: [k3d configuration](https://k3d.io/stable/usage/confi
 [SeaweedFS S3 configuration](https://github.com/seaweedfs/seaweedfs/wiki/S3-Configuration),
 [Ollama generation API](https://docs.ollama.com/api/generate).
 
-Additional executed verification: `results/tests-live.log` records **34 passing
- tests**, including the opt-in live S3 test (put/read/overwrite/metadata/delete).
+Additional executed verification: `results/tests-live.log` records **39 passing tests**, including the opt-in live S3 test (put/read/overwrite/metadata/delete).
 To repeat it against the local running cluster:
 
 ```sh
@@ -265,3 +280,56 @@ of the five smoke checkpoints: five resumed IDs and zero new teacher labels.
 actual generated S3 credentials and Kubernetes private key; its scope is narrower
 than a general secret scanner. Neither it nor the unit tests claims completion
 of the later Task 6 CI requirements.
+
+After export, complete ID accounting and checksum regeneration can also be
+verified **offline**, without Docker, Ollama or S3 credentials:
+
+```sh
+.venv312/bin/python scripts/verify_results.py
+```
+
+This reads the original pool and the two saved raw shards, independently checks
+partition membership and source texts, reruns cleaning, compares the exact bytes,
+checksum and counts, and writes `results/full/offline-verification.json`.
+
+
+## Recovery observed during the full run
+
+SeaweedFS exceeded its initial 768 MiB limit and restarted. Its replacement uses
+2 GiB maximum memory, a 1 GiB Go memory target (`GOMEMLIMIT`) and `GOGC=50`.
+Volume slots were increased to 16. One interrupted volume tail was reported as
+read-only by SeaweedFS. After labelling, every S3 object was exported and restored
+with verified hashes into `/data/recovered` on the same persistent volume. The
+original files are retained outside that subdirectory; the active storage no
+longer uses the interrupted volume. All 2,349 existing per-ID checkpoints downloaded and verified without
+failure before resuming (`results/recovery/checkpoint-verification.json`); backups
+of those exact records are retained there. Aggregate shard objects now publish
+at the first record, every 25 records, and the final record, reducing rewrite
+churn. Each individual reply is still immediately checkpointed and verified.
+
+Ollama also returned `prediction aborted, token repeat limit reached` on C2273.
+A cold model reload did not resolve it. Streaming transport exposed the teacher's
+actual malformed output and repeated newlines, which non-streaming mode discards
+on HTTP 500. The worker now concatenates response chunks without alteration. An
+explicit repetition abort after emitted tokens is logged as `teacher_aborted`,
+and those genuine partial tokens are stored for normal cleaning rejection.
+An empty error or interrupted transport without an explicit repetition abort is
+retried. Prompt, model, temperature, seed, context and token limits did not change.
+No fallback label, JSON repair, or fabricated error label is inserted. Raw
+protocol diagnostics are saved under `results/ollama-C2273-*.json`.
+
+Recovery resumes the original Jobs and their durable checkpoints; it does not
+launch a second full dataset run. A separate fresh five-command streaming smoke
+run is retained under `results/smoke-stream/` and
+`s3://datasets/teacher/smoke-stream/`. Old failure logs and the interrupted
+monitor log are preserved. Concurrency measurement includes original and retried
+Pods, comparing execution intervals only between different shard indices.
+
+
+Storage migration evidence is in `results/storage-export-manifest.json`,
+`storage-migration.json`, and `storage-restore.log`. The ignored backup is under
+`.local/s3-backup/`. `scripts/storage_snapshot.py export` and `restore` implement
+that byte-preserving recovery; do not run a restore while workers are writing.
+The fresh storage subdirectory is created by an init container, so fresh setup
+uses the same final manifest. Full ID coverage, checksum regeneration and live
+S3 tests are repeated after migration.

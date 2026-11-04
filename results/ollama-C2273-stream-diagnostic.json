@@ -1,0 +1,880 @@
+{
+  "diagnostic_only": true,
+  "id": "C2273",
+  "chunks": [
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.326696Z",
+      "response": "{\"",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.35068Z",
+      "response": "intent",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.373029Z",
+      "response": "\":",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.39456Z",
+      "response": "null",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.417706Z",
+      "response": ",\"",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.440418Z",
+      "response": "date",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.461599Z",
+      "response": "\":",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.481561Z",
+      "response": "null",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.501619Z",
+      "response": ",\"",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.521412Z",
+      "response": "time",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.541879Z",
+      "response": "\":",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.562093Z",
+      "response": "null",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.581717Z",
+      "response": ",\"",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.601209Z",
+      "response": "place",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.621079Z",
+      "response": "\":\"",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.641342Z",
+      "response": "my",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.662573Z",
+      "response": " sister",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.682581Z",
+      "response": "'",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.702397Z",
+      "response": " extr",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.723034Z",
+      "response": "al",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.742646Z",
+      "response": "ong",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.762267Z",
+      "response": " command",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.782314Z",
+      "response": " does",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.801831Z",
+      "response": " not",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.821451Z",
+      "response": " provide",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.840879Z",
+      "response": " a",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.86052Z",
+      "response": " clear",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.880747Z",
+      "response": " intent",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.900233Z",
+      "response": ",",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.919984Z",
+      "response": " date",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.939496Z",
+      "response": ",",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.959068Z",
+      "response": " time",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.978613Z",
+      "response": ",",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:43.998165Z",
+      "response": " or",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.018916Z",
+      "response": " place",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.038835Z",
+      "response": " as",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.059328Z",
+      "response": " required",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.079912Z",
+      "response": " by",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.102004Z",
+      "response": " the",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.121488Z",
+      "response": " instructions",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.141473Z",
+      "response": ".",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.161303Z",
+      "response": " The",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.180985Z",
+      "response": " phrase",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.200673Z",
+      "response": " \"",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.226026Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.24996Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.273281Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.296383Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.319984Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.341627Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.361404Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.381035Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.400187Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.419607Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.438673Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.458178Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.477638Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.499755Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.520367Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.5401Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.560176Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.579472Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.598794Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.618293Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.637418Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.657936Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.677838Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.697715Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.717044Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.7365Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.756014Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.775449Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.795003Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.814567Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.833678Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.853253Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.872363Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.891795Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.910939Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.930187Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.949488Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.969191Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:44.988412Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.007846Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.027123Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.046411Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.065662Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.084896Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.104155Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.123327Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.142441Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.161715Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.181Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.200105Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.219688Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.23922Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.259073Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.278915Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.298313Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.318144Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.337556Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.356796Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.376849Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.396099Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.415275Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.434438Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.453722Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.473213Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.49289Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.512062Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.531068Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.55063Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.570152Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.589303Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.610345Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.630719Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.650062Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.66962Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.68881Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.708091Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.727329Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.746534Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.765651Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.784811Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.804779Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.824075Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.84332Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.862528Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.881931Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.901229Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.920503Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.93967Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.958903Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.978093Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:45.997226Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:46.016446Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:46.035573Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:46.055368Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:46.075445Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:46.094747Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:46.114151Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:46.13337Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:46.152724Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:46.171891Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "model": "phi3.5:latest",
+      "created_at": "2026-11-04T08:56:46.191066Z",
+      "response": "\n",
+      "done": false
+    },
+    {
+      "error": "prediction aborted, token repeat limit reached"
+    }
+  ],
+  "teacher_raw": "{\"intent\":null,\"date\":null,\"time\":null,\"place\":\"my sister' extralong command does not provide a clear intent, date, time, or place as required by the instructions. The phrase \"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+}

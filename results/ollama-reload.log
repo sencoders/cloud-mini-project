@@ -1,0 +1,7 @@
+[?2026h[?25l[1G[K[?25h[?2026l[?25l[2K[1G[?25hNAME              READY   STATUS    RESTARTS   AGE    IP           NODE                          NOMINATED NODE   READINESS GATES
+teacher-0-cbkhf   0/1     Error     0          77s    10.42.0.22   k3d-command-parser-server-0   <none>           <none>
+teacher-0-lnm2b   1/1     Running   0          7s     10.42.0.24   k3d-command-parser-server-0   <none>           <none>
+teacher-0-pw8zd   0/1     Error     0          38m    10.42.0.17   k3d-command-parser-server-0   <none>           <none>
+teacher-0-z8xpp   0/1     Error     0          119s   10.42.0.21   k3d-command-parser-server-0   <none>           <none>
+teacher-1-jjq22   0/1     Error     0          38m    10.42.0.18   k3d-command-parser-server-0   <none>           <none>
+teacher-1-r4txr   0/1     Error     0          50s    10.42.0.23   k3d-command-parser-server-0   <none>           <none>

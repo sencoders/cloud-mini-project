@@ -117,6 +117,18 @@ def launch(smoke):
         kube('apply', '-f', str(path))
 
 
+def worker_overlap(intervals, by_shard):
+    """Maximum observed overlap between different shards, including retried Pods."""
+    parsed = {name: [datetime.datetime.fromisoformat(v.replace('Z', '+00:00')) for v in span]
+              for name, span in intervals.items()}
+    overlap = 0
+    for left, (start_l, end_l) in parsed.items():
+        for right, (start_r, end_r) in parsed.items():
+            if by_shard[left] != by_shard[right]:
+                overlap = max(overlap, (min(end_l, end_r) - max(start_l, start_r)).total_seconds())
+    return overlap
+
+
 def snapshot(run):
     credentials()
     folder = ROOT / 'results' / ('smoke' if run == 'smoke' else 'full')
@@ -145,9 +157,13 @@ def snapshot(run):
             else:
                 continue
             intervals[name] = [start, end]
-    starts = [datetime.datetime.fromisoformat(v[0].replace('Z', '+00:00')) for v in intervals.values()]
-    ends = [datetime.datetime.fromisoformat(v[1].replace('Z', '+00:00')) for v in intervals.values()]
-    overlap = max(0, (min(ends) - max(starts)).total_seconds()) if len(starts) == 2 else 0
+    by_shard = {}
+    for pod in pods['items']:
+        name = pod['metadata']['name']
+        env = pod['spec']['containers'][0]['env']
+        index = next(e['value'] for e in env if e['name'] == 'SHARD_INDEX')
+        by_shard[name] = index
+    overlap = worker_overlap(intervals, by_shard)
     (folder / 'concurrency.json').write_text(json.dumps(
         {'intervals': intervals, 'overlap_seconds': overlap}, indent=2) + '\n')
     s3 = client()
@@ -186,6 +202,7 @@ def finish():
                             'second_checksum': repeated.strip(), 'match': True}
             (ROOT / 'results/full/reproducibility.json').write_text(
                 json.dumps(verification, indent=2) + '\n')
+            command([sys.executable, 'scripts/verify_results.py'])
             counts = json.loads((ROOT / 'results/full/counts.json').read_text())
             report = ['# Task 1 measured results', '',
                       'All 3,000 source IDs are accounted for exactly once across two shards.', '',

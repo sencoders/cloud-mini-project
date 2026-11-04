@@ -1,0 +1,6 @@
+{
+  "diagnostic_only": true,
+  "id": "C2273",
+  "status": 500,
+  "body": "{\"error\":\"prediction aborted, token repeat limit reached\"}"
+}

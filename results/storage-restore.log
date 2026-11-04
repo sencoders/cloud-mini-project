@@ -1,0 +1,10 @@
+{
+  "buckets": [
+    "datasets",
+    "models"
+  ],
+  "objects_exported": 3041,
+  "objects_restored_and_hash_verified": 3041,
+  "all_object_keys_match": true,
+  "original_volume_directory_retained": true
+}

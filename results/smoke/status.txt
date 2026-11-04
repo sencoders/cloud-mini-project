@@ -1,0 +1,25 @@
+{
+  "run": "smoke",
+  "durable_completed": 5,
+  "expected": 5,
+  "overlap_seconds": 2.0
+}
+NAME                       STATUS     COMPLETIONS   DURATION   AGE   CONTAINERS   IMAGES                  SELECTOR
+job.batch/smoke-0          Complete   1/1           15s        26m   worker       command-teacher:task1   batch.kubernetes.io/controller-uid=7e3bb88d-dc77-484e-89c9-4d01f904f78a
+job.batch/smoke-1          Complete   1/1           13s        26m   worker       command-teacher:task1   batch.kubernetes.io/controller-uid=440bd01e-8c26-4b83-ba64-90e3e27c5c4d
+job.batch/smoke-json-0     Complete   1/1           8s         24m   worker       command-teacher:task1   batch.kubernetes.io/controller-uid=d6cb0435-98bb-4f28-93eb-be7d90aa2736
+job.batch/smoke-json-1     Complete   1/1           5s         24m   worker       command-teacher:task1   batch.kubernetes.io/controller-uid=0bb4fbc6-46fa-45b6-a607-21e6c4ba459e
+job.batch/smoke-resume-0   Complete   1/1           5s         15m   worker       command-teacher:task1   batch.kubernetes.io/controller-uid=50013165-5a86-4c9c-8823-a53ef12bfc42
+job.batch/smoke-resume-1   Complete   1/1           5s         15m   worker       command-teacher:task1   batch.kubernetes.io/controller-uid=8ca3d725-7688-40be-bd48-a0468a74bd41
+job.batch/teacher-0        Running    0/1           22m        22m   worker       command-teacher:task1   batch.kubernetes.io/controller-uid=6bfa1a16-b7f5-4f1d-82e7-0f29f92e4936
+job.batch/teacher-1        Running    0/1           22m        22m   worker       command-teacher:task1   batch.kubernetes.io/controller-uid=605291ff-916a-4541-b77e-2ecf0bc71cd2
+
+NAME                       READY   STATUS      RESTARTS   AGE   IP           NODE                          NOMINATED NODE   READINESS GATES
+pod/smoke-0-84nsj          0/1     Completed   0          26m   10.42.0.12   k3d-command-parser-server-0   <none>           <none>
+pod/smoke-1-j2jtf          0/1     Completed   0          26m   10.42.0.13   k3d-command-parser-server-0   <none>           <none>
+pod/smoke-json-0-wxp5x     0/1     Completed   0          24m   10.42.0.15   k3d-command-parser-server-0   <none>           <none>
+pod/smoke-json-1-t242p     0/1     Completed   0          24m   10.42.0.14   k3d-command-parser-server-0   <none>           <none>
+pod/smoke-resume-0-s2dm2   0/1     Completed   0          15m   10.42.0.20   k3d-command-parser-server-0   <none>           <none>
+pod/smoke-resume-1-k9lq4   0/1     Completed   0          15m   10.42.0.19   k3d-command-parser-server-0   <none>           <none>
+pod/teacher-0-pw8zd        1/1     Running     0          22m   10.42.0.17   k3d-command-parser-server-0   <none>           <none>
+pod/teacher-1-jjq22        1/1     Running     0          22m   10.42.0.18   k3d-command-parser-server-0   <none>           <none>

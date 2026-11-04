@@ -1,0 +1,4 @@
+35548 19027 /opt/homebrew/Cellar/python@3.12/3.12.16/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python -u scripts/task1.py finish
+35556 35548 caffeinate -i .venv312/bin/python -u scripts/task1.py finish
+43369 19027 /bin/zsh -c KUBECONFIG=.local/kubeconfig kubectl -n data exec deployment/seaweedfs -- du -sh /data > results/storage-disk-usage.txt; KUBECONFIG=.local/kubeconfig kubectl -n pipeline get jobs teacher-0 teacher-1 -o json > results/full/jobs-latest.json; ps -axo pid,ppid,command | rg 'caffeinate|scripts/task1.py finish' > results/monitor-processes.txt
+43373 43369 rg caffeinate|scripts/task1.py finish

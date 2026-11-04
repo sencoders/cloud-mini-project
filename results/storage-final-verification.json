@@ -1,0 +1,7 @@
+{
+  "deployment_ready": true,
+  "fresh_pod_restarts": 0,
+  "integrity_errors_in_final_startup": 0,
+  "full_clean_after_restart_passed": true,
+  "sha256": "1865c9ddc2a723247e96336c0ef966cd3b669aa904ae03d29f77ef4fe92b03e5"
+}

@@ -1,0 +1,100 @@
+I1104 09:15:57.544462 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:15:58.548890 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:15:59.257705 disk_location.go:239 Store started on dir: /data/recovered with 0 volumes max 16
+I1104 09:15:59.257746 disk_location.go:242 Store started on dir: /data/recovered with 0 ec shards
+I1104 09:15:59.257891 volume_grpc_client_to_master.go:52 Volume server start with seed master nodes: [seaweedfs.data.svc.cluster.local:9333]
+I1104 09:15:59.257991 volume.go:381 Start Seaweed volume server 30GB 3.85 7d7e06681 at 0.0.0.0:8080
+I1104 09:15:59.259133 volume_grpc_client_to_master.go:109 Heartbeat to: seaweedfs.data.svc.cluster.local:9333
+I1104 09:15:59.259538 node.go:250 topo adds child DefaultDataCenter
+I1104 09:15:59.259580 node.go:250 topo:DefaultDataCenter adds child DefaultRack
+I1104 09:15:59.259590 node.go:250 topo:DefaultDataCenter:DefaultRack adds child seaweedfs.data.svc.cluster.local:8080
+I1104 09:15:59.259604 node.go:250 topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080 adds child 
+I1104 09:15:59.259615 master_grpc_server.go:141 added volume server 0: seaweedfs.data.svc.cluster.local:8080 [f5ddaad5-bc72-49c2-bef8-bd3d625a03ca]
+I1104 09:15:59.259634 master_grpc_server.go:51 found new uuid:seaweedfs.data.svc.cluster.local:8080 [f5ddaad5-bc72-49c2-bef8-bd3d625a03ca] , map[seaweedfs.data.svc.cluster.local:8080:[f5ddaad5-bc72-49c2-bef8-bd3d625a03ca]]
+I1104 09:15:59.552486 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:16:00.557226 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:16:01.566324 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:16:02.570434 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:16:03.573991 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:16:04.461287 filer_server.go:171 default to create filer store dir in /data/recovered/filerldb2
+I1104 09:16:04.461783 leveldb2_store.go:43 filer store leveldb2 dir: /data/recovered/filerldb2
+I1104 09:16:04.461829 file_util.go:27 Folder /data/recovered/filerldb2 Permission: -rwxr-xr-x
+I1104 09:16:04.463375 master_grpc_server.go:372 + client .filer@seaweedfs.data.svc.cluster.local:8888
+I1104 09:16:04.463611 masterclient.go:265 + master@seaweedfs.data.svc.cluster.local:9333 noticed .filer seaweedfs.data.svc.cluster.local:8888
+I1104 09:16:04.491940 filer.go:154 create filer.store.id to -1073335975
+I1104 09:16:04.491971 configuration.go:28 configured filer store to leveldb2
+I1104 09:16:04.492652 master_client.go:20 the cluster has 1 filer
+I1104 09:16:04.492670 filer_server.go:201 seaweedfs.data.svc.cluster.local:8888 bootstrap from peers [node_type:"filer"  address:"seaweedfs.data.svc.cluster.local:8888"  is_add:true  created_at_ns:1793783764463393845]
+I1104 09:16:04.492723 filer.go:112 seaweedfs.data.svc.cluster.local:8888 aggregate from peers [seaweedfs.data.svc.cluster.local:8888]
+I1104 09:16:04.494825 filer.go:317 Start Seaweed Filer 30GB 3.85 7d7e06681 at seaweedfs.data.svc.cluster.local:8888
+I1104 09:16:04.494831 meta_aggregator.go:76 loopSubscribeToOneFiler read seaweedfs.data.svc.cluster.local:8888 start from 2026-11-04 09:15:04.492665136 +0000 UTC 1793783704492665136
+I1104 09:16:04.496609 meta_aggregator.go:178 subscribing remote seaweedfs.data.svc.cluster.local:8888 meta change: 2026-11-04 09:15:04.492665136 +0000 UTC, clientId:1423396964
+I1104 09:16:04.497583 filer_grpc_server_sub_meta.go:314 + local listener filer:seaweedfs.data.svc.cluster.local:8888@10.42.0.1:38402 clientId -1423396964 clientEpoch 1
+I1104 09:16:04.497597 filer_grpc_server_sub_meta.go:133  + filer:seaweedfs.data.svc.cluster.local:8888@10.42.0.1:38402 local subscribe / from 2026-11-04 09:15:04.492665136 +0000 UTC clientId:-1423396964
+I1104 09:16:04.497604 filer_grpc_server_sub_meta.go:146 read on disk filer:seaweedfs.data.svc.cluster.local:8888@10.42.0.1:38402 local subscribe / from 2026-11-04 09:15:04.492665136 +0000 UTC
+I1104 09:16:04.497632 filer_grpc_server_sub_meta.go:165 read in memory filer:seaweedfs.data.svc.cluster.local:8888@10.42.0.1:38402 local subscribe / from 2026-11-04 09:15:04.492665136 +0000 UTC
+I1104 09:16:04.575088 s3.go:213 S3 read filer buckets dir: /buckets
+I1104 09:16:04.575103 s3.go:220 connected to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:16:04.575725 s3api_circuit_breaker.go:35 s3 circuit breaker not configured
+I1104 09:16:04.576936 s3.go:369 Start Seaweed S3 API Server 30GB 3.85 7d7e06681 at http port 8333
+I1104 09:16:04.578259 filer_grpc_server_sub_meta.go:314 +  listener s3@10.42.0.1:8909 clientId -1149355384 clientEpoch 2
+I1104 09:16:04.578290 filer_grpc_server_sub_meta.go:43  s3@10.42.0.1:8909 starts to subscribe /etc/ from 2026-11-04 09:16:04.575133886 +0000 UTC
+I1104 09:16:06.674230 auth_credentials_subscribe.go:84 updated bucketMetadata /buckets/name:"datasets"  is_directory:true  attributes:{mtime:1793783766  file_mode:2147484159  crtime:1793783766}  extended:{key:"s3-identity-id"  value:"task1"}
+I1104 09:16:06.675371 auth_credentials_subscribe.go:84 updated bucketMetadata /buckets/name:"models"  is_directory:true  attributes:{mtime:1793783766  file_mode:2147484159  crtime:1793783766}  extended:{key:"s3-identity-id"  value:"task1"}
+I1104 09:16:06.696510 master_grpc_server_volume.go:141 volume grow &{Option:{"collection":"datasets","replication":{},"ttl":{"Count":0,"Unit":0},"preallocate":268435456} Count:0 Force:false Reason:grpc assign}
+I1104 09:16:06.699192 store.go:169 In dir /data/recovered adds volume:1 collection:datasets replicaPlacement:000 ttl:
+I1104 09:16:06.699758 volume_loading.go:139 checking volume data integrity for volume 1
+I1104 09:16:06.699779 volume_loading.go:157 loading memory index /data/recovered/datasets_1.idx to memory
+I1104 09:16:06.701243 store.go:173 add volume 1
+I1104 09:16:06.701326 volume_grpc_client_to_master.go:189 volume server seaweedfs.data.svc.cluster.local:8080 adds volume 1
+I1104 09:16:06.701483 volume_growth.go:269 Created Volume 1 on topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080
+I1104 09:16:06.701512 volume_layout.go:417 Volume 1 becomes writable
+I1104 09:16:06.701539 volume_growth.go:282 Registered Volume 1 on topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080
+I1104 09:16:06.701715 store.go:169 In dir /data/recovered adds volume:2 collection:datasets replicaPlacement:000 ttl:
+I1104 09:16:06.702034 volume_loading.go:139 checking volume data integrity for volume 2
+I1104 09:16:06.702048 volume_loading.go:157 loading memory index /data/recovered/datasets_2.idx to memory
+I1104 09:16:06.703043 store.go:173 add volume 2
+I1104 09:16:06.703068 volume_grpc_client_to_master.go:189 volume server seaweedfs.data.svc.cluster.local:8080 adds volume 2
+I1104 09:16:06.703146 volume_growth.go:269 Created Volume 2 on topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080
+I1104 09:16:06.703160 volume_layout.go:417 Volume 2 becomes writable
+I1104 09:16:06.703164 volume_growth.go:282 Registered Volume 2 on topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080
+I1104 09:16:06.703328 store.go:169 In dir /data/recovered adds volume:3 collection:datasets replicaPlacement:000 ttl:
+I1104 09:16:06.703645 volume_loading.go:139 checking volume data integrity for volume 3
+I1104 09:16:06.703657 volume_loading.go:157 loading memory index /data/recovered/datasets_3.idx to memory
+I1104 09:16:06.704643 store.go:173 add volume 3
+I1104 09:16:06.704681 volume_grpc_client_to_master.go:189 volume server seaweedfs.data.svc.cluster.local:8080 adds volume 3
+I1104 09:16:06.704746 volume_growth.go:269 Created Volume 3 on topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080
+I1104 09:16:06.704778 volume_layout.go:417 Volume 3 becomes writable
+I1104 09:16:06.704808 volume_growth.go:282 Registered Volume 3 on topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080
+I1104 09:16:06.704929 store.go:169 In dir /data/recovered adds volume:4 collection:datasets replicaPlacement:000 ttl:
+I1104 09:16:06.705182 volume_loading.go:139 checking volume data integrity for volume 4
+I1104 09:16:06.705195 volume_loading.go:157 loading memory index /data/recovered/datasets_4.idx to memory
+I1104 09:16:06.706145 store.go:173 add volume 4
+I1104 09:16:06.706176 volume_grpc_client_to_master.go:189 volume server seaweedfs.data.svc.cluster.local:8080 adds volume 4
+I1104 09:16:06.706233 volume_growth.go:269 Created Volume 4 on topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080
+I1104 09:16:06.706247 volume_layout.go:417 Volume 4 becomes writable
+I1104 09:16:06.706262 volume_growth.go:282 Registered Volume 4 on topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080
+I1104 09:16:06.706357 store.go:169 In dir /data/recovered adds volume:5 collection:datasets replicaPlacement:000 ttl:
+I1104 09:16:06.706605 volume_loading.go:139 checking volume data integrity for volume 5
+I1104 09:16:06.706617 volume_loading.go:157 loading memory index /data/recovered/datasets_5.idx to memory
+I1104 09:16:06.708776 store.go:173 add volume 5
+I1104 09:16:06.708810 volume_grpc_client_to_master.go:189 volume server seaweedfs.data.svc.cluster.local:8080 adds volume 5
+I1104 09:16:06.708882 volume_growth.go:269 Created Volume 5 on topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080
+I1104 09:16:06.708896 volume_layout.go:417 Volume 5 becomes writable
+I1104 09:16:06.708901 volume_growth.go:282 Registered Volume 5 on topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080
+I1104 09:16:06.708988 store.go:169 In dir /data/recovered adds volume:6 collection:datasets replicaPlacement:000 ttl:
+I1104 09:16:06.709191 volume_loading.go:139 checking volume data integrity for volume 6
+I1104 09:16:06.709200 volume_loading.go:157 loading memory index /data/recovered/datasets_6.idx to memory
+I1104 09:16:06.711673 store.go:173 add volume 6
+I1104 09:16:06.711688 volume_grpc_client_to_master.go:189 volume server seaweedfs.data.svc.cluster.local:8080 adds volume 6
+I1104 09:16:06.711763 volume_growth.go:269 Created Volume 6 on topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080
+I1104 09:16:06.711765 volume_layout.go:417 Volume 6 becomes writable
+I1104 09:16:06.711778 volume_growth.go:282 Registered Volume 6 on topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080
+I1104 09:16:06.711836 store.go:169 In dir /data/recovered adds volume:7 collection:datasets replicaPlacement:000 ttl:
+I1104 09:16:06.711994 volume_loading.go:139 checking volume data integrity for volume 7
+I1104 09:16:06.712001 volume_loading.go:157 loading memory index /data/recovered/datasets_7.idx to memory
+I1104 09:16:06.712647 store.go:173 add volume 7
+I1104 09:16:06.712660 volume_grpc_client_to_master.go:189 volume server seaweedfs.data.svc.cluster.local:8080 adds volume 7
+I1104 09:16:06.712712 volume_growth.go:269 Created Volume 7 on topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080
+I1104 09:16:06.712720 volume_layout.go:417 Volume 7 becomes writable
+I1104 09:16:06.712737 volume_growth.go:282 Registered Volume 7 on topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080

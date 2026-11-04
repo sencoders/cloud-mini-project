@@ -1,0 +1,89 @@
+2026-11-04T08:52:45.053092844Z Traceback (most recent call last):
+2026-11-04T08:52:45.053205719Z   File "/usr/local/lib/python3.12/site-packages/urllib3/connection.py", line 239, in _new_conn
+2026-11-04T08:52:45.053276011Z     sock = connection.create_connection(
+2026-11-04T08:52:45.053284719Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-04T08:52:45.053324678Z   File "/usr/local/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+2026-11-04T08:52:45.053412386Z     raise err
+2026-11-04T08:52:45.053416553Z   File "/usr/local/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+2026-11-04T08:52:45.053478803Z     sock.connect(sa)
+2026-11-04T08:52:45.053530719Z ConnectionRefusedError: [Errno 111] Connection refused
+2026-11-04T08:52:45.053536053Z 
+2026-11-04T08:52:45.053538928Z The above exception was the direct cause of the following exception:
+2026-11-04T08:52:45.053539969Z 
+2026-11-04T08:52:45.053541261Z Traceback (most recent call last):
+2026-11-04T08:52:45.053542761Z   File "/usr/local/lib/python3.12/site-packages/botocore/httpsession.py", line 509, in send
+2026-11-04T08:52:45.053717261Z     urllib_response = conn.urlopen(
+2026-11-04T08:52:45.053728178Z                       ^^^^^^^^^^^^^
+2026-11-04T08:52:45.053731053Z   File "/usr/local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+2026-11-04T08:52:45.053958094Z     retries = retries.increment(
+2026-11-04T08:52:45.053961219Z               ^^^^^^^^^^^^^^^^^^
+2026-11-04T08:52:45.053962719Z   File "/usr/local/lib/python3.12/site-packages/urllib3/util/retry.py", line 485, in increment
+2026-11-04T08:52:45.054121678Z     raise reraise(type(error), error, _stacktrace)
+2026-11-04T08:52:45.054150886Z           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-04T08:52:45.054153386Z   File "/usr/local/lib/python3.12/site-packages/urllib3/util/util.py", line 39, in reraise
+2026-11-04T08:52:45.054233553Z     raise value
+2026-11-04T08:52:45.054236469Z   File "/usr/local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+2026-11-04T08:52:45.054405803Z     response = self._make_request(
+2026-11-04T08:52:45.054409011Z                ^^^^^^^^^^^^^^^^^^^
+2026-11-04T08:52:45.054410303Z   File "/usr/local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 499, in _make_request
+2026-11-04T08:52:45.054525178Z     conn.request(
+2026-11-04T08:52:45.054528094Z   File "/usr/local/lib/python3.12/site-packages/botocore/awsrequest.py", line 96, in request
+2026-11-04T08:52:45.054607928Z     rval = super().request(method, url, body, headers, *args, **kwargs)
+2026-11-04T08:52:45.054659469Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-04T08:52:45.054708719Z   File "/usr/local/lib/python3.12/site-packages/urllib3/connection.py", line 567, in request
+2026-11-04T08:52:45.054865303Z     self.endheaders()
+2026-11-04T08:52:45.054868219Z   File "/usr/local/lib/python3.12/http/client.py", line 1381, in endheaders
+2026-11-04T08:52:45.055188719Z     self._send_output(message_body, encode_chunked=encode_chunked)
+2026-11-04T08:52:45.055196886Z   File "/usr/local/lib/python3.12/site-packages/botocore/awsrequest.py", line 123, in _send_output
+2026-11-04T08:52:45.055269886Z     self.send(msg)
+2026-11-04T08:52:45.055273011Z   File "/usr/local/lib/python3.12/site-packages/botocore/awsrequest.py", line 223, in send
+2026-11-04T08:52:45.055319053Z     return super().send(str)
+2026-11-04T08:52:45.055321011Z            ^^^^^^^^^^^^^^^^^
+2026-11-04T08:52:45.055322053Z   File "/usr/local/lib/python3.12/http/client.py", line 1085, in send
+2026-11-04T08:52:45.055572219Z     self.connect()
+2026-11-04T08:52:45.055587136Z   File "/usr/local/lib/python3.12/site-packages/urllib3/connection.py", line 398, in connect
+2026-11-04T08:52:45.055651219Z     self.sock = self._new_conn()
+2026-11-04T08:52:45.055654178Z                 ^^^^^^^^^^^^^^^^
+2026-11-04T08:52:45.055655178Z   File "/usr/local/lib/python3.12/site-packages/urllib3/connection.py", line 254, in _new_conn
+2026-11-04T08:52:45.055769511Z     raise NewConnectionError(
+2026-11-04T08:52:45.055779928Z urllib3.exceptions.NewConnectionError: AWSHTTPConnection(host='seaweedfs.data.svc.cluster.local', port=8333): Failed to establish a new connection: [Errno 111] Connection refused
+2026-11-04T08:52:45.055780886Z 
+2026-11-04T08:52:45.055782178Z During handling of the above exception, another exception occurred:
+2026-11-04T08:52:45.055782928Z 
+2026-11-04T08:52:45.055784053Z Traceback (most recent call last):
+2026-11-04T08:52:45.055785511Z   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-11-04T08:52:45.055786553Z   File "<frozen runpy>", line 88, in _run_code
+2026-11-04T08:52:45.055788178Z   File "/app/worker/label.py", line 109, in <module>
+2026-11-04T08:52:45.055858594Z     main()
+2026-11-04T08:52:45.055862219Z   File "/app/worker/label.py", line 98, in main
+2026-11-04T08:52:45.055913719Z     rows = load_pool(get(s3, 'commands_pool.jsonl'))
+2026-11-04T08:52:45.055918761Z                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-04T08:52:45.055955886Z   File "/app/worker/storage.py", line 25, in get
+2026-11-04T08:52:45.055996636Z     return s3.get_object(Bucket=bucket, Key=key)['Body'].read()
+2026-11-04T08:52:45.056009386Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-04T08:52:45.056045678Z   File "/usr/local/lib/python3.12/site-packages/botocore/client.py", line 606, in _api_call
+2026-11-04T08:52:45.056225719Z     return self._make_api_call(operation_name, kwargs)
+2026-11-04T08:52:45.056228844Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-04T08:52:45.056235594Z   File "/usr/local/lib/python3.12/site-packages/botocore/context.py", line 123, in wrapper
+2026-11-04T08:52:45.056324969Z     return func(*args, **kwargs)
+2026-11-04T08:52:45.056329011Z            ^^^^^^^^^^^^^^^^^^^^^
+2026-11-04T08:52:45.056370136Z   File "/usr/local/lib/python3.12/site-packages/botocore/client.py", line 1076, in _make_api_call
+2026-11-04T08:52:45.056581094Z     http, parsed_response = self._make_request(
+2026-11-04T08:52:45.056583928Z                             ^^^^^^^^^^^^^^^^^^^
+2026-11-04T08:52:45.056585886Z   File "/usr/local/lib/python3.12/site-packages/botocore/client.py", line 1100, in _make_request
+2026-11-04T08:52:45.056813178Z     return self._endpoint.make_request(operation_model, request_dict)
+2026-11-04T08:52:45.056819761Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-04T08:52:45.056861594Z   File "/usr/local/lib/python3.12/site-packages/botocore/endpoint.py", line 119, in make_request
+2026-11-04T08:52:45.056944219Z     return self._send_request(request_dict, operation_model)
+2026-11-04T08:52:45.056946136Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-04T08:52:45.056982803Z   File "/usr/local/lib/python3.12/site-packages/botocore/endpoint.py", line 231, in _send_request
+2026-11-04T08:52:45.057048136Z     raise exception
+2026-11-04T08:52:45.057050678Z   File "/usr/local/lib/python3.12/site-packages/botocore/endpoint.py", line 281, in _do_get_response
+2026-11-04T08:52:45.057135386Z     http_response = self._send(request)
+2026-11-04T08:52:45.057139594Z                     ^^^^^^^^^^^^^^^^^^^
+2026-11-04T08:52:45.057140803Z   File "/usr/local/lib/python3.12/site-packages/botocore/endpoint.py", line 385, in _send
+2026-11-04T08:52:45.057263553Z     return self.http_session.send(request)
+2026-11-04T08:52:45.057265511Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-04T08:52:45.057268303Z   File "/usr/local/lib/python3.12/site-packages/botocore/httpsession.py", line 540, in send
+2026-11-04T08:52:45.057407636Z     raise EndpointConnectionError(endpoint_url=request.url, error=e)
+2026-11-04T08:52:45.057411969Z botocore.exceptions.EndpointConnectionError: Could not connect to the endpoint URL: "http://seaweedfs.data.svc.cluster.local:8333/datasets/commands_pool.jsonl"

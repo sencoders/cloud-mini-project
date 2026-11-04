@@ -1,0 +1,7 @@
+NAMESPACE     NAME                                      CPU(cores)   MEMORY(bytes)   
+data          seaweedfs-767f985fdb-cb8ws                16m          147Mi           
+kube-system   coredns-8db54c48d-2mfmf                   6m           22Mi            
+kube-system   local-path-provisioner-5d9d9885bc-5kh5l   1m           15Mi            
+kube-system   metrics-server-786d997795-gjdkk           7m           26Mi            
+kube-system   svclb-traefik-435a843b-qpf25              0m           0Mi             
+kube-system   traefik-9bcdbbd9-4z5fd                    2m           24Mi            

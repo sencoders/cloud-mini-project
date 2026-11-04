@@ -30,19 +30,37 @@ def shard(rows, index, count):
 
 
 def teacher(text, prompt):
-    payload = {'model': 'phi3.5:latest', 'stream': False, 'format': 'json',
+    payload = {'model': 'phi3.5:latest', 'stream': True, 'format': 'json',
                'prompt': prompt + '\nCommand: ' + json.dumps(text, ensure_ascii=False) + '\nJSON:',
                'options': {'temperature': 0, 'seed': 42, 'num_predict': 256, 'num_ctx': 2048},
                'keep_alive': '24h'}
     req = urllib.request.Request(os.environ['OLLAMA_URL'].rstrip('/') + '/api/generate',
                                  data=json.dumps(payload).encode(),
                                  headers={'Content-Type': 'application/json'})
+    parts = []
     with urllib.request.urlopen(req, timeout=300) as response:
-        result = json.load(response)
-    if result.get('done') is not True or not isinstance(result.get('response'), str):
-        raise ValueError('Incomplete or missing Ollama response')
-    # Do not strip fences, whitespace, or repair/truncate the generated response.
-    return result['response']
+        for line in response:
+            event = json.loads(line)
+            if 'response' in event:
+                if not isinstance(event['response'], str):
+                    raise ValueError('Non-text Ollama response chunk')
+                parts.append(event['response'])
+            if event.get('error'):
+                error = str(event['error'])
+                if parts and 'token repeat limit reached' in error:
+                    # These are real tokens emitted by the teacher before its
+                    # repetition guard aborted. Keep every character, including
+                    # repeated whitespace. Cleaning will reject invalid JSON.
+                    raw = ''.join(parts)
+                    log('teacher_aborted', error=error, raw_chars=len(raw))
+                    return raw
+                raise RuntimeError(error)
+            if event.get('done') is True:
+                if not parts:
+                    raise ValueError('Missing Ollama response')
+                return ''.join(parts)
+    raise ValueError('Ollama stream ended without completion or explicit model abort')
+
 
 
 def log(event, **fields):
@@ -86,9 +104,10 @@ def run(s3, rows, prompt, index, count, prefix, generate=teacher):
             put_verified(s3, key, encode(record))
             log('labelled', id=row['id'], shard_index=index)
         records.append(record)
-        # Publish complete progress after each durable checkpoint. A restart rebuilds
-        # this object from checkpoints; the cleaner requires ALL expected IDs.
-        put_verified(s3, f'{prefix}/shard-{index}.jsonl', b''.join(encode(r) for r in records))
+        # Batch aggregate rewrites; every individual response is already durable.
+        # A restart rebuilds from checkpoints; cleaning requires ALL expected IDs.
+        if len(records) == 1 or len(records) % 25 == 0 or len(records) == len(assigned):
+            put_verified(s3, f'{prefix}/shard-{index}.jsonl', b''.join(encode(r) for r in records))
     log('complete', shard_index=index, records=len(records))
     return records
 

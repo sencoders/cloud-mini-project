@@ -1,0 +1,269 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "batch/v1",
+            "kind": "Job",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"batch/v1\",\"kind\":\"Job\",\"metadata\":{\"annotations\":{},\"labels\":{\"app\":\"teacher\",\"run\":\"smoke-json\"},\"name\":\"smoke-json-0\",\"namespace\":\"pipeline\"},\"spec\":{\"backoffLimit\":8,\"completions\":1,\"parallelism\":1,\"template\":{\"metadata\":{\"labels\":{\"app\":\"teacher\",\"run\":\"smoke-json\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"S3_ENDPOINT\",\"value\":\"http://seaweedfs.data.svc.cluster.local:8333\"},{\"name\":\"OLLAMA_URL\",\"value\":\"http://host.docker.internal:11434\"},{\"name\":\"SHARD_INDEX\",\"value\":\"0\"},{\"name\":\"SHARD_COUNT\",\"value\":\"2\"},{\"name\":\"OUTPUT_PREFIX\",\"value\":\"teacher/smoke-json\"},{\"name\":\"LIMIT\",\"value\":\"5\"}],\"envFrom\":[{\"secretRef\":{\"name\":\"s3-client\"}}],\"image\":\"command-teacher:task1\",\"imagePullPolicy\":\"Never\",\"name\":\"worker\",\"resources\":{\"limits\":{\"cpu\":\"500m\",\"memory\":\"256Mi\"},\"requests\":{\"cpu\":\"100m\",\"memory\":\"96Mi\"}}}],\"restartPolicy\":\"Never\",\"terminationGracePeriodSeconds\":30}}}}\n"
+                },
+                "creationTimestamp": "2026-11-04T08:12:11Z",
+                "generation": 1,
+                "labels": {
+                    "app": "teacher",
+                    "run": "smoke-json"
+                },
+                "name": "smoke-json-0",
+                "namespace": "pipeline",
+                "resourceVersion": "1229",
+                "uid": "d6cb0435-98bb-4f28-93eb-be7d90aa2736"
+            },
+            "spec": {
+                "backoffLimit": 8,
+                "completionMode": "NonIndexed",
+                "completions": 1,
+                "manualSelector": false,
+                "parallelism": 1,
+                "podReplacementPolicy": "TerminatingOrFailed",
+                "selector": {
+                    "matchLabels": {
+                        "batch.kubernetes.io/controller-uid": "d6cb0435-98bb-4f28-93eb-be7d90aa2736"
+                    }
+                },
+                "suspend": false,
+                "template": {
+                    "metadata": {
+                        "labels": {
+                            "app": "teacher",
+                            "batch.kubernetes.io/controller-uid": "d6cb0435-98bb-4f28-93eb-be7d90aa2736",
+                            "batch.kubernetes.io/job-name": "smoke-json-0",
+                            "controller-uid": "d6cb0435-98bb-4f28-93eb-be7d90aa2736",
+                            "job-name": "smoke-json-0",
+                            "run": "smoke-json"
+                        }
+                    },
+                    "spec": {
+                        "containers": [
+                            {
+                                "env": [
+                                    {
+                                        "name": "S3_ENDPOINT",
+                                        "value": "http://seaweedfs.data.svc.cluster.local:8333"
+                                    },
+                                    {
+                                        "name": "OLLAMA_URL",
+                                        "value": "http://host.docker.internal:11434"
+                                    },
+                                    {
+                                        "name": "SHARD_INDEX",
+                                        "value": "0"
+                                    },
+                                    {
+                                        "name": "SHARD_COUNT",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "OUTPUT_PREFIX",
+                                        "value": "teacher/smoke-json"
+                                    },
+                                    {
+                                        "name": "LIMIT",
+                                        "value": "5"
+                                    }
+                                ],
+                                "envFrom": [
+                                    {
+                                        "secretRef": {
+                                            "name": "s3-client"
+                                        }
+                                    }
+                                ],
+                                "image": "command-teacher:task1",
+                                "imagePullPolicy": "Never",
+                                "name": "worker",
+                                "resources": {
+                                    "limits": {
+                                        "cpu": "500m",
+                                        "memory": "256Mi"
+                                    },
+                                    "requests": {
+                                        "cpu": "100m",
+                                        "memory": "96Mi"
+                                    }
+                                },
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File"
+                            }
+                        ],
+                        "dnsPolicy": "ClusterFirst",
+                        "restartPolicy": "Never",
+                        "schedulerName": "default-scheduler",
+                        "securityContext": {},
+                        "terminationGracePeriodSeconds": 30
+                    }
+                }
+            },
+            "status": {
+                "completionTime": "2026-11-04T08:12:19Z",
+                "conditions": [
+                    {
+                        "lastProbeTime": "2026-11-04T08:12:19Z",
+                        "lastTransitionTime": "2026-11-04T08:12:19Z",
+                        "message": "Reached expected number of succeeded pods",
+                        "reason": "CompletionsReached",
+                        "status": "True",
+                        "type": "SuccessCriteriaMet"
+                    },
+                    {
+                        "lastProbeTime": "2026-11-04T08:12:19Z",
+                        "lastTransitionTime": "2026-11-04T08:12:19Z",
+                        "message": "Reached expected number of succeeded pods",
+                        "reason": "CompletionsReached",
+                        "status": "True",
+                        "type": "Complete"
+                    }
+                ],
+                "ready": 0,
+                "startTime": "2026-11-04T08:12:11Z",
+                "succeeded": 1,
+                "terminating": 0,
+                "uncountedTerminatedPods": {}
+            }
+        },
+        {
+            "apiVersion": "batch/v1",
+            "kind": "Job",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"batch/v1\",\"kind\":\"Job\",\"metadata\":{\"annotations\":{},\"labels\":{\"app\":\"teacher\",\"run\":\"smoke-json\"},\"name\":\"smoke-json-1\",\"namespace\":\"pipeline\"},\"spec\":{\"backoffLimit\":8,\"completions\":1,\"parallelism\":1,\"template\":{\"metadata\":{\"labels\":{\"app\":\"teacher\",\"run\":\"smoke-json\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"S3_ENDPOINT\",\"value\":\"http://seaweedfs.data.svc.cluster.local:8333\"},{\"name\":\"OLLAMA_URL\",\"value\":\"http://host.docker.internal:11434\"},{\"name\":\"SHARD_INDEX\",\"value\":\"1\"},{\"name\":\"SHARD_COUNT\",\"value\":\"2\"},{\"name\":\"OUTPUT_PREFIX\",\"value\":\"teacher/smoke-json\"},{\"name\":\"LIMIT\",\"value\":\"5\"}],\"envFrom\":[{\"secretRef\":{\"name\":\"s3-client\"}}],\"image\":\"command-teacher:task1\",\"imagePullPolicy\":\"Never\",\"name\":\"worker\",\"resources\":{\"limits\":{\"cpu\":\"500m\",\"memory\":\"256Mi\"},\"requests\":{\"cpu\":\"100m\",\"memory\":\"96Mi\"}}}],\"restartPolicy\":\"Never\",\"terminationGracePeriodSeconds\":30}}}}\n"
+                },
+                "creationTimestamp": "2026-11-04T08:12:12Z",
+                "generation": 1,
+                "labels": {
+                    "app": "teacher",
+                    "run": "smoke-json"
+                },
+                "name": "smoke-json-1",
+                "namespace": "pipeline",
+                "resourceVersion": "1223",
+                "uid": "0bb4fbc6-46fa-45b6-a607-21e6c4ba459e"
+            },
+            "spec": {
+                "backoffLimit": 8,
+                "completionMode": "NonIndexed",
+                "completions": 1,
+                "manualSelector": false,
+                "parallelism": 1,
+                "podReplacementPolicy": "TerminatingOrFailed",
+                "selector": {
+                    "matchLabels": {
+                        "batch.kubernetes.io/controller-uid": "0bb4fbc6-46fa-45b6-a607-21e6c4ba459e"
+                    }
+                },
+                "suspend": false,
+                "template": {
+                    "metadata": {
+                        "labels": {
+                            "app": "teacher",
+                            "batch.kubernetes.io/controller-uid": "0bb4fbc6-46fa-45b6-a607-21e6c4ba459e",
+                            "batch.kubernetes.io/job-name": "smoke-json-1",
+                            "controller-uid": "0bb4fbc6-46fa-45b6-a607-21e6c4ba459e",
+                            "job-name": "smoke-json-1",
+                            "run": "smoke-json"
+                        }
+                    },
+                    "spec": {
+                        "containers": [
+                            {
+                                "env": [
+                                    {
+                                        "name": "S3_ENDPOINT",
+                                        "value": "http://seaweedfs.data.svc.cluster.local:8333"
+                                    },
+                                    {
+                                        "name": "OLLAMA_URL",
+                                        "value": "http://host.docker.internal:11434"
+                                    },
+                                    {
+                                        "name": "SHARD_INDEX",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "SHARD_COUNT",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "OUTPUT_PREFIX",
+                                        "value": "teacher/smoke-json"
+                                    },
+                                    {
+                                        "name": "LIMIT",
+                                        "value": "5"
+                                    }
+                                ],
+                                "envFrom": [
+                                    {
+                                        "secretRef": {
+                                            "name": "s3-client"
+                                        }
+                                    }
+                                ],
+                                "image": "command-teacher:task1",
+                                "imagePullPolicy": "Never",
+                                "name": "worker",
+                                "resources": {
+                                    "limits": {
+                                        "cpu": "500m",
+                                        "memory": "256Mi"
+                                    },
+                                    "requests": {
+                                        "cpu": "100m",
+                                        "memory": "96Mi"
+                                    }
+                                },
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File"
+                            }
+                        ],
+                        "dnsPolicy": "ClusterFirst",
+                        "restartPolicy": "Never",
+                        "schedulerName": "default-scheduler",
+                        "securityContext": {},
+                        "terminationGracePeriodSeconds": 30
+                    }
+                }
+            },
+            "status": {
+                "completionTime": "2026-11-04T08:12:17Z",
+                "conditions": [
+                    {
+                        "lastProbeTime": "2026-11-04T08:12:17Z",
+                        "lastTransitionTime": "2026-11-04T08:12:17Z",
+                        "message": "Reached expected number of succeeded pods",
+                        "reason": "CompletionsReached",
+                        "status": "True",
+                        "type": "SuccessCriteriaMet"
+                    },
+                    {
+                        "lastProbeTime": "2026-11-04T08:12:17Z",
+                        "lastTransitionTime": "2026-11-04T08:12:17Z",
+                        "message": "Reached expected number of succeeded pods",
+                        "reason": "CompletionsReached",
+                        "status": "True",
+                        "type": "Complete"
+                    }
+                ],
+                "ready": 0,
+                "startTime": "2026-11-04T08:12:12Z",
+                "succeeded": 1,
+                "terminating": 0,
+                "uncountedTerminatedPods": {}
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}

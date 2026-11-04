@@ -1,0 +1,90 @@
+slot init_sampler: id  0 | task 57248 | init sampler, took 0.06 ms, tokens: text = 469, total = 469
+slot print_timing: id  0 | task 57248 | prompt eval time =     112.43 ms /    15 tokens (    7.50 ms per token,   133.42 tokens per second)
+slot print_timing: id  0 | task 57248 |        eval time =     532.87 ms /    20 tokens (   28.05 ms per token,    35.66 tokens per second)
+slot print_timing: id  0 | task 57248 |       total time =     645.30 ms /    35 tokens
+slot print_timing: id  0 | task 57248 |    graphs reused =      50138
+slot print_timing: id  0 | task 57248 |   graph reallocs =          0    /     0        (same size) / (changed size)
+slot      release: id  0 | task 57248 | stop processing: n_tokens = 488, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/11/04 - 14:21:19 | 200 | 653.74ms |       127.0.0.1 | POST     "/api/generate"
+srv  server_strea: conv_id= (empty=1)
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.966 (454/470) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.966 (> 0.100 thold), f_keep = 0.930
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> greedy 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 57269 | processing task, is_child = 0
+slot   operator(): id  0 | task 57269 | new prompt, n_ctx_slot = 2048, n_keep = 4, task.n_tokens = 470
+slot   operator(): id  0 | task 57269 | cached n_tokens = 454, memory_seq_rm [454, end)
+slot init_sampler: id  0 | task 57269 | init sampler, took 0.06 ms, tokens: text = 470, total = 470
+slot print_timing: id  0 | task 57269 | prompt eval time =     111.41 ms /    16 tokens (    6.96 ms per token,   143.61 tokens per second)
+slot print_timing: id  0 | task 57269 |        eval time =     562.21 ms /    20 tokens (   29.59 ms per token,    33.80 tokens per second)
+slot print_timing: id  0 | task 57269 |       total time =     673.62 ms /    36 tokens
+slot print_timing: id  0 | task 57269 |    graphs reused =      50156
+slot print_timing: id  0 | task 57269 |   graph reallocs =          0    /     0        (same size) / (changed size)
+slot      release: id  0 | task 57269 | stop processing: n_tokens = 489, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/11/04 - 14:21:19 | 200 | 683.95ms |       127.0.0.1 | POST     "/api/generate"
+srv  server_strea: conv_id= (empty=1)
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.958 (454/474) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.958 (> 0.100 thold), f_keep = 0.928
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> greedy 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 57290 | processing task, is_child = 0
+slot   operator(): id  0 | task 57290 | new prompt, n_ctx_slot = 2048, n_keep = 4, task.n_tokens = 474
+slot   operator(): id  0 | task 57290 | cached n_tokens = 454, memory_seq_rm [454, end)
+slot init_sampler: id  0 | task 57290 | init sampler, took 0.06 ms, tokens: text = 474, total = 474
+slot print_timing: id  0 | task 57290 | prompt eval time =     193.56 ms /    20 tokens (    9.68 ms per token,   103.33 tokens per second)
+slot print_timing: id  0 | task 57290 |        eval time =     668.42 ms /    24 tokens (   29.06 ms per token,    34.41 tokens per second)
+slot print_timing: id  0 | task 57290 |       total time =     861.98 ms /    44 tokens
+slot print_timing: id  0 | task 57290 |    graphs reused =      50178
+slot print_timing: id  0 | task 57290 |   graph reallocs =          0    /     0        (same size) / (changed size)
+slot      release: id  0 | task 57290 | stop processing: n_tokens = 497, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/11/04 - 14:21:20 | 200 | 872.76ms |       127.0.0.1 | POST     "/api/generate"
+srv  server_strea: conv_id= (empty=1)
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.964 (454/471) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.964 (> 0.100 thold), f_keep = 0.913
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> greedy 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 57315 | processing task, is_child = 0
+slot   operator(): id  0 | task 57315 | new prompt, n_ctx_slot = 2048, n_keep = 4, task.n_tokens = 471
+slot   operator(): id  0 | task 57315 | cached n_tokens = 454, memory_seq_rm [454, end)
+slot init_sampler: id  0 | task 57315 | init sampler, took 0.07 ms, tokens: text = 471, total = 471
+slot print_timing: id  0 | task 57315 | prompt eval time =     206.96 ms /    17 tokens (   12.17 ms per token,    82.14 tokens per second)
+slot print_timing: id  0 | task 57315 |        eval time =     710.83 ms /    25 tokens (   29.62 ms per token,    33.76 tokens per second)
+slot print_timing: id  0 | task 57315 |       total time =     917.79 ms /    42 tokens
+slot print_timing: id  0 | task 57315 |    graphs reused =      50201
+slot print_timing: id  0 | task 57315 |   graph reallocs =          0    /     0        (same size) / (changed size)
+slot      release: id  0 | task 57315 | stop processing: n_tokens = 495, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/11/04 - 14:21:21 | 200 | 926.57ms |       127.0.0.1 | POST     "/api/generate"
+srv  server_strea: conv_id= (empty=1)
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.952 (454/477) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.952 (> 0.100 thold), f_keep = 0.917
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> greedy 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 57341 | processing task, is_child = 0
+slot   operator(): id  0 | task 57341 | new prompt, n_ctx_slot = 2048, n_keep = 4, task.n_tokens = 477
+slot   operator(): id  0 | task 57341 | cached n_tokens = 454, memory_seq_rm [454, end)
+slot init_sampler: id  0 | task 57341 | init sampler, took 0.13 ms, tokens: text = 477, total = 477
+slot print_timing: id  0 | task 57341 | n_gen =    143, tg =  47.02 t/s, tg_3s =  47.35 t/s
+[GIN] 2026/11/04 - 14:21:27 | 500 |    3.24s |       127.0.0.1 | POST     "/api/generate"
+srv          stop: cancel task, id_task = 57341
+slot      release: id  0 | task 57341 | stop processing: n_tokens = 624, truncated = 0
+srv  update_slots: all slots are idle

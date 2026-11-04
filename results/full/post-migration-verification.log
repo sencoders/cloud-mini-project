@@ -1,0 +1,14 @@
+{
+  "source_records": 3000,
+  "shard_records": [
+    1500,
+    1500
+  ],
+  "unique_raw_ids": 3000,
+  "missing_ids": 0,
+  "repeated_ids": 0,
+  "source_texts_match": true,
+  "regenerated_bytes_match": true,
+  "sha256": "1865c9ddc2a723247e96336c0ef966cd3b669aa904ae03d29f77ef4fe92b03e5",
+  "counts_match": true
+}

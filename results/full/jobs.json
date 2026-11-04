@@ -9,14 +9,14 @@
                     "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"batch/v1\",\"kind\":\"Job\",\"metadata\":{\"annotations\":{},\"labels\":{\"app\":\"teacher\",\"run\":\"teacher\"},\"name\":\"teacher-0\",\"namespace\":\"pipeline\"},\"spec\":{\"backoffLimit\":8,\"completions\":1,\"parallelism\":1,\"template\":{\"metadata\":{\"labels\":{\"app\":\"teacher\",\"run\":\"teacher\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"S3_ENDPOINT\",\"value\":\"http://seaweedfs.data.svc.cluster.local:8333\"},{\"name\":\"OLLAMA_URL\",\"value\":\"http://host.docker.internal:11434\"},{\"name\":\"SHARD_INDEX\",\"value\":\"0\"},{\"name\":\"SHARD_COUNT\",\"value\":\"2\"},{\"name\":\"OUTPUT_PREFIX\",\"value\":\"teacher\"},{\"name\":\"LIMIT\",\"value\":\"0\"}],\"envFrom\":[{\"secretRef\":{\"name\":\"s3-client\"}}],\"image\":\"command-teacher:task1\",\"imagePullPolicy\":\"Never\",\"name\":\"worker\",\"resources\":{\"limits\":{\"cpu\":\"500m\",\"memory\":\"256Mi\"},\"requests\":{\"cpu\":\"100m\",\"memory\":\"96Mi\"}}}],\"restartPolicy\":\"Never\",\"terminationGracePeriodSeconds\":30}}}}\n"
                 },
                 "creationTimestamp": "2026-11-04T08:14:06Z",
-                "generation": 1,
+                "generation": 3,
                 "labels": {
                     "app": "teacher",
                     "run": "teacher"
                 },
                 "name": "teacher-0",
                 "namespace": "pipeline",
-                "resourceVersion": "1332",
+                "resourceVersion": "2808",
                 "uid": "6bfa1a16-b7f5-4f1d-82e7-0f29f92e4936"
             },
             "spec": {
@@ -105,9 +105,37 @@
                 }
             },
             "status": {
-                "active": 1,
-                "ready": 1,
-                "startTime": "2026-11-04T08:14:06Z",
+                "completionTime": "2026-11-04T09:13:20Z",
+                "conditions": [
+                    {
+                        "lastProbeTime": "2026-11-04T09:01:12Z",
+                        "lastTransitionTime": "2026-11-04T09:01:12Z",
+                        "message": "Job resumed",
+                        "reason": "JobResumed",
+                        "status": "False",
+                        "type": "Suspended"
+                    },
+                    {
+                        "lastProbeTime": "2026-11-04T09:13:20Z",
+                        "lastTransitionTime": "2026-11-04T09:13:20Z",
+                        "message": "Reached expected number of succeeded pods",
+                        "reason": "CompletionsReached",
+                        "status": "True",
+                        "type": "SuccessCriteriaMet"
+                    },
+                    {
+                        "lastProbeTime": "2026-11-04T09:13:20Z",
+                        "lastTransitionTime": "2026-11-04T09:13:20Z",
+                        "message": "Reached expected number of succeeded pods",
+                        "reason": "CompletionsReached",
+                        "status": "True",
+                        "type": "Complete"
+                    }
+                ],
+                "failed": 4,
+                "ready": 0,
+                "startTime": "2026-11-04T09:01:12Z",
+                "succeeded": 1,
                 "terminating": 0,
                 "uncountedTerminatedPods": {}
             }
@@ -120,14 +148,14 @@
                     "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"batch/v1\",\"kind\":\"Job\",\"metadata\":{\"annotations\":{},\"labels\":{\"app\":\"teacher\",\"run\":\"teacher\"},\"name\":\"teacher-1\",\"namespace\":\"pipeline\"},\"spec\":{\"backoffLimit\":8,\"completions\":1,\"parallelism\":1,\"template\":{\"metadata\":{\"labels\":{\"app\":\"teacher\",\"run\":\"teacher\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"S3_ENDPOINT\",\"value\":\"http://seaweedfs.data.svc.cluster.local:8333\"},{\"name\":\"OLLAMA_URL\",\"value\":\"http://host.docker.internal:11434\"},{\"name\":\"SHARD_INDEX\",\"value\":\"1\"},{\"name\":\"SHARD_COUNT\",\"value\":\"2\"},{\"name\":\"OUTPUT_PREFIX\",\"value\":\"teacher\"},{\"name\":\"LIMIT\",\"value\":\"0\"}],\"envFrom\":[{\"secretRef\":{\"name\":\"s3-client\"}}],\"image\":\"command-teacher:task1\",\"imagePullPolicy\":\"Never\",\"name\":\"worker\",\"resources\":{\"limits\":{\"cpu\":\"500m\",\"memory\":\"256Mi\"},\"requests\":{\"cpu\":\"100m\",\"memory\":\"96Mi\"}}}],\"restartPolicy\":\"Never\",\"terminationGracePeriodSeconds\":30}}}}\n"
                 },
                 "creationTimestamp": "2026-11-04T08:14:06Z",
-                "generation": 1,
+                "generation": 3,
                 "labels": {
                     "app": "teacher",
                     "run": "teacher"
                 },
                 "name": "teacher-1",
                 "namespace": "pipeline",
-                "resourceVersion": "1333",
+                "resourceVersion": "2772",
                 "uid": "605291ff-916a-4541-b77e-2ecf0bc71cd2"
             },
             "spec": {
@@ -216,9 +244,37 @@
                 }
             },
             "status": {
-                "active": 1,
-                "ready": 1,
-                "startTime": "2026-11-04T08:14:06Z",
+                "completionTime": "2026-11-04T09:12:13Z",
+                "conditions": [
+                    {
+                        "lastProbeTime": "2026-11-04T09:01:12Z",
+                        "lastTransitionTime": "2026-11-04T09:01:12Z",
+                        "message": "Job resumed",
+                        "reason": "JobResumed",
+                        "status": "False",
+                        "type": "Suspended"
+                    },
+                    {
+                        "lastProbeTime": "2026-11-04T09:12:13Z",
+                        "lastTransitionTime": "2026-11-04T09:12:13Z",
+                        "message": "Reached expected number of succeeded pods",
+                        "reason": "CompletionsReached",
+                        "status": "True",
+                        "type": "SuccessCriteriaMet"
+                    },
+                    {
+                        "lastProbeTime": "2026-11-04T09:12:13Z",
+                        "lastTransitionTime": "2026-11-04T09:12:13Z",
+                        "message": "Reached expected number of succeeded pods",
+                        "reason": "CompletionsReached",
+                        "status": "True",
+                        "type": "Complete"
+                    }
+                ],
+                "failed": 4,
+                "ready": 0,
+                "startTime": "2026-11-04T09:01:12Z",
+                "succeeded": 1,
                 "terminating": 0,
                 "uncountedTerminatedPods": {}
             }

@@ -1,0 +1,40 @@
+I1104 08:52:50.824549 volume_loading.go:139 checking volume data integrity for volume 1
+I1104 08:52:50.824575 volume_loading.go:157 loading memory index /data/datasets_2.idx to memory
+I1104 08:52:50.824590 volume_loading.go:157 loading memory index /data/datasets_1.idx to memory
+I1104 08:52:50.824552 volume_loading.go:139 checking volume data integrity for volume 3
+I1104 08:52:50.824624 volume_loading.go:157 loading memory index /data/datasets_3.idx to memory
+I1104 08:52:50.824815 volume_loading.go:98 readSuperBlock volume 4 version 3
+I1104 08:52:50.824829 volume_loading.go:139 checking volume data integrity for volume 4
+E1104 08:52:50.825161 needle_read.go:58 entry not found1: offset 6696928 found id 36333762313734393561353461633165 size -354858672, expected size 0
+E1104 08:52:50.825178 needle_read.go:45 /data/datasets_4.dat read 0 dataSize 32 offset 34366435296 fileSize 6696960: EOF
+I1104 08:52:50.825183 volume_loading.go:142 volumeDataIntegrityChecking failed verifyNeedleIntegrity /data/datasets_4.idx failed: read data [6696928,32) : EOF
+I1104 08:52:50.825320 disk_location.go:183 data file /data/datasets_1.dat, replication=000 v=3 size=21736704 ttl=
+I1104 08:52:50.825320 disk_location.go:183 data file /data/datasets_3.dat, replication=000 v=3 size=21161600 ttl=
+I1104 08:52:50.825336 disk_location.go:183 data file /data/datasets_2.dat, replication=000 v=3 size=21277192 ttl=
+I1104 08:52:50.825474 disk_location.go:183 data file /data/datasets_4.dat, replication=000 v=3 size=6696960 ttl=
+I1104 08:52:50.825485 disk_location.go:239 Store started on dir: /data with 4 volumes max 4
+I1104 08:52:50.825512 disk_location.go:242 Store started on dir: /data with 0 ec shards
+I1104 08:52:50.825574 volume_grpc_client_to_master.go:52 Volume server start with seed master nodes: [seaweedfs.data.svc.cluster.local:9333]
+I1104 08:52:50.825620 volume.go:381 Start Seaweed volume server 30GB 3.85 7d7e06681 at 0.0.0.0:8080
+I1104 08:52:50.826310 volume_grpc_client_to_master.go:109 Heartbeat to: seaweedfs.data.svc.cluster.local:9333
+I1104 08:52:50.826595 node.go:250 topo adds child DefaultDataCenter
+I1104 08:52:50.826619 node.go:250 topo:DefaultDataCenter adds child DefaultRack
+I1104 08:52:50.826623 node.go:250 topo:DefaultDataCenter:DefaultRack adds child seaweedfs.data.svc.cluster.local:8080
+I1104 08:52:50.826626 node.go:250 topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080 adds child 
+I1104 08:52:50.826629 master_grpc_server.go:141 added volume server 0: seaweedfs.data.svc.cluster.local:8080 [8567231d-5744-43d4-84c2-d92cb448d772]
+I1104 08:52:50.826673 master_grpc_server.go:51 found new uuid:seaweedfs.data.svc.cluster.local:8080 [8567231d-5744-43d4-84c2-d92cb448d772] , map[seaweedfs.data.svc.cluster.local:8080:[8567231d-5744-43d4-84c2-d92cb448d772]]
+I1104 08:52:50.826795 volume_layout.go:417 Volume 1 becomes writable
+I1104 08:52:50.826807 volume_layout.go:417 Volume 3 becomes writable
+I1104 08:52:50.826809 volume_layout.go:417 Volume 2 becomes writable
+I1104 08:52:50.826814 volume_layout.go:232 volume 4 are not all writable
+I1104 08:52:50.826816 volume_layout.go:237 volume 4 remove from writable
+I1104 08:52:50.826819 master_grpc_server.go:204 master see new volume 1 from seaweedfs.data.svc.cluster.local:8080
+I1104 08:52:50.826821 master_grpc_server.go:204 master see new volume 3 from seaweedfs.data.svc.cluster.local:8080
+I1104 08:52:50.826822 master_grpc_server.go:204 master see new volume 2 from seaweedfs.data.svc.cluster.local:8080
+I1104 08:52:50.826823 master_grpc_server.go:204 master see new volume 4 from seaweedfs.data.svc.cluster.local:8080
+I1104 08:52:51.781558 s3.go:213 S3 read filer buckets dir: /buckets
+I1104 08:52:51.781609 s3.go:220 connected to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 08:52:51.783326 s3api_circuit_breaker.go:35 s3 circuit breaker not configured
+I1104 08:52:51.788541 s3.go:369 Start Seaweed S3 API Server 30GB 3.85 7d7e06681 at http port 8333
+I1104 08:52:51.790339 filer_grpc_server_sub_meta.go:314 +  listener s3@10.42.0.1:19953 clientId 325335776 clientEpoch 2
+I1104 08:52:51.790355 filer_grpc_server_sub_meta.go:43  s3@10.42.0.1:19953 starts to subscribe /etc/ from 2026-11-04 08:52:51.781687542 +0000 UTC

@@ -1,0 +1,163 @@
+I1104 09:17:56.198600 master.go:282 current: seaweedfs.data.svc.cluster.local:9333 peers:
+I1104 09:17:56.198640 file_util.go:27 Folder /data/recovered Permission: -rwxr-xr-x
+I1104 09:17:56.198679 file_util.go:27 Folder /data/recovered Permission: -rwxr-xr-x
+I1104 09:17:56.198701 master.go:282 current: seaweedfs.data.svc.cluster.local:9333 peers:seaweedfs.data.svc.cluster.local:9333
+I1104 09:17:56.198872 master_server.go:132 Volume Size Limit is 256 MB
+I1104 09:17:56.198963 master.go:163 Start Seaweed Master 30GB 3.85 7d7e06681 at 0.0.0.0:9333
+I1104 09:17:56.199301 raft_server.go:119 Starting RaftServer with seaweedfs.data.svc.cluster.local:9333
+I1104 09:17:56.200736 raft_server.go:168 current cluster leader: 
+I1104 09:17:56.200829 volume_grpc_client_to_master.go:43 checkWithMaster seaweedfs.data.svc.cluster.local:9333: get master seaweedfs.data.svc.cluster.local:9333 configuration: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 10.43.137.96:19333: connect: connection refused"
+I1104 09:17:57.995440 volume_grpc_client_to_master.go:43 checkWithMaster seaweedfs.data.svc.cluster.local:9333: get master seaweedfs.data.svc.cluster.local:9333 configuration: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 10.43.137.96:19333: connect: connection refused"
+I1104 09:17:58.204217 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:17:59.208560 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:17:59.787534 volume_grpc_client_to_master.go:43 checkWithMaster seaweedfs.data.svc.cluster.local:9333: get master seaweedfs.data.svc.cluster.local:9333 configuration: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 10.43.137.96:19333: connect: connection refused"
+I1104 09:18:00.211851 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:01.218419 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:01.581998 volume_grpc_client_to_master.go:43 checkWithMaster seaweedfs.data.svc.cluster.local:9333: get master seaweedfs.data.svc.cluster.local:9333 configuration: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 10.43.137.96:19333: connect: connection refused"
+I1104 09:18:02.220782 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:03.224299 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:03.375330 volume_grpc_client_to_master.go:43 checkWithMaster seaweedfs.data.svc.cluster.local:9333: get master seaweedfs.data.svc.cluster.local:9333 configuration: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 10.43.137.96:19333: connect: connection refused"
+I1104 09:18:04.225951 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:05.168417 volume_grpc_client_to_master.go:43 checkWithMaster seaweedfs.data.svc.cluster.local:9333: get master seaweedfs.data.svc.cluster.local:9333 configuration: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 10.43.137.96:19333: connect: connection refused"
+I1104 09:18:05.229725 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:06.233671 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:06.964102 volume_grpc_client_to_master.go:43 checkWithMaster seaweedfs.data.svc.cluster.local:9333: get master seaweedfs.data.svc.cluster.local:9333 configuration: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 10.43.137.96:19333: connect: connection refused"
+I1104 09:18:07.237123 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:08.242548 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:08.758297 volume_grpc_client_to_master.go:43 checkWithMaster seaweedfs.data.svc.cluster.local:9333: get master seaweedfs.data.svc.cluster.local:9333 configuration: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 10.43.137.96:19333: connect: connection refused"
+I1104 09:18:09.246017 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:10.253356 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:10.555448 volume_grpc_client_to_master.go:43 checkWithMaster seaweedfs.data.svc.cluster.local:9333: get master seaweedfs.data.svc.cluster.local:9333 configuration: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 10.43.137.96:19333: connect: connection refused"
+I1104 09:18:11.257264 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:12.262089 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:12.347910 volume_grpc_client_to_master.go:43 checkWithMaster seaweedfs.data.svc.cluster.local:9333: get master seaweedfs.data.svc.cluster.local:9333 configuration: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp 10.43.137.96:19333: connect: connection refused"
+I1104 09:18:13.265013 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:13.832911 master_server.go:209 [seaweedfs.data.svc.cluster.local:9333]  - is the leader.
+I1104 09:18:13.833688 master.go:214 Start Seaweed Master 30GB 3.85 7d7e06681 grpc server at 0.0.0.0:19333
+I1104 09:18:14.268303 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:15.271319 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:15.334901 masterclient.go:168 No existing leader found!
+I1104 09:18:15.334958 raft_server.go:190 Initializing new cluster
+I1104 09:18:15.335063 master_server.go:181 leader change event:  => seaweedfs.data.svc.cluster.local:9333
+I1104 09:18:15.335119 master_server.go:184 [seaweedfs.data.svc.cluster.local:9333] seaweedfs.data.svc.cluster.local:9333 becomes leader.
+I1104 09:18:15.349876 master_grpc_server.go:372 + client .master@seaweedfs.data.svc.cluster.local:9333
+I1104 09:18:15.753996 volume_loading.go:98 readSuperBlock volume 3 version 3
+I1104 09:18:15.754109 volume_loading.go:139 checking volume data integrity for volume 3
+I1104 09:18:15.754129 volume_loading.go:98 readSuperBlock volume 14 version 3
+I1104 09:18:15.754146 volume_loading.go:98 readSuperBlock volume 1 version 3
+I1104 09:18:15.754154 volume_loading.go:139 checking volume data integrity for volume 14
+I1104 09:18:15.754163 volume_loading.go:157 loading memory index /data/recovered/14.idx to memory
+I1104 09:18:15.754166 volume_loading.go:139 checking volume data integrity for volume 1
+I1104 09:18:15.754221 volume_loading.go:157 loading memory index /data/recovered/datasets_3.idx to memory
+I1104 09:18:15.754309 disk_location.go:183 data file /data/recovered/14.dat, replication=000 v=3 size=8 ttl=
+I1104 09:18:15.754243 volume_loading.go:157 loading memory index /data/recovered/datasets_1.idx to memory
+I1104 09:18:15.754446 volume_loading.go:98 readSuperBlock volume 4 version 3
+I1104 09:18:15.754463 volume_loading.go:139 checking volume data integrity for volume 4
+I1104 09:18:15.754472 disk_location.go:183 data file /data/recovered/datasets_1.dat, replication=000 v=3 size=143760 ttl=
+I1104 09:18:15.754554 volume_loading.go:98 readSuperBlock volume 13 version 3
+I1104 09:18:15.754581 volume_loading.go:139 checking volume data integrity for volume 13
+I1104 09:18:15.754590 volume_loading.go:157 loading memory index /data/recovered/13.idx to memory
+I1104 09:18:15.754607 disk_location.go:183 data file /data/recovered/13.dat, replication=000 v=3 size=8 ttl=
+I1104 09:18:15.754619 disk_location.go:183 data file /data/recovered/datasets_3.dat, replication=000 v=3 size=157312 ttl=
+I1104 09:18:15.754655 volume_loading.go:98 readSuperBlock volume 9 version 3
+I1104 09:18:15.754675 volume_loading.go:139 checking volume data integrity for volume 9
+I1104 09:18:15.754682 volume_loading.go:157 loading memory index /data/recovered/9.idx to memory
+I1104 09:18:15.754779 disk_location.go:183 data file /data/recovered/9.dat, replication=000 v=3 size=8 ttl=
+I1104 09:18:15.754787 volume_loading.go:157 loading memory index /data/recovered/datasets_4.idx to memory
+I1104 09:18:15.754842 volume_loading.go:98 readSuperBlock volume 7 version 3
+I1104 09:18:15.754862 volume_loading.go:139 checking volume data integrity for volume 7
+I1104 09:18:15.754873 volume_loading.go:157 loading memory index /data/recovered/datasets_7.idx to memory
+I1104 09:18:15.754885 volume_loading.go:98 readSuperBlock volume 2 version 3
+I1104 09:18:15.754903 volume_loading.go:139 checking volume data integrity for volume 2
+I1104 09:18:15.754007 volume_loading.go:98 readSuperBlock volume 11 version 3
+I1104 09:18:15.754942 volume_loading.go:157 loading memory index /data/recovered/datasets_2.idx to memory
+I1104 09:18:15.754957 volume_loading.go:139 checking volume data integrity for volume 11
+I1104 09:18:15.754969 volume_loading.go:157 loading memory index /data/recovered/11.idx to memory
+I1104 09:18:15.755001 disk_location.go:183 data file /data/recovered/11.dat, replication=000 v=3 size=8 ttl=
+I1104 09:18:15.755020 disk_location.go:183 data file /data/recovered/datasets_7.dat, replication=000 v=3 size=173024 ttl=
+I1104 09:18:15.755054 disk_location.go:183 data file /data/recovered/datasets_2.dat, replication=000 v=3 size=103656 ttl=
+I1104 09:18:15.755104 volume_loading.go:98 readSuperBlock volume 12 version 3
+I1104 09:18:15.755121 volume_loading.go:139 checking volume data integrity for volume 12
+I1104 09:18:15.755131 volume_loading.go:157 loading memory index /data/recovered/12.idx to memory
+I1104 09:18:15.755142 volume_loading.go:98 readSuperBlock volume 6 version 3
+I1104 09:18:15.755161 volume_loading.go:139 checking volume data integrity for volume 6
+I1104 09:18:15.755179 volume_loading.go:98 readSuperBlock volume 5 version 3
+I1104 09:18:15.755197 volume_loading.go:157 loading memory index /data/recovered/datasets_6.idx to memory
+I1104 09:18:15.755203 volume_loading.go:139 checking volume data integrity for volume 5
+I1104 09:18:15.755299 disk_location.go:183 data file /data/recovered/datasets_6.dat, replication=000 v=3 size=94944 ttl=
+I1104 09:18:15.755309 volume_loading.go:98 readSuperBlock volume 8 version 3
+I1104 09:18:15.755145 disk_location.go:183 data file /data/recovered/12.dat, replication=000 v=3 size=8 ttl=
+I1104 09:18:15.755324 volume_loading.go:139 checking volume data integrity for volume 8
+I1104 09:18:15.755346 volume_loading.go:98 readSuperBlock volume 10 version 3
+I1104 09:18:15.755365 volume_loading.go:139 checking volume data integrity for volume 10
+I1104 09:18:15.755371 volume_loading.go:157 loading memory index /data/recovered/10.idx to memory
+I1104 09:18:15.755383 disk_location.go:183 data file /data/recovered/10.dat, replication=000 v=3 size=8 ttl=
+I1104 09:18:15.755347 volume_loading.go:157 loading memory index /data/recovered/8.idx to memory
+I1104 09:18:15.755399 disk_location.go:183 data file /data/recovered/8.dat, replication=000 v=3 size=1239648 ttl=
+I1104 09:18:15.755399 volume_loading.go:157 loading memory index /data/recovered/datasets_5.idx to memory
+I1104 09:18:15.755426 disk_location.go:183 data file /data/recovered/datasets_4.dat, replication=000 v=3 size=106576 ttl=
+I1104 09:18:15.755526 disk_location.go:183 data file /data/recovered/datasets_5.dat, replication=000 v=3 size=217488 ttl=
+I1104 09:18:15.755551 disk_location.go:239 Store started on dir: /data/recovered with 14 volumes max 16
+I1104 09:18:15.755686 disk_location.go:242 Store started on dir: /data/recovered with 0 ec shards
+I1104 09:18:15.756113 volume_grpc_client_to_master.go:52 Volume server start with seed master nodes: [seaweedfs.data.svc.cluster.local:9333]
+I1104 09:18:15.756180 volume.go:381 Start Seaweed volume server 30GB 3.85 7d7e06681 at 0.0.0.0:8080
+I1104 09:18:15.758073 volume_grpc_client_to_master.go:109 Heartbeat to: seaweedfs.data.svc.cluster.local:9333
+I1104 09:18:15.759174 node.go:250 topo adds child DefaultDataCenter
+I1104 09:18:15.759329 node.go:250 topo:DefaultDataCenter adds child DefaultRack
+I1104 09:18:15.759349 node.go:250 topo:DefaultDataCenter:DefaultRack adds child seaweedfs.data.svc.cluster.local:8080
+I1104 09:18:15.759358 node.go:250 topo:DefaultDataCenter:DefaultRack:seaweedfs.data.svc.cluster.local:8080 adds child 
+I1104 09:18:15.759364 master_grpc_server.go:141 added volume server 0: seaweedfs.data.svc.cluster.local:8080 [f5ddaad5-bc72-49c2-bef8-bd3d625a03ca]
+I1104 09:18:15.759399 master_grpc_server.go:51 found new uuid:seaweedfs.data.svc.cluster.local:8080 [f5ddaad5-bc72-49c2-bef8-bd3d625a03ca] , map[seaweedfs.data.svc.cluster.local:8080:[f5ddaad5-bc72-49c2-bef8-bd3d625a03ca]]
+I1104 09:18:15.759772 volume_layout.go:417 Volume 5 becomes writable
+I1104 09:18:15.759788 volume_layout.go:417 Volume 2 becomes writable
+I1104 09:18:15.759791 volume_layout.go:417 Volume 1 becomes writable
+I1104 09:18:15.759793 volume_layout.go:417 Volume 3 becomes writable
+I1104 09:18:15.759798 volume_layout.go:417 Volume 9 becomes writable
+I1104 09:18:15.759801 volume_layout.go:417 Volume 12 becomes writable
+I1104 09:18:15.759803 volume_layout.go:417 Volume 6 becomes writable
+I1104 09:18:15.759805 volume_layout.go:417 Volume 4 becomes writable
+I1104 09:18:15.759807 volume_layout.go:417 Volume 14 becomes writable
+I1104 09:18:15.759809 volume_layout.go:417 Volume 7 becomes writable
+I1104 09:18:15.759811 volume_layout.go:417 Volume 11 becomes writable
+I1104 09:18:15.759813 volume_layout.go:417 Volume 10 becomes writable
+I1104 09:18:15.759815 volume_layout.go:417 Volume 8 becomes writable
+I1104 09:18:15.759817 volume_layout.go:417 Volume 13 becomes writable
+I1104 09:18:15.759825 master_grpc_server.go:204 master see new volume 5 from seaweedfs.data.svc.cluster.local:8080
+I1104 09:18:15.759828 master_grpc_server.go:204 master see new volume 2 from seaweedfs.data.svc.cluster.local:8080
+I1104 09:18:15.759830 master_grpc_server.go:204 master see new volume 1 from seaweedfs.data.svc.cluster.local:8080
+I1104 09:18:15.759832 master_grpc_server.go:204 master see new volume 3 from seaweedfs.data.svc.cluster.local:8080
+I1104 09:18:15.759833 master_grpc_server.go:204 master see new volume 9 from seaweedfs.data.svc.cluster.local:8080
+I1104 09:18:15.759835 master_grpc_server.go:204 master see new volume 12 from seaweedfs.data.svc.cluster.local:8080
+I1104 09:18:15.759836 master_grpc_server.go:204 master see new volume 6 from seaweedfs.data.svc.cluster.local:8080
+I1104 09:18:15.759838 master_grpc_server.go:204 master see new volume 4 from seaweedfs.data.svc.cluster.local:8080
+I1104 09:18:15.759840 master_grpc_server.go:204 master see new volume 14 from seaweedfs.data.svc.cluster.local:8080
+I1104 09:18:15.759842 master_grpc_server.go:204 master see new volume 7 from seaweedfs.data.svc.cluster.local:8080
+I1104 09:18:15.759843 master_grpc_server.go:204 master see new volume 11 from seaweedfs.data.svc.cluster.local:8080
+I1104 09:18:15.759845 master_grpc_server.go:204 master see new volume 10 from seaweedfs.data.svc.cluster.local:8080
+I1104 09:18:15.759846 master_grpc_server.go:204 master see new volume 8 from seaweedfs.data.svc.cluster.local:8080
+I1104 09:18:15.759847 master_grpc_server.go:204 master see new volume 13 from seaweedfs.data.svc.cluster.local:8080
+I1104 09:18:16.277718 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:17.282232 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:18.220806 filer_server.go:171 default to create filer store dir in /data/recovered/filerldb2
+I1104 09:18:18.221372 leveldb2_store.go:43 filer store leveldb2 dir: /data/recovered/filerldb2
+I1104 09:18:18.221404 file_util.go:27 Folder /data/recovered/filerldb2 Permission: -rwxr-xr-x
+I1104 09:18:18.224601 master_grpc_server.go:372 + client .filer@seaweedfs.data.svc.cluster.local:8888
+I1104 09:18:18.224875 masterclient.go:265 + master@seaweedfs.data.svc.cluster.local:9333 noticed .filer seaweedfs.data.svc.cluster.local:8888
+I1104 09:18:18.285238 s3.go:217 wait to connect to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:18.309337 filer.go:158 existing filer.store.id = -1073335975
+I1104 09:18:18.309356 configuration.go:28 configured filer store to leveldb2
+I1104 09:18:18.309732 master_client.go:20 the cluster has 1 filer
+I1104 09:18:18.309752 filer.go:112 seaweedfs.data.svc.cluster.local:8888 aggregate from peers [seaweedfs.data.svc.cluster.local:8888]
+I1104 09:18:18.316921 meta_aggregator.go:76 loopSubscribeToOneFiler read seaweedfs.data.svc.cluster.local:8888 start from 2026-11-04 09:17:18.309740212 +0000 UTC 1793783838309740212
+I1104 09:18:18.316976 filer.go:317 Start Seaweed Filer 30GB 3.85 7d7e06681 at seaweedfs.data.svc.cluster.local:8888
+I1104 09:18:18.318109 meta_aggregator.go:178 subscribing remote seaweedfs.data.svc.cluster.local:8888 meta change: 2026-11-04 09:17:18.309740212 +0000 UTC, clientId:1238494333
+I1104 09:18:18.318762 filer_grpc_server_sub_meta.go:314 + local listener filer:seaweedfs.data.svc.cluster.local:8888@10.42.0.1:42645 clientId -1238494333 clientEpoch 1
+I1104 09:18:18.318772 filer_grpc_server_sub_meta.go:133  + filer:seaweedfs.data.svc.cluster.local:8888@10.42.0.1:42645 local subscribe / from 2026-11-04 09:17:18.309740212 +0000 UTC clientId:-1238494333
+I1104 09:18:18.318776 filer_grpc_server_sub_meta.go:146 read on disk filer:seaweedfs.data.svc.cluster.local:8888@10.42.0.1:42645 local subscribe / from 2026-11-04 09:17:18.309740212 +0000 UTC
+I1104 09:18:18.318929 filer_grpc_server_sub_meta.go:165 read in memory filer:seaweedfs.data.svc.cluster.local:8888@10.42.0.1:42645 local subscribe / from 2026-11-04 09:17:18.309740212 +0000 UTC
+I1104 09:18:19.287878 s3.go:213 S3 read filer buckets dir: /buckets
+I1104 09:18:19.287932 s3.go:220 connected to filer seaweedfs.data.svc.cluster.local:8888 grpc address seaweedfs.data.svc.cluster.local:18888
+I1104 09:18:19.289461 s3api_circuit_breaker.go:35 s3 circuit breaker not configured
+I1104 09:18:19.291680 s3.go:369 Start Seaweed S3 API Server 30GB 3.85 7d7e06681 at http port 8333
+I1104 09:18:19.293760 filer_grpc_server_sub_meta.go:314 +  listener s3@10.42.0.1:37481 clientId 774302070 clientEpoch 2
+I1104 09:18:19.293775 filer_grpc_server_sub_meta.go:43  s3@10.42.0.1:37481 starts to subscribe /etc/ from 2026-11-04 09:18:19.288003129 +0000 UTC

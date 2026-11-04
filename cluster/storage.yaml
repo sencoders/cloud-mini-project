@@ -49,16 +49,25 @@ spec:
     metadata:
       labels: {app: seaweedfs}
     spec:
+      initContainers:
+        - name: storage-directory
+          image: chrislusf/seaweedfs:3.85@sha256:49312939c00c01e5ee6afbd7d728b18027821d3764c35a797a72acd4fdf3296a
+          command: [/bin/sh, -c, 'mkdir -p /data/recovered']
+          volumeMounts:
+            - {name: storage, mountPath: /data}
       containers:
         - name: seaweedfs
           image: chrislusf/seaweedfs:3.85@sha256:49312939c00c01e5ee6afbd7d728b18027821d3764c35a797a72acd4fdf3296a
-          workingDir: /data
-          args: [server, '-dir=/data', '-ip.bind=0.0.0.0', '-ip=seaweedfs.data.svc.cluster.local', '-volume.max=4', '-master.volumeSizeLimitMB=256', '-filer', '-s3', '-s3.port=8333', '-s3.config=/etc/seaweedfs/s3.json']
+          workingDir: /data/recovered
+          args: [server, '-dir=/data/recovered', '-ip.bind=0.0.0.0', '-ip=seaweedfs.data.svc.cluster.local', '-volume.max=16', '-master.volumeSizeLimitMB=256', '-filer', '-s3', '-s3.port=8333', '-s3.config=/etc/seaweedfs/s3.json']
           ports:
             - {name: s3, containerPort: 8333}
           resources:
-            requests: {cpu: 100m, memory: 192Mi}
-            limits: {cpu: '1', memory: 768Mi}
+            requests: {cpu: 100m, memory: 256Mi}
+            limits: {cpu: '1', memory: 2Gi}
+          env:
+            - {name: GOMEMLIMIT, value: 1GiB}
+            - {name: GOGC, value: '50'}
           readinessProbe:
             tcpSocket: {port: s3}
             initialDelaySeconds: 5

@@ -192,5 +192,40 @@ def test_ollama_request_settings_and_raw_response(monkeypatch):
     assert captured['model'] == 'phi3.5:latest'
     assert captured['options']['temperature'] == 0
     assert captured['options']['seed'] == 42
-    assert captured['stream'] is False
+    assert captured['stream'] is True
     assert captured['format'] == 'json'
+
+
+def test_concurrency_evidence_survives_job_retries():
+    from scripts.task1 import worker_overlap
+    spans = {'first-0': ['2026-11-04T08:00:00Z', '2026-11-04T08:10:00Z'],
+             'retry-0': ['2026-11-04T08:11:00Z', '2026-11-04T08:20:00Z'],
+             'worker-1': ['2026-11-04T08:00:05Z', '2026-11-04T08:20:00Z']}
+    assert worker_overlap(spans, {'first-0': '0', 'retry-0': '0', 'worker-1': '1'}) == 595
+    assert worker_overlap(spans, dict.fromkeys(spans, '0')) == 0
+
+
+def test_repetition_abort_preserves_all_actual_teacher_chunks(monkeypatch):
+    first = '{"intent":null,'
+    spaces = '\n' * 100
+    events = [{'response': first, 'done': False}, {'response': spaces, 'done': False},
+              {'error': 'prediction aborted, token repeat limit reached'}]
+    data = b''.join((json.dumps(e) + '\n').encode() for e in events)
+    monkeypatch.setenv('OLLAMA_URL', 'http://native-ollama:11434')
+    monkeypatch.setattr(label.urllib.request, 'urlopen', lambda *a, **k: io.BytesIO(data))
+    raw = label.teacher('command', 'prompt')
+    assert raw == first + spaces
+    assert rejection({**row(1), 'teacher_raw': raw}) == 'a_invalid_json'
+
+
+@pytest.mark.parametrize('events', [
+    [{'response': 'partial', 'done': False}],
+    [{'error': 'prediction aborted, token repeat limit reached'}],
+    [{'response': 'partial'}, {'error': 'unrelated transport error'}],
+])
+def test_incomplete_transport_or_empty_error_is_retried(monkeypatch, events):
+    data = b''.join((json.dumps(e) + '\n').encode() for e in events)
+    monkeypatch.setenv('OLLAMA_URL', 'http://native-ollama:11434')
+    monkeypatch.setattr(label.urllib.request, 'urlopen', lambda *a, **k: io.BytesIO(data))
+    with pytest.raises((ValueError, RuntimeError)):
+        label.teacher('command', 'prompt')
