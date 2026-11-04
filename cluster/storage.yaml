@@ -1,0 +1,95 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: data
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: pipeline
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: seaweedfs-local
+spec:
+  capacity: {storage: 5Gi}
+  accessModes: [ReadWriteOnce]
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: ""
+  hostPath:
+    path: /var/lib/seaweedfs-data
+    type: DirectoryOrCreate
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: seaweedfs
+  namespace: data
+spec:
+  storageClassName: ""
+  volumeName: seaweedfs-local
+  accessModes: [ReadWriteOnce]
+  resources:
+    requests:
+      storage: 5Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: seaweedfs
+  namespace: data
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels: {app: seaweedfs}
+  template:
+    metadata:
+      labels: {app: seaweedfs}
+    spec:
+      containers:
+        - name: seaweedfs
+          image: chrislusf/seaweedfs:3.85@sha256:49312939c00c01e5ee6afbd7d728b18027821d3764c35a797a72acd4fdf3296a
+          workingDir: /data
+          args: [server, '-dir=/data', '-ip.bind=0.0.0.0', '-ip=seaweedfs.data.svc.cluster.local', '-volume.max=4', '-master.volumeSizeLimitMB=256', '-filer', '-s3', '-s3.port=8333', '-s3.config=/etc/seaweedfs/s3.json']
+          ports:
+            - {name: s3, containerPort: 8333}
+          resources:
+            requests: {cpu: 100m, memory: 192Mi}
+            limits: {cpu: '1', memory: 768Mi}
+          readinessProbe:
+            tcpSocket: {port: s3}
+            initialDelaySeconds: 5
+            periodSeconds: 3
+          livenessProbe:
+            tcpSocket: {port: s3}
+            initialDelaySeconds: 45
+            periodSeconds: 10
+          volumeMounts:
+            - {name: storage, mountPath: /data}
+            - {name: credentials, mountPath: /etc/seaweedfs, readOnly: true}
+      volumes:
+        - name: storage
+          persistentVolumeClaim: {claimName: seaweedfs}
+        - name: credentials
+          secret: {secretName: seaweedfs-auth}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: seaweedfs
+  namespace: data
+spec:
+  type: NodePort
+  publishNotReadyAddresses: true
+  selector: {app: seaweedfs}
+  ports:
+    - {name: s3, port: 8333, targetPort: 8333, nodePort: 30333}
+    - {name: master, port: 9333, targetPort: 9333}
+    - {name: filer, port: 8888, targetPort: 8888}
+    - {name: volume, port: 8080, targetPort: 8080}
+    - {name: master-grpc, port: 19333, targetPort: 19333}
+    - {name: filer-grpc, port: 18888, targetPort: 18888}
+    - {name: volume-grpc, port: 18080, targetPort: 18080}

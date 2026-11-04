@@ -1,0 +1,33 @@
+# scripts/task1.py renders two distinct Jobs from this template.
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: smoke-json-1
+  namespace: pipeline
+  labels: {app: teacher, run: smoke-json}
+spec:
+  backoffLimit: 8
+  completions: 1
+  parallelism: 1
+  template:
+    metadata:
+      labels: {app: teacher, run: smoke-json}
+    spec:
+      restartPolicy: Never
+      terminationGracePeriodSeconds: 30
+      containers:
+        - name: worker
+          image: command-teacher:task1
+          imagePullPolicy: Never
+          envFrom:
+            - secretRef: {name: s3-client}
+          env:
+            - {name: S3_ENDPOINT, value: 'http://seaweedfs.data.svc.cluster.local:8333'}
+            - {name: OLLAMA_URL, value: 'http://host.docker.internal:11434'}
+            - {name: SHARD_INDEX, value: '1'}
+            - {name: SHARD_COUNT, value: '2'}
+            - {name: OUTPUT_PREFIX, value: teacher/smoke-json}
+            - {name: LIMIT, value: '5'}
+          resources:
+            requests: {cpu: 100m, memory: 96Mi}
+            limits: {cpu: 500m, memory: 256Mi}

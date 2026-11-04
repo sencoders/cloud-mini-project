@@ -1,0 +1,7 @@
+{
+  "supplied_files_checked": 9,
+  "changed_supplied_files": [],
+  "artifact_files_scanned": 85,
+  "generated_credential_findings": [],
+  "scope": "Generated S3 credentials and Kubernetes private key; not a general-purpose secret scanner"
+}

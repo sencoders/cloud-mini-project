@@ -1,0 +1,5 @@
+2026-11-04T08:12:13.573341635Z {"time": 1793779933.5732565, "event": "start", "shard_index": 0, "shard_count": 2, "assigned": 3}
+2026-11-04T08:12:14.821956678Z {"time": 1793779934.8217196, "event": "labelled", "id": "C0001", "shard_index": 0}
+2026-11-04T08:12:15.888063220Z {"time": 1793779935.8879514, "event": "labelled", "id": "C0003", "shard_index": 0}
+2026-11-04T08:12:16.531631012Z {"time": 1793779936.5314827, "event": "labelled", "id": "C0005", "shard_index": 0}
+2026-11-04T08:12:16.535521762Z {"time": 1793779936.5354216, "event": "complete", "shard_index": 0, "records": 3}

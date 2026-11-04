@@ -1,0 +1,34 @@
+{
+  "captured_at": "2026-11-04T08:14:07.691384+00:00",
+  "ollama_version": {
+    "version": "0.40.14"
+  },
+  "ollama_models": {
+    "models": [
+      {
+        "name": "phi3.5:latest",
+        "model": "phi3.5:latest",
+        "modified_at": "2026-11-04T13:15:57.23154517+05:30",
+        "size": 2176178843,
+        "digest": "61819fb370a3c1a9be6694869331e5f85f867a079e9271d66cb223acb81d04ba",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "phi3",
+          "families": [
+            "phi3"
+          ],
+          "parameter_size": "3.8B",
+          "quantization_level": "Q4_0",
+          "context_length": 131072,
+          "embedding_length": 3072,
+          "runner": "ggml"
+        },
+        "capabilities": [
+          "completion"
+        ]
+      }
+    ]
+  },
+  "unauthenticated_s3_status": 403
+}

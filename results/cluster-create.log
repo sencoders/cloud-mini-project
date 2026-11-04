@@ -1,0 +1,25 @@
+[36mINFO[0m[0000] Using config file cluster/k3d.yaml (k3d.io/v1alpha5#simple) 
+[36mINFO[0m[0000] Prep: Network                                
+[36mINFO[0m[0000] Created network 'k3d-command-parser'         
+[36mINFO[0m[0000] Created image volume k3d-command-parser-images 
+[36mINFO[0m[0000] Starting new tools node...                   
+[36mINFO[0m[0001] Creating node 'k3d-command-parser-server-0'  
+[36mINFO[0m[0005] Pulling image 'ghcr.io/k3d-io/k3d-tools:5.9.0' 
+[36mINFO[0m[0008] Pulling image 'rancher/k3s:v1.35.5-k3s1'     
+[36mINFO[0m[0015] Starting node 'k3d-command-parser-tools'     
+[36mINFO[0m[0036] Creating LoadBalancer 'k3d-command-parser-serverlb' 
+[36mINFO[0m[0038] Pulling image 'ghcr.io/k3d-io/k3d-proxy:5.9.0' 
+[36mINFO[0m[0048] Using the k3d-tools node to gather environment information 
+[36mINFO[0m[0048] Starting new tools node...                   
+[36mINFO[0m[0048] Starting node 'k3d-command-parser-tools'     
+[36mINFO[0m[0049] Starting cluster 'command-parser'            
+[36mINFO[0m[0049] Starting servers...                          
+[36mINFO[0m[0049] Starting node 'k3d-command-parser-server-0'  
+[36mINFO[0m[0052] All agents already running.                  
+[36mINFO[0m[0052] Starting helpers...                          
+[36mINFO[0m[0052] Starting node 'k3d-command-parser-serverlb'  
+[36mINFO[0m[0058] Injecting records for hostAliases (incl. host.k3d.internal) and for 3 network members into CoreDNS configmap... 
+[36mINFO[0m[0060] Cluster 'command-parser' created successfully! 
+[36mINFO[0m[0060] You can now use it like this:                
+export KUBECONFIG=$(k3d kubeconfig write command-parser)
+kubectl cluster-info

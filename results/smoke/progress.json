@@ -1,0 +1,17 @@
+{
+  "run": "smoke",
+  "durable_completed": 5,
+  "expected": 5,
+  "overlap_seconds": 2.0,
+  "objects": [
+    "teacher/smoke-json/progress/shard-0/C0001.json",
+    "teacher/smoke-json/progress/shard-0/C0003.json",
+    "teacher/smoke-json/progress/shard-0/C0005.json",
+    "teacher/smoke-json/progress/shard-0/manifest.json",
+    "teacher/smoke-json/progress/shard-1/C0002.json",
+    "teacher/smoke-json/progress/shard-1/C0004.json",
+    "teacher/smoke-json/progress/shard-1/manifest.json",
+    "teacher/smoke-json/shard-0.jsonl",
+    "teacher/smoke-json/shard-1.jsonl"
+  ]
+}

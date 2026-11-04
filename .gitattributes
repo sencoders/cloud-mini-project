@@ -1,0 +1,3 @@
+*.pdf binary
+# Preserve genuine logs and teacher outputs byte for byte.
+results/** -whitespace

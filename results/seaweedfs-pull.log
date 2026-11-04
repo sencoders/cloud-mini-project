@@ -1,0 +1,30 @@
+3.85: Pulling from chrislusf/seaweedfs
+4f4fb700ef54: Pulling fs layer
+bc15e1f63882: Pulling fs layer
+6e771e15690e: Pulling fs layer
+95a22640d85e: Pulling fs layer
+1fe3bf2da1e9: Pulling fs layer
+ae1b8905dea3: Pulling fs layer
+99b87bf4c4c5: Pulling fs layer
+9532eb30592d: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+4f4fb700ef54: Already exists
+6e771e15690e: Download complete
+6e771e15690e: Pull complete
+87f09964293b: Download complete
+99b87bf4c4c5: Download complete
+95a22640d85e: Download complete
+1fe3bf2da1e9: Download complete
+9532eb30592d: Download complete
+ae1b8905dea3: Download complete
+bc15e1f63882: Download complete
+4f4fb700ef54: Pull complete
+99b87bf4c4c5: Pull complete
+95a22640d85e: Pull complete
+1fe3bf2da1e9: Pull complete
+9532eb30592d: Pull complete
+ae1b8905dea3: Pull complete
+bc15e1f63882: Pull complete
+Digest: sha256:49312939c00c01e5ee6afbd7d728b18027821d3764c35a797a72acd4fdf3296a
+Status: Downloaded newer image for chrislusf/seaweedfs:3.85
+docker.io/chrislusf/seaweedfs:3.85

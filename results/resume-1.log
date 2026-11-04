@@ -1,0 +1,4 @@
+2026-11-04T08:21:42.781455219Z {"time": 1793780502.781211, "event": "start", "shard_index": 1, "shard_count": 2, "assigned": 2}
+2026-11-04T08:21:42.784822385Z {"time": 1793780502.7846482, "event": "resume", "id": "C0002", "shard_index": 1}
+2026-11-04T08:21:42.794247594Z {"time": 1793780502.794081, "event": "resume", "id": "C0004", "shard_index": 1}
+2026-11-04T08:21:42.801818094Z {"time": 1793780502.8015501, "event": "complete", "shard_index": 1, "records": 2}

@@ -1,0 +1,10 @@
+{
+  "buckets": [
+    "datasets",
+    "models"
+  ],
+  "pool_bytes": 197541,
+  "pool_sha256": "3470398860500fabcf360debda8fb0e7a8a6ef9f552bc0341b5f3648e335f29a",
+  "download_matches_original": true,
+  "roundtrip_put_get_delete": true
+}

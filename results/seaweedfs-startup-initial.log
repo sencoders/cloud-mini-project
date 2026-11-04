@@ -1,0 +1,221 @@
+flag provided but not defined: -volume.sizeLimitMB
+Example: weed server -dir=/tmp -volume.max=5 -ip=server_name
+Default Usage:
+  -cpuprofile string
+    	cpu profile output file
+  -dataCenter string
+    	current volume server's data center name
+  -debug
+    	serves runtime profiling data, e.g., http://localhost:6060/debug/pprof/goroutine?debug=2
+  -debug.port int
+    	http port for debugging (default 6060)
+  -dir string
+    	directories to store data files. dir[,dir]... (default "/tmp")
+  -disableHttp
+    	disable http requests, only gRPC operations are allowed.
+  -filer
+    	whether to start filer
+  -filer.allowedOrigins string
+    	comma separated list of allowed origins (default "*")
+  -filer.collection string
+    	all data will be stored in this collection
+  -filer.concurrentUploadLimitMB int
+    	limit total concurrent upload size (default 64)
+  -filer.defaultReplicaPlacement string
+    	default replication type. If not specified, use master setting.
+  -filer.dirListLimit int
+    	limit sub dir listing size (default 1000)
+  -filer.disableDirListing
+    	turn off directory listing
+  -filer.disk string
+    	[hdd|ssd|<tag>] hard drive or solid state drive or any tag
+  -filer.downloadMaxMBps int
+    	download max speed for each download request, in MB per second
+  -filer.encryptVolumeData
+    	encrypt data on volume servers
+  -filer.exposeDirectoryData
+    	expose directory data via filer. If false, filer UI will be innaccessible. (default true)
+  -filer.filerGroup string
+    	share metadata with other filers in the same filerGroup
+  -filer.localSocket string
+    	default to /tmp/seaweedfs-filer-<port>.sock
+  -filer.maxMB int
+    	split files larger than the limit (default 4)
+  -filer.port int
+    	filer server http listen port (default 8888)
+  -filer.port.grpc int
+    	filer server grpc listen port
+  -filer.port.public int
+    	filer server public http listen port
+  -filer.saveToFilerLimit int
+    	Small files smaller than this limit can be cached in filer store.
+  -filer.ui.deleteDir
+    	enable filer UI show delete directory button (default true)
+  -iam
+    	whether to start IAM service
+  -iam.port int
+    	iam server http listen port (default 8111)
+  -idleTimeout int
+    	connection idle seconds (default 30)
+  -ip string
+    	ip or server name, also used as identifier (default "10.42.0.9")
+  -ip.bind string
+    	ip address to bind to. If empty, default to same as -ip option.
+  -master
+    	whether to start master server (default true)
+  -master.defaultReplication string
+    	Default replication type if not specified.
+  -master.dir string
+    	data directory to store meta data, default to same as -dir specified
+  -master.electionTimeout duration
+    	election timeout of master servers (default 10s)
+  -master.garbageThreshold float
+    	threshold to vacuum and reclaim spaces (default 0.3)
+  -master.heartbeatInterval duration
+    	heartbeat interval of master servers, and will be randomly multiplied by [1, 1.25) (default 300ms)
+  -master.maxParallelVacuumPerServer int
+    	maximum number of volumes to vacuum in parallel on one volume server (default 1)
+  -master.metrics.address string
+    	Prometheus gateway address
+  -master.metrics.intervalSeconds int
+    	Prometheus push interval in seconds (default 15)
+  -master.peers string
+    	all master nodes in comma separated ip:masterPort list
+  -master.port int
+    	master server http listen port (default 9333)
+  -master.port.grpc int
+    	master server grpc listen port
+  -master.raftBootstrap
+    	Whether to bootstrap the Raft cluster
+  -master.raftHashicorp
+    	use hashicorp raft
+  -master.resumeState
+    	resume previous state on start master server
+  -master.volumePreallocate
+    	Preallocate disk space for volumes.
+  -master.volumeSizeLimitMB uint
+    	Master stops directing writes to oversized volumes. (default 30000)
+  -memprofile string
+    	memory profile output file
+  -metricsIp string
+    	metrics listen ip. If empty, default to same as -ip.bind option.
+  -metricsPort int
+    	Prometheus metrics listen port
+  -mq.broker
+    	whether to start message queue broker
+  -mq.broker.port int
+    	message queue broker gRPC listen port (default 17777)
+  -options string
+    	a file of command line options, each line in optionName=optionValue format
+  -rack string
+    	current volume server's rack name
+  -s3
+    	whether to start S3 gateway
+  -s3.allowDeleteBucketNotEmpty
+    	allow recursive deleting all entries along with bucket (default true)
+  -s3.allowEmptyFolder
+    	allow empty folders (default true)
+  -s3.allowedOrigins string
+    	comma separated list of allowed origins (default "*")
+  -s3.auditLogConfig string
+    	path to the audit log config file
+  -s3.cacert.file string
+    	path to the TLS CA certificate file
+  -s3.cert.file string
+    	path to the TLS certificate file
+  -s3.config string
+    	path to the config file
+  -s3.domainName string
+    	suffix of the host name in comma separated list, {bucket}.{domainName}
+  -s3.key.file string
+    	path to the TLS private key file
+  -s3.localSocket string
+    	default to /tmp/seaweedfs-s3-<port>.sock
+  -s3.port int
+    	s3 server http listen port (default 8333)
+  -s3.port.grpc int
+    	s3 server grpc listen port
+  -s3.port.https int
+    	s3 server https listen port
+  -s3.tlsVerifyClientCert
+    	whether to verify the client's certificate
+  -volume
+    	whether to start volume server (default true)
+  -volume.compactionMBps int
+    	limit compaction speed in mega bytes per second
+  -volume.concurrentDownloadLimitMB int
+    	limit total concurrent download size (default 64)
+  -volume.concurrentUploadLimitMB int
+    	limit total concurrent upload size (default 64)
+  -volume.dir.idx string
+    	directory to store .idx files
+  -volume.disk string
+    	[hdd|ssd|<tag>] hard drive or solid state drive or any tag
+  -volume.fileSizeLimitMB int
+    	limit file size to avoid out of memory (default 256)
+  -volume.hasSlowRead
+    	<experimental> if true, this prevents slow reads from blocking other requests, but large file read P99 latency will increase. (default true)
+  -volume.images.fix.orientation
+    	Adjust jpg orientation when uploading.
+  -volume.index string
+    	Choose [memory|leveldb|leveldbMedium|leveldbLarge] mode for memory~performance balance. (default "memory")
+  -volume.index.leveldbTimeout int
+    	alive time for leveldb (default to 0). If leveldb of volume is not accessed in ldbTimeout hours, it will be off loaded to reduce opened files and memory consumption.
+  -volume.inflightUploadDataTimeout duration
+    	inflight upload data wait timeout of volume servers (default 1m0s)
+  -volume.max string
+    	maximum numbers of volumes, count[,count]... If set to zero, the limit will be auto configured as free disk space divided by volume size. (default "8")
+  -volume.minFreeSpace string
+    	min free disk space (value<=100 as percentage like 1, other as human readable bytes, like 10GiB). Low disk space will mark all volumes as ReadOnly.
+  -volume.minFreeSpacePercent string
+    	minimum free disk space (default to 1%). Low disk space will mark all volumes as ReadOnly (deprecated, use minFreeSpace instead). (default "1")
+  -volume.port int
+    	volume server http listen port (default 8080)
+  -volume.port.grpc int
+    	volume server grpc listen port
+  -volume.port.public int
+    	volume server public port
+  -volume.pprof
+    	enable pprof http handlers. precludes --memprofile and --cpuprofile
+  -volume.preStopSeconds int
+    	number of seconds between stop send heartbeats and stop volume server (default 10)
+  -volume.publicUrl string
+    	publicly accessible address
+  -volume.readBufferSizeMB int
+    	<experimental> larger values can optimize query performance but will increase some memory usage,Use with hasSlowRead normally (default 4)
+  -volume.readMode string
+    	[local|proxy|redirect] how to deal with non-local volume: 'not found|read in remote node|redirect volume location'. (default "proxy")
+  -webdav
+    	whether to start WebDAV gateway
+  -webdav.cacheCapacityMB int
+    	local cache capacity in MB
+  -webdav.cacheDir string
+    	local cache directory for file chunks (default "/tmp")
+  -webdav.cert.file string
+    	path to the TLS certificate file
+  -webdav.collection string
+    	collection to create the files
+  -webdav.disk string
+    	[hdd|ssd|<tag>] hard drive or solid state drive or any tag
+  -webdav.filer.path string
+    	use this remote path from filer server (default "/")
+  -webdav.key.file string
+    	path to the TLS private key file
+  -webdav.maxMB int
+    	split files larger than the limit (default 4)
+  -webdav.port int
+    	webdav server http listen port (default 7333)
+  -webdav.replication string
+    	replication to create the files
+  -whiteList string
+    	comma separated Ip addresses having write permission. No limit if empty.
+Description:
+  start both a volume server to provide storage spaces
+  and a master server to provide volume=>location mapping service and sequence number of file ids
+
+  This is provided as a convenient way to start both volume server and master server.
+  The servers acts exactly the same as starting them separately.
+  So other volume servers can connect to this master server also.
+
+  Optionally, a filer server can be started.
+  Also optionally, a S3 gateway can be started.
