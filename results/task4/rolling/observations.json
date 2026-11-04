@@ -1,0 +1,342 @@
+[
+  {
+    "time": 1793802775.436329,
+    "elapsed": 9.499955922365189e-06,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-7pvcf",
+      "command-parser-594c8bd455-qp8qv"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802778.549044,
+    "elapsed": 3.0799053341615945,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-7pvcf",
+      "command-parser-594c8bd455-qp8qv"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802781.666292,
+    "elapsed": 6.207172084134072,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-7pvcf",
+      "command-parser-594c8bd455-qp8qv"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802784.851883,
+    "elapsed": 9.330159374978393,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-7pvcf",
+      "command-parser-594c8bd455-qp8qv"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802787.96593,
+    "elapsed": 12.504418417112902,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-7pvcf",
+      "command-parser-594c8bd455-qp8qv"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802824.842766,
+    "elapsed": 15.615453334059566,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-5dd5898d57-6xb5f",
+      "command-parser-5dd5898d57-sg6qn"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802827.946888,
+    "elapsed": 52.49282529205084,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-5dd5898d57-6xb5f",
+      "command-parser-5dd5898d57-sg6qn"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802831.463943,
+    "elapsed": 55.595109374960884,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-5dd5898d57-6xb5f",
+      "command-parser-5dd5898d57-sg6qn"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802834.856172,
+    "elapsed": 59.1192489170935,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-5dd5898d57-6xb5f",
+      "command-parser-5dd5898d57-sg6qn"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802838.050784,
+    "elapsed": 62.59382000006735,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-5dd5898d57-6xb5f",
+      "command-parser-5dd5898d57-sg6qn"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802841.160392,
+    "elapsed": 65.69962020893581,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-5dd5898d57-6xb5f",
+      "command-parser-5dd5898d57-sg6qn"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802844.5206442,
+    "elapsed": 68.80844100005925,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-5dd5898d57-6xb5f",
+      "command-parser-5dd5898d57-sg6qn"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802871.687037,
+    "elapsed": 72.17614016705193,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-2rm5b",
+      "command-parser-594c8bd455-dvh6z"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802875.5478232,
+    "elapsed": 99.34386041713879,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-2rm5b",
+      "command-parser-594c8bd455-dvh6z"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802878.673347,
+    "elapsed": 103.20730733405799,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-2rm5b",
+      "command-parser-594c8bd455-dvh6z"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802881.7923782,
+    "elapsed": 106.32381041697226,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-2rm5b",
+      "command-parser-594c8bd455-dvh6z"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802885.514602,
+    "elapsed": 109.44412837503478,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-2rm5b",
+      "command-parser-594c8bd455-dvh6z"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802888.6568909,
+    "elapsed": 113.1905305001419,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-2rm5b",
+      "command-parser-594c8bd455-dvh6z"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802891.782988,
+    "elapsed": 116.31286945915781,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-2rm5b",
+      "command-parser-594c8bd455-dvh6z"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793802895.4975538,
+    "elapsed": 119.43806795915589,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-2rm5b",
+      "command-parser-594c8bd455-dvh6z"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  }
+]

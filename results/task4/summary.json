@@ -1,0 +1,493 @@
+{
+  "unit_tests_passed": 95,
+  "cold_starts": {
+    "runs": [
+      {
+        "run": 1,
+        "pods": [
+          {
+            "pod": "command-parser-594c8bd455-8w9mk",
+            "creation": "2026-11-04T13:52:13+00:00",
+            "ready": "2026-11-04T13:52:18+00:00",
+            "seconds": 5.0
+          },
+          {
+            "pod": "command-parser-594c8bd455-pjb7h",
+            "creation": "2026-11-04T13:52:13+00:00",
+            "ready": "2026-11-04T13:52:18+00:00",
+            "seconds": 5.0
+          }
+        ],
+        "median_seconds": 5.0,
+        "no_ready_endpoints_observed": true
+      },
+      {
+        "run": 2,
+        "pods": [
+          {
+            "pod": "command-parser-594c8bd455-56vmt",
+            "creation": "2026-11-04T13:52:20+00:00",
+            "ready": "2026-11-04T13:52:26+00:00",
+            "seconds": 6.0
+          },
+          {
+            "pod": "command-parser-594c8bd455-sfgqr",
+            "creation": "2026-11-04T13:52:20+00:00",
+            "ready": "2026-11-04T13:52:24+00:00",
+            "seconds": 4.0
+          }
+        ],
+        "median_seconds": 5.0,
+        "no_ready_endpoints_observed": true
+      },
+      {
+        "run": 3,
+        "pods": [
+          {
+            "pod": "command-parser-594c8bd455-jnzfg",
+            "creation": "2026-11-04T13:52:28+00:00",
+            "ready": "2026-11-04T13:52:32+00:00",
+            "seconds": 4.0
+          },
+          {
+            "pod": "command-parser-594c8bd455-wdqlr",
+            "creation": "2026-11-04T13:52:28+00:00",
+            "ready": "2026-11-04T13:52:32+00:00",
+            "seconds": 4.0
+          }
+        ],
+        "median_seconds": 4.0,
+        "no_ready_endpoints_observed": true
+      }
+    ],
+    "median_of_run_medians_seconds": 5.0,
+    "all_six_pod_median_seconds": 4.5
+  },
+  "loads": {
+    "load-balancing": {
+      "requests_final_console": 378,
+      "failures_final_console": 4,
+      "failure_percent": 1.0582010582010581,
+      "csv_requests": 377,
+      "csv_failures": 4,
+      "csv_median_ms": 1100.0,
+      "csv_p95_ms": 2000.0,
+      "csv_requests_per_second": 3.331957779810104,
+      "successful_header_count": 374,
+      "headers": {
+        "per_replica": {
+          "command-parser-594c8bd455-wdqlr": 188,
+          "command-parser-594c8bd455-jnzfg": 186
+        },
+        "per_model_version": {
+          "v1": 374
+        }
+      },
+      "replica_success_shares": {
+        "command-parser-594c8bd455-wdqlr": 0.5026737967914439,
+        "command-parser-594c8bd455-jnzfg": 0.49732620320855614
+      },
+      "final_console_and_headers_agree": true,
+      "failures": [
+        {
+          "Method": "POST",
+          "Name": "/parse",
+          "Error": "CatchResponseError('HTTP 500')",
+          "Occurrences": "4"
+        }
+      ],
+      "evidence_directory": "results/task4/load-balancing",
+      "execution": {
+        "returncode": 1,
+        "wall_seconds": 137.77674850006588,
+        "actions": [],
+        "headers_path": "results/loadtest_headers.json",
+        "csv_prefix": "results/loadtest"
+      }
+    },
+    "rolling": {
+      "requests_final_console": 308,
+      "failures_final_console": 24,
+      "failure_percent": 7.792207792207792,
+      "csv_requests": 306,
+      "csv_failures": 24,
+      "csv_median_ms": 1100.0,
+      "csv_p95_ms": 4500.0,
+      "csv_requests_per_second": 2.5662250165830476,
+      "successful_header_count": 284,
+      "headers": {
+        "per_replica": {
+          "command-parser-594c8bd455-7pvcf": 43,
+          "command-parser-594c8bd455-qp8qv": 46,
+          "command-parser-5dd5898d57-6xb5f": 37,
+          "command-parser-5dd5898d57-sg6qn": 34,
+          "command-parser-594c8bd455-dvh6z": 63,
+          "command-parser-594c8bd455-2rm5b": 61
+        },
+        "per_model_version": {
+          "v1": 213,
+          "v2": 71
+        }
+      },
+      "replica_success_shares": {
+        "command-parser-594c8bd455-7pvcf": 0.15140845070422534,
+        "command-parser-594c8bd455-qp8qv": 0.1619718309859155,
+        "command-parser-5dd5898d57-6xb5f": 0.13028169014084506,
+        "command-parser-5dd5898d57-sg6qn": 0.11971830985915492,
+        "command-parser-594c8bd455-dvh6z": 0.22183098591549297,
+        "command-parser-594c8bd455-2rm5b": 0.2147887323943662
+      },
+      "final_console_and_headers_agree": true,
+      "failures": [
+        {
+          "Method": "POST",
+          "Name": "/parse",
+          "Error": "CatchResponseError('HTTP 500')",
+          "Occurrences": "24"
+        }
+      ],
+      "evidence_directory": "results/task4/rolling",
+      "execution": {
+        "returncode": 1,
+        "wall_seconds": 123.1621265001595,
+        "actions": [
+          {
+            "action": "update-v2",
+            "started_at_seconds": 15.615453334059566,
+            "finished_at_seconds": 48.97986691701226,
+            "result": {
+              "version_verified": "v2",
+              "response": {
+                "status": 500,
+                "headers": {
+                  "Content-Length": "32",
+                  "Content-Type": "application/json",
+                  "Date": "Wed, 04 Nov 2026 14:33:40 GMT",
+                  "Server": "uvicorn",
+                  "X-Model-Version": "v2",
+                  "X-Served-By": "command-parser-5dd5898d57-6xb5f",
+                  "Connection": "close"
+                },
+                "body": "{\"error\":\"invalid_model_output\"}",
+                "time": 1793802824.365084
+              },
+              "probe_count": 3,
+              "model_rejection_count": 3,
+              "trace": "results/task4/version-verification/v2-20261104T143326425095Z.json"
+            }
+          },
+          {
+            "action": "rollback-v1",
+            "started_at_seconds": 72.17614016705193,
+            "finished_at_seconds": 95.98507570894435,
+            "result": {
+              "version_verified": "v1",
+              "response": {
+                "status": 200,
+                "headers": {
+                  "Content-Length": "71",
+                  "Content-Type": "application/json",
+                  "Date": "Wed, 04 Nov 2026 14:34:28 GMT",
+                  "Server": "uvicorn",
+                  "X-Model-Version": "v1",
+                  "X-Served-By": "command-parser-594c8bd455-dvh6z",
+                  "Connection": "close"
+                },
+                "body": "{\"intent\":\"weather_query\",\"date\":null,\"time\":\"london\",\"place\":\"london\"}",
+                "time": 1793802871.370773
+              },
+              "probe_count": 3,
+              "model_rejection_count": 0,
+              "trace": "results/task4/version-verification/v1-20261104T143424505456Z.json"
+            }
+          }
+        ],
+        "headers_path": "results/task4/rolling/loadtest_headers.json",
+        "csv_prefix": "results/task4/rolling/loadtest",
+        "orchestration_error": null
+      }
+    },
+    "recovery": {
+      "requests_final_console": 320,
+      "failures_final_console": 3,
+      "failure_percent": 0.9375,
+      "csv_requests": 320,
+      "csv_failures": 3,
+      "csv_median_ms": 1400.0,
+      "csv_p95_ms": 2600.0,
+      "csv_requests_per_second": 2.6812763153635943,
+      "successful_header_count": 317,
+      "headers": {
+        "per_replica": {
+          "command-parser-594c8bd455-dvh6z": 163,
+          "command-parser-594c8bd455-2rm5b": 27,
+          "command-parser-594c8bd455-hzjjq": 127
+        },
+        "per_model_version": {
+          "v1": 317
+        }
+      },
+      "replica_success_shares": {
+        "command-parser-594c8bd455-dvh6z": 0.5141955835962145,
+        "command-parser-594c8bd455-2rm5b": 0.08517350157728706,
+        "command-parser-594c8bd455-hzjjq": 0.40063091482649843
+      },
+      "final_console_and_headers_agree": true,
+      "failures": [
+        {
+          "Method": "POST",
+          "Name": "/parse",
+          "Error": "CatchResponseError('HTTP 500')",
+          "Occurrences": "3"
+        }
+      ],
+      "evidence_directory": "results/task4/recovery",
+      "execution": {
+        "returncode": 1,
+        "wall_seconds": 122.55161333293654,
+        "actions": [
+          {
+            "action": "delete-pod",
+            "started_at_seconds": 16.117933874949813,
+            "finished_at_seconds": 23.456855040974915,
+            "result": {
+              "deleted_pod": "command-parser-594c8bd455-2rm5b",
+              "deleted_uid": "778bbb8e-1d81-42b5-a689-ed6c26554b52",
+              "replicas_restored": 2,
+              "replacement_ready_seconds": 6.862672166898847,
+              "replacement_pods": [
+                "command-parser-594c8bd455-dvh6z",
+                "command-parser-594c8bd455-hzjjq"
+              ]
+            }
+          }
+        ],
+        "headers_path": "results/task4/recovery/loadtest_headers.json",
+        "csv_prefix": "results/task4/recovery/loadtest",
+        "orchestration_error": null
+      }
+    },
+    "autoscaling-load": {
+      "requests_final_console": 356,
+      "failures_final_console": 3,
+      "failure_percent": 0.8426966292134831,
+      "csv_requests": 356,
+      "csv_failures": 3,
+      "csv_median_ms": 1600.0,
+      "csv_p95_ms": 2300.0,
+      "csv_requests_per_second": 2.9816314249494225,
+      "successful_header_count": 353,
+      "headers": {
+        "per_replica": {
+          "command-parser-594c8bd455-hzjjq": 206,
+          "command-parser-594c8bd455-pn95p": 147
+        },
+        "per_model_version": {
+          "v1": 353
+        }
+      },
+      "replica_success_shares": {
+        "command-parser-594c8bd455-hzjjq": 0.5835694050991501,
+        "command-parser-594c8bd455-pn95p": 0.4164305949008499
+      },
+      "final_console_and_headers_agree": true,
+      "failures": [
+        {
+          "Method": "POST",
+          "Name": "/parse",
+          "Error": "CatchResponseError('HTTP 500')",
+          "Occurrences": "3"
+        }
+      ],
+      "evidence_directory": "results/task4/autoscaling-load",
+      "execution": {
+        "returncode": 1,
+        "wall_seconds": 120.79476587497629,
+        "actions": [],
+        "headers_path": "results/task4/autoscaling-load/loadtest_headers.json",
+        "csv_prefix": "results/task4/autoscaling-load/loadtest",
+        "orchestration_error": null
+      }
+    }
+  },
+  "interrupted_original_runs": {
+    "rolling-interrupted-20261104T143229Z": {
+      "requests_final_console": 264,
+      "failures_final_console": 47,
+      "failure_percent": 17.803030303030305,
+      "csv_requests": 264,
+      "csv_failures": 47,
+      "csv_median_ms": 1400.0,
+      "csv_p95_ms": 4900.0,
+      "csv_requests_per_second": 2.2118514176225745,
+      "successful_header_count": 217,
+      "headers": {
+        "per_replica": {
+          "command-parser-594c8bd455-jnzfg": 40,
+          "command-parser-594c8bd455-wdqlr": 35,
+          "command-parser-5dd5898d57-hwpqm": 69,
+          "command-parser-5dd5898d57-bpf2x": 73
+        },
+        "per_model_version": {
+          "v1": 75,
+          "v2": 142
+        }
+      },
+      "replica_success_shares": {
+        "command-parser-594c8bd455-jnzfg": 0.18433179723502305,
+        "command-parser-594c8bd455-wdqlr": 0.16129032258064516,
+        "command-parser-5dd5898d57-hwpqm": 0.31797235023041476,
+        "command-parser-5dd5898d57-bpf2x": 0.33640552995391704
+      },
+      "final_console_and_headers_agree": true,
+      "failures": [
+        {
+          "Method": "POST",
+          "Name": "/parse",
+          "Error": "CatchResponseError('HTTP 500')",
+          "Occurrences": "47"
+        }
+      ],
+      "evidence_directory": "results/task4/rolling-interrupted-20261104T143229Z"
+    }
+  },
+  "rubric_checks": {
+    "ingress_http_200_initially": true,
+    "no_ready_endpoints_while_loading": true,
+    "three_cold_starts_with_download_logs": true,
+    "hpa_min1_max2_target70": true,
+    "hpa_observed_1_to_2_to_1": true,
+    "v2_rollout_and_v1_rollback_verified": true,
+    "rolling_failure_at_most_0_5_percent": false,
+    "recovery_restores_two_replicas": true,
+    "recovery_failure_at_most_2_percent": true,
+    "both_replicas_at_least_30_percent": true
+  },
+  "unmet_checks": [
+    "rolling_failure_at_most_0_5_percent"
+  ],
+  "recovery": {
+    "deleted_pod": "command-parser-594c8bd455-2rm5b",
+    "deleted_uid": "778bbb8e-1d81-42b5-a689-ed6c26554b52",
+    "replicas_restored": 2,
+    "replacement_ready_seconds": 6.862672166898847,
+    "replacement_pods": [
+      "command-parser-594c8bd455-dvh6z",
+      "command-parser-594c8bd455-hzjjq"
+    ]
+  },
+  "final_ready_replicas": 1,
+  "final_hpa": {
+    "apiVersion": "autoscaling/v2",
+    "kind": "HorizontalPodAutoscaler",
+    "metadata": {
+      "annotations": {
+        "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+      },
+      "creationTimestamp": "2026-11-04T14:37:01Z",
+      "name": "command-parser",
+      "namespace": "app",
+      "resourceVersion": "7197",
+      "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+    },
+    "spec": {
+      "behavior": {
+        "scaleDown": {
+          "policies": [
+            {
+              "periodSeconds": 30,
+              "type": "Pods",
+              "value": 1
+            }
+          ],
+          "selectPolicy": "Max",
+          "stabilizationWindowSeconds": 60
+        },
+        "scaleUp": {
+          "policies": [
+            {
+              "periodSeconds": 15,
+              "type": "Pods",
+              "value": 1
+            }
+          ],
+          "selectPolicy": "Max",
+          "stabilizationWindowSeconds": 0
+        }
+      },
+      "maxReplicas": 2,
+      "metrics": [
+        {
+          "resource": {
+            "name": "cpu",
+            "target": {
+              "averageUtilization": 70,
+              "type": "Utilization"
+            }
+          },
+          "type": "Resource"
+        }
+      ],
+      "minReplicas": 1,
+      "scaleTargetRef": {
+        "apiVersion": "apps/v1",
+        "kind": "Deployment",
+        "name": "command-parser"
+      }
+    },
+    "status": {
+      "conditions": [
+        {
+          "lastTransitionTime": "2026-11-04T14:37:16Z",
+          "message": "the HPA controller was able to update the target scale to 1",
+          "reason": "SucceededRescale",
+          "status": "True",
+          "type": "AbleToScale"
+        },
+        {
+          "lastTransitionTime": "2026-11-04T14:37:16Z",
+          "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+          "reason": "ValidMetricFound",
+          "status": "True",
+          "type": "ScalingActive"
+        },
+        {
+          "lastTransitionTime": "2026-11-04T14:40:47Z",
+          "message": "the desired count is within the acceptable range",
+          "reason": "DesiredWithinRange",
+          "status": "False",
+          "type": "ScalingLimited"
+        }
+      ],
+      "currentMetrics": [
+        {
+          "resource": {
+            "current": {
+              "averageUtilization": 2,
+              "averageValue": "6m"
+            },
+            "name": "cpu"
+          },
+          "type": "Resource"
+        }
+      ],
+      "currentReplicas": 2,
+      "desiredReplicas": 1,
+      "lastScaleTime": "2026-11-04T14:41:47Z"
+    }
+  },
+  "final_probe": {
+    "status": 200,
+    "headers": {
+      "Content-Length": "71",
+      "Content-Type": "application/json",
+      "Date": "Wed, 04 Nov 2026 14:41:55 GMT",
+      "Server": "uvicorn",
+      "X-Model-Version": "v1",
+      "X-Served-By": "command-parser-594c8bd455-hzjjq",
+      "Connection": "close"
+    },
+    "body": "{\"intent\":\"weather_query\",\"date\":null,\"time\":\"london\",\"place\":\"london\"}",
+    "time": 1793803316.530976
+  }
+}

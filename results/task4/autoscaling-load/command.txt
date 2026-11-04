@@ -1,0 +1,1 @@
+/Users/shreeja/Projects/cloud-mini-project/.venv-load/bin/locust -f tools/locustfile.py --headless --users 4 --spawn-rate 4 --run-time 2m --host http://localhost:8080 --csv /Users/shreeja/Projects/cloud-mini-project/results/task4/autoscaling-load/loadtest

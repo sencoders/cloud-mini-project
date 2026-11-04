@@ -1,0 +1,733 @@
+[
+  {
+    "time": 1793800356.538243,
+    "elapsed": 5.708076059818268e-06,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800359.6580322,
+    "elapsed": 3.0861240830272436,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800362.8965461,
+    "elapsed": 6.210489958059043,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800366.4873888,
+    "elapsed": 9.908270833082497,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800369.596482,
+    "elapsed": 13.039473541080952,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800372.8643289,
+    "elapsed": 16.149180124979466,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800376.08961,
+    "elapsed": 19.421761750010774,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800379.197132,
+    "elapsed": 22.64280324988067,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800382.4251719,
+    "elapsed": 25.753981875022873,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800385.659939,
+    "elapsed": 28.97175412508659,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800388.770586,
+    "elapsed": 32.21020462503657,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800392.387535,
+    "elapsed": 35.3214665830601,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800395.61471,
+    "elapsed": 38.94176166597754,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800398.723835,
+    "elapsed": 42.165890583069995,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800401.839596,
+    "elapsed": 45.2734037078917,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800405.088279,
+    "elapsed": 48.39291637507267,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800408.200005,
+    "elapsed": 51.6402765000239,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800411.319515,
+    "elapsed": 54.75209258287214,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800414.559757,
+    "elapsed": 57.871268125018105,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800417.667189,
+    "elapsed": 61.105759791098535,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800420.783556,
+    "elapsed": 64.21810712502338,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800424.2164092,
+    "elapsed": 67.33746187505312,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800427.430489,
+    "elapsed": 70.7727642080281,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800430.5536408,
+    "elapsed": 73.97838862496428,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800433.666535,
+    "elapsed": 77.10518754087389,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800436.796559,
+    "elapsed": 80.22009012498893,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800439.910746,
+    "elapsed": 83.34853087505326,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800443.0606341,
+    "elapsed": 86.45737104094587,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800446.285343,
+    "elapsed": 89.61570008308627,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800449.400995,
+    "elapsed": 92.8358368750196,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800452.528872,
+    "elapsed": 95.95355979097076,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800455.654228,
+    "elapsed": 99.08120366604999,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800458.7647302,
+    "elapsed": 102.20057179103605,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800462.390796,
+    "elapsed": 105.31128095788881,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800465.613197,
+    "elapsed": 108.94965175003745,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800468.718094,
+    "elapsed": 112.16232941602357,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800472.387479,
+    "elapsed": 115.26910320809111,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800475.6119502,
+    "elapsed": 118.94845320796594,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800478.724452,
+    "elapsed": 122.16293120803311,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800481.849069,
+    "elapsed": 125.27741475007497,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800484.982921,
+    "elapsed": 128.40053574997,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800488.108105,
+    "elapsed": 131.53523166594096,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793800491.2209542,
+    "elapsed": 134.65676458296366,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-jnzfg",
+      "command-parser-594c8bd455-wdqlr"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  }
+]

@@ -1,0 +1,68 @@
+1793802775.4364002
+1793802778.549192
+1793802781.666348
+1793802784.851965
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-594c8bd455-7pvcf   153m         305Mi           
+command-parser-594c8bd455-qp8qv   107m         306Mi           
+1793802787.9659991
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-594c8bd455-7pvcf   153m         305Mi           
+command-parser-594c8bd455-qp8qv   107m         306Mi           
+1793802824.842836
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-5dd5898d57-6xb5f   777m         312Mi           
+command-parser-5dd5898d57-sg6qn   611m         323Mi           
+1793802827.946943
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-5dd5898d57-6xb5f   997m         322Mi           
+command-parser-5dd5898d57-sg6qn   267m         323Mi           
+1793802831.464
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-5dd5898d57-6xb5f   997m         322Mi           
+command-parser-5dd5898d57-sg6qn   267m         323Mi           
+1793802834.856462
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-5dd5898d57-6xb5f   997m         322Mi           
+command-parser-5dd5898d57-sg6qn   267m         323Mi           
+1793802838.050883
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-5dd5898d57-6xb5f   997m         322Mi           
+command-parser-5dd5898d57-sg6qn   267m         323Mi           
+1793802841.1604621
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-5dd5898d57-6xb5f   997m         322Mi           
+command-parser-5dd5898d57-sg6qn   267m         323Mi           
+1793802844.520724
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-5dd5898d57-6xb5f   692m         322Mi           
+command-parser-5dd5898d57-sg6qn   962m         329Mi           
+1793802871.6871219
+1793802875.547908
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-594c8bd455-2rm5b   947m         402Mi           
+command-parser-594c8bd455-dvh6z   690m         397Mi           
+1793802878.6734269
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-594c8bd455-2rm5b   947m         402Mi           
+command-parser-594c8bd455-dvh6z   690m         397Mi           
+1793802881.79247
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-594c8bd455-2rm5b   947m         402Mi           
+command-parser-594c8bd455-dvh6z   690m         397Mi           
+1793802885.5146902
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-594c8bd455-2rm5b   947m         402Mi           
+command-parser-594c8bd455-dvh6z   690m         397Mi           
+1793802888.657004
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-594c8bd455-2rm5b   986m         313Mi           
+command-parser-594c8bd455-dvh6z   997m         314Mi           
+1793802891.7831511
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-594c8bd455-2rm5b   986m         313Mi           
+command-parser-594c8bd455-dvh6z   997m         314Mi           
+1793802895.497619
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-594c8bd455-2rm5b   986m         313Mi           
+command-parser-594c8bd455-dvh6z   997m         314Mi           

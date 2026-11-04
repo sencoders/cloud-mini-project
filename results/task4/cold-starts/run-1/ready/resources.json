@@ -1,0 +1,299 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "apps/v1",
+            "kind": "Deployment",
+            "metadata": {
+                "annotations": {
+                    "deployment.kubernetes.io/revision": "1",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"replicas\":2,\"revisionHistoryLimit\":5,\"selector\":{\"matchLabels\":{\"app\":\"command-parser\"}},\"strategy\":{\"rollingUpdate\":{\"maxSurge\":1,\"maxUnavailable\":0},\"type\":\"RollingUpdate\"},\"template\":{\"metadata\":{\"labels\":{\"app\":\"command-parser\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"MODEL_URI\",\"value\":\"s3://models/v1/\"},{\"name\":\"MODEL_VERSION\",\"value\":\"v1\"},{\"name\":\"S3_ENDPOINT\",\"value\":\"http://seaweedfs.data.svc.cluster.local:8333\"},{\"name\":\"MAX_NEW_TOKENS\",\"value\":\"128\"},{\"name\":\"FAULT_INJECT\",\"value\":\"0\"}],\"envFrom\":[{\"secretRef\":{\"name\":\"parser-s3\"}}],\"image\":\"command-parser:task3\",\"imagePullPolicy\":\"Never\",\"lifecycle\":{\"preStop\":{\"exec\":{\"command\":[\"/bin/sh\",\"-c\",\"sleep 5\"]}}},\"livenessProbe\":{\"failureThreshold\":6,\"httpGet\":{\"path\":\"/healthz\",\"port\":\"http\"},\"initialDelaySeconds\":5,\"periodSeconds\":5,\"timeoutSeconds\":2},\"name\":\"parser\",\"ports\":[{\"containerPort\":8000,\"name\":\"http\"}],\"readinessProbe\":{\"failureThreshold\":1,\"httpGet\":{\"path\":\"/readyz\",\"port\":\"http\"},\"periodSeconds\":1,\"timeoutSeconds\":2},\"resources\":{\"limits\":{\"cpu\":\"1\",\"memory\":\"1Gi\"},\"requests\":{\"cpu\":\"250m\",\"memory\":\"512Mi\"}},\"securityContext\":{\"allowPrivilegeEscalation\":false,\"capabilities\":{\"drop\":[\"ALL\"]},\"readOnlyRootFilesystem\":true},\"startupProbe\":{\"failureThreshold\":30,\"httpGet\":{\"path\":\"/healthz\",\"port\":\"http\"},\"periodSeconds\":2,\"timeoutSeconds\":2},\"volumeMounts\":[{\"mountPath\":\"/tmp\",\"name\":\"temporary\"}]}],\"securityContext\":{\"fsGroup\":65532,\"runAsGroup\":65532,\"runAsNonRoot\":true,\"runAsUser\":65532},\"terminationGracePeriodSeconds\":45,\"volumes\":[{\"emptyDir\":{\"sizeLimit\":\"1Gi\"},\"name\":\"temporary\"}]}}}}\n"
+                },
+                "creationTimestamp": "2026-11-04T13:48:49Z",
+                "generation": 1,
+                "name": "command-parser",
+                "namespace": "app",
+                "resourceVersion": "5694",
+                "uid": "e9c7b62a-0b0e-4ae4-a835-fb366c07755e"
+            },
+            "spec": {
+                "progressDeadlineSeconds": 600,
+                "replicas": 2,
+                "revisionHistoryLimit": 5,
+                "selector": {
+                    "matchLabels": {
+                        "app": "command-parser"
+                    }
+                },
+                "strategy": {
+                    "rollingUpdate": {
+                        "maxSurge": 1,
+                        "maxUnavailable": 0
+                    },
+                    "type": "RollingUpdate"
+                },
+                "template": {
+                    "metadata": {
+                        "labels": {
+                            "app": "command-parser"
+                        }
+                    },
+                    "spec": {
+                        "containers": [
+                            {
+                                "env": [
+                                    {
+                                        "name": "MODEL_URI",
+                                        "value": "s3://models/v1/"
+                                    },
+                                    {
+                                        "name": "MODEL_VERSION",
+                                        "value": "v1"
+                                    },
+                                    {
+                                        "name": "S3_ENDPOINT",
+                                        "value": "http://seaweedfs.data.svc.cluster.local:8333"
+                                    },
+                                    {
+                                        "name": "MAX_NEW_TOKENS",
+                                        "value": "128"
+                                    },
+                                    {
+                                        "name": "FAULT_INJECT",
+                                        "value": "0"
+                                    }
+                                ],
+                                "envFrom": [
+                                    {
+                                        "secretRef": {
+                                            "name": "parser-s3"
+                                        }
+                                    }
+                                ],
+                                "image": "command-parser:task3",
+                                "imagePullPolicy": "Never",
+                                "lifecycle": {
+                                    "preStop": {
+                                        "exec": {
+                                            "command": [
+                                                "/bin/sh",
+                                                "-c",
+                                                "sleep 5"
+                                            ]
+                                        }
+                                    }
+                                },
+                                "livenessProbe": {
+                                    "failureThreshold": 6,
+                                    "httpGet": {
+                                        "path": "/healthz",
+                                        "port": "http",
+                                        "scheme": "HTTP"
+                                    },
+                                    "initialDelaySeconds": 5,
+                                    "periodSeconds": 5,
+                                    "successThreshold": 1,
+                                    "timeoutSeconds": 2
+                                },
+                                "name": "parser",
+                                "ports": [
+                                    {
+                                        "containerPort": 8000,
+                                        "name": "http",
+                                        "protocol": "TCP"
+                                    }
+                                ],
+                                "readinessProbe": {
+                                    "failureThreshold": 1,
+                                    "httpGet": {
+                                        "path": "/readyz",
+                                        "port": "http",
+                                        "scheme": "HTTP"
+                                    },
+                                    "periodSeconds": 1,
+                                    "successThreshold": 1,
+                                    "timeoutSeconds": 2
+                                },
+                                "resources": {
+                                    "limits": {
+                                        "cpu": "1",
+                                        "memory": "1Gi"
+                                    },
+                                    "requests": {
+                                        "cpu": "250m",
+                                        "memory": "512Mi"
+                                    }
+                                },
+                                "securityContext": {
+                                    "allowPrivilegeEscalation": false,
+                                    "capabilities": {
+                                        "drop": [
+                                            "ALL"
+                                        ]
+                                    },
+                                    "readOnlyRootFilesystem": true
+                                },
+                                "startupProbe": {
+                                    "failureThreshold": 30,
+                                    "httpGet": {
+                                        "path": "/healthz",
+                                        "port": "http",
+                                        "scheme": "HTTP"
+                                    },
+                                    "periodSeconds": 2,
+                                    "successThreshold": 1,
+                                    "timeoutSeconds": 2
+                                },
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File",
+                                "volumeMounts": [
+                                    {
+                                        "mountPath": "/tmp",
+                                        "name": "temporary"
+                                    }
+                                ]
+                            }
+                        ],
+                        "dnsPolicy": "ClusterFirst",
+                        "restartPolicy": "Always",
+                        "schedulerName": "default-scheduler",
+                        "securityContext": {
+                            "fsGroup": 65532,
+                            "runAsGroup": 65532,
+                            "runAsNonRoot": true,
+                            "runAsUser": 65532
+                        },
+                        "terminationGracePeriodSeconds": 45,
+                        "volumes": [
+                            {
+                                "emptyDir": {
+                                    "sizeLimit": "1Gi"
+                                },
+                                "name": "temporary"
+                            }
+                        ]
+                    }
+                }
+            },
+            "status": {
+                "availableReplicas": 2,
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2026-11-04T13:48:49Z",
+                        "lastUpdateTime": "2026-11-04T13:48:56Z",
+                        "message": "ReplicaSet \"command-parser-594c8bd455\" has successfully progressed.",
+                        "reason": "NewReplicaSetAvailable",
+                        "status": "True",
+                        "type": "Progressing"
+                    },
+                    {
+                        "lastTransitionTime": "2026-11-04T13:52:18Z",
+                        "lastUpdateTime": "2026-11-04T13:52:18Z",
+                        "message": "Deployment has minimum availability.",
+                        "reason": "MinimumReplicasAvailable",
+                        "status": "True",
+                        "type": "Available"
+                    }
+                ],
+                "observedGeneration": 1,
+                "readyReplicas": 2,
+                "replicas": 2,
+                "terminatingReplicas": 0,
+                "updatedReplicas": 2
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Service",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"ports\":[{\"name\":\"http\",\"port\":8000,\"targetPort\":\"http\"}],\"selector\":{\"app\":\"command-parser\"}}}\n"
+                },
+                "creationTimestamp": "2026-11-04T13:48:49Z",
+                "name": "command-parser",
+                "namespace": "app",
+                "resourceVersion": "5518",
+                "uid": "15cc4f61-6960-402a-b1b1-763125cada9a"
+            },
+            "spec": {
+                "clusterIP": "10.43.16.167",
+                "clusterIPs": [
+                    "10.43.16.167"
+                ],
+                "internalTrafficPolicy": "Cluster",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "ports": [
+                    {
+                        "name": "http",
+                        "port": 8000,
+                        "protocol": "TCP",
+                        "targetPort": "http"
+                    }
+                ],
+                "selector": {
+                    "app": "command-parser"
+                },
+                "sessionAffinity": "None",
+                "type": "ClusterIP"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "apiVersion": "networking.k8s.io/v1",
+            "kind": "Ingress",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.k8s.io/v1\",\"kind\":\"Ingress\",\"metadata\":{\"annotations\":{\"traefik.ingress.kubernetes.io/router.entrypoints\":\"web\"},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"ingressClassName\":\"traefik\",\"rules\":[{\"http\":{\"paths\":[{\"backend\":{\"service\":{\"name\":\"command-parser\",\"port\":{\"number\":8000}}},\"path\":\"/\",\"pathType\":\"Prefix\"}]}}]}}\n",
+                    "traefik.ingress.kubernetes.io/router.entrypoints": "web"
+                },
+                "creationTimestamp": "2026-11-04T13:48:49Z",
+                "generation": 1,
+                "name": "command-parser",
+                "namespace": "app",
+                "resourceVersion": "5526",
+                "uid": "447577db-509e-4b4c-955f-ddf3e293f95a"
+            },
+            "spec": {
+                "ingressClassName": "traefik",
+                "rules": [
+                    {
+                        "http": {
+                            "paths": [
+                                {
+                                    "backend": {
+                                        "service": {
+                                            "name": "command-parser",
+                                            "port": {
+                                                "number": 8000
+                                            }
+                                        }
+                                    },
+                                    "path": "/",
+                                    "pathType": "Prefix"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "status": {
+                "loadBalancer": {
+                    "ingress": [
+                        {
+                            "ip": "172.19.0.3"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}

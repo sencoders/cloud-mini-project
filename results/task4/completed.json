@@ -1,0 +1,20 @@
+{
+  "cold_start_runs_preserved": 3,
+  "baseline_preserved": true,
+  "remaining_load_tests_executed": 3,
+  "final_version_probe": {
+    "status": 200,
+    "headers": {
+      "Content-Length": "71",
+      "Content-Type": "application/json",
+      "Date": "Wed, 04 Nov 2026 14:41:55 GMT",
+      "Server": "uvicorn",
+      "X-Model-Version": "v1",
+      "X-Served-By": "command-parser-594c8bd455-hzjjq",
+      "Connection": "close"
+    },
+    "body": "{\"intent\":\"weather_query\",\"date\":null,\"time\":\"london\",\"place\":\"london\"}",
+    "time": 1793803316.530976
+  },
+  "all_experiments_executed": true
+}

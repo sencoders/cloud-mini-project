@@ -1,0 +1,82 @@
+[
+  {
+    "time": 1793800349.219497,
+    "ready_endpoints": 0,
+    "pods": {
+      "command-parser-594c8bd455-jnzfg": false,
+      "command-parser-594c8bd455-wdqlr": false
+    }
+  },
+  {
+    "time": 1793800349.8233569,
+    "ready_endpoints": 0,
+    "pods": {
+      "command-parser-594c8bd455-jnzfg": false,
+      "command-parser-594c8bd455-wdqlr": false
+    }
+  },
+  {
+    "time": 1793800350.529251,
+    "ready_endpoints": 0,
+    "pods": {
+      "command-parser-594c8bd455-jnzfg": false,
+      "command-parser-594c8bd455-wdqlr": false
+    }
+  },
+  {
+    "time": 1793800351.099783,
+    "ready_endpoints": 0,
+    "pods": {
+      "command-parser-594c8bd455-jnzfg": false,
+      "command-parser-594c8bd455-wdqlr": false
+    }
+  },
+  {
+    "time": 1793800351.839089,
+    "ready_endpoints": 0,
+    "pods": {
+      "command-parser-594c8bd455-jnzfg": false,
+      "command-parser-594c8bd455-wdqlr": false
+    }
+  },
+  {
+    "time": 1793800352.6527302,
+    "ready_endpoints": 2,
+    "pods": {
+      "command-parser-594c8bd455-jnzfg": true,
+      "command-parser-594c8bd455-wdqlr": true
+    }
+  },
+  {
+    "time": 1793800353.432107,
+    "ready_endpoints": 2,
+    "pods": {
+      "command-parser-594c8bd455-jnzfg": true,
+      "command-parser-594c8bd455-wdqlr": true
+    }
+  },
+  {
+    "time": 1793800354.01356,
+    "ready_endpoints": 2,
+    "pods": {
+      "command-parser-594c8bd455-jnzfg": true,
+      "command-parser-594c8bd455-wdqlr": true
+    }
+  },
+  {
+    "time": 1793800355.266117,
+    "ready_endpoints": 2,
+    "pods": {
+      "command-parser-594c8bd455-jnzfg": true,
+      "command-parser-594c8bd455-wdqlr": true
+    }
+  },
+  {
+    "time": 1793800355.870671,
+    "ready_endpoints": 2,
+    "pods": {
+      "command-parser-594c8bd455-jnzfg": true,
+      "command-parser-594c8bd455-wdqlr": true
+    }
+  }
+]

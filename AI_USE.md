@@ -30,3 +30,13 @@ uses the real trained V1 model, 50 sequential requests at the assignment limits,
 actual cgroup peaks/OOM counters, response comparisons with stored Task 2 outputs,
 and the explicit fault-injection test. Initial harness failure evidence is retained.
 No model weights or credentials are committed, and no labels are altered.
+
+
+Task 4: Codex assisted with app manifests, Secret wiring, probes, Ingress,
+rollout/recovery/HPA orchestration, resumption guards, diagnosis and reporting.
+Checks used real Kubernetes state, unchanged instructor Locust runs, S3 download
+logs and Pod timestamps. Completed cold starts and the baseline were preserved
+through resumption. Nonzero Locust exits and all HTTP 500s are retained; the
+rolling failure threshold is explicitly unmet. Inference/training code, data and trained artifacts from Tasks 1–3 were preserved.
+Those expensive pipelines were not repeated; combined unit tests were rerun. A single local V2 inference was used only
+to diagnose the failing probe, not to train, relabel or replace a served output.

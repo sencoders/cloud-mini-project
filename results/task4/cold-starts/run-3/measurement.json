@@ -1,0 +1,19 @@
+{
+  "run": 3,
+  "pods": [
+    {
+      "pod": "command-parser-594c8bd455-jnzfg",
+      "creation": "2026-11-04T13:52:28+00:00",
+      "ready": "2026-11-04T13:52:32+00:00",
+      "seconds": 4.0
+    },
+    {
+      "pod": "command-parser-594c8bd455-wdqlr",
+      "creation": "2026-11-04T13:52:28+00:00",
+      "ready": "2026-11-04T13:52:32+00:00",
+      "seconds": 4.0
+    }
+  ],
+  "median_seconds": 4.0,
+  "no_ready_endpoints_observed": true
+}

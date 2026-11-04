@@ -1,0 +1,38 @@
+2026-11-04T14:32:40.073579763Z INFO:     Started server process [1]
+2026-11-04T14:32:40.073596805Z INFO:     Waiting for application startup.
+2026-11-04T14:32:40.073843096Z INFO:     Application startup complete.
+2026-11-04T14:32:40.074012763Z INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-11-04T14:32:40.105025346Z {"time": 1793802760.104946, "event": "model_download_start", "model_uri": "s3://models/v1/"}
+2026-11-04T14:32:40.109281680Z {"time": 1793802760.1092224, "event": "model_file_verified", "file": "config.json", "bytes": 770, "sha256": "0011261bdd0ae8f8f77b9f07bd34325bdaed2fc054ab5964265d0422f5904082"}
+2026-11-04T14:32:40.110018138Z {"time": 1793802760.1099682, "event": "model_file_verified", "file": "generation_config.json", "bytes": 111, "sha256": "98f34247dcd75d34c7bfb8e7e508f170c2abc9867b74e9d70db1a70bb2b1a644"}
+2026-11-04T14:32:41.785088139Z INFO:     10.42.0.1:48194 - "GET /healthz HTTP/1.1" 200 OK
+2026-11-04T14:32:42.419110250Z {"time": 1793802762.419016, "event": "model_file_verified", "file": "model.safetensors", "bytes": 281715176, "sha256": "f549d5c34cc91d9d79dbe593f6ab14d50f43d4e49cf0e507894bb306c6cb0ce7"}
+2026-11-04T14:32:42.420387833Z {"time": 1793802762.4203382, "event": "model_file_verified", "file": "special_tokens_map.json", "bytes": 473, "sha256": "57491904f8680d4b52ed440f1f7ba48cad1c31ecf3eb453b03484e6ff4723ae8"}
+2026-11-04T14:32:42.431212125Z {"time": 1793802762.431151, "event": "model_file_verified", "file": "tokenizer.json", "bytes": 3564303, "sha256": "d4c0d99d84af59e9126913fafe5210822963e9a3065ee43e6833b358b0c2f825"}
+2026-11-04T14:32:42.436095875Z {"time": 1793802762.436037, "event": "model_file_verified", "file": "tokenizer_config.json", "bytes": 4876, "sha256": "435e0103b15eee9a299ded22f93129ebb7409bc5b6dd93f069bd86bdbc7c44a1"}
+2026-11-04T14:32:42.436895250Z {"time": 1793802762.4368408, "event": "model_file_verified", "file": "training_config.yaml", "bytes": 1915, "sha256": "191c5ceaeffdd1fba13215d951f372f6fbb7e9ced873efd4de2c3290fe4a933d"}
+2026-11-04T14:32:42.437666916Z {"time": 1793802762.437616, "event": "model_file_verified", "file": "version.json", "bytes": 1745, "sha256": "c7f439277c68529e21cf6271a8f0fa44e9f60652bf8e5b1a38338aaa332d0ada"}
+2026-11-04T14:32:42.437748250Z {"time": 1793802762.4376988, "event": "model_download_complete", "files": 8, "manifest_sha256": "5ca810f5ab7cf55c2daafbfee6c224362641243dfe8c792e88ecea60de0a49ae"}
+2026-11-04T14:32:42.533207666Z INFO:     10.42.0.1:48202 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+2026-11-04T14:32:43.462200667Z INFO:     10.42.0.1:48204 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+2026-11-04T14:32:43.462893792Z INFO:     10.42.0.1:48216 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+2026-11-04T14:32:43.758091500Z `torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-04T14:32:43.864931959Z {"time": 1793802763.864846, "event": "model_loaded", "version": "v1", "device": "cpu", "seconds": 3.7907453759999044}
+2026-11-04T14:32:43.864953167Z {"time": 1793802763.8648791, "event": "ready", "version": "v1", "served_by": "command-parser-594c8bd455-7pvcf"}
+2026-11-04T14:32:44.464501584Z INFO:     10.42.0.1:48222 - "GET /readyz HTTP/1.1" 200 OK
+2026-11-04T14:32:44.784122376Z INFO:     10.42.0.1:48238 - "GET /healthz HTTP/1.1" 200 OK
+2026-11-04T14:32:45.464114793Z INFO:     10.42.0.1:48244 - "GET /readyz HTTP/1.1" 200 OK
+2026-11-04T14:32:46.464589210Z INFO:     10.42.0.1:48252 - "GET /readyz HTTP/1.1" 200 OK
+2026-11-04T14:32:47.466383377Z INFO:     10.42.0.1:48262 - "GET /readyz HTTP/1.1" 200 OK
+2026-11-04T14:32:48.464283586Z INFO:     10.42.0.1:48272 - "GET /readyz HTTP/1.1" 200 OK
+2026-11-04T14:32:49.467687920Z INFO:     10.42.0.1:48286 - "GET /readyz HTTP/1.1" 200 OK
+2026-11-04T14:32:49.785045253Z INFO:     10.42.0.1:48290 - "GET /healthz HTTP/1.1" 200 OK
+2026-11-04T14:32:50.463091462Z INFO:     10.42.0.1:48298 - "GET /readyz HTTP/1.1" 200 OK
+2026-11-04T14:32:51.465263587Z INFO:     10.42.0.8:42844 - "GET /readyz HTTP/1.1" 200 OK
+2026-11-04T14:32:51.465821587Z INFO:     10.42.0.1:48308 - "GET /readyz HTTP/1.1" 200 OK
+2026-11-04T14:32:52.464940296Z INFO:     10.42.0.1:48126 - "GET /readyz HTTP/1.1" 200 OK
+2026-11-04T14:32:53.037161713Z INFO:     10.42.0.8:42844 - "GET /readyz HTTP/1.1" 200 OK
+2026-11-04T14:32:53.463989547Z INFO:     10.42.0.1:48128 - "GET /readyz HTTP/1.1" 200 OK
+2026-11-04T14:32:54.464889839Z INFO:     10.42.0.1:48130 - "GET /readyz HTTP/1.1" 200 OK
+2026-11-04T14:32:54.502440339Z INFO:     10.42.0.8:42844 - "GET /readyz HTTP/1.1" 200 OK
+2026-11-04T14:32:54.784670381Z INFO:     10.42.0.1:48138 - "GET /healthz HTTP/1.1" 200 OK

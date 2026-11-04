@@ -1,0 +1,63 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "pods": [
+        {
+          "pod": "command-parser-594c8bd455-8w9mk",
+          "creation": "2026-11-04T13:52:13+00:00",
+          "ready": "2026-11-04T13:52:18+00:00",
+          "seconds": 5.0
+        },
+        {
+          "pod": "command-parser-594c8bd455-pjb7h",
+          "creation": "2026-11-04T13:52:13+00:00",
+          "ready": "2026-11-04T13:52:18+00:00",
+          "seconds": 5.0
+        }
+      ],
+      "median_seconds": 5.0,
+      "no_ready_endpoints_observed": true
+    },
+    {
+      "run": 2,
+      "pods": [
+        {
+          "pod": "command-parser-594c8bd455-56vmt",
+          "creation": "2026-11-04T13:52:20+00:00",
+          "ready": "2026-11-04T13:52:26+00:00",
+          "seconds": 6.0
+        },
+        {
+          "pod": "command-parser-594c8bd455-sfgqr",
+          "creation": "2026-11-04T13:52:20+00:00",
+          "ready": "2026-11-04T13:52:24+00:00",
+          "seconds": 4.0
+        }
+      ],
+      "median_seconds": 5.0,
+      "no_ready_endpoints_observed": true
+    },
+    {
+      "run": 3,
+      "pods": [
+        {
+          "pod": "command-parser-594c8bd455-jnzfg",
+          "creation": "2026-11-04T13:52:28+00:00",
+          "ready": "2026-11-04T13:52:32+00:00",
+          "seconds": 4.0
+        },
+        {
+          "pod": "command-parser-594c8bd455-wdqlr",
+          "creation": "2026-11-04T13:52:28+00:00",
+          "ready": "2026-11-04T13:52:32+00:00",
+          "seconds": 4.0
+        }
+      ],
+      "median_seconds": 4.0,
+      "no_ready_endpoints_observed": true
+    }
+  ],
+  "median_of_run_medians_seconds": 5.0,
+  "all_six_pod_median_seconds": 4.5
+}

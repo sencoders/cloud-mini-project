@@ -1,0 +1,11 @@
+{
+  "model_manifest_hashes": {
+    "v1": "5ca810f5ab7cf55c2daafbfee6c224362641243dfe8c792e88ecea60de0a49ae",
+    "v2": "2488102dc97e94c5439b152d0470687bed921305fd6779b402865b52952d22eb"
+  },
+  "dataset_sha256": "1865c9ddc2a723247e96336c0ef966cd3b669aa904ae03d29f77ef4fe92b03e5",
+  "original_data_pod_uid_unchanged": true,
+  "data_container_restarts": [
+    0
+  ]
+}

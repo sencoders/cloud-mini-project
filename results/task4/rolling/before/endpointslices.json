@@ -1,0 +1,80 @@
+{
+  "apiVersion": "v1",
+  "items": [
+    {
+      "addressType": "IPv4",
+      "apiVersion": "discovery.k8s.io/v1",
+      "endpoints": [
+        {
+          "addresses": [
+            "10.42.0.45"
+          ],
+          "conditions": {
+            "ready": true,
+            "serving": true,
+            "terminating": false
+          },
+          "nodeName": "k3d-command-parser-server-0",
+          "targetRef": {
+            "kind": "Pod",
+            "name": "command-parser-594c8bd455-qp8qv",
+            "namespace": "app",
+            "uid": "f88e2157-e284-4567-acf2-3873e557f571"
+          }
+        },
+        {
+          "addresses": [
+            "10.42.0.46"
+          ],
+          "conditions": {
+            "ready": true,
+            "serving": true,
+            "terminating": false
+          },
+          "nodeName": "k3d-command-parser-server-0",
+          "targetRef": {
+            "kind": "Pod",
+            "name": "command-parser-594c8bd455-7pvcf",
+            "namespace": "app",
+            "uid": "944184e1-3919-40d3-a4eb-b134c8e31167"
+          }
+        }
+      ],
+      "kind": "EndpointSlice",
+      "metadata": {
+        "creationTimestamp": "2026-11-04T13:48:49Z",
+        "generateName": "command-parser-",
+        "generation": 51,
+        "labels": {
+          "endpointslice.kubernetes.io/managed-by": "endpointslice-controller.k8s.io",
+          "kubernetes.io/service-name": "command-parser"
+        },
+        "name": "command-parser-jb7ql",
+        "namespace": "app",
+        "ownerReferences": [
+          {
+            "apiVersion": "v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Service",
+            "name": "command-parser",
+            "uid": "15cc4f61-6960-402a-b1b1-763125cada9a"
+          }
+        ],
+        "resourceVersion": "6751",
+        "uid": "aaf02679-08e8-4487-b116-b5e1ab231ec2"
+      },
+      "ports": [
+        {
+          "name": "http",
+          "port": 8000,
+          "protocol": "TCP"
+        }
+      ]
+    }
+  ],
+  "kind": "List",
+  "metadata": {
+    "resourceVersion": ""
+  }
+}

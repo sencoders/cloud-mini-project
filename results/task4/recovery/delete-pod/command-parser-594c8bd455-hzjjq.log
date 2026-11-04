@@ -1,0 +1,24 @@
+2026-11-04T14:35:17.422481669Z INFO:     Started server process [1]
+2026-11-04T14:35:17.422529502Z INFO:     Waiting for application startup.
+2026-11-04T14:35:17.422971752Z INFO:     Application startup complete.
+2026-11-04T14:35:17.423216044Z INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-11-04T14:35:17.568173002Z {"time": 1793802917.5679684, "event": "model_download_start", "model_uri": "s3://models/v1/"}
+2026-11-04T14:35:17.589442919Z {"time": 1793802917.5892596, "event": "model_file_verified", "file": "config.json", "bytes": 770, "sha256": "0011261bdd0ae8f8f77b9f07bd34325bdaed2fc054ab5964265d0422f5904082"}
+2026-11-04T14:35:17.592331669Z {"time": 1793802917.5921967, "event": "model_file_verified", "file": "generation_config.json", "bytes": 111, "sha256": "98f34247dcd75d34c7bfb8e7e508f170c2abc9867b74e9d70db1a70bb2b1a644"}
+2026-11-04T14:35:18.337585711Z {"time": 1793802918.3372903, "event": "model_file_verified", "file": "model.safetensors", "bytes": 281715176, "sha256": "f549d5c34cc91d9d79dbe593f6ab14d50f43d4e49cf0e507894bb306c6cb0ce7"}
+2026-11-04T14:35:18.341743669Z {"time": 1793802918.3416305, "event": "model_file_verified", "file": "special_tokens_map.json", "bytes": 473, "sha256": "57491904f8680d4b52ed440f1f7ba48cad1c31ecf3eb453b03484e6ff4723ae8"}
+2026-11-04T14:35:18.365763919Z {"time": 1793802918.3656237, "event": "model_file_verified", "file": "tokenizer.json", "bytes": 3564303, "sha256": "d4c0d99d84af59e9126913fafe5210822963e9a3065ee43e6833b358b0c2f825"}
+2026-11-04T14:35:18.368097336Z {"time": 1793802918.3679864, "event": "model_file_verified", "file": "tokenizer_config.json", "bytes": 4876, "sha256": "435e0103b15eee9a299ded22f93129ebb7409bc5b6dd93f069bd86bdbc7c44a1"}
+2026-11-04T14:35:18.370468086Z {"time": 1793802918.3702688, "event": "model_file_verified", "file": "training_config.yaml", "bytes": 1915, "sha256": "191c5ceaeffdd1fba13215d951f372f6fbb7e9ced873efd4de2c3290fe4a933d"}
+2026-11-04T14:35:18.373157877Z {"time": 1793802918.3729122, "event": "model_file_verified", "file": "version.json", "bytes": 1745, "sha256": "c7f439277c68529e21cf6271a8f0fa44e9f60652bf8e5b1a38338aaa332d0ada"}
+2026-11-04T14:35:18.373258461Z {"time": 1793802918.373148, "event": "model_download_complete", "files": 8, "manifest_sha256": "5ca810f5ab7cf55c2daafbfee6c224362641243dfe8c792e88ecea60de0a49ae"}
+2026-11-04T14:35:18.747407919Z INFO:     10.42.0.1:39438 - "GET /healthz HTTP/1.1" 200 OK
+2026-11-04T14:35:18.994738461Z INFO:     10.42.0.1:39442 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+2026-11-04T14:35:20.017123795Z INFO:     10.42.0.1:39456 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+2026-11-04T14:35:20.018539920Z INFO:     10.42.0.1:39460 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+2026-11-04T14:35:20.613648837Z `torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-04T14:35:20.723928504Z {"time": 1793802920.7238135, "event": "model_loaded", "version": "v1", "device": "cpu", "seconds": 3.301096418999805}
+2026-11-04T14:35:20.723948170Z {"time": 1793802920.7238498, "event": "ready", "version": "v1", "served_by": "command-parser-594c8bd455-hzjjq"}
+2026-11-04T14:35:21.018678670Z INFO:     10.42.0.1:39466 - "GET /readyz HTTP/1.1" 200 OK
+2026-11-04T14:35:21.742399754Z INFO:     10.42.0.1:39476 - "GET /healthz HTTP/1.1" 200 OK
+2026-11-04T14:35:22.019238421Z INFO:     10.42.0.1:54518 - "GET /readyz HTTP/1.1" 200 OK

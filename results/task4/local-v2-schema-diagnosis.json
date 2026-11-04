@@ -1,0 +1,8 @@
+{
+  "scope": "Local CPU v2 diagnostic, not a captured server completion",
+  "text": "what is the weather in london",
+  "raw": " {\"intent\":\"weather_query\",\"date\":null,\"time\":null,\"place\":\"london timelondon time of thelondon time of the day\",\"time\":null,\"place\":\"london timeulsais time time time time time time time time time time time time time time time of the day\",\"time\":null,\"place\":\"london timeulsais time of the day of the day of the day of the day\",\"time\":null,\"place\":\"london\"}",
+  "weight_sha256": "eb82b1e71d1109ee34fddc150bb53c417bf0ae17a9c1c44bd56dc103efdbb6e2",
+  "schema_valid": false,
+  "rejection": "Malformed JSON object"
+}

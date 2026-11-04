@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/shreeja/Projects/cloud-mini-project/scripts/task4.py", line 294, in <module>
+    deploy()
+  File "/Users/shreeja/Projects/cloud-mini-project/scripts/task4.py", line 123, in deploy
+    count, slices = endpoints()
+                    ^^^^^^^^^^^
+  File "/Users/shreeja/Projects/cloud-mini-project/scripts/task4.py", line 50, in endpoints
+    ready = [e for item in value['items'] for e in item.get('endpoints', []) if e.get('conditions', {}).get('ready')]
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable

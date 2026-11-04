@@ -1,0 +1,79 @@
+[
+  {
+    "time": 1793800333.385003,
+    "ready_endpoints": 0,
+    "pods": {}
+  },
+  {
+    "time": 1793800334.384172,
+    "ready_endpoints": 0,
+    "pods": {
+      "command-parser-594c8bd455-8w9mk": false,
+      "command-parser-594c8bd455-pjb7h": false
+    }
+  },
+  {
+    "time": 1793800335.068368,
+    "ready_endpoints": 0,
+    "pods": {
+      "command-parser-594c8bd455-8w9mk": false,
+      "command-parser-594c8bd455-pjb7h": false
+    }
+  },
+  {
+    "time": 1793800335.648488,
+    "ready_endpoints": 0,
+    "pods": {
+      "command-parser-594c8bd455-8w9mk": false,
+      "command-parser-594c8bd455-pjb7h": false
+    }
+  },
+  {
+    "time": 1793800336.51363,
+    "ready_endpoints": 0,
+    "pods": {
+      "command-parser-594c8bd455-8w9mk": false,
+      "command-parser-594c8bd455-pjb7h": false
+    }
+  },
+  {
+    "time": 1793800337.097922,
+    "ready_endpoints": 0,
+    "pods": {
+      "command-parser-594c8bd455-8w9mk": false,
+      "command-parser-594c8bd455-pjb7h": false
+    }
+  },
+  {
+    "time": 1793800337.822861,
+    "ready_endpoints": 0,
+    "pods": {
+      "command-parser-594c8bd455-8w9mk": false,
+      "command-parser-594c8bd455-pjb7h": false
+    }
+  },
+  {
+    "time": 1793800338.528214,
+    "ready_endpoints": 2,
+    "pods": {
+      "command-parser-594c8bd455-8w9mk": true,
+      "command-parser-594c8bd455-pjb7h": true
+    }
+  },
+  {
+    "time": 1793800339.397399,
+    "ready_endpoints": 2,
+    "pods": {
+      "command-parser-594c8bd455-8w9mk": true,
+      "command-parser-594c8bd455-pjb7h": true
+    }
+  },
+  {
+    "time": 1793800339.9951549,
+    "ready_endpoints": 2,
+    "pods": {
+      "command-parser-594c8bd455-8w9mk": true,
+      "command-parser-594c8bd455-pjb7h": true
+    }
+  }
+]

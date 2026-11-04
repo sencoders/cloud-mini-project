@@ -1,0 +1,19 @@
+{"event": "cold_start_complete", "run": 1, "pods": [{"pod": "command-parser-594c8bd455-8w9mk", "creation": "2026-11-04T13:52:13+00:00", "ready": "2026-11-04T13:52:18+00:00", "seconds": 5.0}, {"pod": "command-parser-594c8bd455-pjb7h", "creation": "2026-11-04T13:52:13+00:00", "ready": "2026-11-04T13:52:18+00:00", "seconds": 5.0}], "median_seconds": 5.0, "no_ready_endpoints_observed": true}
+{"event": "cold_start_complete", "run": 2, "pods": [{"pod": "command-parser-594c8bd455-56vmt", "creation": "2026-11-04T13:52:20+00:00", "ready": "2026-11-04T13:52:26+00:00", "seconds": 6.0}, {"pod": "command-parser-594c8bd455-sfgqr", "creation": "2026-11-04T13:52:20+00:00", "ready": "2026-11-04T13:52:24+00:00", "seconds": 4.0}], "median_seconds": 5.0, "no_ready_endpoints_observed": true}
+{"event": "cold_start_complete", "run": 3, "pods": [{"pod": "command-parser-594c8bd455-jnzfg", "creation": "2026-11-04T13:52:28+00:00", "ready": "2026-11-04T13:52:32+00:00", "seconds": 4.0}, {"pod": "command-parser-594c8bd455-wdqlr", "creation": "2026-11-04T13:52:28+00:00", "ready": "2026-11-04T13:52:32+00:00", "seconds": 4.0}], "median_seconds": 4.0, "no_ready_endpoints_observed": true}
+{"event": "load_complete", "test": "load-balancing", "returncode": 1, "headers": {"per_replica": {"command-parser-594c8bd455-wdqlr": 188, "command-parser-594c8bd455-jnzfg": 186}, "per_model_version": {"v1": 374}}}
+Traceback (most recent call last):
+  File "/Users/shreeja/Projects/cloud-mini-project/scripts/task4.py", line 296, in <module>
+    experiments()
+  File "/Users/shreeja/Projects/cloud-mini-project/scripts/task4.py", line 278, in experiments
+    run_load('rolling', events=[(15, 'update-v2', lambda: set_version('v2')), (70, 'rollback-v1', rollback)])
+  File "/Users/shreeja/Projects/cloud-mini-project/scripts/task4.py", line 237, in run_load
+    result = callback()
+             ^^^^^^^^^^
+  File "/Users/shreeja/Projects/cloud-mini-project/scripts/task4.py", line 278, in <lambda>
+    run_load('rolling', events=[(15, 'update-v2', lambda: set_version('v2')), (70, 'rollback-v1', rollback)])
+                                                          ^^^^^^^^^^^^^^^^^
+  File "/Users/shreeja/Projects/cloud-mini-project/scripts/task4.py", line 190, in set_version
+    assert result['status'] == 200 and {k.lower(): v for k, v in result['headers'].items()}['x-model-version'] == version
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

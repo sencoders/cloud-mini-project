@@ -1,0 +1,74 @@
+[
+  {
+    "time": 1793800341.1989172,
+    "ready_endpoints": 0,
+    "pods": {
+      "command-parser-594c8bd455-56vmt": false,
+      "command-parser-594c8bd455-sfgqr": false
+    }
+  },
+  {
+    "time": 1793800342.305758,
+    "ready_endpoints": 0,
+    "pods": {
+      "command-parser-594c8bd455-56vmt": false,
+      "command-parser-594c8bd455-sfgqr": false
+    }
+  },
+  {
+    "time": 1793800343.2027268,
+    "ready_endpoints": 0,
+    "pods": {
+      "command-parser-594c8bd455-56vmt": false,
+      "command-parser-594c8bd455-sfgqr": false
+    }
+  },
+  {
+    "time": 1793800343.9117398,
+    "ready_endpoints": 0,
+    "pods": {
+      "command-parser-594c8bd455-56vmt": false,
+      "command-parser-594c8bd455-sfgqr": false
+    }
+  },
+  {
+    "time": 1793800344.513797,
+    "ready_endpoints": 1,
+    "pods": {
+      "command-parser-594c8bd455-56vmt": false,
+      "command-parser-594c8bd455-sfgqr": true
+    }
+  },
+  {
+    "time": 1793800345.0822551,
+    "ready_endpoints": 1,
+    "pods": {
+      "command-parser-594c8bd455-56vmt": false,
+      "command-parser-594c8bd455-sfgqr": true
+    }
+  },
+  {
+    "time": 1793800345.7230668,
+    "ready_endpoints": 1,
+    "pods": {
+      "command-parser-594c8bd455-56vmt": false,
+      "command-parser-594c8bd455-sfgqr": true
+    }
+  },
+  {
+    "time": 1793800347.388458,
+    "ready_endpoints": 2,
+    "pods": {
+      "command-parser-594c8bd455-56vmt": true,
+      "command-parser-594c8bd455-sfgqr": true
+    }
+  },
+  {
+    "time": 1793800347.9776971,
+    "ready_endpoints": 2,
+    "pods": {
+      "command-parser-594c8bd455-56vmt": true,
+      "command-parser-594c8bd455-sfgqr": true
+    }
+  }
+]

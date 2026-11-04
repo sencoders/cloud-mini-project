@@ -1,0 +1,14 @@
+{
+  "status": 500,
+  "headers": {
+    "Content-Length": "32",
+    "Content-Type": "application/json",
+    "Date": "Wed, 04 Nov 2026 14:30:11 GMT",
+    "Server": "uvicorn",
+    "X-Model-Version": "v2",
+    "X-Served-By": "command-parser-5dd5898d57-bpf2x",
+    "Connection": "close"
+  },
+  "body": "{\"error\":\"invalid_model_output\"}",
+  "time": 1793802614.9718359
+}

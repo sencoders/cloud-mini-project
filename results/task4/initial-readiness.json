@@ -1,0 +1,10 @@
+[
+  {
+    "time": 1793800213.3313322,
+    "ready_endpoints": 2,
+    "pod_ready": {
+      "command-parser-594c8bd455-kxns7": true,
+      "command-parser-594c8bd455-vtn7f": true
+    }
+  }
+]

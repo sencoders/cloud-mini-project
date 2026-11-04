@@ -1,0 +1,20 @@
+{
+  "version_verified": "v1",
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Length": "71",
+      "Content-Type": "application/json",
+      "Date": "Wed, 04 Nov 2026 14:32:53 GMT",
+      "Server": "uvicorn",
+      "X-Model-Version": "v1",
+      "X-Served-By": "command-parser-594c8bd455-qp8qv",
+      "Connection": "close"
+    },
+    "body": "{\"intent\":\"weather_query\",\"date\":null,\"time\":\"london\",\"place\":\"london\"}",
+    "time": 1793802774.9599
+  },
+  "probe_count": 3,
+  "model_rejection_count": 0,
+  "trace": "results/task4/version-verification/v1-20261104T143251442599Z.json"
+}

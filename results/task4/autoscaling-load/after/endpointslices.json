@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "items": [
+    {
+      "addressType": "IPv4",
+      "apiVersion": "discovery.k8s.io/v1",
+      "endpoints": [
+        {
+          "addresses": [
+            "10.42.0.51"
+          ],
+          "conditions": {
+            "ready": true,
+            "serving": true,
+            "terminating": false
+          },
+          "nodeName": "k3d-command-parser-server-0",
+          "targetRef": {
+            "kind": "Pod",
+            "name": "command-parser-594c8bd455-hzjjq",
+            "namespace": "app",
+            "uid": "d558ac44-5bfd-434a-8666-cf1ecb3cb4be"
+          }
+        },
+        {
+          "addresses": [
+            "10.42.0.52"
+          ],
+          "conditions": {
+            "ready": true,
+            "serving": true,
+            "terminating": false
+          },
+          "nodeName": "k3d-command-parser-server-0",
+          "targetRef": {
+            "kind": "Pod",
+            "name": "command-parser-594c8bd455-pn95p",
+            "namespace": "app",
+            "uid": "ec59e5f4-eaad-4644-ba4f-9c8dad387933"
+          }
+        }
+      ],
+      "kind": "EndpointSlice",
+      "metadata": {
+        "annotations": {
+          "endpoints.kubernetes.io/last-change-trigger-time": "2026-11-04T14:38:51Z"
+        },
+        "creationTimestamp": "2026-11-04T13:48:49Z",
+        "generateName": "command-parser-",
+        "generation": 78,
+        "labels": {
+          "endpointslice.kubernetes.io/managed-by": "endpointslice-controller.k8s.io",
+          "kubernetes.io/service-name": "command-parser"
+        },
+        "name": "command-parser-jb7ql",
+        "namespace": "app",
+        "ownerReferences": [
+          {
+            "apiVersion": "v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Service",
+            "name": "command-parser",
+            "uid": "15cc4f61-6960-402a-b1b1-763125cada9a"
+          }
+        ],
+        "resourceVersion": "7131",
+        "uid": "aaf02679-08e8-4487-b116-b5e1ab231ec2"
+      },
+      "ports": [
+        {
+          "name": "http",
+          "port": 8000,
+          "protocol": "TCP"
+        }
+      ]
+    }
+  ],
+  "kind": "List",
+  "metadata": {
+    "resourceVersion": ""
+  }
+}

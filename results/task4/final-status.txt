@@ -1,0 +1,14 @@
+NAME                             READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES                 SELECTOR
+deployment.apps/command-parser   1/1     1            1           53m   parser       command-parser:task3   app=command-parser
+
+NAME                                  READY   STATUS    RESTARTS   AGE     IP           NODE                          NOMINATED NODE   READINESS GATES
+pod/command-parser-594c8bd455-hzjjq   1/1     Running   0          7m19s   10.42.0.51   k3d-command-parser-server-0   <none>           <none>
+
+NAME                                                 REFERENCE                   TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/command-parser   Deployment/command-parser   cpu: 2%/70%   1         2         1          5m34s
+
+NAME                     TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE   SELECTOR
+service/command-parser   ClusterIP   10.43.16.167   <none>        8000/TCP   53m   app=command-parser
+
+NAME                                       CLASS     HOSTS   ADDRESS      PORTS   AGE
+ingress.networking.k8s.io/command-parser   traefik   *       172.19.0.3   80      53m

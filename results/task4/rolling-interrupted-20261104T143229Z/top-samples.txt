@@ -1,0 +1,20 @@
+1793800494.91671
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-594c8bd455-jnzfg   977m         425Mi           
+command-parser-594c8bd455-wdqlr   998m         388Mi           
+1793800498.099932
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-594c8bd455-jnzfg   977m         425Mi           
+command-parser-594c8bd455-wdqlr   998m         388Mi           
+1793800501.2082188
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-594c8bd455-jnzfg   977m         425Mi           
+command-parser-594c8bd455-wdqlr   998m         388Mi           
+1793800504.343122
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-594c8bd455-jnzfg   989m         332Mi           
+command-parser-594c8bd455-wdqlr   969m         333Mi           
+1793800507.4690502
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-594c8bd455-jnzfg   989m         332Mi           
+command-parser-594c8bd455-wdqlr   969m         333Mi           

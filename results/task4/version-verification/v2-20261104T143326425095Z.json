@@ -1,0 +1,59 @@
+[
+  {
+    "ready_status": 200,
+    "response": {
+      "status": 500,
+      "headers": {
+        "Content-Length": "32",
+        "Content-Type": "application/json",
+        "Date": "Wed, 04 Nov 2026 14:33:25 GMT",
+        "Server": "uvicorn",
+        "X-Model-Version": "v2",
+        "X-Served-By": "command-parser-5dd5898d57-6xb5f",
+        "Connection": "close"
+      },
+      "body": "{\"error\":\"invalid_model_output\"}",
+      "time": 1793802815.79935
+    },
+    "model_output_rejected": true,
+    "version_matches": true
+  },
+  {
+    "ready_status": 200,
+    "response": {
+      "status": 500,
+      "headers": {
+        "Content-Length": "32",
+        "Content-Type": "application/json",
+        "Date": "Wed, 04 Nov 2026 14:33:36 GMT",
+        "Server": "uvicorn",
+        "X-Model-Version": "v2",
+        "X-Served-By": "command-parser-5dd5898d57-sg6qn",
+        "Connection": "close"
+      },
+      "body": "{\"error\":\"invalid_model_output\"}",
+      "time": 1793802820.2216609
+    },
+    "model_output_rejected": true,
+    "version_matches": true
+  },
+  {
+    "ready_status": 200,
+    "response": {
+      "status": 500,
+      "headers": {
+        "Content-Length": "32",
+        "Content-Type": "application/json",
+        "Date": "Wed, 04 Nov 2026 14:33:40 GMT",
+        "Server": "uvicorn",
+        "X-Model-Version": "v2",
+        "X-Served-By": "command-parser-5dd5898d57-6xb5f",
+        "Connection": "close"
+      },
+      "body": "{\"error\":\"invalid_model_output\"}",
+      "time": 1793802824.365084
+    },
+    "model_output_rejected": true,
+    "version_matches": true
+  }
+]

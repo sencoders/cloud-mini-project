@@ -1,0 +1,11 @@
+{
+  "source": "Existing Task 2 predictions; no model evaluation repeated",
+  "invalid_frames": [
+    {
+      "id": "V066",
+      "text": "remind me at this time",
+      "saved_task2_raw": " {\"intent\":\"datetime_set\",\"date\":\"this day\",\"time\":\"this day\",\"place\":null}",
+      "rejection": "Invalid intent"
+    }
+  ]
+}

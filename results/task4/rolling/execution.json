@@ -1,0 +1,59 @@
+{
+  "returncode": 1,
+  "wall_seconds": 123.1621265001595,
+  "actions": [
+    {
+      "action": "update-v2",
+      "started_at_seconds": 15.615453334059566,
+      "finished_at_seconds": 48.97986691701226,
+      "result": {
+        "version_verified": "v2",
+        "response": {
+          "status": 500,
+          "headers": {
+            "Content-Length": "32",
+            "Content-Type": "application/json",
+            "Date": "Wed, 04 Nov 2026 14:33:40 GMT",
+            "Server": "uvicorn",
+            "X-Model-Version": "v2",
+            "X-Served-By": "command-parser-5dd5898d57-6xb5f",
+            "Connection": "close"
+          },
+          "body": "{\"error\":\"invalid_model_output\"}",
+          "time": 1793802824.365084
+        },
+        "probe_count": 3,
+        "model_rejection_count": 3,
+        "trace": "results/task4/version-verification/v2-20261104T143326425095Z.json"
+      }
+    },
+    {
+      "action": "rollback-v1",
+      "started_at_seconds": 72.17614016705193,
+      "finished_at_seconds": 95.98507570894435,
+      "result": {
+        "version_verified": "v1",
+        "response": {
+          "status": 200,
+          "headers": {
+            "Content-Length": "71",
+            "Content-Type": "application/json",
+            "Date": "Wed, 04 Nov 2026 14:34:28 GMT",
+            "Server": "uvicorn",
+            "X-Model-Version": "v1",
+            "X-Served-By": "command-parser-594c8bd455-dvh6z",
+            "Connection": "close"
+          },
+          "body": "{\"intent\":\"weather_query\",\"date\":null,\"time\":\"london\",\"place\":\"london\"}",
+          "time": 1793802871.370773
+        },
+        "probe_count": 3,
+        "model_rejection_count": 0,
+        "trace": "results/task4/version-verification/v1-20261104T143424505456Z.json"
+      }
+    }
+  ],
+  "headers_path": "results/task4/rolling/loadtest_headers.json",
+  "csv_prefix": "results/task4/rolling/loadtest",
+  "orchestration_error": null
+}

@@ -1,3 +1,115 @@
+# Task 4: Kubernetes deployment and measured reliability
+
+Task 4 implementation and experiments are complete; **the rolling-update HTTP
+failure threshold is not met**. Task 3 remains separately committed as `4b79c23`.
+All original cold starts, baseline files and interrupted rollout evidence were
+preserved. See [Task 4 measured report](report/task4-results.md),
+[criterion checks](results/task4/summary.json) and [final cluster status](results/task4/final-status.txt).
+
+| Run | Final requests | HTTP failures | Failure rate | CSV median | CSV p95 |
+|---|---:|---:|---:|---:|---:|
+| Two-replica baseline | 378 | 4 | 1.058% | 1,100 ms | 2,000 ms |
+| V1→V2→V1 under load | 308 | 24 | 7.792% | 1,100 ms | 4,500 ms |
+| Pod deletion/recovery | 320 | 3 | 0.938% | 1,400 ms | 2,600 ms |
+| HPA load | 356 | 3 | 0.843% | 1,600 ms | 2,300 ms |
+
+The instructor's unchanged Locust workload used four users, spawn rate four and
+two minutes through Traefik at `http://localhost:8080`. All recorded failures in
+these runs were HTTP 500 model-output rejections. They remain failures, including
+nonzero Locust exit codes. The baseline CSV periodic snapshot has 377 requests,
+while the final console has 378; successful response headers total 374. Both
+originals are retained. Failure rates above use final console counts; latencies
+are the CSV values. Successful baseline traffic was **188 / 186** responses
+(**50.27% / 49.73%**), meeting the ≥30% per-replica criterion.
+
+Cold-start run medians were **5.0, 5.0 and 4.0 seconds**, overall **5.0 seconds**.
+Both Pods were measured in each run; all six individual times have median 4.5 s.
+The Service had zero Ready endpoints during every measured model-loading period,
+and startup logs show fresh authenticated S3 downloads and checksum verification.
+These successful experiments were not rerun during the resumed work.
+
+Rollout and `kubectl rollout undo` ran under load and verified V2 then V1 headers.
+The recovery experiment restored two Ready replicas automatically in **6.863 s**;
+its 0.938% failure rate meets the ≤2% criterion. The HPA demonstrated **1→2→1**
+Ready replicas under idle/load/idle, with min 1, max 2 and CPU target 70%.
+Final state is **one Ready V1 replica**, managed by that active HPA.
+
+## Access and deployment
+
+The cluster uses a project-local kubeconfig; the default context is unset:
+
+```sh
+export KUBECONFIG="$PWD/.local/kubeconfig"
+kubectl get deploy,pods,hpa,svc,ingress -n app
+curl http://localhost:8080/readyz
+curl -H 'Content-Type: application/json' -d '{"text":"what is the weather in london"}' http://localhost:8080/parse
+```
+
+The Kubernetes API is `https://127.0.0.1:6550`; port 8080 is the application
+Ingress. Without KUBECONFIG, plain kubectl can try the application port and emit
+API discovery errors. No cluster or SeaweedFS restart was needed to resolve this.
+
+For an initial app deployment into the existing Task 1 cluster:
+
+```sh
+make service-build
+make app-up
+```
+
+`app-up` imports the tested CPU image, creates only namespace `app`, copies the
+existing S3 credentials into `app/parser-s3` through private stdin, and applies
+`cluster/app.yaml`. It adds `127.0.0.1:8080:80` to the existing k3d server load
+balancer if absent; it does not recreate the node, data namespace or PV. Two
+replicas initially request 250m CPU / 512 MiB each and have limits 1 CPU / 1 GiB.
+The service uses liveness/readiness probes, a non-root read-only filesystem with
+an ephemeral /tmp, maxUnavailable=0, maxSurge=1 and a five-second preStop delay.
+Every new Pod downloads and verifies its own model/tokenizer before becoming Ready.
+
+`cluster/hpa.yaml` defines min 1, max 2 and 70% CPU, with a 60-second downscale
+stabilization window. The HPA was applied after the fixed-two-replica experiments
+so those tests had an exact controlled replica count. Its separate load test
+then measured genuine controller scale-out and scale-in. All replicas share one
+laptop/node; this does not demonstrate fault tolerance across physical machines.
+
+## Evidence, safe resumption and remaining gap
+
+```sh
+make app-status
+make app-resume
+make app-report
+.venv312/bin/python -m pytest -q
+```
+
+`app-status` saves a timestamped read-only snapshot. `app-resume` skips completed
+stages, preserves partial/interrupted folders, and returns without action when
+completed.json exists. It never repeats the recorded cold starts or baseline.
+A nonzero Locust exit due to HTTP errors still represents an executed experiment;
+it does not trigger silent reruns. Initial `app-experiments` refuses to overwrite
+existing evidence. Locust child processes are stopped cleanly and their evidence
+saved if orchestration fails. The combined unit suite has **95 passed, one legacy
+opt-in live S3 test skipped**.
+
+The original rollout assertion conflated model validity with deployment identity:
+V2 was Ready and returned its correct version header with invalid_model_output.
+The corrected verifier waits for readiness and three consecutive expected headers,
+retaining every stale response/error and separately counting model rejections.
+A recorded 500 is never described as successful inference, and the unchanged
+Locust script still counts it as a failed request.
+
+The ≤0.5% rolling failure requirement remains unmet at **7.792%**. The V1 saved
+Task 2 prediction for V066 contains unsupported intent `datetime_set`; Task 2's
+100% raw JSON validity metric did not enforce the eight-intent schema, and its
+strict-extraction provenance already reported 99/100. V2 also produces some
+malformed/duplicate-field output; the one-command local diagnostic is explicitly
+labelled and kept in results/task4/. No gold-frame fallback, output repair,
+schema weakening, retraining or model artifact change was used to improve scores.
+The next improvement is a separately evaluated decoding/model-quality change in
+a new version. Existing artifacts stay immutable. GitHub Release publication
+remains pending; no pushes or final tag were made. Tasks 5 onward are outside
+this work. See the detailed report for all successes and unmet checks.
+
+---
+
 # Task 3: FastAPI service verified in Docker
 
 The CPU service is implemented and passed the required Docker test: **50/50 HTTP
@@ -5,7 +117,7 @@ The CPU service is implemented and passed the required Docker test: **50/50 HTTP
 Image disk size is **1.33 GB**. All 50 response frames match the saved Task 2 V1
 predictions. Fault injection returns exactly `{"error":"invalid_model_output"}`
 with HTTP 500. See [measurements](report/task3-results.md) and [evidence](results/task3/).
-Task 4 deployment and reliability work follows this verified service milestone.
+Task 4 deployment and reliability measurements are documented above.
 
 ```sh
 .venv312/bin/pip install -r requirements-service-dev.txt
@@ -189,7 +301,7 @@ No GitHub Release has been published, and no Git remote is configured. Verified
 local packages and the manual `.github/workflows/package-model.yml` are ready.
 See [release instructions](docs/releases.md) for the self-hosted runner, network,
 repository secrets, existing tag and optional publication step. No commits are
-pushed, and no `final` tag is created by this work. Tasks 3 onward remain pending.
+pushed, and no `final` tag is created by this work. At Task 2 completion, Tasks 3 onward were pending; their later results are above.
 
 ---
 
@@ -452,7 +564,7 @@ suspend or finish Jobs first. After exporting everything, permanent teardown is:
 make down
 ```
 
-Do not tag this partial assignment `final`: Tasks 3–7 remain outside this work; GitHub Release publication is still pending.
+Do not tag this partial assignment `final`: Tasks 5–7 remain pending; GitHub Release publication and the rolling failure-rate gap remain unresolved.
 No remote push or GitHub publication is performed.
 
 Implementation references: [k3d configuration](https://k3d.io/stable/usage/configfile/),

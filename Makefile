@@ -38,3 +38,17 @@ service-build:
 	docker build -t command-parser:task3 -f service/Dockerfile .
 service-test:
 	$(PYTHON) scripts/test_service_docker.py
+
+.PHONY: app-up app-experiments app-status
+app-up:
+	$(PYTHON) scripts/task4.py deploy
+app-experiments:
+	$(PYTHON) scripts/task4.py experiments
+app-status:
+	$(PYTHON) scripts/task4.py snapshot
+
+.PHONY: app-resume app-report
+app-resume:
+	$(PYTHON) scripts/task4.py resume
+app-report:
+	$(PYTHON) scripts/report_task4.py

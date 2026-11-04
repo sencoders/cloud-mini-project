@@ -1,0 +1,59 @@
+[
+  {
+    "ready_status": 200,
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Length": "71",
+        "Content-Type": "application/json",
+        "Date": "Wed, 04 Nov 2026 14:34:23 GMT",
+        "Server": "uvicorn",
+        "X-Model-Version": "v1",
+        "X-Served-By": "command-parser-594c8bd455-dvh6z",
+        "Connection": "close"
+      },
+      "body": "{\"intent\":\"weather_query\",\"date\":null,\"time\":\"london\",\"place\":\"london\"}",
+      "time": 1793802866.731754
+    },
+    "model_output_rejected": false,
+    "version_matches": true
+  },
+  {
+    "ready_status": 200,
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Length": "71",
+        "Content-Type": "application/json",
+        "Date": "Wed, 04 Nov 2026 14:34:27 GMT",
+        "Server": "uvicorn",
+        "X-Model-Version": "v1",
+        "X-Served-By": "command-parser-594c8bd455-2rm5b",
+        "Connection": "close"
+      },
+      "body": "{\"intent\":\"weather_query\",\"date\":null,\"time\":\"london\",\"place\":\"london\"}",
+      "time": 1793802868.5297961
+    },
+    "model_output_rejected": false,
+    "version_matches": true
+  },
+  {
+    "ready_status": 200,
+    "response": {
+      "status": 200,
+      "headers": {
+        "Content-Length": "71",
+        "Content-Type": "application/json",
+        "Date": "Wed, 04 Nov 2026 14:34:28 GMT",
+        "Server": "uvicorn",
+        "X-Model-Version": "v1",
+        "X-Served-By": "command-parser-594c8bd455-dvh6z",
+        "Connection": "close"
+      },
+      "body": "{\"intent\":\"weather_query\",\"date\":null,\"time\":\"london\",\"place\":\"london\"}",
+      "time": 1793802871.370773
+    },
+    "model_output_rejected": false,
+    "version_matches": true
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "returncode": 1,
+  "wall_seconds": 120.79476587497629,
+  "actions": [],
+  "headers_path": "results/task4/autoscaling-load/loadtest_headers.json",
+  "csv_prefix": "results/task4/autoscaling-load/loadtest",
+  "orchestration_error": null
+}

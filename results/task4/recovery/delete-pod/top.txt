@@ -1,0 +1,2 @@
+NAME                              CPU(cores)   MEMORY(bytes)   
+command-parser-594c8bd455-dvh6z   847m         316Mi           

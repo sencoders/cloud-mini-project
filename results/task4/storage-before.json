@@ -1,0 +1,406 @@
+{
+  "apiVersion": "v1",
+  "items": [
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "annotations": {
+          "kubectl.kubernetes.io/restartedAt": "2026-11-04T14:47:24+05:30"
+        },
+        "creationTimestamp": "2026-11-04T09:17:55Z",
+        "generateName": "seaweedfs-767f985fdb-",
+        "generation": 1,
+        "labels": {
+          "app": "seaweedfs",
+          "pod-template-hash": "767f985fdb"
+        },
+        "name": "seaweedfs-767f985fdb-cb8ws",
+        "namespace": "data",
+        "ownerReferences": [
+          {
+            "apiVersion": "apps/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "ReplicaSet",
+            "name": "seaweedfs-767f985fdb",
+            "uid": "fe0671a4-7f9a-42af-8974-0a8e50bd459d"
+          }
+        ],
+        "resourceVersion": "3052",
+        "uid": "14c04c22-a206-4b2e-8f8a-45e174dc8a56"
+      },
+      "spec": {
+        "containers": [
+          {
+            "args": [
+              "server",
+              "-dir=/data/recovered",
+              "-ip.bind=0.0.0.0",
+              "-ip=seaweedfs.data.svc.cluster.local",
+              "-volume.max=16",
+              "-master.volumeSizeLimitMB=256",
+              "-filer",
+              "-s3",
+              "-s3.port=8333",
+              "-s3.config=/etc/seaweedfs/s3.json"
+            ],
+            "env": [
+              {
+                "name": "GOMEMLIMIT",
+                "value": "1GiB"
+              },
+              {
+                "name": "GOGC",
+                "value": "50"
+              }
+            ],
+            "image": "chrislusf/seaweedfs:3.85@sha256:49312939c00c01e5ee6afbd7d728b18027821d3764c35a797a72acd4fdf3296a",
+            "imagePullPolicy": "IfNotPresent",
+            "livenessProbe": {
+              "failureThreshold": 3,
+              "initialDelaySeconds": 45,
+              "periodSeconds": 10,
+              "successThreshold": 1,
+              "tcpSocket": {
+                "port": "s3"
+              },
+              "timeoutSeconds": 1
+            },
+            "name": "seaweedfs",
+            "ports": [
+              {
+                "containerPort": 8333,
+                "name": "s3",
+                "protocol": "TCP"
+              }
+            ],
+            "readinessProbe": {
+              "failureThreshold": 3,
+              "initialDelaySeconds": 5,
+              "periodSeconds": 3,
+              "successThreshold": 1,
+              "tcpSocket": {
+                "port": "s3"
+              },
+              "timeoutSeconds": 1
+            },
+            "resources": {
+              "limits": {
+                "cpu": "1",
+                "memory": "2Gi"
+              },
+              "requests": {
+                "cpu": "100m",
+                "memory": "256Mi"
+              }
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File",
+            "volumeMounts": [
+              {
+                "mountPath": "/data",
+                "name": "storage"
+              },
+              {
+                "mountPath": "/etc/seaweedfs",
+                "name": "credentials",
+                "readOnly": true
+              },
+              {
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                "name": "kube-api-access-cn5hs",
+                "readOnly": true
+              }
+            ],
+            "workingDir": "/data/recovered"
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "enableServiceLinks": true,
+        "initContainers": [
+          {
+            "command": [
+              "/bin/sh",
+              "-c",
+              "mkdir -p /data/recovered"
+            ],
+            "image": "chrislusf/seaweedfs:3.85@sha256:49312939c00c01e5ee6afbd7d728b18027821d3764c35a797a72acd4fdf3296a",
+            "imagePullPolicy": "IfNotPresent",
+            "name": "storage-directory",
+            "resources": {},
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File",
+            "volumeMounts": [
+              {
+                "mountPath": "/data",
+                "name": "storage"
+              },
+              {
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                "name": "kube-api-access-cn5hs",
+                "readOnly": true
+              }
+            ]
+          }
+        ],
+        "nodeName": "k3d-command-parser-server-0",
+        "preemptionPolicy": "PreemptLowerPriority",
+        "priority": 0,
+        "restartPolicy": "Always",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "serviceAccount": "default",
+        "serviceAccountName": "default",
+        "terminationGracePeriodSeconds": 30,
+        "tolerations": [
+          {
+            "effect": "NoExecute",
+            "key": "node.kubernetes.io/not-ready",
+            "operator": "Exists",
+            "tolerationSeconds": 300
+          },
+          {
+            "effect": "NoExecute",
+            "key": "node.kubernetes.io/unreachable",
+            "operator": "Exists",
+            "tolerationSeconds": 300
+          }
+        ],
+        "volumes": [
+          {
+            "name": "storage",
+            "persistentVolumeClaim": {
+              "claimName": "seaweedfs"
+            }
+          },
+          {
+            "name": "credentials",
+            "secret": {
+              "defaultMode": 420,
+              "secretName": "seaweedfs-auth"
+            }
+          },
+          {
+            "name": "kube-api-access-cn5hs",
+            "projected": {
+              "defaultMode": 420,
+              "sources": [
+                {
+                  "serviceAccountToken": {
+                    "expirationSeconds": 3607,
+                    "path": "token"
+                  }
+                },
+                {
+                  "configMap": {
+                    "items": [
+                      {
+                        "key": "ca.crt",
+                        "path": "ca.crt"
+                      }
+                    ],
+                    "name": "kube-root-ca.crt"
+                  }
+                },
+                {
+                  "downwardAPI": {
+                    "items": [
+                      {
+                        "fieldRef": {
+                          "apiVersion": "v1",
+                          "fieldPath": "metadata.namespace"
+                        },
+                        "path": "namespace"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-11-04T09:17:56Z",
+            "observedGeneration": 1,
+            "status": "True",
+            "type": "PodReadyToStartContainers"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-11-04T09:17:56Z",
+            "observedGeneration": 1,
+            "status": "True",
+            "type": "Initialized"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-11-04T09:18:22Z",
+            "observedGeneration": 1,
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-11-04T09:18:22Z",
+            "observedGeneration": 1,
+            "status": "True",
+            "type": "ContainersReady"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-11-04T09:17:55Z",
+            "observedGeneration": 1,
+            "status": "True",
+            "type": "PodScheduled"
+          }
+        ],
+        "containerStatuses": [
+          {
+            "allocatedResources": {
+              "cpu": "100m",
+              "memory": "256Mi"
+            },
+            "containerID": "containerd://47de91633ac2f689b48bbb55e61ab63881f186aa07b3d0afbe68d8ceaa0ff78b",
+            "image": "docker.io/chrislusf/seaweedfs:3.85",
+            "imageID": "docker.io/chrislusf/seaweedfs@sha256:49312939c00c01e5ee6afbd7d728b18027821d3764c35a797a72acd4fdf3296a",
+            "lastState": {},
+            "name": "seaweedfs",
+            "ready": true,
+            "resources": {
+              "limits": {
+                "cpu": "1",
+                "memory": "2Gi"
+              },
+              "requests": {
+                "cpu": "100m",
+                "memory": "256Mi"
+              }
+            },
+            "restartCount": 0,
+            "started": true,
+            "state": {
+              "running": {
+                "startedAt": "2026-11-04T09:17:56Z"
+              }
+            },
+            "user": {
+              "linux": {
+                "gid": 0,
+                "supplementalGroups": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  6,
+                  10,
+                  11,
+                  20,
+                  26,
+                  27
+                ],
+                "uid": 0
+              }
+            },
+            "volumeMounts": [
+              {
+                "mountPath": "/data",
+                "name": "storage"
+              },
+              {
+                "mountPath": "/etc/seaweedfs",
+                "name": "credentials",
+                "readOnly": true,
+                "recursiveReadOnly": "Disabled"
+              },
+              {
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                "name": "kube-api-access-cn5hs",
+                "readOnly": true,
+                "recursiveReadOnly": "Disabled"
+              }
+            ]
+          }
+        ],
+        "hostIP": "172.19.0.3",
+        "hostIPs": [
+          {
+            "ip": "172.19.0.3"
+          }
+        ],
+        "initContainerStatuses": [
+          {
+            "containerID": "containerd://668f30ef299fafc3dd5edb8655b7fb9713507605e2556ae2381bf396d4b71bb6",
+            "image": "docker.io/chrislusf/seaweedfs:3.85",
+            "imageID": "docker.io/chrislusf/seaweedfs@sha256:49312939c00c01e5ee6afbd7d728b18027821d3764c35a797a72acd4fdf3296a",
+            "lastState": {},
+            "name": "storage-directory",
+            "ready": true,
+            "resources": {},
+            "restartCount": 0,
+            "started": false,
+            "state": {
+              "terminated": {
+                "containerID": "containerd://668f30ef299fafc3dd5edb8655b7fb9713507605e2556ae2381bf396d4b71bb6",
+                "exitCode": 0,
+                "finishedAt": "2026-11-04T09:17:55Z",
+                "reason": "Completed",
+                "startedAt": "2026-11-04T09:17:55Z"
+              }
+            },
+            "user": {
+              "linux": {
+                "gid": 0,
+                "supplementalGroups": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  6,
+                  10,
+                  11,
+                  20,
+                  26,
+                  27
+                ],
+                "uid": 0
+              }
+            },
+            "volumeMounts": [
+              {
+                "mountPath": "/data",
+                "name": "storage"
+              },
+              {
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                "name": "kube-api-access-cn5hs",
+                "readOnly": true,
+                "recursiveReadOnly": "Disabled"
+              }
+            ]
+          }
+        ],
+        "observedGeneration": 1,
+        "phase": "Running",
+        "podIP": "10.42.0.34",
+        "podIPs": [
+          {
+            "ip": "10.42.0.34"
+          }
+        ],
+        "qosClass": "Burstable",
+        "startTime": "2026-11-04T09:17:55Z"
+      }
+    }
+  ],
+  "kind": "List",
+  "metadata": {
+    "resourceVersion": ""
+  }
+}

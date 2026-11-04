@@ -1,0 +1,18 @@
+{
+  "unit_tests_passed": 95,
+  "rubric_checks": {
+    "ingress_http_200_initially": true,
+    "no_ready_endpoints_while_loading": true,
+    "three_cold_starts_with_download_logs": true,
+    "hpa_min1_max2_target70": true,
+    "hpa_observed_1_to_2_to_1": true,
+    "v2_rollout_and_v1_rollback_verified": true,
+    "rolling_failure_at_most_0_5_percent": false,
+    "recovery_restores_two_replicas": true,
+    "recovery_failure_at_most_2_percent": true,
+    "both_replicas_at_least_30_percent": true
+  },
+  "unmet_checks": [
+    "rolling_failure_at_most_0_5_percent"
+  ]
+}

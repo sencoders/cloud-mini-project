@@ -1,0 +1,4324 @@
+[
+  {
+    "time": 1793803106.163481,
+    "elapsed": 4.832865670323372e-06,
+    "ready_pods": 1,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7074",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA controller was able to update the target scale to 1",
+                "reason": "SucceededRescale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the desired count is within the acceptable range",
+                "reason": "DesiredWithinRange",
+                "status": "False",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 2,
+                    "averageValue": "6m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 1,
+            "lastScaleTime": "2026-11-04T14:38:17Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803109.4778602,
+    "elapsed": 3.0914262500591576,
+    "ready_pods": 1,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7074",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA controller was able to update the target scale to 1",
+                "reason": "SucceededRescale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the desired count is within the acceptable range",
+                "reason": "DesiredWithinRange",
+                "status": "False",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 2,
+                    "averageValue": "6m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 1,
+            "lastScaleTime": "2026-11-04T14:38:17Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803112.671468,
+    "elapsed": 6.402125832857564,
+    "ready_pods": 1,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7098",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the desired count is within the acceptable range",
+                "reason": "DesiredWithinRange",
+                "status": "False",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 2,
+                    "averageValue": "6m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 1,
+            "desiredReplicas": 1,
+            "lastScaleTime": "2026-11-04T14:38:17Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803115.78074,
+    "elapsed": 9.596485208021477,
+    "ready_pods": 1,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7098",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the desired count is within the acceptable range",
+                "reason": "DesiredWithinRange",
+                "status": "False",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 2,
+                    "averageValue": "6m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 1,
+            "desiredReplicas": 1,
+            "lastScaleTime": "2026-11-04T14:38:17Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803118.886961,
+    "elapsed": 12.711770833004266,
+    "ready_pods": 1,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7098",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the desired count is within the acceptable range",
+                "reason": "DesiredWithinRange",
+                "status": "False",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 2,
+                    "averageValue": "6m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 1,
+            "desiredReplicas": 1,
+            "lastScaleTime": "2026-11-04T14:38:17Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803122.058837,
+    "elapsed": 15.807692666072398,
+    "ready_pods": 1,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7098",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the desired count is within the acceptable range",
+                "reason": "DesiredWithinRange",
+                "status": "False",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 2,
+                    "averageValue": "6m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 1,
+            "desiredReplicas": 1,
+            "lastScaleTime": "2026-11-04T14:38:17Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803125.253142,
+    "elapsed": 18.984115249942988,
+    "ready_pods": 1,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7098",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the desired count is within the acceptable range",
+                "reason": "DesiredWithinRange",
+                "status": "False",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 2,
+                    "averageValue": "6m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 1,
+            "desiredReplicas": 1,
+            "lastScaleTime": "2026-11-04T14:38:17Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803128.5784068,
+    "elapsed": 22.174526958027855,
+    "ready_pods": 1,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7105",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA controller was able to update the target scale to 2",
+                "reason": "SucceededRescale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 340,
+                    "averageValue": "850m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 1,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803131.725379,
+    "elapsed": 25.508658832870424,
+    "ready_pods": 1,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7105",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA controller was able to update the target scale to 2",
+                "reason": "SucceededRescale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 340,
+                    "averageValue": "850m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 1,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803134.930214,
+    "elapsed": 28.65020720800385,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7105",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA controller was able to update the target scale to 2",
+                "reason": "SucceededRescale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 340,
+                    "averageValue": "850m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 1,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803138.147889,
+    "elapsed": 31.865789416013286,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7105",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA controller was able to update the target scale to 2",
+                "reason": "SucceededRescale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 340,
+                    "averageValue": "850m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 1,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803141.3697321,
+    "elapsed": 35.077483708038926,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7105",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA controller was able to update the target scale to 2",
+                "reason": "SucceededRescale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 340,
+                    "averageValue": "850m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 1,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803144.491133,
+    "elapsed": 38.30142133287154,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7137",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 398,
+                    "averageValue": "997m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803147.614007,
+    "elapsed": 41.420990583021194,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7137",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 398,
+                    "averageValue": "997m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803151.53938,
+    "elapsed": 44.546970249852166,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7137",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 398,
+                    "averageValue": "997m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803154.6603992,
+    "elapsed": 48.4700758329127,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7137",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 398,
+                    "averageValue": "997m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803157.830585,
+    "elapsed": 51.590324708027765,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7142",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 382,
+                    "averageValue": "956m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803161.519862,
+    "elapsed": 54.76658799988218,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7142",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 382,
+                    "averageValue": "956m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803164.69645,
+    "elapsed": 58.450910500017926,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7142",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 382,
+                    "averageValue": "956m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803167.82175,
+    "elapsed": 61.62722829100676,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7142",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 382,
+                    "averageValue": "956m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803171.4441578,
+    "elapsed": 64.75341620785184,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7142",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 382,
+                    "averageValue": "956m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803174.674377,
+    "elapsed": 68.38094391603954,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7148",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 396,
+                    "averageValue": "990m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803177.821961,
+    "elapsed": 71.60994974989444,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7148",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 396,
+                    "averageValue": "990m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803181.021003,
+    "elapsed": 74.75725591601804,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7148",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 396,
+                    "averageValue": "990m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803184.2470772,
+    "elapsed": 77.95332266599871,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7148",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 396,
+                    "averageValue": "990m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803187.483161,
+    "elapsed": 81.18671879102476,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7153",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 392,
+                    "averageValue": "980m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803191.494781,
+    "elapsed": 84.41467420803383,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7153",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 392,
+                    "averageValue": "980m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803194.821867,
+    "elapsed": 88.43839812488295,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7153",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 392,
+                    "averageValue": "980m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803198.0225961,
+    "elapsed": 91.76944108307362,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7153",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 392,
+                    "averageValue": "980m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803201.49243,
+    "elapsed": 94.96695166593418,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7153",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 392,
+                    "averageValue": "980m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803204.7972639,
+    "elapsed": 98.42733470792882,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7159",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 398,
+                    "averageValue": "995m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803207.935591,
+    "elapsed": 101.73557504103519,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7159",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 398,
+                    "averageValue": "995m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803211.092105,
+    "elapsed": 104.87449424993247,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7159",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 398,
+                    "averageValue": "995m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803214.2687192,
+    "elapsed": 108.04442849988118,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7159",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 398,
+                    "averageValue": "995m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803217.512675,
+    "elapsed": 111.206135999877,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7164",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 392,
+                    "averageValue": "980m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803220.686549,
+    "elapsed": 114.45693304087035,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7164",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 392,
+                    "averageValue": "980m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  },
+  {
+    "time": 1793803223.845263,
+    "elapsed": 117.63562149996869,
+    "ready_pods": 2,
+    "pods": [
+      "command-parser-594c8bd455-hzjjq",
+      "command-parser-594c8bd455-pn95p"
+    ],
+    "hpa": {
+      "apiVersion": "v1",
+      "items": [
+        {
+          "apiVersion": "autoscaling/v2",
+          "kind": "HorizontalPodAutoscaler",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{},\"name\":\"command-parser\",\"namespace\":\"app\"},\"spec\":{\"behavior\":{\"scaleDown\":{\"policies\":[{\"periodSeconds\":30,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":60},\"scaleUp\":{\"policies\":[{\"periodSeconds\":15,\"type\":\"Pods\",\"value\":1}],\"stabilizationWindowSeconds\":0}},\"maxReplicas\":2,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":70,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"command-parser\"}}}\n"
+            },
+            "creationTimestamp": "2026-11-04T14:37:01Z",
+            "name": "command-parser",
+            "namespace": "app",
+            "resourceVersion": "7164",
+            "uid": "c91c31ad-05ed-4852-a1e3-3d2baf4bf846"
+          },
+          "spec": {
+            "behavior": {
+              "scaleDown": {
+                "policies": [
+                  {
+                    "periodSeconds": 30,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 60
+              },
+              "scaleUp": {
+                "policies": [
+                  {
+                    "periodSeconds": 15,
+                    "type": "Pods",
+                    "value": 1
+                  }
+                ],
+                "selectPolicy": "Max",
+                "stabilizationWindowSeconds": 0
+              }
+            },
+            "maxReplicas": 2,
+            "metrics": [
+              {
+                "resource": {
+                  "name": "cpu",
+                  "target": {
+                    "averageUtilization": 70,
+                    "type": "Utilization"
+                  }
+                },
+                "type": "Resource"
+              }
+            ],
+            "minReplicas": 1,
+            "scaleTargetRef": {
+              "apiVersion": "apps/v1",
+              "kind": "Deployment",
+              "name": "command-parser"
+            }
+          },
+          "status": {
+            "conditions": [
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "recommended size matches current size",
+                "reason": "ReadyForNewScale",
+                "status": "True",
+                "type": "AbleToScale"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:37:16Z",
+                "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                "reason": "ValidMetricFound",
+                "status": "True",
+                "type": "ScalingActive"
+              },
+              {
+                "lastTransitionTime": "2026-11-04T14:38:47Z",
+                "message": "the desired replica count is more than the maximum replica count",
+                "reason": "TooManyReplicas",
+                "status": "True",
+                "type": "ScalingLimited"
+              }
+            ],
+            "currentMetrics": [
+              {
+                "resource": {
+                  "current": {
+                    "averageUtilization": 392,
+                    "averageValue": "980m"
+                  },
+                  "name": "cpu"
+                },
+                "type": "Resource"
+              }
+            ],
+            "currentReplicas": 2,
+            "desiredReplicas": 2,
+            "lastScaleTime": "2026-11-04T14:38:47Z"
+          }
+        }
+      ],
+      "kind": "List",
+      "metadata": {
+        "resourceVersion": ""
+      }
+    }
+  }
+]

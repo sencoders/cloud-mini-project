@@ -1,0 +1,158 @@
+LAST SEEN   TYPE      REASON              OBJECT                                   MESSAGE
+53m         Normal    ScalingReplicaSet   deployment/command-parser                Scaled up replica set command-parser-594c8bd455 from 0 to 2
+53m         Normal    SuccessfulCreate    replicaset/command-parser-594c8bd455     Created pod: command-parser-594c8bd455-vtn7f
+53m         Normal    SuccessfulCreate    replicaset/command-parser-594c8bd455     Created pod: command-parser-594c8bd455-kxns7
+53m         Normal    Scheduled           pod/command-parser-594c8bd455-kxns7      Successfully assigned app/command-parser-594c8bd455-kxns7 to k3d-command-parser-server-0
+53m         Normal    Scheduled           pod/command-parser-594c8bd455-vtn7f      Successfully assigned app/command-parser-594c8bd455-vtn7f to k3d-command-parser-server-0
+53m         Normal    Created             pod/command-parser-594c8bd455-vtn7f      Container created
+53m         Normal    Pulled              pod/command-parser-594c8bd455-vtn7f      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+53m         Normal    Created             pod/command-parser-594c8bd455-kxns7      Container created
+53m         Normal    Started             pod/command-parser-594c8bd455-vtn7f      Container started
+53m         Normal    Pulled              pod/command-parser-594c8bd455-kxns7      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+53m         Normal    Started             pod/command-parser-594c8bd455-kxns7      Container started
+53m         Warning   Unhealthy           pod/command-parser-594c8bd455-vtn7f      Readiness probe failed: HTTP probe failed with statuscode: 503
+53m         Warning   Unhealthy           pod/command-parser-594c8bd455-kxns7      Readiness probe failed: HTTP probe failed with statuscode: 503
+50m         Normal    Killing             pod/command-parser-594c8bd455-kxns7      Stopping container parser
+50m         Normal    Scheduled           pod/command-parser-594c8bd455-8w9mk      Successfully assigned app/command-parser-594c8bd455-8w9mk to k3d-command-parser-server-0
+50m         Normal    Started             pod/command-parser-594c8bd455-pjb7h      Container started
+50m         Normal    SuccessfulCreate    replicaset/command-parser-594c8bd455     Created pod: command-parser-594c8bd455-pjb7h
+50m         Normal    Killing             pod/command-parser-594c8bd455-vtn7f      Stopping container parser
+50m         Normal    Pulled              pod/command-parser-594c8bd455-pjb7h      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+50m         Normal    Scheduled           pod/command-parser-594c8bd455-pjb7h      Successfully assigned app/command-parser-594c8bd455-pjb7h to k3d-command-parser-server-0
+50m         Normal    SuccessfulCreate    replicaset/command-parser-594c8bd455     Created pod: command-parser-594c8bd455-8w9mk
+50m         Normal    Pulled              pod/command-parser-594c8bd455-8w9mk      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+50m         Normal    Created             pod/command-parser-594c8bd455-8w9mk      Container created
+50m         Normal    Started             pod/command-parser-594c8bd455-8w9mk      Container started
+50m         Normal    Created             pod/command-parser-594c8bd455-pjb7h      Container created
+50m         Warning   Unhealthy           pod/command-parser-594c8bd455-8w9mk      Readiness probe failed: HTTP probe failed with statuscode: 503
+50m         Warning   Unhealthy           pod/command-parser-594c8bd455-pjb7h      Readiness probe failed: HTTP probe failed with statuscode: 503
+50m         Normal    Scheduled           pod/command-parser-594c8bd455-56vmt      Successfully assigned app/command-parser-594c8bd455-56vmt to k3d-command-parser-server-0
+50m         Normal    Killing             pod/command-parser-594c8bd455-pjb7h      Stopping container parser
+50m         Normal    SuccessfulCreate    replicaset/command-parser-594c8bd455     Created pod: command-parser-594c8bd455-sfgqr
+50m         Normal    Killing             pod/command-parser-594c8bd455-8w9mk      Stopping container parser
+50m         Normal    Started             pod/command-parser-594c8bd455-56vmt      Container started
+50m         Normal    Started             pod/command-parser-594c8bd455-sfgqr      Container started
+50m         Normal    Created             pod/command-parser-594c8bd455-sfgqr      Container created
+50m         Normal    Pulled              pod/command-parser-594c8bd455-sfgqr      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+50m         Normal    Scheduled           pod/command-parser-594c8bd455-sfgqr      Successfully assigned app/command-parser-594c8bd455-sfgqr to k3d-command-parser-server-0
+50m         Normal    Pulled              pod/command-parser-594c8bd455-56vmt      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+50m         Normal    SuccessfulCreate    replicaset/command-parser-594c8bd455     Created pod: command-parser-594c8bd455-56vmt
+50m         Normal    Created             pod/command-parser-594c8bd455-56vmt      Container created
+50m         Warning   Unhealthy           pod/command-parser-594c8bd455-sfgqr      Readiness probe failed: HTTP probe failed with statuscode: 503
+50m         Warning   Unhealthy           pod/command-parser-594c8bd455-56vmt      Readiness probe failed: HTTP probe failed with statuscode: 503
+50m         Normal    Killing             pod/command-parser-594c8bd455-56vmt      Stopping container parser
+50m         Normal    Scheduled           pod/command-parser-594c8bd455-jnzfg      Successfully assigned app/command-parser-594c8bd455-jnzfg to k3d-command-parser-server-0
+50m         Warning   Unhealthy           pod/command-parser-594c8bd455-pjb7h      Readiness probe failed: Get "http://10.42.0.38:8000/readyz": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+50m         Normal    Killing             pod/command-parser-594c8bd455-sfgqr      Stopping container parser
+50m         Warning   Unhealthy           pod/command-parser-594c8bd455-8w9mk      Readiness probe failed: Get "http://10.42.0.37:8000/readyz": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+50m         Normal    Scheduled           pod/command-parser-594c8bd455-wdqlr      Successfully assigned app/command-parser-594c8bd455-wdqlr to k3d-command-parser-server-0
+50m         Normal    SuccessfulCreate    replicaset/command-parser-594c8bd455     Created pod: command-parser-594c8bd455-wdqlr
+50m         Normal    SuccessfulCreate    replicaset/command-parser-594c8bd455     Created pod: command-parser-594c8bd455-jnzfg
+50m         Normal    Pulled              pod/command-parser-594c8bd455-jnzfg      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+50m         Normal    Started             pod/command-parser-594c8bd455-wdqlr      Container started
+50m         Normal    Started             pod/command-parser-594c8bd455-jnzfg      Container started
+50m         Normal    Created             pod/command-parser-594c8bd455-jnzfg      Container created
+50m         Normal    Created             pod/command-parser-594c8bd455-wdqlr      Container created
+50m         Normal    Pulled              pod/command-parser-594c8bd455-wdqlr      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+50m         Warning   Unhealthy           pod/command-parser-594c8bd455-wdqlr      Readiness probe failed: HTTP probe failed with statuscode: 503
+50m         Warning   Unhealthy           pod/command-parser-594c8bd455-jnzfg      Readiness probe failed: HTTP probe failed with statuscode: 503
+50m         Warning   Unhealthy           pod/command-parser-594c8bd455-56vmt      Readiness probe failed: Get "http://10.42.0.39:8000/readyz": dial tcp 10.42.0.39:8000: connect: connection refused
+50m         Warning   Unhealthy           pod/command-parser-594c8bd455-sfgqr      Readiness probe failed: Get "http://10.42.0.40:8000/readyz": dial tcp 10.42.0.40:8000: connect: connection refused
+9m25s       Normal    ScalingReplicaSet   deployment/command-parser                Scaled up replica set command-parser-5dd5898d57 from 0 to 1
+47m         Normal    Scheduled           pod/command-parser-5dd5898d57-hwpqm      Successfully assigned app/command-parser-5dd5898d57-hwpqm to k3d-command-parser-server-0
+47m         Normal    Started             pod/command-parser-5dd5898d57-hwpqm      Container started
+47m         Normal    SuccessfulCreate    replicaset/command-parser-5dd5898d57     Created pod: command-parser-5dd5898d57-hwpqm
+47m         Normal    Created             pod/command-parser-5dd5898d57-hwpqm      Container created
+47m         Normal    Pulled              pod/command-parser-5dd5898d57-hwpqm      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+47m         Warning   Unhealthy           pod/command-parser-5dd5898d57-hwpqm      Readiness probe failed: HTTP probe failed with statuscode: 503
+47m         Normal    SuccessfulDelete    replicaset/command-parser-594c8bd455     Deleted pod: command-parser-594c8bd455-wdqlr
+9m21s       Normal    ScalingReplicaSet   deployment/command-parser                Scaled up replica set command-parser-5dd5898d57 from 1 to 2
+47m         Normal    SuccessfulCreate    replicaset/command-parser-5dd5898d57     Created pod: command-parser-5dd5898d57-bpf2x
+47m         Normal    Scheduled           pod/command-parser-5dd5898d57-bpf2x      Successfully assigned app/command-parser-5dd5898d57-bpf2x to k3d-command-parser-server-0
+47m         Normal    Killing             pod/command-parser-594c8bd455-wdqlr      Stopping container parser
+49s         Normal    ScalingReplicaSet   deployment/command-parser                Scaled down replica set command-parser-594c8bd455 from 2 to 1
+47m         Normal    Pulled              pod/command-parser-5dd5898d57-bpf2x      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+47m         Normal    Created             pod/command-parser-5dd5898d57-bpf2x      Container created
+47m         Normal    Started             pod/command-parser-5dd5898d57-bpf2x      Container started
+47m         Warning   Unhealthy           pod/command-parser-5dd5898d57-bpf2x      Readiness probe failed: HTTP probe failed with statuscode: 503
+9m17s       Normal    ScalingReplicaSet   deployment/command-parser                Scaled down replica set command-parser-594c8bd455 from 1 to 0
+47m         Normal    SuccessfulDelete    replicaset/command-parser-594c8bd455     Deleted pod: command-parser-594c8bd455-jnzfg
+47m         Normal    Killing             pod/command-parser-594c8bd455-jnzfg      Stopping container parser
+47m         Warning   Unhealthy           pod/command-parser-594c8bd455-wdqlr      Readiness probe failed: Get "http://10.42.0.41:8000/readyz": dial tcp 10.42.0.41:8000: connect: connection refused
+47m         Warning   Unhealthy           pod/command-parser-594c8bd455-jnzfg      Readiness probe failed: Get "http://10.42.0.42:8000/readyz": dial tcp 10.42.0.42:8000: connect: connection refused
+10m         Normal    Started             pod/command-parser-594c8bd455-qp8qv      Container started
+10m         Normal    Created             pod/command-parser-594c8bd455-qp8qv      Container created
+10m         Normal    Pulled              pod/command-parser-594c8bd455-qp8qv      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+9m59s       Normal    Scheduled           pod/command-parser-594c8bd455-qp8qv      Successfully assigned app/command-parser-594c8bd455-qp8qv to k3d-command-parser-server-0
+8m29s       Normal    ScalingReplicaSet   deployment/command-parser                Scaled up replica set command-parser-594c8bd455 from 0 to 1
+10m         Normal    SuccessfulCreate    replicaset/command-parser-594c8bd455     Created pod: command-parser-594c8bd455-qp8qv
+9m56s       Normal    Scheduled           pod/command-parser-594c8bd455-7pvcf      Successfully assigned app/command-parser-594c8bd455-7pvcf to k3d-command-parser-server-0
+9m57s       Normal    SuccessfulDelete    replicaset/command-parser-5dd5898d57     Deleted pod: command-parser-5dd5898d57-bpf2x
+9m57s       Normal    Started             pod/command-parser-594c8bd455-7pvcf      Container started
+9m57s       Normal    Pulled              pod/command-parser-594c8bd455-7pvcf      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+3m49s       Normal    ScalingReplicaSet   deployment/command-parser                Scaled up replica set command-parser-594c8bd455 from 1 to 2
+9m57s       Normal    Killing             pod/command-parser-5dd5898d57-bpf2x      Stopping container parser
+9m57s       Normal    SuccessfulCreate    replicaset/command-parser-594c8bd455     Created pod: command-parser-594c8bd455-7pvcf
+8m24s       Normal    ScalingReplicaSet   deployment/command-parser                Scaled down replica set command-parser-5dd5898d57 from 2 to 1
+9m57s       Normal    Created             pod/command-parser-594c8bd455-7pvcf      Container created
+9m53s       Warning   Unhealthy           pod/command-parser-594c8bd455-7pvcf      Readiness probe failed: HTTP probe failed with statuscode: 503
+9m52s       Normal    SuccessfulDelete    replicaset/command-parser-5dd5898d57     Deleted pod: command-parser-5dd5898d57-hwpqm
+9m52s       Normal    Killing             pod/command-parser-5dd5898d57-hwpqm      Stopping container parser
+9m52s       Warning   Unhealthy           pod/command-parser-5dd5898d57-bpf2x      Readiness probe failed: Get "http://10.42.0.44:8000/readyz": dial tcp 10.42.0.44:8000: connect: connection refused
+8m20s       Normal    ScalingReplicaSet   deployment/command-parser                Scaled down replica set command-parser-5dd5898d57 from 1 to 0
+9m47s       Warning   Unhealthy           pod/command-parser-5dd5898d57-hwpqm      Readiness probe failed: Get "http://10.42.0.43:8000/readyz": dial tcp 10.42.0.43:8000: connect: connection refused
+9m25s       Normal    SuccessfulCreate    replicaset/command-parser-5dd5898d57     Created pod: command-parser-5dd5898d57-6xb5f
+9m24s       Normal    Scheduled           pod/command-parser-5dd5898d57-6xb5f      Successfully assigned app/command-parser-5dd5898d57-6xb5f to k3d-command-parser-server-0
+9m25s       Normal    Started             pod/command-parser-5dd5898d57-6xb5f      Container started
+9m25s       Normal    Created             pod/command-parser-5dd5898d57-6xb5f      Container created
+9m25s       Normal    Pulled              pod/command-parser-5dd5898d57-6xb5f      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+9m22s       Warning   Unhealthy           pod/command-parser-5dd5898d57-6xb5f      Readiness probe failed: HTTP probe failed with statuscode: 503
+9m21s       Normal    SuccessfulDelete    replicaset/command-parser-594c8bd455     Deleted pod: command-parser-594c8bd455-7pvcf
+9m20s       Normal    Scheduled           pod/command-parser-5dd5898d57-sg6qn      Successfully assigned app/command-parser-5dd5898d57-sg6qn to k3d-command-parser-server-0
+9m21s       Normal    Created             pod/command-parser-5dd5898d57-sg6qn      Container created
+9m21s       Normal    Pulled              pod/command-parser-5dd5898d57-sg6qn      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+9m21s       Normal    Killing             pod/command-parser-594c8bd455-7pvcf      Stopping container parser
+9m21s       Normal    SuccessfulCreate    replicaset/command-parser-5dd5898d57     Created pod: command-parser-5dd5898d57-sg6qn
+9m20s       Normal    Started             pod/command-parser-5dd5898d57-sg6qn      Container started
+9m18s       Warning   Unhealthy           pod/command-parser-5dd5898d57-sg6qn      Readiness probe failed: HTTP probe failed with statuscode: 503
+9m17s       Normal    Killing             pod/command-parser-594c8bd455-qp8qv      Stopping container parser
+9m17s       Normal    SuccessfulDelete    replicaset/command-parser-594c8bd455     Deleted pod: command-parser-594c8bd455-qp8qv
+8m27s       Normal    Scheduled           pod/command-parser-594c8bd455-dvh6z      Successfully assigned app/command-parser-594c8bd455-dvh6z to k3d-command-parser-server-0
+8m28s       Normal    SuccessfulCreate    replicaset/command-parser-594c8bd455     Created pod: command-parser-594c8bd455-dvh6z
+8m28s       Normal    Started             pod/command-parser-594c8bd455-dvh6z      Container started
+8m28s       Normal    Created             pod/command-parser-594c8bd455-dvh6z      Container created
+8m28s       Normal    Pulled              pod/command-parser-594c8bd455-dvh6z      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+8m25s       Warning   Unhealthy           pod/command-parser-594c8bd455-dvh6z      Readiness probe failed: HTTP probe failed with statuscode: 503
+8m24s       Normal    SuccessfulCreate    replicaset/command-parser-594c8bd455     Created pod: command-parser-594c8bd455-2rm5b
+8m24s       Normal    Killing             pod/command-parser-5dd5898d57-6xb5f      Stopping container parser
+8m24s       Normal    SuccessfulDelete    replicaset/command-parser-5dd5898d57     Deleted pod: command-parser-5dd5898d57-6xb5f
+8m23s       Normal    Scheduled           pod/command-parser-594c8bd455-2rm5b      Successfully assigned app/command-parser-594c8bd455-2rm5b to k3d-command-parser-server-0
+8m23s       Normal    Created             pod/command-parser-594c8bd455-2rm5b      Container created
+8m23s       Normal    Started             pod/command-parser-594c8bd455-2rm5b      Container started
+8m23s       Normal    Pulled              pod/command-parser-594c8bd455-2rm5b      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+8m21s       Warning   Unhealthy           pod/command-parser-594c8bd455-2rm5b      Readiness probe failed: HTTP probe failed with statuscode: 503
+8m20s       Normal    SuccessfulDelete    replicaset/command-parser-5dd5898d57     Deleted pod: command-parser-5dd5898d57-sg6qn
+8m20s       Normal    Killing             pod/command-parser-5dd5898d57-sg6qn      Stopping container parser
+8m18s       Warning   Unhealthy           pod/command-parser-5dd5898d57-6xb5f      Readiness probe failed: Get "http://10.42.0.47:8000/readyz": dial tcp 10.42.0.47:8000: connect: connection refused
+8m14s       Warning   Unhealthy           pod/command-parser-5dd5898d57-sg6qn      Readiness probe failed: Get "http://10.42.0.48:8000/readyz": dial tcp 10.42.0.48:8000: connect: connection refused
+7m21s       Normal    Killing             pod/command-parser-594c8bd455-2rm5b      Stopping container parser
+7m20s       Normal    Created             pod/command-parser-594c8bd455-hzjjq      Container created
+7m20s       Normal    Pulled              pod/command-parser-594c8bd455-hzjjq      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+7m19s       Normal    Scheduled           pod/command-parser-594c8bd455-hzjjq      Successfully assigned app/command-parser-594c8bd455-hzjjq to k3d-command-parser-server-0
+7m20s       Normal    SuccessfulCreate    replicaset/command-parser-594c8bd455     Created pod: command-parser-594c8bd455-hzjjq
+7m20s       Normal    Started             pod/command-parser-594c8bd455-hzjjq      Container started
+7m16s       Warning   Unhealthy           pod/command-parser-594c8bd455-hzjjq      Readiness probe failed: HTTP probe failed with statuscode: 503
+7m16s       Warning   Unhealthy           pod/command-parser-594c8bd455-2rm5b      Readiness probe failed: Get "http://10.42.0.50:8000/readyz": dial tcp 10.42.0.50:8000: connect: connection refused
+49s         Normal    SuccessfulRescale   horizontalpodautoscaler/command-parser   New size: 1; reason: All metrics below target
+4m19s       Normal    Killing             pod/command-parser-594c8bd455-dvh6z      Stopping container parser
+4m19s       Normal    SuccessfulDelete    replicaset/command-parser-594c8bd455     Deleted pod: command-parser-594c8bd455-dvh6z
+3m48s       Normal    Scheduled           pod/command-parser-594c8bd455-pn95p      Successfully assigned app/command-parser-594c8bd455-pn95p to k3d-command-parser-server-0
+3m49s       Normal    Started             pod/command-parser-594c8bd455-pn95p      Container started
+3m49s       Normal    Created             pod/command-parser-594c8bd455-pn95p      Container created
+3m49s       Normal    Pulled              pod/command-parser-594c8bd455-pn95p      Container image "command-parser:task3" already present on machine and can be accessed by the pod
+3m49s       Normal    SuccessfulCreate    replicaset/command-parser-594c8bd455     Created pod: command-parser-594c8bd455-pn95p
+3m49s       Normal    SuccessfulRescale   horizontalpodautoscaler/command-parser   New size: 2; reason: cpu resource utilization (percentage of request) above target
+3m46s       Warning   Unhealthy           pod/command-parser-594c8bd455-pn95p      Readiness probe failed: HTTP probe failed with statuscode: 503
+49s         Normal    SuccessfulDelete    replicaset/command-parser-594c8bd455     Deleted pod: command-parser-594c8bd455-pn95p
+49s         Normal    Killing             pod/command-parser-594c8bd455-pn95p      Stopping container parser
+44s         Warning   Unhealthy           pod/command-parser-594c8bd455-pn95p      Readiness probe failed: Get "http://10.42.0.52:8000/readyz": dial tcp 10.42.0.52:8000: connect: connection refused

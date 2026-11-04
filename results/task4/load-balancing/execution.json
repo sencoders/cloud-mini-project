@@ -1,0 +1,7 @@
+{
+  "returncode": 1,
+  "wall_seconds": 137.77674850006588,
+  "actions": [],
+  "headers_path": "results/loadtest_headers.json",
+  "csv_prefix": "results/loadtest"
+}

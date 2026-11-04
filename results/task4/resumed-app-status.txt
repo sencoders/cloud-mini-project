@@ -1,0 +1,6 @@
+NAME                             READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES                 SELECTOR
+deployment.apps/command-parser   2/2     2            2           41m   parser       command-parser:task3   app=command-parser
+
+NAME                                  READY   STATUS    RESTARTS   AGE   IP           NODE                          NOMINATED NODE   READINESS GATES
+pod/command-parser-5dd5898d57-bpf2x   1/1     Running   0          34m   10.42.0.44   k3d-command-parser-server-0   <none>           <none>
+pod/command-parser-5dd5898d57-hwpqm   1/1     Running   0          35m   10.42.0.43   k3d-command-parser-server-0   <none>           <none>

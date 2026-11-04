@@ -1,0 +1,17 @@
+[
+  {
+    "action": "delete-pod",
+    "started_at_seconds": 16.117933874949813,
+    "finished_at_seconds": 23.456855040974915,
+    "result": {
+      "deleted_pod": "command-parser-594c8bd455-2rm5b",
+      "deleted_uid": "778bbb8e-1d81-42b5-a689-ed6c26554b52",
+      "replicas_restored": 2,
+      "replacement_ready_seconds": 6.862672166898847,
+      "replacement_pods": [
+        "command-parser-594c8bd455-dvh6z",
+        "command-parser-594c8bd455-hzjjq"
+      ]
+    }
+  }
+]
