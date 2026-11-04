@@ -16,7 +16,7 @@ SHA-256: `1865c9ddc2a723247e96336c0ef966cd3b669aa904ae03d29f77ef4fe92b03e5`.
 
 Two independent cleaning runs produced the same checksum.
 See results/full/ for raw shards, logs, ID accounting and concurrency evidence.
-No Task 2 training was started.
+This Task 1 milestone predates training; completed training is documented in task2-results.md.
 
 The workers overlapped for at least 2,173 seconds (36 minutes 13 seconds), as
 measured from container intervals for different shard indices. Retried Pods and

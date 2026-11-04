@@ -1,0 +1,10 @@
+{
+  "pages": 7,
+  "all_seven_tasks": true,
+  "threshold_failures_disclosed": true,
+  "cost_assumptions_disclosed": true,
+  "tests_passed": 129,
+  "tests_skipped": 1,
+  "lint_passed": true,
+  "supplied_files_unchanged": 9
+}

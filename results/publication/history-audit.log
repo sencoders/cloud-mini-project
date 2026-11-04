@@ -1,0 +1,11 @@
+{
+  "audited_head": "cb4249bef4cf00f7a2c45cff4942094165ba92cc",
+  "commits": 6,
+  "tracked_files": 576,
+  "distinct_history_blobs": 533,
+  "bytes_inspected": 50224360,
+  "credential_or_unexpected_binary_findings": [],
+  "forbidden_paths_in_any_commit": [],
+  "historical_blobs_with_local_user_paths": 32,
+  "literal_credential_fields_for_review": []
+}

@@ -18,3 +18,16 @@ __pycache__/
 *.zip
 .venv-*/
 *.whl
+# Private runtime/config variants and local tooling outputs.
+.env.*
+.aws/
+.ruff_cache/
+.coverage
+htmlcov/
+*.p12
+*.pfx
+kubeconfig
+kubeconfig.*
+credentials.json
+# Separate student reflection/submission staging; not source or model assets.
+/submission/

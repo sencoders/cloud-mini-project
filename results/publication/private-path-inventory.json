@@ -1,0 +1,195 @@
+[
+  {
+    "oid": "c51a321b75c85c5369c503957bbf97ce67e7b326",
+    "paths": [
+      "results/commands.log"
+    ]
+  },
+  {
+    "oid": "e48f74790931d8ea5e208d96e1542b261b432109",
+    "paths": [
+      "results/dependencies.log"
+    ]
+  },
+  {
+    "oid": "1d8e34f9f1ee93880b313e798c24e69956272aca",
+    "paths": [
+      "results/finish-attempt1.log"
+    ]
+  },
+  {
+    "oid": "9d3dfd90fce089d28432b37c6baefd828a724c6a",
+    "paths": [
+      "results/task2/dependencies.log"
+    ]
+  },
+  {
+    "oid": "6f0b7651e9b113711b3a5da8f44b045fd6df30a6",
+    "paths": [
+      "results/task2/evaluation/student_v1_score.log"
+    ]
+  },
+  {
+    "oid": "8bd2916359cedd6fc988bc27193b9d49ddbaf37a",
+    "paths": [
+      "results/task2/evaluation/teacher_score.log"
+    ]
+  },
+  {
+    "oid": "8210ff024e70dae71251863c714bdd76beb7fb00",
+    "paths": [
+      "results/task2/evaluation/untrained_score.log"
+    ]
+  },
+  {
+    "oid": "3e7ad73bac4e809ba3398d125a43cc48845fa4ef",
+    "paths": [
+      "results/task2/v1-package-command.log"
+    ]
+  },
+  {
+    "oid": "2c7f2b6ca695bca36468c832558ae69057fd30cf",
+    "paths": [
+      "results/task2/v2-package-command.log"
+    ]
+  },
+  {
+    "oid": "6cbafd1988177a1cc6f71682a128d29af47a7006",
+    "paths": [
+      "results/task3/dependencies.log"
+    ]
+  },
+  {
+    "oid": "bbfe03c589bfb1b33aa3b5ad487812e8e5ae202c",
+    "paths": [
+      "results/task3/docker-runs/20261104T134242015031Z/docker-test-commands.log"
+    ]
+  },
+  {
+    "oid": "0e2d49581c386cbfe49acef79713dd22d3e4c1f9",
+    "paths": [
+      "results/task3/initial-harness-run/docker-test-commands.log"
+    ]
+  },
+  {
+    "oid": "8091238c4a041a8819bf149b31f63fbc03ebbdcf",
+    "paths": [
+      "results/task3/initial-harness-run/docker-test.log"
+    ]
+  },
+  {
+    "oid": "30f9755cefde76d12993863b8980a15ff0597708",
+    "paths": [
+      "results/task3/locust-dependencies.log"
+    ]
+  },
+  {
+    "oid": "f3a8c0cf81ee8db32390f21ab02f63ab62a9c354",
+    "paths": [
+      "results/task3/unit-tests.log"
+    ]
+  },
+  {
+    "oid": "1dcb9d5eee618599f1fa0174499375e9b4fd1642",
+    "paths": [
+      "results/task4/autoscaling-load/command.txt"
+    ]
+  },
+  {
+    "oid": "331866659ebe66a65ed119a040c65cf9e3162c78",
+    "paths": [
+      "results/task4/deploy-attempt1.log"
+    ]
+  },
+  {
+    "oid": "a85e128f53b88300bc83c2f4b026bdb3f3544dbc",
+    "paths": [
+      "results/task4/experiments.log"
+    ]
+  },
+  {
+    "oid": "9e740d853b4abce13aa4cc9caa5eb01ee4f249a2",
+    "paths": [
+      "results/task4/load-balancing/command.txt"
+    ]
+  },
+  {
+    "oid": "f24f324a10c2d8ac8f72bcc2570e8164670391c3",
+    "paths": [
+      "results/task4/recovery/command.txt"
+    ]
+  },
+  {
+    "oid": "b9e19157473514177dc14eb9db935519243507e5",
+    "paths": [
+      "results/task4/rolling-interrupted-20261104T143229Z/command.txt",
+      "results/task4/rolling/command.txt"
+    ]
+  },
+  {
+    "oid": "7b35595f61741f29c29feb508b82d0b7658ad796",
+    "paths": [
+      "results/task4/unit-tests-resumed.log"
+    ]
+  },
+  {
+    "oid": "8c24fe8e27d9c8a97cf4ca18ab2a39063f1f66c7",
+    "paths": [
+      "results/task4/unit-tests.log"
+    ]
+  },
+  {
+    "oid": "2f99e5e810909c8e99fa03921c95a2439f89e329",
+    "paths": [
+      "results/task6/dependencies.log"
+    ]
+  },
+  {
+    "oid": "3eeb68cc12ed6e2ab55e2c869d09b6933c331dd8",
+    "paths": [
+      "results/task6/local-gate-demonstration.json"
+    ]
+  },
+  {
+    "oid": "a815d06116500bcee48d04f3b12821597ac70b35",
+    "paths": [
+      "results/task6/local-release-evaluation/execution.json"
+    ]
+  },
+  {
+    "oid": "52ea9ca571eac1442b1922b7387212ba626dfcc4",
+    "paths": [
+      "results/task6/local-release-evaluation/execution.log"
+    ]
+  },
+  {
+    "oid": "942ff2861d7e79bf9959a038b71133694797f364",
+    "paths": [
+      "results/task6/local-release-evaluation/score.log"
+    ]
+  },
+  {
+    "oid": "5dde34216abde5864f97302d8002b797a0d88455",
+    "paths": [
+      "results/task6/local-student_v1-gate.log"
+    ]
+  },
+  {
+    "oid": "34e0a04fd0bb304d27d3da0314a752a62fbb54b9",
+    "paths": [
+      "results/task6/local-untrained-gate.log"
+    ]
+  },
+  {
+    "oid": "70a2ad76a47fab7097ebc8a50bc370f450de7409",
+    "paths": [
+      "results/task6/unit-tests.log"
+    ]
+  },
+  {
+    "oid": "0bf842088bacb6a64ef06e3eaa5cff2d3e113833",
+    "paths": [
+      "results/commands.log"
+    ]
+  }
+]
