@@ -1,0 +1,40 @@
+{
+  "pages": 7,
+  "seven_task_sections": true,
+  "student_name": "Shreeja Chaudhary",
+  "roll_number": "230101089",
+  "clickable_uris": [
+    "https://github.com/sencoders/cloud-mini-project",
+    "https://github.com/sencoders/cloud-mini-project/releases/tag/models-v1-v2",
+    "https://github.com/sencoders/cloud-mini-project/actions/runs/42029372903",
+    "https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782"
+  ],
+  "metrics_match_saved_scorer_reports": {
+    "Teacher phi3.5": [
+      83.0,
+      74.0,
+      64.0,
+      64.0,
+      76.0,
+      44.0
+    ],
+    "Untrained Pythia": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Student V1": [
+      100.0,
+      80.0,
+      66.0,
+      70.0,
+      77.0,
+      26.0
+    ]
+  },
+  "threshold_failures_and_assumptions_disclosed": true,
+  "handwritten_reflection_present": false
+}

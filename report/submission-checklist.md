@@ -16,3 +16,15 @@
 - Review the seven-section `report/report.pdf` (at most eight pages).
 - Tag the final reviewed submission commit `final`, and publish that tag only when
   ready. No final tag is created automatically while mandatory evidence is missing.
+
+## Student and archive procedure
+
+Student-provided details: **Shreeja Chaudhary**, **230101089**. The actual scan
+`230101089.pdf` is still missing. Please supply the real three-page handwritten
+reflection with name, roll number and repository URL; do not substitute the typeset
+report or generated test PDFs. No final ZIP or final tag is created while it is missing.
+
+Follow docs/final-submission.md. `make submission-plan` is safe now;
+`make submission-zip REVIEWED=1` is reserved for a real reviewed scan and clean,
+committed source. Final outputs are ignored `submission/230101089.zip` and its hash.
+The PDF does not specify ZIP format; this filename follows the student's added request.

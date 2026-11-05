@@ -21,7 +21,7 @@ fully disclosed in [AI_USE.md](AI_USE.md).
 | Rolling V1→V2→V1 | Version changes verified; 24/308 failures (7.792%) |
 | HPA | Observed 1→2→1; min 1, max 2, CPU target 70% |
 | Networking | Supplied simulator 6/6; 25 focused networking tests |
-| Unit suite | 129 passed, 1 optional live-S3 test skipped |
+| Unit suite | 145 passed, 1 optional live-S3 test skipped |
 | Estimated cost | INR 0.6586 per 1,000 attempts at the measured two-replica rate |
 
 The **rolling ≤0.5% error criterion is unmet**. The **baseline ≤1% error criterion
@@ -200,3 +200,16 @@ No `final` tag is created during this publication stage.
 
 Dataset attribution: SLURP, Bastianelli et al., EMNLP 2020, CC BY 4.0,
 https://github.com/pswietojanski/slurp. Base student: EleutherAI/pythia-70m, Apache 2.0.
+
+## Final submission packaging (blocked until the real reflection arrives)
+
+Student: **Shreeja Chaudhary**, roll number **230101089**. Required student filenames:
+`230101089.pdf` (actual three-page handwritten reflection) and `230101089.zip`.
+See [final submission procedure](docs/final-submission.md) for the exact checklist,
+ZIP layout, verification, Release retry and deferred tag commands.
+
+`make submission-plan` creates an inspection plan only. After the real scan is
+received, visually reviewed and placed at `.local/submission-input/230101089.pdf`,
+with clean committed source, `make submission-zip REVIEWED=1` builds the source-only
+ZIP under ignored `submission/`. It excludes private state and weights, verifies
+payload hashes/CRC, and creates no tag. No reflection or final ZIP is fabricated.

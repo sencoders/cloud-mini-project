@@ -60,3 +60,13 @@ performance-report:
 	$(PYTHON) scripts/report_task7.py
 down-dry-run:
 	PYTHONPATH=. $(PYTHON) scripts/system.py down --dry-run
+
+# Reflection must be a real reviewed scan; no target creates a Git tag.
+ROLL_NUMBER ?= 230101089
+REFLECTION ?= .local/submission-input/$(ROLL_NUMBER).pdf
+.PHONY: submission-plan submission-zip
+submission-plan:
+	$(PYTHON) -m scripts.package_submission --roll-number $(ROLL_NUMBER) --reflection "$(REFLECTION)" --plan $(if $(filter 1,$(REVIEWED)),--reflection-reviewed,) --plan-output .local/submission-plan.json
+submission-zip:
+	@test "$(REVIEWED)" = "1" || { echo 'Review the real handwritten scan, then use REVIEWED=1'; exit 1; }
+	$(PYTHON) -m scripts.package_submission --roll-number $(ROLL_NUMBER) --reflection "$(REFLECTION)" --reflection-reviewed --output submission/$(ROLL_NUMBER).zip

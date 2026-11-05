@@ -1,0 +1,11 @@
+{
+  "command": [
+    "make",
+    "submission-zip"
+  ],
+  "exit_code": 2,
+  "stdout": "Review the real handwritten scan, then use REVIEWED=1\n",
+  "stderr": "make: *** [submission-zip] Error 1\n",
+  "zip_created": false,
+  "reason": "manual review flag absent; actual handwritten scan also missing"
+}

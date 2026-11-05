@@ -1,5 +1,6 @@
 """Typeset seven task sections from preserved results; never invent remote evidence."""
 import json
+import re
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -19,7 +20,12 @@ story = []
 
 
 def text(value):
-    story.append(Paragraph(escape(value), styles['BodyText']))
+    escaped = escape(value)
+    def link(match):
+        value = match.group(0)
+        url = value.rstrip('.,;)')
+        return '<link href="' + url + '" color="#174f9c">' + url + '</link>' + value[len(url):]
+    story.append(Paragraph(re.sub(r'https?://[^\s<>]+', link, escaped), styles['BodyText']))
 
 
 def title(value):
@@ -40,10 +46,11 @@ def table(rows, widths):
 
 
 title('Task 1 — Object storage and parallel teacher labelling')
+text('Shreeja Chaudhary | Roll number: 230101089 | Repository: https://github.com/sencoders/cloud-mini-project')
 text('CS3081 Mini Project. This report separates measured local results from estimates and pending remote submission evidence. Source, manifests, commands and detailed reports are in the repository; results/ preserves genuine successes and failures.')
 text('Architecture: a single-node k3d cluster hosts SeaweedFS S3 in data, two deterministic teacher Jobs in pipeline, and the inference app in app. One native macOS Ollama phi3.5 server serves both teacher workers. Credentials are local ignored files and Kubernetes Secrets; weights are excluded from Git.')
 text('The authoritative prompt permits exactly eight intents and four JSON keys. Workers use temperature=0 and seed=42, partition by SHARD_INDEX/SHARD_COUNT, and retain unmodified teacher_raw strings. Per-ID checkpoints, retries and verified aggregate writes provide restart-safe progress without silently replacing labels.')
-table([['Measured accounting', 'Records'], ['Input, all IDs accounted exactly once', 3000], ['Invalid JSON / wrong keys', '2 / 2'], ['Invalid intent / invalid slot', '526 / 202'], ['Duplicate frames removed', 43], ['Cleaned records retained', 2225]], [330, 160])
+table([['Measured accounting', 'Records'], ['Input, all IDs accounted exactly once', 3000], ['Invalid JSON / wrong keys', '2 / 2'], ['Invalid intent / invalid slot', '526 / 202'], ['Duplicate commands removed', 43], ['Cleaned records retained', 2225]], [330, 160])
 text('Cleaned data: s3://datasets/v1/train.jsonl. SHA-256: 1865c9ddc2a723247e96336c0ef966cd3b669aa904ae03d29f77ef4fe92b03e5. Two independent cleaning runs matched. The workers overlapped for at least 2,173 seconds; 2,349 pre-recovery checkpoints remained byte-identical.')
 text('Observed limitation: the initial 768 MiB SeaweedFS limit caused an OOM restart. The final storage manifest uses 2 GiB and a 1 GiB Go memory target. This is laptop-local storage, not multi-machine durability. Improve with replicated/versioned storage and rejection-bias monitoring.')
 text('Evidence: results/full/, results/storage.json, report/task1-results.md; original inputs and instructor tools are preserved.')
@@ -84,7 +91,7 @@ text('Measured: the unchanged instructor simulator passed all 6/6 sample packets
 
 title('Task 6 — Reproducibility, tests and CI/CD')
 text('Ordered GitHub Actions: lint → unit tests → actual GitHub Release download and CPU model evaluation → score.py --min-validity 95 → Gitleaks. The secret scan runs even after earlier failure. Release archives and every model/tokenizer member must match committed hashes; there is no cached-weight fallback. A separate deliberate-bad-model workflow evaluates the real untrained pinned Pythia after verifying the downloaded Release.')
-text('Local measured verification: 129 tests passed, one optional S3 integration test skipped. Ruff 0.14.4 critical correctness checks pass. Tests exercise network decisions, cost arithmetic, strict artifact integrity/path traversal, preservation of an existing cluster and the exact teardown command.')
+text('Local measured verification: 145 tests passed, one optional S3 integration test skipped. Ruff 0.14.4 critical correctness checks pass. Tests exercise network decisions, cost arithmetic, strict artifact integrity/path traversal, preservation of an existing cluster, exact teardown and safe submission ZIP packaging.')
 text('make up genuinely verified the existing storage and app without restarting SeaweedFS or changing the HPA replica policy. The fresh-clone path downloads both released models, creates storage, builds/imports images, restores verified models to S3 and deploys the app. It uses at most three documented setup commands after system prerequisites and Release configuration.')
 text('Fresh-clone deployment is implemented but NOT end-to-end verified. Publication evidence does not establish a fresh-clone deployment. make down invokes k3d cluster delete command-parser; only its dry run and unit test were executed, deliberately preserving the working cluster and its data.')
 text('Both actual local archives passed archive and nine-member verification. The unchanged scorer accepted genuine preserved V1 predictions at 100% validity (exit 0) and rejected untrained predictions at 0% (exit 1). The new evaluator also ran all 100 V1 examples from the actual local archive in 12.441 seconds; all raw outputs matched Task 2. This proves local evaluation and gating only, not a remote workflow run.')

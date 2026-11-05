@@ -42,3 +42,10 @@ No prediction is repaired or replaced with gold labels. Measured results, failed
 thresholds, assumptions and unexecuted checks are identified in the reports.
 Publication and remote CI are reported only after verification, separately from
 historical local-only evidence. AI suggestions are not treated as test results.
+
+Final submission preparation: Codex assisted with checklist/metric/link checks,
+identity fields supplied by the student, clickable report links, a safe Git-snapshot
+ZIP packager and tests for exclusions, reflection page/name/review requirements,
+ZIP membership and hashes. Generated blank PDFs exist only as temporary unit-test
+fixtures; no personal reflection or handwritten scan was generated. The final ZIP
+and final tag remain blocked until the student's actual scan is supplied and reviewed.
