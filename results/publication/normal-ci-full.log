@@ -1,0 +1,1437 @@
+lint	Set up job	﻿2026-11-05T12:42:10.3505042Z Current runner version: '2.338.2'
+lint	Set up job	2026-11-05T12:42:10.3589273Z ##[group]Runner Image Provisioner
+lint	Set up job	2026-11-05T12:42:10.3590841Z Hosted Compute Agent
+lint	Set up job	2026-11-05T12:42:10.3612226Z Version: 20261021.618
+lint	Set up job	2026-11-05T12:42:10.3613449Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+lint	Set up job	2026-11-05T12:42:10.3614962Z Build Date: 2026-10-21T00:45:21Z
+lint	Set up job	2026-11-05T12:42:10.3616257Z Worker ID: {990d1695-728b-49a8-96b0-61ae493e8e98}
+lint	Set up job	2026-11-05T12:42:10.3617548Z Region: eastus
+lint	Set up job	2026-11-05T12:42:10.3618746Z Cloud: Azure
+lint	Set up job	2026-11-05T12:42:10.3619721Z ##[endgroup]
+lint	Set up job	2026-11-05T12:42:10.3622706Z ##[group]Operating System
+lint	Set up job	2026-11-05T12:42:10.3623877Z Ubuntu
+lint	Set up job	2026-11-05T12:42:10.3624874Z 24.04.5
+lint	Set up job	2026-11-05T12:42:10.3626013Z LTS
+lint	Set up job	2026-11-05T12:42:10.3626990Z ##[endgroup]
+lint	Set up job	2026-11-05T12:42:10.3628072Z ##[group]Runner Image
+lint	Set up job	2026-11-05T12:42:10.3629192Z Image: ubuntu-24.04
+lint	Set up job	2026-11-05T12:42:10.3630229Z Version: 20261025.353.1
+lint	Set up job	2026-11-05T12:42:10.3652773Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+lint	Set up job	2026-11-05T12:42:10.3656209Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+lint	Set up job	2026-11-05T12:42:10.3658052Z ##[endgroup]
+lint	Set up job	2026-11-05T12:42:10.3660057Z ##[group]GITHUB_TOKEN Permissions
+lint	Set up job	2026-11-05T12:42:10.3663474Z Contents: read
+lint	Set up job	2026-11-05T12:42:10.3665059Z Metadata: read
+lint	Set up job	2026-11-05T12:42:10.3666067Z ##[endgroup]
+lint	Set up job	2026-11-05T12:42:10.3669208Z Secret source: Actions
+lint	Set up job	2026-11-05T12:42:10.3670919Z Cache mode: write
+lint	Set up job	2026-11-05T12:42:10.3693016Z Prepare workflow directory
+lint	Set up job	2026-11-05T12:42:10.4741990Z Prepare all required actions
+lint	Set up job	2026-11-05T12:42:10.4900005Z Getting action download info
+lint	Set up job	2026-11-05T12:42:10.7462827Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+lint	Set up job	2026-11-05T12:42:10.8823535Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+lint	Set up job	2026-11-05T12:42:11.0824010Z Complete job name: lint
+lint	Run actions/checkout@v4	﻿2026-11-05T12:42:11.1769369Z ##[group]Run actions/checkout@v4
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.1770332Z with:
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.1770845Z   repository: sencoders/cloud-mini-project
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.1776170Z   token: ***
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.1776658Z   ssh-strict: true
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.1777135Z   ssh-user: git
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.1777609Z   persist-credentials: true
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.1778148Z   clean: true
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.1778658Z   sparse-checkout-cone-mode: true
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.1779261Z   fetch-depth: 1
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.1779752Z   fetch-tags: false
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.1780262Z   show-progress: true
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.1780776Z   lfs: false
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.1781250Z   submodules: false
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.1781908Z   set-safe-directory: true
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.1782486Z   allow-unsafe-pr-checkout: false
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.1783386Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.4952813Z Syncing repository: sencoders/cloud-mini-project
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.4956519Z ##[group]Getting Git version info
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.4958479Z Working directory is '/home/runner/work/cloud-mini-project/cloud-mini-project'
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.4974969Z [command]/usr/bin/git version
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5117025Z git version 2.56.0
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5123291Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5198639Z Temporarily overriding HOME='/home/runner/work/_temp/43a7557c-fee7-4b29-836b-2c35faec6c75' before making global git config changes
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5223203Z Adding repository directory to the temporary git global config as a safe directory
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5262673Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5307502Z Deleting the contents of '/home/runner/work/cloud-mini-project/cloud-mini-project'
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5314297Z ##[group]Initializing the repository
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5317228Z [command]/usr/bin/git init /home/runner/work/cloud-mini-project/cloud-mini-project
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5383473Z hint: Using 'master' as the name for the initial branch. This default branch name
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5394562Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5419008Z hint: to use in all of your new repositories, which will suppress this warning,
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5435318Z hint: call:
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5502906Z hint:
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5557748Z hint: 	git config --global init.defaultBranch <name>
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5570327Z hint:
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5587444Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5602970Z hint: 'development'. The just-created branch can be renamed via this command:
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5635932Z hint:
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5663487Z hint: 	git branch -m <name>
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5664707Z hint:
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5671807Z hint: Disable this message with "git config set advice.defaultBranchName false"
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5674797Z Initialized empty Git repository in /home/runner/work/cloud-mini-project/cloud-mini-project/.git/
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5681670Z [command]/usr/bin/git remote add origin https://github.com/sencoders/cloud-mini-project
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5687279Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5689227Z ##[group]Disabling automatic garbage collection
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5692169Z [command]/usr/bin/git config --local gc.auto 0
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5698436Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5704140Z ##[group]Setting up auth
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5713391Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.5748087Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.6217180Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.6313327Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.6562620Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.6633460Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.6894348Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.6954525Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.6956723Z ##[group]Fetching the repository
+lint	Run actions/checkout@v4	2026-11-05T12:42:11.6969319Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +68333d74b6e6d911108b74e638868e0821e4ba00:refs/remotes/origin/master
+lint	Run actions/checkout@v4	2026-11-05T12:42:12.2591069Z From https://github.com/sencoders/cloud-mini-project
+lint	Run actions/checkout@v4	2026-11-05T12:42:12.2593991Z  * [new ref]         68333d74b6e6d911108b74e638868e0821e4ba00 -> origin/master
+lint	Run actions/checkout@v4	2026-11-05T12:42:12.2599711Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-11-05T12:42:12.2602396Z ##[group]Determining the checkout info
+lint	Run actions/checkout@v4	2026-11-05T12:42:12.2604431Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-11-05T12:42:12.2605750Z [command]/usr/bin/git sparse-checkout disable
+lint	Run actions/checkout@v4	2026-11-05T12:42:12.2662874Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+lint	Run actions/checkout@v4	2026-11-05T12:42:12.2710221Z ##[group]Checking out the ref
+lint	Run actions/checkout@v4	2026-11-05T12:42:12.2715347Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+lint	Run actions/checkout@v4	2026-11-05T12:42:12.4952787Z Reset branch 'master'
+lint	Run actions/checkout@v4	2026-11-05T12:42:12.4983745Z branch 'master' set up to track 'origin/master'.
+lint	Run actions/checkout@v4	2026-11-05T12:42:12.4999850Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-11-05T12:42:12.5064016Z [command]/usr/bin/git log -1 --format=%H
+lint	Run actions/checkout@v4	2026-11-05T12:42:12.5107461Z 68333d74b6e6d911108b74e638868e0821e4ba00
+lint	Run actions/setup-python@v5	﻿2026-11-05T12:42:12.5553955Z ##[group]Run actions/setup-python@v5
+lint	Run actions/setup-python@v5	2026-11-05T12:42:12.5555891Z with:
+lint	Run actions/setup-python@v5	2026-11-05T12:42:12.5557117Z   python-version: 3.12
+lint	Run actions/setup-python@v5	2026-11-05T12:42:12.5558597Z   check-latest: false
+lint	Run actions/setup-python@v5	2026-11-05T12:42:12.5572321Z   token: ***
+lint	Run actions/setup-python@v5	2026-11-05T12:42:12.5573353Z   update-environment: true
+lint	Run actions/setup-python@v5	2026-11-05T12:42:12.5574794Z   allow-prereleases: false
+lint	Run actions/setup-python@v5	2026-11-05T12:42:12.5575918Z   freethreaded: false
+lint	Run actions/setup-python@v5	2026-11-05T12:42:12.5576913Z ##[endgroup]
+lint	Run actions/setup-python@v5	2026-11-05T12:42:12.7205135Z ##[group]Installed versions
+lint	Run actions/setup-python@v5	2026-11-05T12:42:12.7359120Z (node:2087) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+lint	Run actions/setup-python@v5	2026-11-05T12:42:12.7363383Z Successfully set up CPython (3.12.15)
+lint	Run actions/setup-python@v5	2026-11-05T12:42:12.7366660Z ##[endgroup]
+lint	Run actions/setup-python@v5	2026-11-05T12:42:12.7368796Z (Use `node --trace-deprecation ...` to show where the warning was created)
+lint	Run pip install ruff==0.14.4	﻿2026-11-05T12:42:12.7677455Z ##[group]Run pip install ruff==0.14.4
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:12.7679817Z ^[[36;1mpip install ruff==0.14.4^[[0m
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:12.7734384Z shell: /usr/bin/bash -e {0}
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:12.7736023Z env:
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:12.7737685Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:12.7740478Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:12.7743533Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:12.7746182Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:12.7748830Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:12.7751215Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:12.7753645Z ##[endgroup]
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:14.6851494Z Collecting ruff==0.14.4
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:14.7354165Z   Downloading ruff-0.14.4-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (25 kB)
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:14.7483132Z Downloading ruff-0.14.4-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.4 MB)
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:14.8565064Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.4/13.4 MB 147.4 MB/s  0:00:00
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:15.0086631Z Installing collected packages: ruff
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:15.1565671Z Successfully installed ruff-0.14.4
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:15.1589852Z 
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:15.1597479Z [notice] A new release of pip is available: 26.2.2 -> 26.3
+lint	Run pip install ruff==0.14.4	2026-11-05T12:42:15.1612486Z [notice] To update, run: pip install --upgrade pip
+lint	Run ruff check .	﻿2026-11-05T12:42:15.2311302Z ##[group]Run ruff check .
+lint	Run ruff check .	2026-11-05T12:42:15.2312013Z ^[[36;1mruff check .^[[0m
+lint	Run ruff check .	2026-11-05T12:42:15.2334107Z shell: /usr/bin/bash -e {0}
+lint	Run ruff check .	2026-11-05T12:42:15.2334417Z env:
+lint	Run ruff check .	2026-11-05T12:42:15.2334741Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+lint	Run ruff check .	2026-11-05T12:42:15.2335278Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+lint	Run ruff check .	2026-11-05T12:42:15.2335852Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+lint	Run ruff check .	2026-11-05T12:42:15.2336318Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+lint	Run ruff check .	2026-11-05T12:42:15.2336793Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+lint	Run ruff check .	2026-11-05T12:42:15.2337277Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+lint	Run ruff check .	2026-11-05T12:42:15.2337707Z ##[endgroup]
+lint	Run ruff check .	2026-11-05T12:42:15.2567107Z All checks passed!
+lint	Post Run actions/setup-python@v5	﻿2026-11-05T12:42:15.2703520Z Post job cleanup.
+lint	Post Run actions/setup-python@v5	2026-11-05T12:42:15.4132157Z (node:2127) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+lint	Post Run actions/setup-python@v5	2026-11-05T12:42:15.4134232Z (Use `node --trace-deprecation ...` to show where the warning was created)
+lint	Post Run actions/checkout@v4	﻿2026-11-05T12:42:15.4440453Z Post job cleanup.
+lint	Post Run actions/checkout@v4	2026-11-05T12:42:15.5672555Z [command]/usr/bin/git version
+lint	Post Run actions/checkout@v4	2026-11-05T12:42:15.5787954Z git version 2.56.0
+lint	Post Run actions/checkout@v4	2026-11-05T12:42:15.5868254Z Temporarily overriding HOME='/home/runner/work/_temp/193b6f6d-caaa-4bcb-8a58-24fca17aa11b' before making global git config changes
+lint	Post Run actions/checkout@v4	2026-11-05T12:42:15.5872153Z Adding repository directory to the temporary git global config as a safe directory
+lint	Post Run actions/checkout@v4	2026-11-05T12:42:15.6094190Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+lint	Post Run actions/checkout@v4	2026-11-05T12:42:15.6380080Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint	Post Run actions/checkout@v4	2026-11-05T12:42:15.6382763Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint	Post Run actions/checkout@v4	2026-11-05T12:42:15.6385614Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint	Post Run actions/checkout@v4	2026-11-05T12:42:15.6417350Z http.https://github.com/.extraheader
+lint	Post Run actions/checkout@v4	2026-11-05T12:42:15.6437199Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+lint	Post Run actions/checkout@v4	2026-11-05T12:42:15.7004498Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint	Post Run actions/checkout@v4	2026-11-05T12:42:15.7442630Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint	Post Run actions/checkout@v4	2026-11-05T12:42:15.7550838Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint	Complete job	﻿2026-11-05T12:42:15.8212894Z Cleaning up orphan processes
+lint	Complete job	2026-11-05T12:42:15.8612081Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+unit	Set up job	﻿2026-11-05T12:42:20.6959907Z Current runner version: '2.338.2'
+unit	Set up job	2026-11-05T12:42:20.6985332Z ##[group]Runner Image Provisioner
+unit	Set up job	2026-11-05T12:42:20.6986264Z Hosted Compute Agent
+unit	Set up job	2026-11-05T12:42:20.6986818Z Version: 20261028.624
+unit	Set up job	2026-11-05T12:42:20.6987409Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+unit	Set up job	2026-11-05T12:42:20.6988162Z Build Date: 2026-10-28T21:51:42Z
+unit	Set up job	2026-11-05T12:42:20.6988791Z Worker ID: {2de43c99-2e80-4ec1-a9eb-8b2854d5ce63}
+unit	Set up job	2026-11-05T12:42:20.6989535Z Region: westus2
+unit	Set up job	2026-11-05T12:42:20.6990064Z Cloud: Azure
+unit	Set up job	2026-11-05T12:42:20.6990555Z ##[endgroup]
+unit	Set up job	2026-11-05T12:42:20.6991950Z ##[group]Operating System
+unit	Set up job	2026-11-05T12:42:20.6992526Z Ubuntu
+unit	Set up job	2026-11-05T12:42:20.6993024Z 24.04.5
+unit	Set up job	2026-11-05T12:42:20.6993588Z LTS
+unit	Set up job	2026-11-05T12:42:20.6994391Z ##[endgroup]
+unit	Set up job	2026-11-05T12:42:20.6994961Z ##[group]Runner Image
+unit	Set up job	2026-11-05T12:42:20.6995508Z Image: ubuntu-24.04
+unit	Set up job	2026-11-05T12:42:20.6996060Z Version: 20261101.360.1
+unit	Set up job	2026-11-05T12:42:20.6997119Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+unit	Set up job	2026-11-05T12:42:20.6998919Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+unit	Set up job	2026-11-05T12:42:20.6999849Z ##[endgroup]
+unit	Set up job	2026-11-05T12:42:20.7000929Z ##[group]GITHUB_TOKEN Permissions
+unit	Set up job	2026-11-05T12:42:20.7003057Z Contents: read
+unit	Set up job	2026-11-05T12:42:20.7003594Z Metadata: read
+unit	Set up job	2026-11-05T12:42:20.7004400Z ##[endgroup]
+unit	Set up job	2026-11-05T12:42:20.7006467Z Secret source: Actions
+unit	Set up job	2026-11-05T12:42:20.7007844Z Cache mode: write
+unit	Set up job	2026-11-05T12:42:20.7008502Z Prepare workflow directory
+unit	Set up job	2026-11-05T12:42:20.7314938Z Prepare all required actions
+unit	Set up job	2026-11-05T12:42:20.7360224Z Getting action download info
+unit	Set up job	2026-11-05T12:42:21.1039528Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+unit	Set up job	2026-11-05T12:42:21.2368123Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+unit	Set up job	2026-11-05T12:42:21.4510397Z Complete job name: unit
+unit	Run actions/checkout@v4	﻿2026-11-05T12:42:21.5089418Z ##[group]Run actions/checkout@v4
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.5090112Z with:
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.5090505Z   repository: sencoders/cloud-mini-project
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.5094105Z   token: ***
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.5094484Z   ssh-strict: true
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.5094868Z   ssh-user: git
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.5095255Z   persist-credentials: true
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.5095688Z   clean: true
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.5096085Z   sparse-checkout-cone-mode: true
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.5096546Z   fetch-depth: 1
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.5097193Z   fetch-tags: false
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.5097662Z   show-progress: true
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.5098042Z   lfs: false
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.5098385Z   submodules: false
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.5098774Z   set-safe-directory: true
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.5099227Z   allow-unsafe-pr-checkout: false
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.5100042Z ##[endgroup]
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9371909Z Syncing repository: sencoders/cloud-mini-project
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9374356Z ##[group]Getting Git version info
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9377261Z Working directory is '/home/runner/work/cloud-mini-project/cloud-mini-project'
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9378339Z [command]/usr/bin/git version
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9378782Z git version 2.56.0
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9380152Z ##[endgroup]
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9384160Z Temporarily overriding HOME='/home/runner/work/_temp/a8d1d646-0ddf-4979-9b17-41be45e4fb6f' before making global git config changes
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9385383Z Adding repository directory to the temporary git global config as a safe directory
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9386511Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9388141Z Deleting the contents of '/home/runner/work/cloud-mini-project/cloud-mini-project'
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9389126Z ##[group]Initializing the repository
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9389810Z [command]/usr/bin/git init /home/runner/work/cloud-mini-project/cloud-mini-project
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9390746Z hint: Using 'master' as the name for the initial branch. This default branch name
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9391994Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9392837Z hint: to use in all of your new repositories, which will suppress this warning,
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9393999Z hint: call:
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9394350Z hint:
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9394786Z hint: 	git config --global init.defaultBranch <name>
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9395330Z hint:
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9395832Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9396662Z hint: 'development'. The just-created branch can be renamed via this command:
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9397320Z hint:
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9397673Z hint: 	git branch -m <name>
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9398105Z hint:
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9398652Z hint: Disable this message with "git config set advice.defaultBranchName false"
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9399648Z Initialized empty Git repository in /home/runner/work/cloud-mini-project/cloud-mini-project/.git/
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9401174Z [command]/usr/bin/git remote add origin https://github.com/sencoders/cloud-mini-project
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9402595Z ##[endgroup]
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9403226Z ##[group]Disabling automatic garbage collection
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9403791Z [command]/usr/bin/git config --local gc.auto 0
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9405057Z ##[endgroup]
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9405642Z ##[group]Setting up auth
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9406245Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9408135Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9642075Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9687366Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9896426Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+unit	Run actions/checkout@v4	2026-11-05T12:42:21.9924013Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.0122797Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.0168358Z ##[endgroup]
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.0169219Z ##[group]Fetching the repository
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.0177690Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +68333d74b6e6d911108b74e638868e0821e4ba00:refs/remotes/origin/master
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.6075563Z From https://github.com/sencoders/cloud-mini-project
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.6077725Z  * [new ref]         68333d74b6e6d911108b74e638868e0821e4ba00 -> origin/master
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.6119883Z ##[endgroup]
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.6135041Z ##[group]Determining the checkout info
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.6155008Z ##[endgroup]
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.6163799Z [command]/usr/bin/git sparse-checkout disable
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.6214844Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.6241468Z ##[group]Checking out the ref
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.6242870Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.7730335Z Reset branch 'master'
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.7734648Z branch 'master' set up to track 'origin/master'.
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.7767770Z ##[endgroup]
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.7820292Z [command]/usr/bin/git log -1 --format=%H
+unit	Run actions/checkout@v4	2026-11-05T12:42:22.7854753Z 68333d74b6e6d911108b74e638868e0821e4ba00
+unit	Run actions/setup-python@v5	﻿2026-11-05T12:42:22.8108512Z ##[group]Run actions/setup-python@v5
+unit	Run actions/setup-python@v5	2026-11-05T12:42:22.8108994Z with:
+unit	Run actions/setup-python@v5	2026-11-05T12:42:22.8109274Z   python-version: 3.12
+unit	Run actions/setup-python@v5	2026-11-05T12:42:22.8109628Z   check-latest: false
+unit	Run actions/setup-python@v5	2026-11-05T12:42:22.8115024Z   token: ***
+unit	Run actions/setup-python@v5	2026-11-05T12:42:22.8115331Z   update-environment: true
+unit	Run actions/setup-python@v5	2026-11-05T12:42:22.8115855Z   allow-prereleases: false
+unit	Run actions/setup-python@v5	2026-11-05T12:42:22.8116230Z   freethreaded: false
+unit	Run actions/setup-python@v5	2026-11-05T12:42:22.8116554Z ##[endgroup]
+unit	Run actions/setup-python@v5	2026-11-05T12:42:22.9017889Z ##[group]Installed versions
+unit	Run actions/setup-python@v5	2026-11-05T12:42:22.9089890Z (node:2231) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+unit	Run actions/setup-python@v5	2026-11-05T12:42:22.9091906Z Successfully set up CPython (3.12.16)
+unit	Run actions/setup-python@v5	2026-11-05T12:42:22.9104889Z (Use `node --trace-deprecation ...` to show where the warning was created)
+unit	Run actions/setup-python@v5	2026-11-05T12:42:22.9106654Z ##[endgroup]
+unit	Install CPU-only dependencies	﻿2026-11-05T12:42:22.9326489Z ##[group]Run pip install torch==2.8.0+cpu --index-url https://download.pytorch.org/whl/cpu
+unit	Install CPU-only dependencies	2026-11-05T12:42:22.9328380Z ^[[36;1mpip install torch==2.8.0+cpu --index-url https://download.pytorch.org/whl/cpu^[[0m
+unit	Install CPU-only dependencies	2026-11-05T12:42:22.9329766Z ^[[36;1mpip install -r requirements-service-dev.txt^[[0m
+unit	Install CPU-only dependencies	2026-11-05T12:42:22.9380465Z shell: /usr/bin/bash -e {0}
+unit	Install CPU-only dependencies	2026-11-05T12:42:22.9381233Z env:
+unit	Install CPU-only dependencies	2026-11-05T12:42:22.9381840Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+unit	Install CPU-only dependencies	2026-11-05T12:42:22.9383038Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+unit	Install CPU-only dependencies	2026-11-05T12:42:22.9384373Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+unit	Install CPU-only dependencies	2026-11-05T12:42:22.9385405Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+unit	Install CPU-only dependencies	2026-11-05T12:42:22.9386393Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+unit	Install CPU-only dependencies	2026-11-05T12:42:22.9387392Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+unit	Install CPU-only dependencies	2026-11-05T12:42:22.9388269Z ##[endgroup]
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.1781087Z Looking in indexes: https://download.pytorch.org/whl/cpu
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.3178282Z Collecting torch==2.8.0+cpu
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.4039694Z   Downloading torch-2.8.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (29 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.4411026Z Collecting filelock (from torch==2.8.0+cpu)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.4922107Z   Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.5112573Z Collecting typing-extensions>=4.10.0 (from torch==2.8.0+cpu)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.5178218Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.5402260Z Collecting setuptools (from torch==2.8.0+cpu)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.5504281Z   Downloading setuptools-78.1.0-py3-none-any.whl.metadata (6.6 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.5713618Z Collecting sympy>=1.13.3 (from torch==2.8.0+cpu)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.5784638Z   Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.6042828Z Collecting networkx (from torch==2.8.0+cpu)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.6109717Z   Downloading networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.6371459Z Collecting jinja2 (from torch==2.8.0+cpu)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.6474559Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.6700256Z Collecting fsspec (from torch==2.8.0+cpu)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.6766128Z   Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.7032401Z Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch==2.8.0+cpu)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.7098395Z   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.7318852Z Collecting MarkupSafe>=2.0 (from jinja2->torch==2.8.0+cpu)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.7424450Z   Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:24.7658956Z Downloading torch-2.8.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl (183.9 MB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:28.1528585Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 183.9/183.9 MB 54.5 MB/s  0:00:03
+unit	Install CPU-only dependencies	2026-11-05T12:42:28.1601283Z Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:28.8070340Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 9.6 MB/s  0:00:00
+unit	Install CPU-only dependencies	2026-11-05T12:42:28.8137536Z Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:29.2895409Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 580.3 kB/s  0:00:00
+unit	Install CPU-only dependencies	2026-11-05T12:42:29.2964480Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:29.7565755Z Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:29.7666945Z Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:29.7798270Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:29.7939937Z Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:29.8034330Z Downloading networkx-3.7-py3-none-any.whl (2.1 MB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:29.8286641Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 79.5 MB/s  0:00:00
+unit	Install CPU-only dependencies	2026-11-05T12:42:29.8392589Z Downloading setuptools-78.1.0-py3-none-any.whl (1.3 MB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:29.8599135Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 58.6 MB/s  0:00:00
+unit	Install CPU-only dependencies	2026-11-05T12:42:30.1156648Z Installing collected packages: mpmath, typing-extensions, sympy, setuptools, networkx, MarkupSafe, fsspec, filelock, jinja2, torch
+unit	Install CPU-only dependencies	2026-11-05T12:42:41.8294939Z 
+unit	Install CPU-only dependencies	2026-11-05T12:42:41.8315149Z Successfully installed MarkupSafe-3.0.3 filelock-4.2.4 fsspec-2026.9.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.7 setuptools-78.1.0 sympy-1.14.0 torch-2.8.0+cpu typing-extensions-4.16.0
+unit	Install CPU-only dependencies	2026-11-05T12:42:42.6796021Z Collecting boto3==1.43.123 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 1))
+unit	Install CPU-only dependencies	2026-11-05T12:42:42.7317802Z   Downloading boto3-1.43.123-py3-none-any.whl.metadata (6.6 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:42.8677723Z Collecting botocore==1.43.123 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 2))
+unit	Install CPU-only dependencies	2026-11-05T12:42:42.8749361Z   Downloading botocore-1.43.123-py3-none-any.whl.metadata (5.6 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:42.8896616Z Collecting certifi==2026.10.23 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 3))
+unit	Install CPU-only dependencies	2026-11-05T12:42:42.8964213Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:42.9884347Z Collecting charset-normalizer==3.5.2 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 4))
+unit	Install CPU-only dependencies	2026-11-05T12:42:42.9953428Z   Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.0207328Z Collecting filelock==4.2.8 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 5))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.0273230Z   Downloading filelock-4.2.8-py3-none-any.whl.metadata (2.3 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.0300333Z Requirement already satisfied: fsspec==2026.9.0 in /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 6)) (2026.9.0)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.0557806Z Collecting hf-xet==1.8.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 7))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.0624358Z   Downloading hf_xet-1.8.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.0903172Z Collecting huggingface-hub==0.36.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 8))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.0971573Z   Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.1160252Z Collecting idna==3.20 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 9))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.1230080Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.1344260Z Collecting iniconfig==2.3.1 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 10))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.1411129Z   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.1436269Z Requirement already satisfied: Jinja2==3.1.6 in /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 11)) (3.1.6)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.1531357Z Collecting jmespath==1.1.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 12))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.1598351Z   Downloading jmespath-1.1.0-py3-none-any.whl.metadata (7.6 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.1938823Z Collecting MarkupSafe==3.0.4 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 13))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.2005624Z   Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.2032128Z Requirement already satisfied: mpmath==1.3.0 in /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 14)) (1.3.0)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.2035053Z Requirement already satisfied: networkx==3.7 in /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 15)) (3.7)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.3170203Z Collecting numpy==2.3.4 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 16))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.3261916Z   Downloading numpy-2.3.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.3466432Z Collecting packaging==26.3 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 17))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.3533642Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.3650827Z Collecting pluggy==1.7.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 18))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.3717949Z   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.4096909Z Collecting psutil==7.1.3 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 19))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.4177666Z   Downloading psutil-7.1.3-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (23 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.4352791Z Collecting Pygments==2.21.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 20))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.4420405Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.4579244Z Collecting pypdf==6.21.4 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 21))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.4646601Z   Downloading pypdf-6.21.4-py3-none-any.whl.metadata (7.6 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.4840100Z Collecting pytest==9.2.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 22))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.4910107Z   Downloading pytest-9.2.0-py3-none-any.whl.metadata (7.9 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.5045596Z Collecting python-dateutil==2.9.0.post0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 23))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.5115126Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.5361836Z Collecting PyYAML==6.0.3 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 24))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.5427901Z   Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.7967790Z Collecting regex==2026.9.29 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 25))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.8040019Z   Downloading regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.8214162Z Collecting requests==2.34.2 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 26))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.8281156Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.8420658Z Collecting s3transfer==0.19.3 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 27))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.8488270Z   Downloading s3transfer-0.19.3-py3-none-any.whl.metadata (1.7 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.9111885Z Collecting safetensors==0.6.2 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 28))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.9193357Z   Downloading safetensors-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.9621639Z Collecting setuptools==84.2.1 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 29))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.9687949Z   Downloading setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.9828874Z Collecting six==1.17.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 30))
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.9897637Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:43.9922302Z Requirement already satisfied: sympy==1.14.0 in /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 31)) (1.14.0)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.0630059Z Collecting tokenizers==0.22.1 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 32))
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.0698183Z   Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.0731414Z Requirement already satisfied: torch==2.8.0 in /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 33)) (2.8.0+cpu)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.0886190Z Collecting tqdm==4.70.1 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 34))
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.0953355Z   Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.1507558Z Collecting transformers==4.57.2 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 35))
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.1586286Z   Downloading transformers-4.57.2-py3-none-any.whl.metadata (43 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.2211409Z Requirement already satisfied: typing_extensions==4.16.0 in /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 36)) (4.16.0)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.2346018Z Collecting urllib3==2.8.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 37))
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.2412273Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.2529174Z Collecting annotated-doc==0.0.5 (from -r requirements-service-dev.txt (line 2))
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.2595337Z   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.2707428Z Collecting annotated-types==0.8.0 (from -r requirements-service-dev.txt (line 3))
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.2778147Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.2925212Z Collecting anyio==4.16.0 (from -r requirements-service-dev.txt (line 4))
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.2991266Z   Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.3118004Z Collecting attrs==26.1.0 (from -r requirements-service-dev.txt (line 5))
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.3184229Z   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.3321746Z Collecting click==8.5.0 (from -r requirements-service-dev.txt (line 10))
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.3390509Z   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.3648313Z Collecting fastapi==0.121.0 (from -r requirements-service-dev.txt (line 11))
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.3729649Z   Downloading fastapi-0.121.0-py3-none-any.whl.metadata (28 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.3865206Z Collecting h11==0.16.0 (from -r requirements-service-dev.txt (line 14))
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.3939346Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.4098808Z Collecting jsonschema==4.25.1 (from -r requirements-service-dev.txt (line 20))
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.4167271Z   Downloading jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.4301217Z Collecting jsonschema-specifications==2025.9.1 (from -r requirements-service-dev.txt (line 21))
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.4373623Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.4938445Z Collecting pydantic==2.14.2 (from -r requirements-service-dev.txt (line 27))
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.5007076Z   Downloading pydantic-2.14.2-py3-none-any.whl.metadata (137 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.9420724Z Collecting pydantic_core==2.50.2 (from -r requirements-service-dev.txt (line 28))
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.9493313Z   Downloading pydantic_core-2.50.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.5 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.9662906Z Collecting referencing==0.37.0 (from -r requirements-service-dev.txt (line 31))
+unit	Install CPU-only dependencies	2026-11-05T12:42:44.9730575Z   Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.1077834Z Collecting rpds-py==2026.9.1 (from -r requirements-service-dev.txt (line 34))
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.1150909Z   Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.1331869Z Collecting starlette==0.49.3 (from -r requirements-service-dev.txt (line 39))
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.1404068Z   Downloading starlette-0.49.3-py3-none-any.whl.metadata (6.4 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.1534219Z Collecting typing-inspection==0.4.4 (from -r requirements-service-dev.txt (line 44))
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.1601480Z   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.1766966Z Collecting uvicorn==0.38.0 (from -r requirements-service-dev.txt (line 47))
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.1834775Z   Downloading uvicorn-0.38.0-py3-none-any.whl.metadata (6.8 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.1983572Z Collecting httpx==0.28.1 (from -r requirements-service-dev.txt (line 48))
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.2542754Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.3295241Z Collecting httpcore==1.* (from httpx==0.28.1->-r requirements-service-dev.txt (line 48))
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.3364806Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.3482182Z Downloading boto3-1.43.123-py3-none-any.whl (140 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.3578913Z Downloading botocore-1.43.123-py3-none-any.whl (16.2 MB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.5151355Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.2/16.2 MB 103.5 MB/s  0:00:00
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.5220682Z Downloading jmespath-1.1.0-py3-none-any.whl (20 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.5309160Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.5393571Z Downloading s3transfer-0.19.3-py3-none-any.whl (90 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.5482660Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.5574902Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.5655325Z Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.5757201Z Downloading filelock-4.2.8-py3-none-any.whl (164 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.5847013Z Downloading hf_xet-1.8.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.3 MB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.6232720Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 109.5 MB/s  0:00:00
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.6301341Z Downloading huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.6340643Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.1/566.1 kB 139.7 MB/s  0:00:00
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.6410662Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.6491183Z Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.6572693Z Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.6686991Z Downloading numpy-2.3.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.9265098Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 64.2 MB/s  0:00:00
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.9327719Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.9405363Z Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.9489049Z Downloading psutil-7.1.3-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (263 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.9589665Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.9729794Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 80.6 MB/s  0:00:00
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.9799024Z Downloading pypdf-6.21.4-py3-none-any.whl (410 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.9885297Z Downloading pytest-9.2.0-py3-none-any.whl (411 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:45.9974879Z Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.0015104Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 211.8 MB/s  0:00:00
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.0084740Z Downloading regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.0147685Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.8/807.8 kB 123.2 MB/s  0:00:00
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.0212560Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.0301498Z Downloading safetensors-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (485 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.0415634Z Downloading setuptools-84.2.1-py3-none-any.whl (876 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.0542720Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 876.3/876.3 kB 54.1 MB/s  0:00:00
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.0610533Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.0711748Z Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.1156264Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 69.9 MB/s  0:00:00
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.1223717Z Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.1343659Z Downloading transformers-4.57.2-py3-none-any.whl (12.0 MB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.2979053Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 72.6 MB/s  0:00:00
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.3047796Z Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.3129139Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.3210522Z Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.3296597Z Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.3379208Z Downloading click-8.5.0-py3-none-any.whl (125 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.3462784Z Downloading fastapi-0.121.0-py3-none-any.whl (109 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.3548490Z Downloading pydantic-2.14.2-py3-none-any.whl (490 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.3635434Z Downloading starlette-0.49.3-py3-none-any.whl (74 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.3717884Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.3800470Z Downloading jsonschema-4.25.1-py3-none-any.whl (90 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.3882856Z Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.3966318Z Downloading pydantic_core-2.50.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.2 MB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.4166680Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 106.4 MB/s  0:00:00
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.4235149Z Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.4320265Z Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.4408162Z Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.4490343Z Downloading uvicorn-0.38.0-py3-none-any.whl (68 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.4575450Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.4660349Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+unit	Install CPU-only dependencies	2026-11-05T12:42:46.6818246Z Installing collected packages: urllib3, typing-inspection, tqdm, six, setuptools, safetensors, rpds-py, regex, PyYAML, pypdf, Pygments, pydantic_core, psutil, pluggy, packaging, numpy, MarkupSafe, jmespath, iniconfig, idna, hf-xet, h11, filelock, click, charset-normalizer, certifi, attrs, annotated-types, annotated-doc, uvicorn, requests, referencing, python-dateutil, pytest, pydantic, httpcore, anyio, starlette, jsonschema-specifications, huggingface-hub, httpx, botocore, tokenizers, s3transfer, jsonschema, fastapi, transformers, boto3
+unit	Install CPU-only dependencies	2026-11-05T12:42:47.8838872Z   Attempting uninstall: setuptools
+unit	Install CPU-only dependencies	2026-11-05T12:42:47.8849386Z     Found existing installation: setuptools 78.1.0
+unit	Install CPU-only dependencies	2026-11-05T12:42:47.9042859Z     Uninstalling setuptools-78.1.0:
+unit	Install CPU-only dependencies	2026-11-05T12:42:47.9709960Z       Successfully uninstalled setuptools-78.1.0
+unit	Install CPU-only dependencies	2026-11-05T12:42:50.5038919Z   Attempting uninstall: MarkupSafe
+unit	Install CPU-only dependencies	2026-11-05T12:42:50.5050927Z     Found existing installation: MarkupSafe 3.0.3
+unit	Install CPU-only dependencies	2026-11-05T12:42:50.5061509Z     Uninstalling MarkupSafe-3.0.3:
+unit	Install CPU-only dependencies	2026-11-05T12:42:50.5067131Z       Successfully uninstalled MarkupSafe-3.0.3
+unit	Install CPU-only dependencies	2026-11-05T12:42:50.6074488Z   Attempting uninstall: filelock
+unit	Install CPU-only dependencies	2026-11-05T12:42:50.6091375Z     Found existing installation: filelock 4.2.4
+unit	Install CPU-only dependencies	2026-11-05T12:42:50.6110275Z     Uninstalling filelock-4.2.4:
+unit	Install CPU-only dependencies	2026-11-05T12:42:50.6117118Z       Successfully uninstalled filelock-4.2.4
+unit	Install CPU-only dependencies	2026-11-05T12:42:56.5994059Z 
+unit	Install CPU-only dependencies	2026-11-05T12:42:56.6022447Z Successfully installed MarkupSafe-3.0.4 PyYAML-6.0.3 Pygments-2.21.0 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.16.0 attrs-26.1.0 boto3-1.43.123 botocore-1.43.123 certifi-2026.10.23 charset-normalizer-3.5.2 click-8.5.0 fastapi-0.121.0 filelock-4.2.8 h11-0.16.0 hf-xet-1.8.0 httpcore-1.0.9 httpx-0.28.1 huggingface-hub-0.36.0 idna-3.20 iniconfig-2.3.1 jmespath-1.1.0 jsonschema-4.25.1 jsonschema-specifications-2025.9.1 numpy-2.3.4 packaging-26.3 pluggy-1.7.0 psutil-7.1.3 pydantic-2.14.2 pydantic_core-2.50.2 pypdf-6.21.4 pytest-9.2.0 python-dateutil-2.9.0.post0 referencing-0.37.0 regex-2026.9.29 requests-2.34.2 rpds-py-2026.9.1 s3transfer-0.19.3 safetensors-0.6.2 setuptools-84.2.1 six-1.17.0 starlette-0.49.3 tokenizers-0.22.1 tqdm-4.70.1 transformers-4.57.2 typing-inspection-0.4.4 urllib3-2.8.0 uvicorn-0.38.0
+unit	Install CPU-only dependencies	2026-11-05T12:42:56.6030505Z 
+unit	Install CPU-only dependencies	2026-11-05T12:42:56.6030898Z [notice] A new release of pip is available: 26.2.2 -> 26.3
+unit	Install CPU-only dependencies	2026-11-05T12:42:56.6031528Z [notice] To update, run: pip install --upgrade pip
+unit	Run python -m pytest -q	﻿2026-11-05T12:42:56.8489396Z ##[group]Run python -m pytest -q
+unit	Run python -m pytest -q	2026-11-05T12:42:56.8489614Z ^[[36;1mpython -m pytest -q^[[0m
+unit	Run python -m pytest -q	2026-11-05T12:42:56.8507681Z shell: /usr/bin/bash -e {0}
+unit	Run python -m pytest -q	2026-11-05T12:42:56.8507827Z env:
+unit	Run python -m pytest -q	2026-11-05T12:42:56.8507986Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+unit	Run python -m pytest -q	2026-11-05T12:42:56.8508373Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+unit	Run python -m pytest -q	2026-11-05T12:42:56.8508613Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+unit	Run python -m pytest -q	2026-11-05T12:42:56.8508829Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+unit	Run python -m pytest -q	2026-11-05T12:42:56.8509043Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+unit	Run python -m pytest -q	2026-11-05T12:42:56.8509263Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+unit	Run python -m pytest -q	2026-11-05T12:42:56.8509449Z ##[endgroup]
+unit	Run python -m pytest -q	2026-11-05T12:42:59.2576829Z .........................................................s.............. [ 55%]
+unit	Run python -m pytest -q	2026-11-05T12:43:01.0617489Z ..........................................................               [100%]
+unit	Run python -m pytest -q	2026-11-05T12:43:01.0618347Z =============================== warnings summary ===============================
+unit	Run python -m pytest -q	2026-11-05T12:43:01.0619255Z ../../../../../opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/starlette/testclient.py:51
+unit	Run python -m pytest -q	2026-11-05T12:43:01.0620486Z   /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/starlette/testclient.py:51: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+unit	Run python -m pytest -q	2026-11-05T12:43:01.0622498Z     _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+unit	Run python -m pytest -q	2026-11-05T12:43:01.0622972Z 
+unit	Run python -m pytest -q	2026-11-05T12:43:01.0623293Z -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+unit	Run python -m pytest -q	2026-11-05T12:43:01.0623801Z 129 passed, 1 skipped, 1 warning in 3.19s
+unit	Post Run actions/setup-python@v5	﻿2026-11-05T12:43:01.5775486Z Post job cleanup.
+unit	Post Run actions/setup-python@v5	2026-11-05T12:43:01.6633335Z (node:2377) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+unit	Post Run actions/setup-python@v5	2026-11-05T12:43:01.6634189Z (Use `node --trace-deprecation ...` to show where the warning was created)
+unit	Post Run actions/checkout@v4	﻿2026-11-05T12:43:01.6968640Z Post job cleanup.
+unit	Post Run actions/checkout@v4	2026-11-05T12:43:01.7687138Z [command]/usr/bin/git version
+unit	Post Run actions/checkout@v4	2026-11-05T12:43:01.7767816Z git version 2.56.0
+unit	Post Run actions/checkout@v4	2026-11-05T12:43:01.7798631Z Temporarily overriding HOME='/home/runner/work/_temp/ffcf53b3-bf24-47f3-8ef9-612a91179207' before making global git config changes
+unit	Post Run actions/checkout@v4	2026-11-05T12:43:01.7844516Z Adding repository directory to the temporary git global config as a safe directory
+unit	Post Run actions/checkout@v4	2026-11-05T12:43:01.7845310Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+unit	Post Run actions/checkout@v4	2026-11-05T12:43:01.7894237Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+unit	Post Run actions/checkout@v4	2026-11-05T12:43:01.7954822Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+unit	Post Run actions/checkout@v4	2026-11-05T12:43:01.8242255Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+unit	Post Run actions/checkout@v4	2026-11-05T12:43:01.8261123Z http.https://github.com/.extraheader
+unit	Post Run actions/checkout@v4	2026-11-05T12:43:01.8295224Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+unit	Post Run actions/checkout@v4	2026-11-05T12:43:01.9619605Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+unit	Post Run actions/checkout@v4	2026-11-05T12:43:01.9919082Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+unit	Post Run actions/checkout@v4	2026-11-05T12:43:01.9979619Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+unit	Complete job	﻿2026-11-05T12:43:02.0543470Z Cleaning up orphan processes
+unit	Complete job	2026-11-05T12:43:02.0824043Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+model-evaluation	Set up job	﻿2026-11-05T12:43:08.0170310Z Current runner version: '2.338.2'
+model-evaluation	Set up job	2026-11-05T12:43:08.0194279Z ##[group]Runner Image Provisioner
+model-evaluation	Set up job	2026-11-05T12:43:08.0195030Z Hosted Compute Agent
+model-evaluation	Set up job	2026-11-05T12:43:08.0195640Z Version: 20261021.618
+model-evaluation	Set up job	2026-11-05T12:43:08.0196178Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+model-evaluation	Set up job	2026-11-05T12:43:08.0196797Z Build Date: 2026-10-21T00:45:21Z
+model-evaluation	Set up job	2026-11-05T12:43:08.0197430Z Worker ID: {09a55ced-5f40-4cc8-b669-fe84c995035e}
+model-evaluation	Set up job	2026-11-05T12:43:08.0198039Z Region: westus
+model-evaluation	Set up job	2026-11-05T12:43:08.0198527Z Cloud: Azure
+model-evaluation	Set up job	2026-11-05T12:43:08.0199005Z ##[endgroup]
+model-evaluation	Set up job	2026-11-05T12:43:08.0200436Z ##[group]Operating System
+model-evaluation	Set up job	2026-11-05T12:43:08.0201025Z Ubuntu
+model-evaluation	Set up job	2026-11-05T12:43:08.0201482Z 24.04.5
+model-evaluation	Set up job	2026-11-05T12:43:08.0202288Z LTS
+model-evaluation	Set up job	2026-11-05T12:43:08.0202760Z ##[endgroup]
+model-evaluation	Set up job	2026-11-05T12:43:08.0203262Z ##[group]Runner Image
+model-evaluation	Set up job	2026-11-05T12:43:08.0203810Z Image: ubuntu-24.04
+model-evaluation	Set up job	2026-11-05T12:43:08.0204316Z Version: 20261025.353.1
+model-evaluation	Set up job	2026-11-05T12:43:08.0205183Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+model-evaluation	Set up job	2026-11-05T12:43:08.0206779Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+model-evaluation	Set up job	2026-11-05T12:43:08.0207947Z ##[endgroup]
+model-evaluation	Set up job	2026-11-05T12:43:08.0208935Z ##[group]GITHUB_TOKEN Permissions
+model-evaluation	Set up job	2026-11-05T12:43:08.0210802Z Contents: read
+model-evaluation	Set up job	2026-11-05T12:43:08.0211363Z Metadata: read
+model-evaluation	Set up job	2026-11-05T12:43:08.0212057Z ##[endgroup]
+model-evaluation	Set up job	2026-11-05T12:43:08.0214091Z Secret source: Actions
+model-evaluation	Set up job	2026-11-05T12:43:08.0214905Z Cache mode: write
+model-evaluation	Set up job	2026-11-05T12:43:08.0215800Z Prepare workflow directory
+model-evaluation	Set up job	2026-11-05T12:43:08.0697822Z Prepare all required actions
+model-evaluation	Set up job	2026-11-05T12:43:08.0738104Z Getting action download info
+model-evaluation	Set up job	2026-11-05T12:43:08.4796437Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+model-evaluation	Set up job	2026-11-05T12:43:08.5873195Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+model-evaluation	Set up job	2026-11-05T12:43:08.8698521Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+model-evaluation	Set up job	2026-11-05T12:43:09.4112384Z Complete job name: model-evaluation
+model-evaluation	Run actions/checkout@v4	﻿2026-11-05T12:43:09.4824902Z ##[group]Run actions/checkout@v4
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4825749Z with:
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4826222Z   repository: sencoders/cloud-mini-project
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4834007Z   token: ***
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4834440Z   ssh-strict: true
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4834886Z   ssh-user: git
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4835328Z   persist-credentials: true
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4835836Z   clean: true
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4836293Z   sparse-checkout-cone-mode: true
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4836850Z   fetch-depth: 1
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4837277Z   fetch-tags: false
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4837722Z   show-progress: true
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4838165Z   lfs: false
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4838564Z   submodules: false
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4839043Z   set-safe-directory: true
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4839575Z   allow-unsafe-pr-checkout: false
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4840350Z env:
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4840747Z   RELEASE_TAG: models-v1-v2
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4847811Z   GH_TOKEN: ***
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4848317Z   RELEASE_REPO: sencoders/cloud-mini-project
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4849002Z   BAD_MODEL: false
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.4849434Z ##[endgroup]
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.8781590Z Syncing repository: sencoders/cloud-mini-project
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.8784646Z ##[group]Getting Git version info
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.8786029Z Working directory is '/home/runner/work/cloud-mini-project/cloud-mini-project'
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.8787568Z [command]/usr/bin/git version
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.8928807Z git version 2.56.0
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.8954346Z ##[endgroup]
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.8968168Z Temporarily overriding HOME='/home/runner/work/_temp/824a220b-3c71-438e-b280-bb6f554d3bca' before making global git config changes
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.8976935Z Adding repository directory to the temporary git global config as a safe directory
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.8991184Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9116417Z Deleting the contents of '/home/runner/work/cloud-mini-project/cloud-mini-project'
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9118473Z ##[group]Initializing the repository
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9119421Z [command]/usr/bin/git init /home/runner/work/cloud-mini-project/cloud-mini-project
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9248889Z hint: Using 'master' as the name for the initial branch. This default branch name
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9266225Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9272516Z hint: to use in all of your new repositories, which will suppress this warning,
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9297807Z hint: call:
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9298473Z hint:
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9312558Z hint: 	git config --global init.defaultBranch <name>
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9323307Z hint:
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9324182Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9325177Z hint: 'development'. The just-created branch can be renamed via this command:
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9326003Z hint:
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9326652Z hint: 	git branch -m <name>
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9343048Z hint:
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9362753Z hint: Disable this message with "git config set advice.defaultBranchName false"
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9375920Z Initialized empty Git repository in /home/runner/work/cloud-mini-project/cloud-mini-project/.git/
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9384058Z [command]/usr/bin/git remote add origin https://github.com/sencoders/cloud-mini-project
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9426442Z ##[endgroup]
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9427762Z ##[group]Disabling automatic garbage collection
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9429155Z [command]/usr/bin/git config --local gc.auto 0
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9439474Z ##[endgroup]
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9440382Z ##[group]Setting up auth
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9441444Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:09.9443922Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:10.0029561Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:10.0032983Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:10.0244143Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:10.0289887Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:10.0525895Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:10.0564257Z ##[endgroup]
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:10.0565616Z ##[group]Fetching the repository
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:10.0579500Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +68333d74b6e6d911108b74e638868e0821e4ba00:refs/remotes/origin/master
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:11.0126348Z From https://github.com/sencoders/cloud-mini-project
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:11.0133746Z  * [new ref]         68333d74b6e6d911108b74e638868e0821e4ba00 -> origin/master
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:11.0137242Z ##[endgroup]
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:11.0138504Z ##[group]Determining the checkout info
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:11.0139495Z ##[endgroup]
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:11.0140582Z [command]/usr/bin/git sparse-checkout disable
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:11.0143134Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:11.0146133Z ##[group]Checking out the ref
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:11.0147143Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:11.1450484Z Reset branch 'master'
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:11.6863306Z branch 'master' set up to track 'origin/master'.
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:11.6882806Z ##[endgroup]
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:11.6932207Z [command]/usr/bin/git log -1 --format=%H
+model-evaluation	Run actions/checkout@v4	2026-11-05T12:43:11.6965037Z 68333d74b6e6d911108b74e638868e0821e4ba00
+model-evaluation	Run actions/setup-python@v5	﻿2026-11-05T12:43:11.7219466Z ##[group]Run actions/setup-python@v5
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:11.7219785Z with:
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:11.7219962Z   python-version: 3.12
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:11.7220160Z   check-latest: false
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:11.7222579Z   token: ***
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:11.7222782Z   update-environment: true
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:11.7223002Z   allow-prereleases: false
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:11.7223194Z   freethreaded: false
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:11.7223378Z env:
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:11.7223549Z   RELEASE_TAG: models-v1-v2
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:11.7225670Z   GH_TOKEN: ***
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:11.7225893Z   RELEASE_REPO: sencoders/cloud-mini-project
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:11.7226130Z   BAD_MODEL: false
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:11.7226307Z ##[endgroup]
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:11.8536611Z ##[group]Installed versions
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:12.0780388Z (node:2009) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:12.0782067Z (Use `node --trace-deprecation ...` to show where the warning was created)
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:12.0782543Z Successfully set up CPython (3.12.15)
+model-evaluation	Run actions/setup-python@v5	2026-11-05T12:43:12.0783569Z ##[endgroup]
+model-evaluation	Install CPU-only dependencies	﻿2026-11-05T12:43:12.0994944Z ##[group]Run pip install torch==2.8.0+cpu --index-url https://download.pytorch.org/whl/cpu
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:12.0995865Z ^[[36;1mpip install torch==2.8.0+cpu --index-url https://download.pytorch.org/whl/cpu^[[0m
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:12.0996492Z ^[[36;1mpip install -r requirements-service-dev.txt^[[0m
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:12.1099639Z shell: /usr/bin/bash -e {0}
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:12.1100084Z env:
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:12.1100364Z   RELEASE_TAG: models-v1-v2
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:12.1104616Z   GH_TOKEN: ***
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:12.1104955Z   RELEASE_REPO: sencoders/cloud-mini-project
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:12.1105291Z   BAD_MODEL: false
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:12.1105600Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:12.1106103Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:12.1106638Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:12.1107093Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:12.1107558Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:12.1108101Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:12.1108512Z ##[endgroup]
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:13.8756435Z Looking in indexes: https://download.pytorch.org/whl/cpu
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:13.9898606Z Collecting torch==2.8.0+cpu
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.0438391Z   Downloading torch-2.8.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (29 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.0696372Z Collecting filelock (from torch==2.8.0+cpu)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.1141942Z   Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.1288699Z Collecting typing-extensions>=4.10.0 (from torch==2.8.0+cpu)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.1319092Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.1405043Z Collecting setuptools (from torch==2.8.0+cpu)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.1450306Z   Downloading setuptools-78.1.0-py3-none-any.whl.metadata (6.6 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.1613813Z Collecting sympy>=1.13.3 (from torch==2.8.0+cpu)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.1646436Z   Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.1855487Z Collecting networkx (from torch==2.8.0+cpu)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.1885945Z   Downloading networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.2127756Z Collecting jinja2 (from torch==2.8.0+cpu)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.2162531Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.2336150Z Collecting fsspec (from torch==2.8.0+cpu)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.2367004Z   Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.2607798Z Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch==2.8.0+cpu)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.2648448Z   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.2817079Z Collecting MarkupSafe>=2.0 (from jinja2->torch==2.8.0+cpu)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.2850015Z   Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:14.2997176Z Downloading torch-2.8.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl (183.9 MB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:16.8007998Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 183.9/183.9 MB 73.6 MB/s  0:00:02
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:16.8040426Z Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:16.9134437Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 62.0 MB/s  0:00:00
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:16.9169227Z Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:16.9379415Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 14.4 MB/s  0:00:00
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:16.9412381Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:16.9465066Z Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:16.9516538Z Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:16.9589188Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:16.9638327Z Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:16.9684465Z Downloading networkx-3.7-py3-none-any.whl (2.1 MB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:16.9974168Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 75.8 MB/s  0:00:00
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:17.0014709Z Downloading setuptools-78.1.0-py3-none-any.whl (1.3 MB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:17.0170341Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 74.3 MB/s  0:00:00
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:17.3331282Z Installing collected packages: mpmath, typing-extensions, sympy, setuptools, networkx, MarkupSafe, fsspec, filelock, jinja2, torch
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:33.3859109Z 
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:33.3873695Z Successfully installed MarkupSafe-3.0.3 filelock-4.2.4 fsspec-2026.9.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.7 setuptools-78.1.0 sympy-1.14.0 torch-2.8.0+cpu typing-extensions-4.16.0
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.0895110Z Collecting boto3==1.43.123 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 1))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.1271599Z   Downloading boto3-1.43.123-py3-none-any.whl.metadata (6.6 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.2882632Z Collecting botocore==1.43.123 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 2))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.2921392Z   Downloading botocore-1.43.123-py3-none-any.whl.metadata (5.6 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.3561477Z Collecting certifi==2026.10.23 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 3))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.3587089Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.4833642Z Collecting charset-normalizer==3.5.2 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 4))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.4860390Z   Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.5115358Z Collecting filelock==4.2.8 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 5))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.5142779Z   Downloading filelock-4.2.8-py3-none-any.whl.metadata (2.3 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.5234606Z Requirement already satisfied: fsspec==2026.9.0 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 6)) (2026.9.0)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.5520581Z Collecting hf-xet==1.8.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 7))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.5545660Z   Downloading hf_xet-1.8.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.5843368Z Collecting huggingface-hub==0.36.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 8))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.5871581Z   Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.6061460Z Collecting idna==3.20 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 9))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.6085165Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.6270741Z Collecting iniconfig==2.3.1 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 10))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.6286879Z   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.6358978Z Requirement already satisfied: Jinja2==3.1.6 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 11)) (3.1.6)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.6467342Z Collecting jmespath==1.1.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 12))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.6488766Z   Downloading jmespath-1.1.0-py3-none-any.whl.metadata (7.6 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.6973409Z Collecting MarkupSafe==3.0.4 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 13))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.6992490Z   Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.7043447Z Requirement already satisfied: mpmath==1.3.0 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 14)) (1.3.0)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.7048130Z Requirement already satisfied: networkx==3.7 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 15)) (3.7)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.8493612Z Collecting numpy==2.3.4 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 16))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.8525584Z   Downloading numpy-2.3.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.8737294Z Collecting packaging==26.3 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 17))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.8761035Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.8893219Z Collecting pluggy==1.7.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 18))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.8917567Z   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.9381378Z Collecting psutil==7.1.3 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 19))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.9416511Z   Downloading psutil-7.1.3-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (23 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.9567733Z Collecting Pygments==2.21.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 20))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.9589400Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.9733419Z Collecting pypdf==6.21.4 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 21))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:34.9756766Z   Downloading pypdf-6.21.4-py3-none-any.whl.metadata (7.6 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.0037148Z Collecting pytest==9.2.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 22))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.0064196Z   Downloading pytest-9.2.0-py3-none-any.whl.metadata (7.9 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.0174124Z Collecting python-dateutil==2.9.0.post0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 23))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.0197427Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.0467486Z Collecting PyYAML==6.0.3 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 24))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.0494098Z   Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.3731583Z Collecting regex==2026.9.29 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 25))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.3773095Z   Downloading regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.3982048Z Collecting requests==2.34.2 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 26))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.4008870Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.4134162Z Collecting s3transfer==0.19.3 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 27))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.4158057Z   Downloading s3transfer-0.19.3-py3-none-any.whl.metadata (1.7 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.4980572Z Collecting safetensors==0.6.2 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 28))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.5022009Z   Downloading safetensors-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.5946932Z Collecting setuptools==84.2.1 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 29))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.5974515Z   Downloading setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.6106056Z Collecting six==1.17.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 30))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.6129686Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.6161323Z Requirement already satisfied: sympy==1.14.0 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 31)) (1.14.0)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.7134677Z Collecting tokenizers==0.22.1 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 32))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.7172405Z   Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.7213879Z Requirement already satisfied: torch==2.8.0 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 33)) (2.8.0+cpu)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.7365963Z Collecting tqdm==4.70.1 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 34))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.7394771Z   Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.8160395Z Collecting transformers==4.57.2 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 35))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.8199463Z   Downloading transformers-4.57.2-py3-none-any.whl.metadata (43 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.9083817Z Requirement already satisfied: typing_extensions==4.16.0 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 36)) (4.16.0)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.9213519Z Collecting urllib3==2.8.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 37))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.9230753Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.9347301Z Collecting annotated-doc==0.0.5 (from -r requirements-service-dev.txt (line 2))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.9376232Z   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.9481933Z Collecting annotated-types==0.8.0 (from -r requirements-service-dev.txt (line 3))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.9514059Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.9777218Z Collecting anyio==4.16.0 (from -r requirements-service-dev.txt (line 4))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.9803289Z   Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.9909886Z Collecting attrs==26.1.0 (from -r requirements-service-dev.txt (line 5))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:35.9933389Z   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:36.0053065Z Collecting click==8.5.0 (from -r requirements-service-dev.txt (line 10))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:36.0074822Z   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:36.0367848Z Collecting fastapi==0.121.0 (from -r requirements-service-dev.txt (line 11))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:36.0404493Z   Downloading fastapi-0.121.0-py3-none-any.whl.metadata (28 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:36.0594630Z Collecting h11==0.16.0 (from -r requirements-service-dev.txt (line 14))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:36.0621588Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:36.0840655Z Collecting jsonschema==4.25.1 (from -r requirements-service-dev.txt (line 20))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:36.0866206Z   Downloading jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:36.1368347Z Collecting jsonschema-specifications==2025.9.1 (from -r requirements-service-dev.txt (line 21))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:36.1394326Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:36.2378997Z Collecting pydantic==2.14.2 (from -r requirements-service-dev.txt (line 27))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:36.2421275Z   Downloading pydantic-2.14.2-py3-none-any.whl.metadata (137 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:36.8697211Z Collecting pydantic_core==2.50.2 (from -r requirements-service-dev.txt (line 28))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:36.8732728Z   Downloading pydantic_core-2.50.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.5 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:37.5953485Z Collecting referencing==0.37.0 (from -r requirements-service-dev.txt (line 31))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:37.5978493Z   Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:38.4500139Z Collecting rpds-py==2026.9.1 (from -r requirements-service-dev.txt (line 34))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:38.4525150Z   Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:38.7101013Z Collecting starlette==0.49.3 (from -r requirements-service-dev.txt (line 39))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:38.7125492Z   Downloading starlette-0.49.3-py3-none-any.whl.metadata (6.4 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:38.7217582Z Collecting typing-inspection==0.4.4 (from -r requirements-service-dev.txt (line 44))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:38.7240018Z   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:38.7403177Z Collecting uvicorn==0.38.0 (from -r requirements-service-dev.txt (line 47))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:38.7427216Z   Downloading uvicorn-0.38.0-py3-none-any.whl.metadata (6.8 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:38.7566963Z Collecting httpx==0.28.1 (from -r requirements-service-dev.txt (line 48))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:38.8226179Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:38.9206426Z Collecting httpcore==1.* (from httpx==0.28.1->-r requirements-service-dev.txt (line 48))
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:38.9229619Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:38.9318074Z Downloading boto3-1.43.123-py3-none-any.whl (140 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:38.9360083Z Downloading botocore-1.43.123-py3-none-any.whl (16.2 MB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.0825196Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.2/16.2 MB 110.8 MB/s  0:00:00
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.0853691Z Downloading jmespath-1.1.0-py3-none-any.whl (20 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.0895744Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.1969762Z Downloading s3transfer-0.19.3-py3-none-any.whl (90 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.2014805Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.2056707Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.2098099Z Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.2149942Z Downloading filelock-4.2.8-py3-none-any.whl (164 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.2196316Z Downloading hf_xet-1.8.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.3 MB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.2593469Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 107.2 MB/s  0:00:00
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.2645142Z Downloading huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.2694965Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.1/566.1 kB 96.8 MB/s  0:00:00
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.2717618Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.2763207Z Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.2799734Z Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.2876569Z Downloading numpy-2.3.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.5457476Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 64.1 MB/s  0:00:00
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.5495275Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.5539548Z Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.5582270Z Downloading psutil-7.1.3-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (263 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.5630599Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.5769091Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 85.7 MB/s  0:00:00
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.5796229Z Downloading pypdf-6.21.4-py3-none-any.whl (410 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.5861240Z Downloading pytest-9.2.0-py3-none-any.whl (411 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.5930654Z Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.6066794Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 48.7 MB/s  0:00:00
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.6096131Z Downloading regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.6180988Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.8/807.8 kB 84.9 MB/s  0:00:00
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.6206468Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.6267146Z Downloading safetensors-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (485 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.6320437Z Downloading setuptools-84.2.1-py3-none-any.whl (876 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.6413035Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 876.3/876.3 kB 86.7 MB/s  0:00:00
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.6438126Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.6500503Z Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.6930759Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 74.9 MB/s  0:00:00
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.6969985Z Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.7014400Z Downloading transformers-4.57.2-py3-none-any.whl (12.0 MB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.8930120Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 62.6 MB/s  0:00:00
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.8957870Z Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.9217009Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.9263124Z Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.9303335Z Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.9344611Z Downloading click-8.5.0-py3-none-any.whl (125 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.9395055Z Downloading fastapi-0.121.0-py3-none-any.whl (109 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.9439874Z Downloading pydantic-2.14.2-py3-none-any.whl (490 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.9500776Z Downloading starlette-0.49.3-py3-none-any.whl (74 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.9547771Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.9583028Z Downloading jsonschema-4.25.1-py3-none-any.whl (90 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.9622825Z Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.9662408Z Downloading pydantic_core-2.50.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.2 MB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.9908382Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 93.3 MB/s  0:00:00
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.9925537Z Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:39.9987486Z Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:40.0023324Z Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:40.0072899Z Downloading uvicorn-0.38.0-py3-none-any.whl (68 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:40.0113199Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:40.0147452Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:40.2995044Z Installing collected packages: urllib3, typing-inspection, tqdm, six, setuptools, safetensors, rpds-py, regex, PyYAML, pypdf, Pygments, pydantic_core, psutil, pluggy, packaging, numpy, MarkupSafe, jmespath, iniconfig, idna, hf-xet, h11, filelock, click, charset-normalizer, certifi, attrs, annotated-types, annotated-doc, uvicorn, requests, referencing, python-dateutil, pytest, pydantic, httpcore, anyio, starlette, jsonschema-specifications, huggingface-hub, httpx, botocore, tokenizers, s3transfer, jsonschema, fastapi, transformers, boto3
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:40.4432826Z   Attempting uninstall: setuptools
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:40.4439132Z     Found existing installation: setuptools 78.1.0
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:40.4707909Z     Uninstalling setuptools-78.1.0:
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:40.5762938Z       Successfully uninstalled setuptools-78.1.0
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:44.5183076Z   Attempting uninstall: MarkupSafe
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:44.5202534Z     Found existing installation: MarkupSafe 3.0.3
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:44.5211595Z     Uninstalling MarkupSafe-3.0.3:
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:44.5218708Z       Successfully uninstalled MarkupSafe-3.0.3
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:44.6642969Z   Attempting uninstall: filelock
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:44.6662439Z     Found existing installation: filelock 4.2.4
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:44.6671155Z     Uninstalling filelock-4.2.4:
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:44.6679270Z       Successfully uninstalled filelock-4.2.4
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:54.2742535Z 
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:54.2771592Z Successfully installed MarkupSafe-3.0.4 PyYAML-6.0.3 Pygments-2.21.0 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.16.0 attrs-26.1.0 boto3-1.43.123 botocore-1.43.123 certifi-2026.10.23 charset-normalizer-3.5.2 click-8.5.0 fastapi-0.121.0 filelock-4.2.8 h11-0.16.0 hf-xet-1.8.0 httpcore-1.0.9 httpx-0.28.1 huggingface-hub-0.36.0 idna-3.20 iniconfig-2.3.1 jmespath-1.1.0 jsonschema-4.25.1 jsonschema-specifications-2025.9.1 numpy-2.3.4 packaging-26.3 pluggy-1.7.0 psutil-7.1.3 pydantic-2.14.2 pydantic_core-2.50.2 pypdf-6.21.4 pytest-9.2.0 python-dateutil-2.9.0.post0 referencing-0.37.0 regex-2026.9.29 requests-2.34.2 rpds-py-2026.9.1 s3transfer-0.19.3 safetensors-0.6.2 setuptools-84.2.1 six-1.17.0 starlette-0.49.3 tokenizers-0.22.1 tqdm-4.70.1 transformers-4.57.2 typing-inspection-0.4.4 urllib3-2.8.0 uvicorn-0.38.0
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:54.2782497Z 
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:54.2788726Z [notice] A new release of pip is available: 26.2.2 -> 26.3
+model-evaluation	Install CPU-only dependencies	2026-11-05T12:43:54.2789322Z [notice] To update, run: pip install --upgrade pip
+model-evaluation	Download actual published Release asset (no fallback)	﻿2026-11-05T12:43:54.8013613Z ##[group]Run test -n "$RELEASE_TAG" || { echo 'Configure MODEL_RELEASE_TAG or dispatch with release_tag'; exit 1; }
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-05T12:43:54.8014292Z ^[[36;1mtest -n "$RELEASE_TAG" || { echo 'Configure MODEL_RELEASE_TAG or dispatch with release_tag'; exit 1; }^[[0m
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-05T12:43:54.8014717Z ^[[36;1mmkdir -p .local/release-download^[[0m
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-05T12:43:54.8015174Z ^[[36;1mgh release download "$RELEASE_TAG" --repo "$RELEASE_REPO" --dir .local/release-download --pattern 'pythia-70m-v1.tar.gz*'^[[0m
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-05T12:43:54.8033844Z shell: /usr/bin/bash -e {0}
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-05T12:43:54.8034057Z env:
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-05T12:43:54.8034226Z   RELEASE_TAG: models-v1-v2
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-05T12:43:54.8036448Z   GH_TOKEN: ***
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-05T12:43:54.8036667Z   RELEASE_REPO: sencoders/cloud-mini-project
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-05T12:43:54.8036913Z   BAD_MODEL: false
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-05T12:43:54.8037140Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-05T12:43:54.8037475Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-05T12:43:54.8037874Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-05T12:43:54.8038175Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-05T12:43:54.8038475Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-05T12:43:54.8038772Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-05T12:43:54.8039034Z ##[endgroup]
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	﻿2026-11-05T12:44:01.9072778Z ##[group]Run extra=()
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9073050Z ^[[36;1mextra=()^[[0m
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9073286Z ^[[36;1mif [ "$BAD_MODEL" = true ]; then extra+=(--bad-model); fi^[[0m
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9073740Z ^[[36;1mpython -m ci.evaluate_release --archive .local/release-download/pythia-70m-v1.tar.gz "${extra[@]}"^[[0m
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9074341Z ^[[36;1mpython tools/score.py results/ci/predictions.jsonl data/validation.jsonl --out results/ci/evaluation.json^[[0m
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9092929Z shell: /usr/bin/bash -e {0}
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9093141Z env:
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9093313Z   RELEASE_TAG: models-v1-v2
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9095687Z   GH_TOKEN: ***
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9095905Z   RELEASE_REPO: sencoders/cloud-mini-project
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9096144Z   BAD_MODEL: false
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9096385Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9096731Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9097063Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9097410Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9097704Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9097999Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:01.9098262Z ##[endgroup]
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:44:11.4328491Z `torch_dtype` is deprecated! Use `dtype` instead!
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:45:05.5818780Z {
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:45:05.5819462Z   "json_validity": 100.0,
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:45:05.5820022Z   "intent_accuracy": 80.0,
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:45:05.5820451Z   "date_accuracy": 66.0,
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:45:05.5820883Z   "time_accuracy": 70.0,
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:45:05.5821290Z   "place_accuracy": 77.0,
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:45:05.5821692Z   "full_frame": 26.0,
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:45:05.5822286Z   "examples": 100,
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:45:05.5822720Z   "missing_predictions": 0
+model-evaluation	Verify trusted checksums and generate all 100 raw predictions	2026-11-05T12:45:05.5823157Z }
+model-evaluation	Run actions/upload-artifact@v4	﻿2026-11-05T12:45:05.5945069Z ##[group]Run actions/upload-artifact@v4
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5945320Z with:
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5945487Z   name: evaluation
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5945824Z   path: results/ci/
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5946007Z   if-no-files-found: warn
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5946199Z   compression-level: 6
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5946376Z   overwrite: false
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5946555Z   include-hidden-files: false
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5946748Z env:
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5946907Z   RELEASE_TAG: models-v1-v2
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5949123Z   GH_TOKEN: ***
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5949341Z   RELEASE_REPO: sencoders/cloud-mini-project
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5949570Z   BAD_MODEL: false
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5949796Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5950127Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5950451Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5950747Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5951082Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5951379Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.5951637Z ##[endgroup]
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.7390174Z (node:2123) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.7391351Z (Use `node --trace-deprecation ...` to show where the warning was created)
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.7541914Z With the provided path, there will be 3 files uploaded
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.7572693Z Artifact name is valid!
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:05.7592444Z Root directory input is valid!
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:06.1782519Z Beginning upload of artifact content to blob storage
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:06.4937615Z (node:2123) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:06.7978639Z Uploaded bytes 1812
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:06.8800761Z Finished uploading artifact content to blob storage!
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:06.8811676Z SHA256 digest of uploaded artifact zip is cf3ce838bf53202c8c042b1419583e6f9abdd5e3120e230e61637f7199051773
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:06.8812333Z Finalizing artifact upload
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:07.3653889Z Artifact evaluation.zip successfully finalized. Artifact ID 13415536707
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:07.3654676Z Artifact evaluation has been successfully uploaded! Final size is 1812 bytes. Artifact ID is 13415536707
+model-evaluation	Run actions/upload-artifact@v4	2026-11-05T12:45:07.3655576Z Artifact download URL: https://github.com/sencoders/cloud-mini-project/actions/runs/42029372903/artifacts/13415536707
+model-evaluation	Post Run actions/setup-python@v5	﻿2026-11-05T12:45:07.3831645Z Post job cleanup.
+model-evaluation	Post Run actions/setup-python@v5	2026-11-05T12:45:07.4923640Z (node:2138) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+model-evaluation	Post Run actions/setup-python@v5	2026-11-05T12:45:07.4946194Z (Use `node --trace-deprecation ...` to show where the warning was created)
+model-evaluation	Post Run actions/checkout@v4	﻿2026-11-05T12:45:07.5334992Z Post job cleanup.
+model-evaluation	Post Run actions/checkout@v4	2026-11-05T12:45:07.6355133Z [command]/usr/bin/git version
+model-evaluation	Post Run actions/checkout@v4	2026-11-05T12:45:07.6462871Z git version 2.56.0
+model-evaluation	Post Run actions/checkout@v4	2026-11-05T12:45:07.6552719Z Temporarily overriding HOME='/home/runner/work/_temp/c06718cf-bdeb-4118-98cc-47cff1e69465' before making global git config changes
+model-evaluation	Post Run actions/checkout@v4	2026-11-05T12:45:07.6577341Z Adding repository directory to the temporary git global config as a safe directory
+model-evaluation	Post Run actions/checkout@v4	2026-11-05T12:45:07.6594355Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+model-evaluation	Post Run actions/checkout@v4	2026-11-05T12:45:07.6793117Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+model-evaluation	Post Run actions/checkout@v4	2026-11-05T12:45:07.6876479Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+model-evaluation	Post Run actions/checkout@v4	2026-11-05T12:45:07.7219490Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+model-evaluation	Post Run actions/checkout@v4	2026-11-05T12:45:07.7267421Z http.https://github.com/.extraheader
+model-evaluation	Post Run actions/checkout@v4	2026-11-05T12:45:07.7287104Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+model-evaluation	Post Run actions/checkout@v4	2026-11-05T12:45:07.7838466Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+model-evaluation	Post Run actions/checkout@v4	2026-11-05T12:45:07.8154721Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+model-evaluation	Post Run actions/checkout@v4	2026-11-05T12:45:07.8195183Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+model-evaluation	Complete job	﻿2026-11-05T12:45:07.8605405Z Cleaning up orphan processes
+model-evaluation	Complete job	2026-11-05T12:45:07.8894720Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+quality-gate	Set up job	﻿2026-11-05T12:45:14.8479015Z Current runner version: '2.338.2'
+quality-gate	Set up job	2026-11-05T12:45:14.8518629Z ##[group]Runner Image Provisioner
+quality-gate	Set up job	2026-11-05T12:45:14.8520161Z Hosted Compute Agent
+quality-gate	Set up job	2026-11-05T12:45:14.8521157Z Version: 20261028.624
+quality-gate	Set up job	2026-11-05T12:45:14.8522689Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+quality-gate	Set up job	2026-11-05T12:45:14.8523977Z Build Date: 2026-10-28T21:51:42Z
+quality-gate	Set up job	2026-11-05T12:45:14.8525151Z Worker ID: {e7a9f399-1f57-4358-addd-ddaa14dcd9c7}
+quality-gate	Set up job	2026-11-05T12:45:14.8526561Z Region: westus
+quality-gate	Set up job	2026-11-05T12:45:14.8527552Z Cloud: Azure
+quality-gate	Set up job	2026-11-05T12:45:14.8528541Z ##[endgroup]
+quality-gate	Set up job	2026-11-05T12:45:14.8531229Z ##[group]Operating System
+quality-gate	Set up job	2026-11-05T12:45:14.8532906Z Ubuntu
+quality-gate	Set up job	2026-11-05T12:45:14.8534062Z 24.04.5
+quality-gate	Set up job	2026-11-05T12:45:14.8535016Z LTS
+quality-gate	Set up job	2026-11-05T12:45:14.8535931Z ##[endgroup]
+quality-gate	Set up job	2026-11-05T12:45:14.8537052Z ##[group]Runner Image
+quality-gate	Set up job	2026-11-05T12:45:14.8538094Z Image: ubuntu-24.04
+quality-gate	Set up job	2026-11-05T12:45:14.8539187Z Version: 20261101.360.1
+quality-gate	Set up job	2026-11-05T12:45:14.8541127Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+quality-gate	Set up job	2026-11-05T12:45:14.8544433Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+quality-gate	Set up job	2026-11-05T12:45:14.8546167Z ##[endgroup]
+quality-gate	Set up job	2026-11-05T12:45:14.8548709Z ##[group]GITHUB_TOKEN Permissions
+quality-gate	Set up job	2026-11-05T12:45:14.8551670Z Contents: read
+quality-gate	Set up job	2026-11-05T12:45:14.8553207Z Metadata: read
+quality-gate	Set up job	2026-11-05T12:45:14.8554177Z ##[endgroup]
+quality-gate	Set up job	2026-11-05T12:45:14.8558730Z Secret source: Actions
+quality-gate	Set up job	2026-11-05T12:45:14.8560441Z Cache mode: write
+quality-gate	Set up job	2026-11-05T12:45:14.8561663Z Prepare workflow directory
+quality-gate	Set up job	2026-11-05T12:45:14.9071989Z Prepare all required actions
+quality-gate	Set up job	2026-11-05T12:45:14.9147393Z Getting action download info
+quality-gate	Set up job	2026-11-05T12:45:15.3453027Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+quality-gate	Set up job	2026-11-05T12:45:15.4390781Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+quality-gate	Set up job	2026-11-05T12:45:15.5268376Z Download action repository 'actions/download-artifact@v4' (SHA:d3f86a106a0bac45b974a628896c90dbdf5c8093)
+quality-gate	Set up job	2026-11-05T12:45:15.9230622Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+quality-gate	Set up job	2026-11-05T12:45:16.1560914Z Complete job name: quality-gate
+quality-gate	Run actions/checkout@v4	﻿2026-11-05T12:45:16.2456367Z ##[group]Run actions/checkout@v4
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.2457397Z with:
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.2457876Z   repository: sencoders/cloud-mini-project
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.2461946Z   token: ***
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.2462396Z   ssh-strict: true
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.2462839Z   ssh-user: git
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.2463279Z   persist-credentials: true
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.2463762Z   clean: true
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.2464204Z   sparse-checkout-cone-mode: true
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.2464720Z   fetch-depth: 1
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.2465140Z   fetch-tags: false
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.2465576Z   show-progress: true
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.2466017Z   lfs: false
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.2466437Z   submodules: false
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.2466877Z   set-safe-directory: true
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.2467376Z   allow-unsafe-pr-checkout: false
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.2468205Z ##[endgroup]
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.5754607Z Syncing repository: sencoders/cloud-mini-project
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.5761933Z ##[group]Getting Git version info
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.5769506Z Working directory is '/home/runner/work/cloud-mini-project/cloud-mini-project'
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.5781518Z [command]/usr/bin/git version
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.5907803Z git version 2.56.0
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.5920322Z ##[endgroup]
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.5942539Z Temporarily overriding HOME='/home/runner/work/_temp/c979b483-1815-432f-b7e3-6618bb33c74e' before making global git config changes
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.5947846Z Adding repository directory to the temporary git global config as a safe directory
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.5952297Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6166651Z Deleting the contents of '/home/runner/work/cloud-mini-project/cloud-mini-project'
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6174450Z ##[group]Initializing the repository
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6179839Z [command]/usr/bin/git init /home/runner/work/cloud-mini-project/cloud-mini-project
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6241247Z hint: Using 'master' as the name for the initial branch. This default branch name
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6246112Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6430068Z hint: to use in all of your new repositories, which will suppress this warning,
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6433534Z hint: call:
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6435200Z hint:
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6437132Z hint: 	git config --global init.defaultBranch <name>
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6439600Z hint:
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6446835Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6450733Z hint: 'development'. The just-created branch can be renamed via this command:
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6454395Z hint:
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6456051Z hint: 	git branch -m <name>
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6457800Z hint:
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6460245Z hint: Disable this message with "git config set advice.defaultBranchName false"
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6490248Z Initialized empty Git repository in /home/runner/work/cloud-mini-project/cloud-mini-project/.git/
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6499604Z [command]/usr/bin/git remote add origin https://github.com/sencoders/cloud-mini-project
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6506551Z ##[endgroup]
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6509685Z ##[group]Disabling automatic garbage collection
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6563669Z [command]/usr/bin/git config --local gc.auto 0
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6644351Z ##[endgroup]
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6647437Z ##[group]Setting up auth
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6650769Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.6666488Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.7145514Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.7198776Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.7471991Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.7530512Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.7805408Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.7862095Z ##[endgroup]
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.7865443Z ##[group]Fetching the repository
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:16.7879265Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +68333d74b6e6d911108b74e638868e0821e4ba00:refs/remotes/origin/master
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:17.5661223Z From https://github.com/sencoders/cloud-mini-project
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:17.5674550Z  * [new ref]         68333d74b6e6d911108b74e638868e0821e4ba00 -> origin/master
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:17.5683742Z ##[endgroup]
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:17.5686452Z ##[group]Determining the checkout info
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:17.5688650Z ##[endgroup]
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:17.5689774Z [command]/usr/bin/git sparse-checkout disable
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:17.5765388Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:17.5824149Z ##[group]Checking out the ref
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:17.5827245Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:17.8529765Z Reset branch 'master'
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:17.8534698Z branch 'master' set up to track 'origin/master'.
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:17.8582787Z ##[endgroup]
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:17.8640351Z [command]/usr/bin/git log -1 --format=%H
+quality-gate	Run actions/checkout@v4	2026-11-05T12:45:17.8681344Z 68333d74b6e6d911108b74e638868e0821e4ba00
+quality-gate	Run actions/setup-python@v5	﻿2026-11-05T12:45:17.9196545Z ##[group]Run actions/setup-python@v5
+quality-gate	Run actions/setup-python@v5	2026-11-05T12:45:17.9198078Z with:
+quality-gate	Run actions/setup-python@v5	2026-11-05T12:45:17.9198956Z   python-version: 3.12
+quality-gate	Run actions/setup-python@v5	2026-11-05T12:45:17.9199974Z   check-latest: false
+quality-gate	Run actions/setup-python@v5	2026-11-05T12:45:17.9209626Z   token: ***
+quality-gate	Run actions/setup-python@v5	2026-11-05T12:45:17.9210575Z   update-environment: true
+quality-gate	Run actions/setup-python@v5	2026-11-05T12:45:17.9211794Z   allow-prereleases: false
+quality-gate	Run actions/setup-python@v5	2026-11-05T12:45:17.9212852Z   freethreaded: false
+quality-gate	Run actions/setup-python@v5	2026-11-05T12:45:17.9213812Z ##[endgroup]
+quality-gate	Run actions/setup-python@v5	2026-11-05T12:45:18.0787828Z ##[group]Installed versions
+quality-gate	Run actions/setup-python@v5	2026-11-05T12:45:18.0912234Z (node:2124) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+quality-gate	Run actions/setup-python@v5	2026-11-05T12:45:18.0916254Z Successfully set up CPython (3.12.16)
+quality-gate	Run actions/setup-python@v5	2026-11-05T12:45:18.0933279Z (Use `node --trace-deprecation ...` to show where the warning was created)
+quality-gate	Run actions/setup-python@v5	2026-11-05T12:45:18.0948087Z ##[endgroup]
+quality-gate	Run actions/download-artifact@v4	﻿2026-11-05T12:45:18.1371364Z ##[group]Run actions/download-artifact@v4
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.1373650Z with:
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.1374985Z   name: evaluation
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.1376440Z   path: results/ci/
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.1377988Z   merge-multiple: false
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.1379665Z   repository: sencoders/cloud-mini-project
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.1381578Z   run-id: 42029372903
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.1383561Z env:
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.1385702Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.1388868Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.1392305Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.1394980Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.1397732Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.1400400Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.1402902Z ##[endgroup]
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.3250558Z Downloading single artifact
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.3446355Z (node:2132) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.3451961Z (Use `node --trace-deprecation ...` to show where the warning was created)
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.6517895Z Preparing to download the following artifacts:
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.6522487Z - evaluation (ID: 13415536707, Size: 1812, Expected Digest: sha256:cf3ce838bf53202c8c042b1419583e6f9abdd5e3120e230e61637f7199051773)
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.8992189Z Redirecting to blob download url: https://productionresultssa14.blob.core.windows.net/actions-results/eb6d6c4a-56a6-815b-afde-84fd93332023/workflow-job-run-f62660b6-bb97-5efc-a46e-a915b50a3ea0/artifacts/efe77b201dc216c0edf435a227df2b2898d3f6ea1ff16e5d4d0d4ec0cf593271.zip
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:18.9002886Z Starting download of artifact to: /home/runner/work/cloud-mini-project/cloud-mini-project/results/ci
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:19.1824111Z (node:2132) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:19.1934999Z SHA256 digest of downloaded artifact is cf3ce838bf53202c8c042b1419583e6f9abdd5e3120e230e61637f7199051773
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:19.1937694Z Artifact download completed successfully.
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:19.1938867Z Total of 1 artifact(s) downloaded
+quality-gate	Run actions/download-artifact@v4	2026-11-05T12:45:19.1941364Z Download artifact has finished successfully
+quality-gate	Require at least 95 percent JSON validity	﻿2026-11-05T12:45:19.2108522Z ##[group]Run set -o pipefail
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.2108983Z ^[[36;1mset -o pipefail^[[0m
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.2109757Z ^[[36;1mpython tools/score.py results/ci/predictions.jsonl data/validation.jsonl --min-validity 95 --out results/ci/gate.json 2>&1 | tee results/ci/gate.log^[[0m
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.2143634Z shell: /usr/bin/bash -e {0}
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.2143995Z env:
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.2144347Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.2144879Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.2145404Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.2145871Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.2146578Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.2147096Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.2147497Z ##[endgroup]
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.3046641Z {
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.3047711Z   "json_validity": 100.0,
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.3048896Z   "intent_accuracy": 80.0,
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.3049862Z   "date_accuracy": 66.0,
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.3050704Z   "time_accuracy": 70.0,
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.3051545Z   "place_accuracy": 77.0,
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.3052602Z   "full_frame": 26.0,
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.3053316Z   "examples": 100,
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.3054162Z   "missing_predictions": 0
+quality-gate	Require at least 95 percent JSON validity	2026-11-05T12:45:19.3054938Z }
+quality-gate	Record actual run URL	﻿2026-11-05T12:45:19.3160262Z ##[group]Run printf '%s\n' "$RUN_URL" > results/ci/run-url.txt
+quality-gate	Record actual run URL	2026-11-05T12:45:19.3160838Z ^[[36;1mprintf '%s\n' "$RUN_URL" > results/ci/run-url.txt^[[0m
+quality-gate	Record actual run URL	2026-11-05T12:45:19.3183906Z shell: /usr/bin/bash -e {0}
+quality-gate	Record actual run URL	2026-11-05T12:45:19.3184492Z env:
+quality-gate	Record actual run URL	2026-11-05T12:45:19.3185071Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+quality-gate	Record actual run URL	2026-11-05T12:45:19.3185731Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+quality-gate	Record actual run URL	2026-11-05T12:45:19.3186282Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+quality-gate	Record actual run URL	2026-11-05T12:45:19.3186754Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+quality-gate	Record actual run URL	2026-11-05T12:45:19.3187229Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+quality-gate	Record actual run URL	2026-11-05T12:45:19.3187710Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+quality-gate	Record actual run URL	2026-11-05T12:45:19.3188314Z   RUN_URL: https://github.com/sencoders/cloud-mini-project/actions/runs/42029372903
+quality-gate	Record actual run URL	2026-11-05T12:45:19.3188825Z ##[endgroup]
+quality-gate	Run actions/upload-artifact@v4	﻿2026-11-05T12:45:19.3306212Z ##[group]Run actions/upload-artifact@v4
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.3306607Z with:
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.3306896Z   name: quality-gate-evidence
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.3307231Z   path: results/ci/
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.3307520Z   if-no-files-found: warn
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.3307826Z   compression-level: 6
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.3308131Z   overwrite: false
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.3308438Z   include-hidden-files: false
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.3308742Z env:
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.3309075Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.3309589Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.3310117Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.3310585Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.3311057Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.3311536Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.3312360Z ##[endgroup]
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.5134087Z (node:2150) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.5136135Z (Use `node --trace-deprecation ...` to show where the warning was created)
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.5370988Z With the provided path, there will be 6 files uploaded
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.5402393Z Artifact name is valid!
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.5421838Z Root directory input is valid!
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.9363568Z Beginning upload of artifact content to blob storage
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:19.9724372Z (node:2150) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:20.2626452Z Uploaded bytes 2455
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:20.3383422Z Finished uploading artifact content to blob storage!
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:20.3385165Z SHA256 digest of uploaded artifact zip is e43f8b1dc596b8c28ac46e9c21e455ccd90443239d394bfdbd4887e34d671cb3
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:20.3388573Z Finalizing artifact upload
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:20.8470161Z Artifact quality-gate-evidence.zip successfully finalized. Artifact ID 13415816301
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:20.8471588Z Artifact quality-gate-evidence has been successfully uploaded! Final size is 2455 bytes. Artifact ID is 13415816301
+quality-gate	Run actions/upload-artifact@v4	2026-11-05T12:45:20.8473761Z Artifact download URL: https://github.com/sencoders/cloud-mini-project/actions/runs/42029372903/artifacts/13415816301
+quality-gate	Post Run actions/setup-python@v5	﻿2026-11-05T12:45:20.8671027Z Post job cleanup.
+quality-gate	Post Run actions/setup-python@v5	2026-11-05T12:45:21.0004322Z (node:2162) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+quality-gate	Post Run actions/setup-python@v5	2026-11-05T12:45:21.0013199Z (Use `node --trace-deprecation ...` to show where the warning was created)
+quality-gate	Post Run actions/checkout@v4	﻿2026-11-05T12:45:21.0321310Z Post job cleanup.
+quality-gate	Post Run actions/checkout@v4	2026-11-05T12:45:21.2000013Z [command]/usr/bin/git version
+quality-gate	Post Run actions/checkout@v4	2026-11-05T12:45:21.2066577Z git version 2.56.0
+quality-gate	Post Run actions/checkout@v4	2026-11-05T12:45:21.2184751Z Temporarily overriding HOME='/home/runner/work/_temp/3df9b7b6-6b83-41e8-b27d-1758fd285311' before making global git config changes
+quality-gate	Post Run actions/checkout@v4	2026-11-05T12:45:21.2224338Z Adding repository directory to the temporary git global config as a safe directory
+quality-gate	Post Run actions/checkout@v4	2026-11-05T12:45:21.2273039Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+quality-gate	Post Run actions/checkout@v4	2026-11-05T12:45:21.2374750Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+quality-gate	Post Run actions/checkout@v4	2026-11-05T12:45:21.2473341Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+quality-gate	Post Run actions/checkout@v4	2026-11-05T12:45:21.2646832Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+quality-gate	Post Run actions/checkout@v4	2026-11-05T12:45:21.2682767Z http.https://github.com/.extraheader
+quality-gate	Post Run actions/checkout@v4	2026-11-05T12:45:21.2712140Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+quality-gate	Post Run actions/checkout@v4	2026-11-05T12:45:21.2838392Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+quality-gate	Post Run actions/checkout@v4	2026-11-05T12:45:21.3605022Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+quality-gate	Post Run actions/checkout@v4	2026-11-05T12:45:21.3736008Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+quality-gate	Complete job	﻿2026-11-05T12:45:21.4268488Z Cleaning up orphan processes
+quality-gate	Complete job	2026-11-05T12:45:21.4629059Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/download-artifact@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+secret-scan	Set up job	﻿2026-11-05T12:45:27.9909261Z Current runner version: '2.338.2'
+secret-scan	Set up job	2026-11-05T12:45:27.9948230Z ##[group]Runner Image Provisioner
+secret-scan	Set up job	2026-11-05T12:45:27.9949741Z Hosted Compute Agent
+secret-scan	Set up job	2026-11-05T12:45:27.9950660Z Version: 20261021.618
+secret-scan	Set up job	2026-11-05T12:45:27.9951794Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+secret-scan	Set up job	2026-11-05T12:45:27.9953456Z Build Date: 2026-10-21T00:45:21Z
+secret-scan	Set up job	2026-11-05T12:45:27.9954632Z Worker ID: {bff28415-31c7-4bb8-8b38-4f9059415065}
+secret-scan	Set up job	2026-11-05T12:45:27.9956019Z Region: eastus
+secret-scan	Set up job	2026-11-05T12:45:27.9956927Z Cloud: Azure
+secret-scan	Set up job	2026-11-05T12:45:27.9957750Z ##[endgroup]
+secret-scan	Set up job	2026-11-05T12:45:27.9960344Z ##[group]Operating System
+secret-scan	Set up job	2026-11-05T12:45:27.9961330Z Ubuntu
+secret-scan	Set up job	2026-11-05T12:45:27.9962358Z 24.04.5
+secret-scan	Set up job	2026-11-05T12:45:27.9963472Z LTS
+secret-scan	Set up job	2026-11-05T12:45:27.9964389Z ##[endgroup]
+secret-scan	Set up job	2026-11-05T12:45:27.9965288Z ##[group]Runner Image
+secret-scan	Set up job	2026-11-05T12:45:27.9966306Z Image: ubuntu-24.04
+secret-scan	Set up job	2026-11-05T12:45:27.9967893Z Version: 20261025.353.1
+secret-scan	Set up job	2026-11-05T12:45:27.9969757Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+secret-scan	Set up job	2026-11-05T12:45:27.9972881Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+secret-scan	Set up job	2026-11-05T12:45:27.9974897Z ##[endgroup]
+secret-scan	Set up job	2026-11-05T12:45:27.9977204Z ##[group]GITHUB_TOKEN Permissions
+secret-scan	Set up job	2026-11-05T12:45:27.9980214Z Contents: read
+secret-scan	Set up job	2026-11-05T12:45:27.9981245Z Metadata: read
+secret-scan	Set up job	2026-11-05T12:45:27.9982177Z ##[endgroup]
+secret-scan	Set up job	2026-11-05T12:45:27.9985707Z Secret source: Actions
+secret-scan	Set up job	2026-11-05T12:45:27.9987249Z Cache mode: write
+secret-scan	Set up job	2026-11-05T12:45:27.9988824Z Prepare workflow directory
+secret-scan	Set up job	2026-11-05T12:45:28.0477990Z Prepare all required actions
+secret-scan	Set up job	2026-11-05T12:45:28.0553003Z Getting action download info
+secret-scan	Set up job	2026-11-05T12:45:28.2819970Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+secret-scan	Set up job	2026-11-05T12:45:28.4255155Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+secret-scan	Set up job	2026-11-05T12:45:28.6592113Z Complete job name: secret-scan
+secret-scan	Run actions/checkout@v4	﻿2026-11-05T12:45:28.7680223Z ##[group]Run actions/checkout@v4
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:28.7681160Z with:
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:28.7681609Z   fetch-depth: 0
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:28.7682110Z   repository: sencoders/cloud-mini-project
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:28.7685983Z   token: ***
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:28.7686423Z   ssh-strict: true
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:28.7687135Z   ssh-user: git
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:28.7687825Z   persist-credentials: true
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:28.7688331Z   clean: true
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:28.7688782Z   sparse-checkout-cone-mode: true
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:28.7689311Z   fetch-tags: false
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:28.7689756Z   show-progress: true
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:28.7690199Z   lfs: false
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:28.7690611Z   submodules: false
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:28.7691061Z   set-safe-directory: true
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:28.7691562Z   allow-unsafe-pr-checkout: false
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:28.7692431Z ##[endgroup]
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.0957454Z Syncing repository: sencoders/cloud-mini-project
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.0961464Z ##[group]Getting Git version info
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.0974671Z Working directory is '/home/runner/work/cloud-mini-project/cloud-mini-project'
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.0977668Z [command]/usr/bin/git version
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.1014098Z git version 2.56.0
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.1046618Z ##[endgroup]
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.1072252Z Temporarily overriding HOME='/home/runner/work/_temp/e7500eb5-3cc1-4f4e-873a-bb43816552cb' before making global git config changes
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.1123419Z Adding repository directory to the temporary git global config as a safe directory
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2230373Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2246008Z Deleting the contents of '/home/runner/work/cloud-mini-project/cloud-mini-project'
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2248492Z ##[group]Initializing the repository
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2250152Z [command]/usr/bin/git init /home/runner/work/cloud-mini-project/cloud-mini-project
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2252210Z hint: Using 'master' as the name for the initial branch. This default branch name
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2255050Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2256986Z hint: to use in all of your new repositories, which will suppress this warning,
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2264682Z hint: call:
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2265704Z hint:
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2266822Z hint: 	git config --global init.defaultBranch <name>
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2268264Z hint:
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2269717Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2271749Z hint: 'development'. The just-created branch can be renamed via this command:
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2277982Z hint:
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2279170Z hint: 	git branch -m <name>
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2283254Z hint:
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2285166Z hint: Disable this message with "git config set advice.defaultBranchName false"
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2287785Z Initialized empty Git repository in /home/runner/work/cloud-mini-project/cloud-mini-project/.git/
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2292452Z [command]/usr/bin/git remote add origin https://github.com/sencoders/cloud-mini-project
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2297315Z ##[endgroup]
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2299281Z ##[group]Disabling automatic garbage collection
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2305648Z [command]/usr/bin/git config --local gc.auto 0
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2309561Z ##[endgroup]
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2311357Z ##[group]Setting up auth
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2341288Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2353658Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2838836Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.2844994Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.3117495Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.3166705Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.3442275Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.3498417Z ##[endgroup]
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.3500882Z ##[group]Fetching the repository
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:29.3513606Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.0618062Z From https://github.com/sencoders/cloud-mini-project
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.0635240Z  * [new branch]      master       -> origin/master
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.0635762Z  * [new tag]         models-v1-v2 -> models-v1-v2
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.0639971Z [command]/usr/bin/git branch --list --remote origin/master
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.0680951Z   origin/master
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.0694156Z [command]/usr/bin/git rev-parse refs/remotes/origin/master
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.0732714Z 68333d74b6e6d911108b74e638868e0821e4ba00
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.0737712Z ##[endgroup]
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.0739316Z ##[group]Determining the checkout info
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.0741016Z ##[endgroup]
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.0758706Z [command]/usr/bin/git sparse-checkout disable
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.0826769Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.0876468Z ##[group]Checking out the ref
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.0877837Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.3027439Z Reset branch 'master'
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.3043937Z branch 'master' set up to track 'origin/master'.
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.3124040Z ##[endgroup]
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.3174883Z [command]/usr/bin/git log -1 --format=%H
+secret-scan	Run actions/checkout@v4	2026-11-05T12:45:30.3238369Z 68333d74b6e6d911108b74e638868e0821e4ba00
+secret-scan	Gitleaks full Git history, redacted output	﻿2026-11-05T12:45:30.3474152Z ##[group]Run mkdir -p results/ci
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.3474590Z ^[[36;1mmkdir -p results/ci^[[0m
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.3475520Z ^[[36;1mdocker run --rm --user "$(id -u):$(id -g)" -v "$PWD:/repo" -w /repo ghcr.io/gitleaks/gitleaks:v8.24.3 git --no-banner --redact --report-format json --report-path results/ci/gitleaks.json^[[0m
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.3499552Z shell: /usr/bin/bash -e {0}
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.3499853Z ##[endgroup]
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.4673614Z Unable to find image 'ghcr.io/gitleaks/gitleaks:v8.24.3' locally
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.7349372Z v8.24.3: Pulling from gitleaks/gitleaks
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.7910953Z 83abf496f1b8: Pulling fs layer
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.7911667Z 7042bd605ed9: Pulling fs layer
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.7912105Z 0bde1133c0bf: Pulling fs layer
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.7912577Z f1c9435e03c7: Pulling fs layer
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.7913297Z f1c9435e03c7: Waiting
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.8899756Z 7042bd605ed9: Verifying Checksum
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.8903990Z 7042bd605ed9: Download complete
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.8958574Z 83abf496f1b8: Verifying Checksum
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.8960329Z 83abf496f1b8: Download complete
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.8983744Z 0bde1133c0bf: Verifying Checksum
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.8984753Z 0bde1133c0bf: Download complete
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.9801078Z f1c9435e03c7: Verifying Checksum
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:30.9801674Z f1c9435e03c7: Download complete
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:31.0249510Z 83abf496f1b8: Pull complete
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:32.1608655Z 7042bd605ed9: Pull complete
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:32.2616035Z 0bde1133c0bf: Pull complete
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:32.2748076Z f1c9435e03c7: Pull complete
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:32.2795760Z Digest: sha256:e1b35e12a8c6fa8901f060459cfb6b2fc4c484d3afbe3b029733a3bbfab07055
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:32.2806782Z Status: Downloaded newer image for ghcr.io/gitleaks/gitleaks:v8.24.3
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:53.2295667Z ^[[90m12:45PM^[[0m ^[[32mINF^[[0m ^[[1m8 commits scanned.^[[0m
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:53.2304163Z ^[[90m12:45PM^[[0m ^[[32mINF^[[0m ^[[1mscanned ~47990933 bytes (47.99 MB) in 20.7s^[[0m
+secret-scan	Gitleaks full Git history, redacted output	2026-11-05T12:45:53.2305129Z ^[[90m12:45PM^[[0m ^[[32mINF^[[0m ^[[1mno leaks found^[[0m
+secret-scan	Run actions/upload-artifact@v4	﻿2026-11-05T12:45:53.3476493Z ##[group]Run actions/upload-artifact@v4
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.3476852Z with:
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.3477055Z   name: secret-scan
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.3477287Z   path: results/ci/gitleaks.json
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.3477568Z   if-no-files-found: warn
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.3477802Z   compression-level: 6
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.3478014Z   overwrite: false
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.3478225Z   include-hidden-files: false
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.3478467Z ##[endgroup]
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.5505091Z (node:2238) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.5509530Z (Use `node --trace-deprecation ...` to show where the warning was created)
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.5588969Z With the provided path, there will be 1 file uploaded
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.5613987Z Artifact name is valid!
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.5640504Z Root directory input is valid!
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.7764238Z Beginning upload of artifact content to blob storage
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.8021147Z (node:2238) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.8291312Z Uploaded bytes 145
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.8457617Z Finished uploading artifact content to blob storage!
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.8459212Z SHA256 digest of uploaded artifact zip is ac3f3036490466a166a594227e693e17eae196d72291a3cfd6ead3f1d28bf2dd
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:53.8460730Z Finalizing artifact upload
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:54.3768309Z Artifact secret-scan.zip successfully finalized. Artifact ID 13415097837
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:54.3769724Z Artifact secret-scan has been successfully uploaded! Final size is 145 bytes. Artifact ID is 13415097837
+secret-scan	Run actions/upload-artifact@v4	2026-11-05T12:45:54.3776492Z Artifact download URL: https://github.com/sencoders/cloud-mini-project/actions/runs/42029372903/artifacts/13415097837
+secret-scan	Post Run actions/checkout@v4	﻿2026-11-05T12:45:54.4014333Z Post job cleanup.
+secret-scan	Post Run actions/checkout@v4	2026-11-05T12:45:54.5093801Z [command]/usr/bin/git version
+secret-scan	Post Run actions/checkout@v4	2026-11-05T12:45:54.5163832Z git version 2.56.0
+secret-scan	Post Run actions/checkout@v4	2026-11-05T12:45:54.5224323Z Temporarily overriding HOME='/home/runner/work/_temp/d5e7f290-dc21-4d6f-839f-5b3488c73753' before making global git config changes
+secret-scan	Post Run actions/checkout@v4	2026-11-05T12:45:54.5229755Z Adding repository directory to the temporary git global config as a safe directory
+secret-scan	Post Run actions/checkout@v4	2026-11-05T12:45:54.5231126Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+secret-scan	Post Run actions/checkout@v4	2026-11-05T12:45:54.5285654Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+secret-scan	Post Run actions/checkout@v4	2026-11-05T12:45:54.5377601Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+secret-scan	Post Run actions/checkout@v4	2026-11-05T12:45:54.5765504Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+secret-scan	Post Run actions/checkout@v4	2026-11-05T12:45:54.5845900Z http.https://github.com/.extraheader
+secret-scan	Post Run actions/checkout@v4	2026-11-05T12:45:54.5954796Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+secret-scan	Post Run actions/checkout@v4	2026-11-05T12:45:54.6017117Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+secret-scan	Post Run actions/checkout@v4	2026-11-05T12:45:54.6478579Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+secret-scan	Post Run actions/checkout@v4	2026-11-05T12:45:54.6532507Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+secret-scan	Complete job	﻿2026-11-05T12:45:54.6981416Z Cleaning up orphan processes
+secret-scan	Complete job	2026-11-05T12:45:54.7440561Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

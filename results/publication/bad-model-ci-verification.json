@@ -1,0 +1,23 @@
+{
+  "url": "https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782",
+  "jobs": {
+    "lint": "success",
+    "unit": "success",
+    "model-evaluation": "success",
+    "quality-gate": "failure",
+    "secret-scan": "success"
+  },
+  "actual_gate_scores": {
+    "json_validity": 0.0,
+    "intent_accuracy": 0.0,
+    "date_accuracy": 0.0,
+    "time_accuracy": 0.0,
+    "place_accuracy": 0.0,
+    "full_frame": 0.0,
+    "examples": 100,
+    "missing_predictions": 0
+  },
+  "real_untrained_model_verified_from_provenance": true,
+  "quality_gate_threshold_unchanged": 95,
+  "zero_secret_scan_findings": true
+}

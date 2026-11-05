@@ -1,0 +1,236 @@
+demonstrate / quality-gate	UNKNOWN STEP	﻿2026-11-05T12:55:32.5387763Z Current runner version: '2.338.2'
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5412279Z ##[group]Runner Image Provisioner
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5413124Z Hosted Compute Agent
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5413742Z Version: 20261021.618
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5414330Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5414994Z Build Date: 2026-10-21T00:45:21Z
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5415735Z Worker ID: {7cc5a4ef-1e13-4829-8c92-0f4e71ccd5a0}
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5416387Z Region: northcentralus
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5416904Z Cloud: Azure
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5417482Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5419098Z ##[group]Operating System
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5419804Z Ubuntu
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5420349Z 24.04.5
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5420800Z LTS
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5421345Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5421843Z ##[group]Runner Image
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5422475Z Image: ubuntu-24.04
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5423000Z Version: 20261025.353.1
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5424235Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5425695Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5426704Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5427740Z ##[group]GITHUB_TOKEN Permissions
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5429633Z Contents: read
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5430176Z Metadata: read
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5430678Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5432892Z Secret source: Actions
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5433689Z Cache mode: write
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5434407Z Prepare workflow directory
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5732764Z Prepare all required actions
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5812818Z Getting action download info
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.9219817Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.0436908Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.1814110Z Download action repository 'actions/download-artifact@v4' (SHA:d3f86a106a0bac45b974a628896c90dbdf5c8093)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.5227156Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.8089073Z Uses: sencoders/cloud-mini-project/.github/workflows/ci.yml@refs/heads/master (68333d74b6e6d911108b74e638868e0821e4ba00)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.8094722Z ##[group] Inputs
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.8096020Z   release_tag: models-v1-v2
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.8097484Z   bad_model: true
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.8097765Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.8098066Z Complete job name: demonstrate / quality-gate
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9587416Z ##[group]Run actions/checkout@v4
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9587876Z with:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9588293Z   repository: sencoders/cloud-mini-project
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9590539Z   token: ***
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9590793Z   ssh-strict: true
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9591049Z   ssh-user: git
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9591313Z   persist-credentials: true
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9591598Z   clean: true
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9591882Z   sparse-checkout-cone-mode: true
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9592235Z   fetch-depth: 1
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9592489Z   fetch-tags: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9592753Z   show-progress: true
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9593020Z   lfs: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9593268Z   submodules: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9593533Z   set-safe-directory: true
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9593830Z   allow-unsafe-pr-checkout: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9594225Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1705478Z Syncing repository: sencoders/cloud-mini-project
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1707222Z ##[group]Getting Git version info
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1709818Z Working directory is '/home/runner/work/cloud-mini-project/cloud-mini-project'
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1719546Z [command]/usr/bin/git version
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1819287Z git version 2.56.0
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1823204Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1830899Z Temporarily overriding HOME='/home/runner/work/_temp/00f8bc55-c133-48bb-8b68-29f209a47803' before making global git config changes
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1833075Z Adding repository directory to the temporary git global config as a safe directory
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1835438Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1932001Z Deleting the contents of '/home/runner/work/cloud-mini-project/cloud-mini-project'
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1942353Z ##[group]Initializing the repository
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1946168Z [command]/usr/bin/git init /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2039075Z hint: Using 'master' as the name for the initial branch. This default branch name
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2049144Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2051162Z hint: to use in all of your new repositories, which will suppress this warning,
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2052375Z hint: call:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2065783Z hint:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2066809Z hint: 	git config --global init.defaultBranch <name>
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2067981Z hint:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2069119Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2070829Z hint: 'development'. The just-created branch can be renamed via this command:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2071957Z hint:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2072794Z hint: 	git branch -m <name>
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2073480Z hint:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2074585Z hint: Disable this message with "git config set advice.defaultBranchName false"
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2076141Z Initialized empty Git repository in /home/runner/work/cloud-mini-project/cloud-mini-project/.git/
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2079365Z [command]/usr/bin/git remote add origin https://github.com/sencoders/cloud-mini-project
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2144176Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2145248Z ##[group]Disabling automatic garbage collection
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2147833Z [command]/usr/bin/git config --local gc.auto 0
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2222687Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2223751Z ##[group]Setting up auth
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2225070Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2276027Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2652206Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2692686Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2895753Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2935224Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.3136683Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.3182295Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.3183660Z ##[group]Fetching the repository
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.3192216Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +68333d74b6e6d911108b74e638868e0821e4ba00:refs/remotes/origin/master
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.9864981Z From https://github.com/sencoders/cloud-mini-project
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.9900665Z  * [new ref]         68333d74b6e6d911108b74e638868e0821e4ba00 -> origin/master
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.9973904Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.9975586Z ##[group]Determining the checkout info
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.9977149Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.9978345Z [command]/usr/bin/git sparse-checkout disable
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.9981306Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.0038029Z ##[group]Checking out the ref
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.0053760Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.2619771Z Reset branch 'master'
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.2650341Z branch 'master' set up to track 'origin/master'.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.2666057Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.2715035Z [command]/usr/bin/git log -1 --format=%H
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.2749486Z 68333d74b6e6d911108b74e638868e0821e4ba00
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3101393Z ##[group]Run actions/setup-python@v5
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3102122Z with:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3102652Z   python-version: 3.12
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3103244Z   check-latest: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3108767Z   token: ***
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3109328Z   update-environment: true
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3109951Z   allow-prereleases: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3110561Z   freethreaded: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3111117Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4101770Z ##[group]Installed versions
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4164303Z (node:1973) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4166699Z Successfully set up CPython (3.12.15)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4168539Z (Use `node --trace-deprecation ...` to show where the warning was created)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4170741Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4484183Z ##[group]Run actions/download-artifact@v4
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4484921Z with:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4485471Z   name: evaluation
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4486009Z   path: results/ci/
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4486529Z   merge-multiple: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4487149Z   repository: sencoders/cloud-mini-project
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4487834Z   run-id: 42030357782
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4488573Z env:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4489181Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4490243Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4491291Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4492235Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4493187Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4494162Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4494964Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.5630314Z Downloading single artifact
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.5775370Z (node:1981) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.5778008Z (Use `node --trace-deprecation ...` to show where the warning was created)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.7183065Z Preparing to download the following artifacts:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.7183855Z - evaluation (ID: 13416765607, Size: 3680, Expected Digest: sha256:3c36405065e65181efe9dde8b3d1ad45db16ce8da5574559cdb784d74df6815f)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.9217324Z Redirecting to blob download url: https://productionresultssa11.blob.core.windows.net/actions-results/61556198-283d-4bcb-956d-c1db4d18017e/workflow-job-run-b965ae41-e854-533d-9f2b-6de669d44a14/artifacts/efe77b201dc216c0edf435a227df2b2898d3f6ea1ff16e5d4d0d4ec0cf593271.zip
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.9218905Z Starting download of artifact to: /home/runner/work/cloud-mini-project/cloud-mini-project/results/ci
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0252556Z (node:1981) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0320178Z SHA256 digest of downloaded artifact is 3c36405065e65181efe9dde8b3d1ad45db16ce8da5574559cdb784d74df6815f
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0320781Z Artifact download completed successfully.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0329321Z Total of 1 artifact(s) downloaded
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0329804Z Download artifact has finished successfully
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0447310Z ##[group]Run set -o pipefail
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0447526Z ^[[36;1mset -o pipefail^[[0m
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0447915Z ^[[36;1mpython tools/score.py results/ci/predictions.jsonl data/validation.jsonl --min-validity 95 --out results/ci/gate.json 2>&1 | tee results/ci/gate.log^[[0m
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0473604Z shell: /usr/bin/bash -e {0}
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0473913Z env:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0474075Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0474326Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0474569Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0474785Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0475007Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0475226Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0475409Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0989220Z QUALITY GATE FAILED: json_validity 0.0 < 95.0
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0989958Z {
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0990661Z   "json_validity": 0.0,
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0991118Z   "intent_accuracy": 0.0,
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0991778Z   "date_accuracy": 0.0,
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0992263Z   "time_accuracy": 0.0,
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0992887Z   "place_accuracy": 0.0,
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0994284Z   "full_frame": 0.0,
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0994775Z   "examples": 100,
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0995435Z   "missing_predictions": 0
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0995845Z }
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1029084Z ##[error]Process completed with exit code 1.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1080304Z ##[group]Run printf '%s\n' "$RUN_URL" > results/ci/run-url.txt
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1080581Z ^[[36;1mprintf '%s\n' "$RUN_URL" > results/ci/run-url.txt^[[0m
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1096623Z shell: /usr/bin/bash -e {0}
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1096771Z env:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1096935Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1097194Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1097448Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1097677Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1097908Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1098471Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1098793Z   RUN_URL: https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1099033Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1173238Z ##[group]Run actions/upload-artifact@v4
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1173407Z with:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1173532Z   name: quality-gate-evidence
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1173674Z   path: results/ci/
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1173809Z   if-no-files-found: warn
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1173951Z   compression-level: 6
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1174080Z   overwrite: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1174208Z   include-hidden-files: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1174344Z env:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1174498Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1174750Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1174994Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1175217Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1175452Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1175679Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1175887Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.2377997Z (node:1997) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.2384160Z (Use `node --trace-deprecation ...` to show where the warning was created)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.2853150Z With the provided path, there will be 6 files uploaded
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.2853640Z Artifact name is valid!
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.2853884Z Root directory input is valid!
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.5254385Z Beginning upload of artifact content to blob storage
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.5530773Z (node:1997) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.6486874Z Uploaded bytes 4325
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.6814316Z Finished uploading artifact content to blob storage!
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.6815776Z SHA256 digest of uploaded artifact zip is c5ee6fdf755ab3310fee6e044cb1f5b6fb68a00991abe215c572bb6262119967
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.6817971Z Finalizing artifact upload
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.1516317Z Artifact quality-gate-evidence.zip successfully finalized. Artifact ID 13416371996
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.1517158Z Artifact quality-gate-evidence has been successfully uploaded! Final size is 4325 bytes. Artifact ID is 13416371996
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.1518269Z Artifact download URL: https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782/artifacts/13416371996
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.1707922Z Post job cleanup.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.2539023Z [command]/usr/bin/git version
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.2599022Z git version 2.56.0
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.2634262Z Temporarily overriding HOME='/home/runner/work/_temp/b3714d2c-a38e-4353-bf7d-0d3df6c1154f' before making global git config changes
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.2635170Z Adding repository directory to the temporary git global config as a safe directory
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.2637054Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.2728785Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.2776323Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.3126934Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.3177219Z http.https://github.com/.extraheader
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.3179906Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.3244293Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.3604741Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.3684026Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.3988626Z Cleaning up orphan processes
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.4226337Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/download-artifact@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

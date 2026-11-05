@@ -1,20 +1,23 @@
 # Publication resume state
 
-Source is private at https://github.com/sencoders/cloud-mini-project on master,
-17cbb49745026a4c0b2221c79708bf9fa8fcd0b9. The audit passed. No final tag exists.
+Private repo: https://github.com/sencoders/cloud-mini-project; master at
+68333d74b6e6d911108b74e638868e0821e4ba00. No final tag exists.
 
-Initial run 41866415146 failed specifically at model-evaluation / Download actual
-published Release asset (no fallback): `release not found`. Lint, unit and
-secret-scan passed; quality-gate was skipped. Actual logs are
-confirmed-model-evaluation-failure.log. The previous combined archive upload
-failed with connection reset by peer and its Release was removed.
+Release: https://github.com/sencoders/cloud-mini-project/releases/tag/models-v1-v2
+is published. V1 and both sidecars are available. V1 was independently downloaded,
+archive/member hashes and version metadata matched committed manifests. V2 is
+explicitly marked upload pending. Prior V2 attempts failed with HTTP 408 during
+connection loss; user confirmed stable connection and attempt 3 is active. Do not
+start a duplicate upload. See release-v2-attempt-3.log.
 
-A fresh models-v1-v2 draft was created. Both checksum sidecars uploaded. The
-verified V1 archive is uploading sequentially; do not start a duplicate upload.
-Inspect release-v1-upload.log and `gh release view models-v1-v2 --repo
-sencoders/cloud-mini-project --json url,isDraft,assets`. After V1 succeeds, upload
-V2 separately, verify all four asset sizes/digests, publish the draft, and run
-normal CI and the deliberate bad-model workflow with release_tag=models-v1-v2.
+Normal CI PASSED all five jobs:
+https://github.com/sencoders/cloud-mini-project/actions/runs/42029372903
+Artifacts/logs are normal-ci-artifacts/ and normal-ci-full.log; scores
+100/80/66/70/77/26, 100 IDs, raw predictions exactly match Task 2.
 
-Save actual pass/failure URLs and logs, update the seven-page report, scan, commit
-and push necessary evidence. Never weaken the gate, retrain, or create final.
+Separate bad-model run is in progress (not yet verified gate failure):
+https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782
+Check actual job conclusions and download quality-gate-evidence after completion.
+Require model-evaluation success, quality-gate failure and validity below 95 before
+claiming the demonstration. Finish V2 upload/checksums, update Release title/notes,
+update report and evidence, scan, commit/push corrections. Do not retrain or tag final.

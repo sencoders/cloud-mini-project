@@ -1,10 +1,9 @@
 # Remaining submission actions
 
-- Configure the real GitHub remote and authentication. No push has been performed.
-- After explicit authorization, push source and publish both verified model archives
-  plus checksums on one GitHub Release. No weights belong in Git.
-- Run CI against that actual Release and the deliberate untrained-model workflow;
-  inspect jobs and insert the actual failed-quality-gate run URL into Task 6 report.
+- Private GitHub source is published; normal CI passed and the separate untrained
+  run failed at the quality gate. Actual URLs/logs are in results/publication/.
+- V1 Release is downloaded/hash/member/version verified. Complete and independently
+  verify the remaining V2 upload before claiming both versions available.
 - Verify fresh-clone make up and actual destructive make down on a separate
   disposable environment. The working cluster was deliberately preserved.
 - Task 4 rolling error rate is 7.792%, exceeding 0.5%; Task 7 baseline errors

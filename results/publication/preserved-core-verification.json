@@ -1,0 +1,21 @@
+{
+  "compared_to": "17cbb49",
+  "core_paths_checked": [
+    "worker",
+    "training",
+    "data",
+    "student",
+    "service",
+    ".github/workflows",
+    "cluster",
+    "network",
+    "prompts",
+    "tools",
+    "Makefile"
+  ],
+  "changed_core_files": [],
+  "original_instructor_files_match": true,
+  "teacher_regenerated": false,
+  "models_retrained": false,
+  "quality_gate_threshold": 95
+}

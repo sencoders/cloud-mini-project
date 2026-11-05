@@ -156,6 +156,20 @@ verified export/restore. Test destructive teardown on a separate disposable clus
 
 ## CI, releases and submission
 
+Verified private repository: https://github.com/sencoders/cloud-mini-project
+
+- Published V1: https://github.com/sencoders/cloud-mini-project/releases/tag/models-v1-v2
+  (V1 archive/member/version checks pass; V2 upload is explicitly pending).
+- Passing normal CI: https://github.com/sencoders/cloud-mini-project/actions/runs/42029372903
+- Deliberate untrained-model gate failure: https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782
+  (100 evaluated records; 0% validity; unchanged 95% gate; other jobs passed).
+
+The original failed run stopped at Release download with `release not found` after
+a network-interrupted upload. The fix was verified asset publication; training,
+weights, evaluation data, workflow code and the quality threshold were unchanged.
+Full logs, predictions, score reports and Release verification are in results/publication/.
+
+
 [Release instructions](docs/releases.md) describe the actual archive boundaries,
 checksums and publication procedure. CI orders lint → unit tests → actual Release
 download/CPU evaluation → supplied `score.py --min-validity 95` → Gitleaks.

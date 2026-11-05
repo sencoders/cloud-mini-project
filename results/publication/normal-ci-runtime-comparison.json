@@ -1,0 +1,4 @@
+{
+  "examples": 100,
+  "all_raw_predictions_match_original_cpu_evaluation": true
+}

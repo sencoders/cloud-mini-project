@@ -1,9 +1,11 @@
 # Verified model release packaging
 
-No GitHub Release is claimed to exist. Task 2 creates local, ignored archives
-and records `published: false` until a real publication is independently verified.
-No weights are added to Git. A public Release would expose the packaged model
-and tokenizer; do not include credentials or the private `.local/` directory.
+Private Release: https://github.com/sencoders/cloud-mini-project/releases/tag/models-v1-v2
+
+V1 is published, independently downloaded, and checked against the committed archive
+and every member checksum plus version metadata. V2 is still uploading; its archive
+is not yet claimed remotely available. Current verification: results/publication/outcome.json.
+No model weights or credentials are committed to Git.
 
 After full training and S3 upload:
 
@@ -39,14 +41,14 @@ provide an existing pushed tag and install GitHub CLI (`gh`) on the runner. The 
 and uploads the archive, its checksum sidecar and the model checksum manifest.
 It does not push Git commits or create remote tags. `gh release view TAG --json
 url,assets` and a downloaded asset checksum are required before reporting a
-Release as published. This project run does not execute that publication step.
+Release as published. The verified current publication uses the model-specific tag above; it is not the final submission tag.
 
 ## Both-version Release for CI and fresh bootstrap
 
 The locally verified archives have nine members each and match the committed
 `models/v1/release.sha256` and `models/v2/release.sha256`. Verification evidence is
 `results/task6/release-verification.json`. Each archive includes `version.json`,
-`model.sha256`, weights, tokenizer and model config. No publication is claimed.
+`model.sha256`, weights, tokenizer and model config. Publication status and per-version checks are recorded above and in results/publication/.
 
 `publish-release.yml` prepares **both** versions on the same release tag using a
 self-hosted Mac with access to SeaweedFS. Configure its three S3 secrets; leave
@@ -61,4 +63,4 @@ gh release create "$MODEL_RELEASE_TAG" --verify-tag --title 'CPU Pythia-70M V1 a
 Set GitHub Actions variable `MODEL_RELEASE_TAG`; dispatch `ci.yml`, then
 `bad-model-gate.yml` with that `release_tag`. Obtain the **actual** failed-run URL
 with `gh run list --workflow bad-model-gate.yml`; verify its quality-gate step
-failed with validity below 95 before citing it. No such URL exists locally yet.
+failed with validity below 95 before citing it. Verified deliberate failure: https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782 (model-evaluation passed; the unchanged 95% gate rejected the real untrained model at 0% validity).

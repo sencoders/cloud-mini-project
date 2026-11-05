@@ -1,0 +1,8 @@
+{
+  "asset": "pythia-70m-v1.tar.gz",
+  "size": 234159749,
+  "server_sha256": "9ad3cdb774d6f88a55205ad4b11f1b3c8163e2e6733fded288ee4cc43cb5a109",
+  "matches_original_archive_and_committed_hash": true,
+  "nine_members_and_version_metadata_verified_locally": true,
+  "v2_still_uploading": true
+}

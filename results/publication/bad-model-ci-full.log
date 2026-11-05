@@ -1,0 +1,1466 @@
+demonstrate / lint	UNKNOWN STEP	﻿2026-11-05T12:49:15.1790128Z Current runner version: '2.338.2'
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1828169Z ##[group]Runner Image Provisioner
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1829687Z Hosted Compute Agent
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1830967Z Version: 20261021.618
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1832104Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1833486Z Build Date: 2026-10-21T00:45:21Z
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1834821Z Worker ID: {caf137b3-11ac-4339-9b52-d8d53f0aa918}
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1836550Z Region: westus2
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1837759Z Cloud: Azure
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1838692Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1841317Z ##[group]Operating System
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1842540Z Ubuntu
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1843478Z 24.04.5
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1844452Z LTS
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1845330Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1846531Z ##[group]Runner Image
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1847682Z Image: ubuntu-24.04
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1848739Z Version: 20261025.353.1
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1851127Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1853979Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1856285Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1858228Z ##[group]GITHUB_TOKEN Permissions
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1861445Z Contents: read
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1862632Z Metadata: read
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1863800Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1867228Z Secret source: Actions
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1868830Z Cache mode: write
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.1870063Z Prepare workflow directory
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.2468600Z Prepare all required actions
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.2543924Z Getting action download info
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.6530448Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:15.7726913Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.0073772Z Uses: sencoders/cloud-mini-project/.github/workflows/ci.yml@refs/heads/master (68333d74b6e6d911108b74e638868e0821e4ba00)
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.0081506Z ##[group] Inputs
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.0082408Z   release_tag: models-v1-v2
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.0083844Z   bad_model: true
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.0084658Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.0085721Z Complete job name: demonstrate / lint
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1589913Z ##[group]Run actions/checkout@v4
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1591400Z with:
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1592232Z   repository: sencoders/cloud-mini-project
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1599974Z   token: ***
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1600808Z   ssh-strict: true
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1601580Z   ssh-user: git
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1602369Z   persist-credentials: true
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1603215Z   clean: true
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1604003Z   sparse-checkout-cone-mode: true
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1604961Z   fetch-depth: 1
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1622975Z   fetch-tags: false
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1623856Z   show-progress: true
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1624702Z   lfs: false
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1625732Z   submodules: false
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1626639Z   set-safe-directory: true
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1627569Z   allow-unsafe-pr-checkout: false
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.1629090Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.5637981Z Syncing repository: sencoders/cloud-mini-project
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.5645152Z ##[group]Getting Git version info
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.5646462Z Working directory is '/home/runner/work/cloud-mini-project/cloud-mini-project'
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.5647613Z [command]/usr/bin/git version
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.5776838Z git version 2.56.0
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.5827798Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.5837701Z Temporarily overriding HOME='/home/runner/work/_temp/f1641ccf-f2e2-413b-ac65-aeddc2c29820' before making global git config changes
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.5842170Z Adding repository directory to the temporary git global config as a safe directory
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.5859204Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.5987040Z Deleting the contents of '/home/runner/work/cloud-mini-project/cloud-mini-project'
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6008801Z ##[group]Initializing the repository
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6046839Z [command]/usr/bin/git init /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6205756Z hint: Using 'master' as the name for the initial branch. This default branch name
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6211084Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6213193Z hint: to use in all of your new repositories, which will suppress this warning,
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6217460Z hint: call:
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6218595Z hint:
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6219705Z hint: 	git config --global init.defaultBranch <name>
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6221114Z hint:
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6222300Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6224109Z hint: 'development'. The just-created branch can be renamed via this command:
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6225866Z hint:
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6226903Z hint: 	git branch -m <name>
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6228209Z hint:
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6229561Z hint: Disable this message with "git config set advice.defaultBranchName false"
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6231859Z Initialized empty Git repository in /home/runner/work/cloud-mini-project/cloud-mini-project/.git/
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6237320Z [command]/usr/bin/git remote add origin https://github.com/sencoders/cloud-mini-project
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6303818Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6305582Z ##[group]Disabling automatic garbage collection
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6326995Z [command]/usr/bin/git config --local gc.auto 0
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6380981Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6382358Z ##[group]Setting up auth
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6406605Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.6430924Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.7006902Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.7071885Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.7333991Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.7390127Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.7681411Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.7736757Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.7738578Z ##[group]Fetching the repository
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:16.7751880Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +68333d74b6e6d911108b74e638868e0821e4ba00:refs/remotes/origin/master
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.4399329Z From https://github.com/sencoders/cloud-mini-project
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.4401859Z  * [new ref]         68333d74b6e6d911108b74e638868e0821e4ba00 -> origin/master
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.4409400Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.4411513Z ##[group]Determining the checkout info
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.4413731Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.4415165Z [command]/usr/bin/git sparse-checkout disable
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.4474814Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.4535067Z ##[group]Checking out the ref
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.4550211Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.6588050Z Reset branch 'master'
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.6595965Z branch 'master' set up to track 'origin/master'.
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.6640951Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.6694442Z [command]/usr/bin/git log -1 --format=%H
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.6737217Z 68333d74b6e6d911108b74e638868e0821e4ba00
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.7151512Z ##[group]Run actions/setup-python@v5
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.7152687Z with:
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.7153465Z   python-version: 3.12
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.7154391Z   check-latest: false
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.7164041Z   token: ***
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.7164902Z   update-environment: true
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.7166030Z   allow-prereleases: false
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.7167022Z   freethreaded: false
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.7167899Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.8726421Z ##[group]Installed versions
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.8860652Z (node:2322) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.8864973Z Successfully set up CPython (3.12.15)
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.8868105Z (Use `node --trace-deprecation ...` to show where the warning was created)
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.8879950Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.9216547Z ##[group]Run pip install ruff==0.14.4
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.9218472Z ^[[36;1mpip install ruff==0.14.4^[[0m
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.9291458Z shell: /usr/bin/bash -e {0}
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.9293380Z env:
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.9294968Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.9298011Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.9300825Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.9303339Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.9306074Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.9308701Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:17.9310826Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:20.4499984Z Collecting ruff==0.14.4
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:20.5134096Z   Downloading ruff-0.14.4-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (25 kB)
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:20.5335590Z Downloading ruff-0.14.4-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.4 MB)
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:20.8993892Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.4/13.4 MB 39.5 MB/s  0:00:00
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.0488094Z Installing collected packages: ruff
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.1984021Z Successfully installed ruff-0.14.4
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.2000971Z 
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.2001949Z [notice] A new release of pip is available: 26.2.2 -> 26.3
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.2007812Z [notice] To update, run: pip install --upgrade pip
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.2730645Z ##[group]Run ruff check .
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.2731017Z ^[[36;1mruff check .^[[0m
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.2753142Z shell: /usr/bin/bash -e {0}
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.2753454Z env:
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.2753786Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.2754306Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.2754830Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.2755287Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.2756033Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.2756520Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.2756903Z ##[endgroup]
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.2987077Z All checks passed!
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.3110143Z Post job cleanup.
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.4442232Z (node:2361) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.4444258Z (Use `node --trace-deprecation ...` to show where the warning was created)
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.4826524Z Post job cleanup.
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.5978175Z [command]/usr/bin/git version
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.6026981Z git version 2.56.0
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.6088163Z Temporarily overriding HOME='/home/runner/work/_temp/5849ca97-0e1f-4531-8089-392c770c7d43' before making global git config changes
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.6098934Z Adding repository directory to the temporary git global config as a safe directory
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.6120455Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.6197737Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.6252594Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.6679448Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.6726112Z http.https://github.com/.extraheader
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.6756598Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.6867755Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.7274775Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.7358620Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.7804421Z Cleaning up orphan processes
+demonstrate / lint	UNKNOWN STEP	2026-11-05T12:49:21.8211104Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+demonstrate / unit	UNKNOWN STEP	﻿2026-11-05T12:49:27.7595782Z Current runner version: '2.338.2'
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7618120Z ##[group]Runner Image Provisioner
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7618828Z Hosted Compute Agent
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7619548Z Version: 20261021.618
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7620206Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7620821Z Build Date: 2026-10-21T00:45:21Z
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7621476Z Worker ID: {2f0f5174-4483-4375-8fb3-d66ed778004a}
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7622060Z Region: westus
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7622541Z Cloud: Azure
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7623049Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7624205Z ##[group]Operating System
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7624763Z Ubuntu
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7625225Z 24.04.5
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7625702Z LTS
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7626181Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7626657Z ##[group]Runner Image
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7627218Z Image: ubuntu-24.04
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7627785Z Version: 20261025.353.1
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7628889Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7630396Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7631257Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7632205Z ##[group]GITHUB_TOKEN Permissions
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7633848Z Contents: read
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7634364Z Metadata: read
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7634845Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7636624Z Secret source: Actions
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7637453Z Cache mode: write
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7638071Z Prepare workflow directory
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7900858Z Prepare all required actions
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:27.7939835Z Getting action download info
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.1504564Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.3160192Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.6354315Z Uses: sencoders/cloud-mini-project/.github/workflows/ci.yml@refs/heads/master (68333d74b6e6d911108b74e638868e0821e4ba00)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.6358494Z ##[group] Inputs
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.6358939Z   release_tag: models-v1-v2
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.6359763Z   bad_model: true
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.6360136Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.6360508Z Complete job name: demonstrate / unit
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7156598Z ##[group]Run actions/checkout@v4
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7157259Z with:
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7157642Z   repository: sencoders/cloud-mini-project
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7161153Z   token: ***
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7161511Z   ssh-strict: true
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7161876Z   ssh-user: git
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7162242Z   persist-credentials: true
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7162648Z   clean: true
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7163016Z   sparse-checkout-cone-mode: true
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7163445Z   fetch-depth: 1
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7164390Z   fetch-tags: false
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7164917Z   show-progress: true
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7165474Z   lfs: false
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7165991Z   submodules: false
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7166537Z   set-safe-directory: true
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7167148Z   allow-unsafe-pr-checkout: false
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:28.7168270Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0425166Z Syncing repository: sencoders/cloud-mini-project
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0427216Z ##[group]Getting Git version info
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0428269Z Working directory is '/home/runner/work/cloud-mini-project/cloud-mini-project'
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0431177Z [command]/usr/bin/git version
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0563602Z git version 2.56.0
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0569569Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0624267Z Temporarily overriding HOME='/home/runner/work/_temp/32e72489-9378-494a-b18b-3bb56b06956e' before making global git config changes
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0626389Z Adding repository directory to the temporary git global config as a safe directory
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0634723Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0667391Z Deleting the contents of '/home/runner/work/cloud-mini-project/cloud-mini-project'
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0677605Z ##[group]Initializing the repository
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0704153Z [command]/usr/bin/git init /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0780658Z hint: Using 'master' as the name for the initial branch. This default branch name
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0783145Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0799714Z hint: to use in all of your new repositories, which will suppress this warning,
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0802166Z hint: call:
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0803294Z hint:
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0810424Z hint: 	git config --global init.defaultBranch <name>
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0833904Z hint:
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0835090Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0837317Z hint: 'development'. The just-created branch can be renamed via this command:
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0841783Z hint:
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0843481Z hint: 	git branch -m <name>
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0846689Z hint:
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0868900Z hint: Disable this message with "git config set advice.defaultBranchName false"
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0871082Z Initialized empty Git repository in /home/runner/work/cloud-mini-project/cloud-mini-project/.git/
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0880840Z [command]/usr/bin/git remote add origin https://github.com/sencoders/cloud-mini-project
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0882835Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0883745Z ##[group]Disabling automatic garbage collection
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0884540Z [command]/usr/bin/git config --local gc.auto 0
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.0990442Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.1029588Z ##[group]Setting up auth
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.1084673Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.1119009Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.2374467Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.2416126Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.2634931Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.2677593Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.2892223Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.2937587Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.2938879Z ##[group]Fetching the repository
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:29.2948243Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +68333d74b6e6d911108b74e638868e0821e4ba00:refs/remotes/origin/master
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.1052013Z From https://github.com/sencoders/cloud-mini-project
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.1054281Z  * [new ref]         68333d74b6e6d911108b74e638868e0821e4ba00 -> origin/master
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.1058406Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.1060025Z ##[group]Determining the checkout info
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.1061603Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.1068710Z [command]/usr/bin/git sparse-checkout disable
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.1150606Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.1231504Z ##[group]Checking out the ref
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.1249069Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.3022168Z Reset branch 'master'
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.3026677Z branch 'master' set up to track 'origin/master'.
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.3060621Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.3113833Z [command]/usr/bin/git log -1 --format=%H
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.3147151Z 68333d74b6e6d911108b74e638868e0821e4ba00
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.3462350Z ##[group]Run actions/setup-python@v5
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.3463397Z with:
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.3464185Z   python-version: 3.12
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.3465073Z   check-latest: false
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.3472847Z   token: ***
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.3473692Z   update-environment: true
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.3474618Z   allow-prereleases: false
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.3475524Z   freethreaded: false
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.3476354Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.4627113Z ##[group]Installed versions
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.4698592Z (node:2002) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.4711342Z Successfully set up CPython (3.12.15)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.4722155Z (Use `node --trace-deprecation ...` to show where the warning was created)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.4724622Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.4996432Z ##[group]Run pip install torch==2.8.0+cpu --index-url https://download.pytorch.org/whl/cpu
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.4999235Z ^[[36;1mpip install torch==2.8.0+cpu --index-url https://download.pytorch.org/whl/cpu^[[0m
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.5001507Z ^[[36;1mpip install -r requirements-service-dev.txt^[[0m
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.5043643Z shell: /usr/bin/bash -e {0}
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.5044773Z env:
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.5045945Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.5047799Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.5049846Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.5051650Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.5053358Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.5055054Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:30.5056531Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.5112003Z Looking in indexes: https://download.pytorch.org/whl/cpu
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.6128861Z Collecting torch==2.8.0+cpu
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.6691001Z   Downloading torch-2.8.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (29 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.6983449Z Collecting filelock (from torch==2.8.0+cpu)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.7321036Z   Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.7460605Z Collecting typing-extensions>=4.10.0 (from torch==2.8.0+cpu)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.7483189Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.7639853Z Collecting setuptools (from torch==2.8.0+cpu)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.7669929Z   Downloading setuptools-78.1.0-py3-none-any.whl.metadata (6.6 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.7834790Z Collecting sympy>=1.13.3 (from torch==2.8.0+cpu)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.7864537Z   Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.8069732Z Collecting networkx (from torch==2.8.0+cpu)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.8101066Z   Downloading networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.8329588Z Collecting jinja2 (from torch==2.8.0+cpu)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.8340325Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.9132514Z Collecting fsspec (from torch==2.8.0+cpu)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.9150029Z   Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.9516901Z Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch==2.8.0+cpu)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.9545051Z   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.9811320Z Collecting MarkupSafe>=2.0 (from jinja2->torch==2.8.0+cpu)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:31.9843272Z   Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:32.0023796Z Downloading torch-2.8.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl (183.9 MB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:34.4796001Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 183.9/183.9 MB 74.3 MB/s  0:00:02
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:34.4825156Z Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:34.5817681Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 69.5 MB/s  0:00:00
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:34.5851020Z Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:34.5991435Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 24.6 MB/s  0:00:00
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:34.6017254Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:34.6095378Z Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:34.6388535Z Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:34.7007219Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:34.7071761Z Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:34.7166972Z Downloading networkx-3.7-py3-none-any.whl (2.1 MB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:34.7410339Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 85.4 MB/s  0:00:00
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:34.7467928Z Downloading setuptools-78.1.0-py3-none-any.whl (1.3 MB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:34.7665434Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 56.7 MB/s  0:00:00
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:35.1838168Z Installing collected packages: mpmath, typing-extensions, sympy, setuptools, networkx, MarkupSafe, fsspec, filelock, jinja2, torch
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:52.7041257Z 
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:52.7054795Z Successfully installed MarkupSafe-3.0.3 filelock-4.2.4 fsspec-2026.9.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.7 setuptools-78.1.0 sympy-1.14.0 torch-2.8.0+cpu typing-extensions-4.16.0
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:53.4558907Z Collecting boto3==1.43.123 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 1))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:53.5503038Z   Downloading boto3-1.43.123-py3-none-any.whl.metadata (6.6 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:53.7227441Z Collecting botocore==1.43.123 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 2))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:53.7443697Z   Downloading botocore-1.43.123-py3-none-any.whl.metadata (5.6 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:53.7581342Z Collecting certifi==2026.10.23 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 3))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:53.7795280Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:53.9034411Z Collecting charset-normalizer==3.5.2 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 4))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:53.9251093Z   Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:53.9630476Z Collecting filelock==4.2.8 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 5))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:53.9841139Z   Downloading filelock-4.2.8-py3-none-any.whl.metadata (2.3 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:53.9884663Z Requirement already satisfied: fsspec==2026.9.0 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 6)) (2026.9.0)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.0186324Z Collecting hf-xet==1.8.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 7))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.0398088Z   Downloading hf_xet-1.8.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.0724279Z Collecting huggingface-hub==0.36.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 8))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.0978595Z   Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.1168164Z Collecting idna==3.20 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 9))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.1382566Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.2154027Z Collecting iniconfig==2.3.1 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 10))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.2370633Z   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.2411185Z Requirement already satisfied: Jinja2==3.1.6 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 11)) (3.1.6)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.2469951Z Collecting jmespath==1.1.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 12))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.2682879Z   Downloading jmespath-1.1.0-py3-none-any.whl.metadata (7.6 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.3096725Z Collecting MarkupSafe==3.0.4 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 13))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.3310895Z   Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.3347099Z Requirement already satisfied: mpmath==1.3.0 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 14)) (1.3.0)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.3351051Z Requirement already satisfied: networkx==3.7 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 15)) (3.7)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.5356239Z Collecting numpy==2.3.4 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 16))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.5567882Z   Downloading numpy-2.3.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.5836199Z Collecting packaging==26.3 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 17))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.6045952Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.6154869Z Collecting pluggy==1.7.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 18))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.6363265Z   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.7181840Z Collecting psutil==7.1.3 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 19))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.7393202Z   Downloading psutil-7.1.3-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (23 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.8191121Z Collecting Pygments==2.21.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 20))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:54.8398687Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:55.0899377Z Collecting pypdf==6.21.4 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 21))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:55.1122660Z   Downloading pypdf-6.21.4-py3-none-any.whl.metadata (7.6 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:55.2248646Z Collecting pytest==9.2.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 22))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:55.2476721Z   Downloading pytest-9.2.0-py3-none-any.whl.metadata (7.9 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:55.2623185Z Collecting python-dateutil==2.9.0.post0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 23))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:55.2834517Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:55.3111135Z Collecting PyYAML==6.0.3 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 24))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:55.3315538Z   Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:55.7883407Z Collecting regex==2026.9.29 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 25))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:55.8098841Z   Downloading regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:55.9903886Z Collecting requests==2.34.2 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 26))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:56.0111254Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:56.1019828Z Collecting s3transfer==0.19.3 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 27))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:56.1226122Z   Downloading s3transfer-0.19.3-py3-none-any.whl.metadata (1.7 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:56.3500242Z Collecting safetensors==0.6.2 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 28))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:56.3712975Z   Downloading safetensors-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:56.5152319Z Collecting setuptools==84.2.1 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 29))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:56.5362966Z   Downloading setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:56.8896347Z Collecting six==1.17.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 30))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:56.9116589Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:56.9143058Z Requirement already satisfied: sympy==1.14.0 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 31)) (1.14.0)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.0128827Z Collecting tokenizers==0.22.1 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 32))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.0344072Z   Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.0385966Z Requirement already satisfied: torch==2.8.0 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 33)) (2.8.0+cpu)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.0548260Z Collecting tqdm==4.70.1 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 34))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.0759683Z   Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.1603272Z Collecting transformers==4.57.2 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 35))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.1820938Z   Downloading transformers-4.57.2-py3-none-any.whl.metadata (43 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.3011558Z Requirement already satisfied: typing_extensions==4.16.0 in /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 36)) (4.16.0)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.3881781Z Collecting urllib3==2.8.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 37))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.4093817Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.4811531Z Collecting annotated-doc==0.0.5 (from -r requirements-service-dev.txt (line 2))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.5022122Z   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.5113841Z Collecting annotated-types==0.8.0 (from -r requirements-service-dev.txt (line 3))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.5333021Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.5460913Z Collecting anyio==4.16.0 (from -r requirements-service-dev.txt (line 4))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.5672633Z   Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.7552514Z Collecting attrs==26.1.0 (from -r requirements-service-dev.txt (line 5))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.7763520Z   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.7885458Z Collecting click==8.5.0 (from -r requirements-service-dev.txt (line 10))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.8095708Z   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.8397723Z Collecting fastapi==0.121.0 (from -r requirements-service-dev.txt (line 11))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.8622324Z   Downloading fastapi-0.121.0-py3-none-any.whl.metadata (28 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.8745287Z Collecting h11==0.16.0 (from -r requirements-service-dev.txt (line 14))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:57.8967512Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:58.7148126Z Collecting jsonschema==4.25.1 (from -r requirements-service-dev.txt (line 20))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:58.7360795Z   Downloading jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:59.0988343Z Collecting jsonschema-specifications==2025.9.1 (from -r requirements-service-dev.txt (line 21))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:59.1202554Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:59.4290386Z Collecting pydantic==2.14.2 (from -r requirements-service-dev.txt (line 27))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:49:59.4492080Z   Downloading pydantic-2.14.2-py3-none-any.whl.metadata (137 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.3180626Z Collecting pydantic_core==2.50.2 (from -r requirements-service-dev.txt (line 28))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.3394648Z   Downloading pydantic_core-2.50.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.5 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.3585864Z Collecting referencing==0.37.0 (from -r requirements-service-dev.txt (line 31))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.3800927Z   Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.5770868Z Collecting rpds-py==2026.9.1 (from -r requirements-service-dev.txt (line 34))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.5982552Z   Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.6244284Z Collecting starlette==0.49.3 (from -r requirements-service-dev.txt (line 39))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.6458466Z   Downloading starlette-0.49.3-py3-none-any.whl.metadata (6.4 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.6560634Z Collecting typing-inspection==0.4.4 (from -r requirements-service-dev.txt (line 44))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.6770608Z   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.6950454Z Collecting uvicorn==0.38.0 (from -r requirements-service-dev.txt (line 47))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.7157568Z   Downloading uvicorn-0.38.0-py3-none-any.whl.metadata (6.8 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.7288385Z Collecting httpx==0.28.1 (from -r requirements-service-dev.txt (line 48))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.8186946Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.9119119Z Collecting httpcore==1.* (from httpx==0.28.1->-r requirements-service-dev.txt (line 48))
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.9329823Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.9600606Z Downloading boto3-1.43.123-py3-none-any.whl (140 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:00.9880906Z Downloading botocore-1.43.123-py3-none-any.whl (16.2 MB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:01.2825338Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.2/16.2 MB 55.9 MB/s  0:00:00
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:01.3026044Z Downloading jmespath-1.1.0-py3-none-any.whl (20 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:01.3262089Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:01.3504850Z Downloading s3transfer-0.19.3-py3-none-any.whl (90 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:01.3929205Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:01.4191114Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:01.4448629Z Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:01.4704023Z Downloading filelock-4.2.8-py3-none-any.whl (164 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:01.4943731Z Downloading hf_xet-1.8.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.3 MB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:01.5465667Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 80.1 MB/s  0:00:00
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:01.5676623Z Downloading huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:01.7314250Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.1/566.1 kB 1.9 MB/s  0:00:00
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:01.7528284Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:01.7762005Z Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:01.9790942Z Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.0066908Z Downloading numpy-2.3.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.2541396Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 67.0 MB/s  0:00:00
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.2755573Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.3002874Z Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.3237618Z Downloading psutil-7.1.3-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (263 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.3502989Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.3661619Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 71.1 MB/s  0:00:00
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.3878892Z Downloading pypdf-6.21.4-py3-none-any.whl (410 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.4145945Z Downloading pytest-9.2.0-py3-none-any.whl (411 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.4406118Z Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.4523250Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 56.0 MB/s  0:00:00
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.4735368Z Downloading regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.4859955Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.8/807.8 kB 52.8 MB/s  0:00:00
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.5078649Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.5304569Z Downloading safetensors-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (485 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.5585020Z Downloading setuptools-84.2.1-py3-none-any.whl (876 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.5726901Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 876.3/876.3 kB 52.3 MB/s  0:00:00
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.5941712Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.6197690Z Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.6617700Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 77.1 MB/s  0:00:00
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.6817025Z Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.7313161Z Downloading transformers-4.57.2-py3-none-any.whl (12.0 MB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.8752112Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 84.1 MB/s  0:00:00
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.8972687Z Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.9208734Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.9456642Z Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:02.9704823Z Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:03.1620904Z Downloading click-8.5.0-py3-none-any.whl (125 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:03.1862653Z Downloading fastapi-0.121.0-py3-none-any.whl (109 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:03.2105195Z Downloading pydantic-2.14.2-py3-none-any.whl (490 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:03.2380062Z Downloading starlette-0.49.3-py3-none-any.whl (74 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:03.2617591Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:03.2847302Z Downloading jsonschema-4.25.1-py3-none-any.whl (90 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:03.3082945Z Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:03.3354406Z Downloading pydantic_core-2.50.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.2 MB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:03.3607749Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 87.1 MB/s  0:00:00
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:03.3820490Z Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:03.4048349Z Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:03.5577676Z Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:03.5808088Z Downloading uvicorn-0.38.0-py3-none-any.whl (68 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:03.6035428Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:03.6260219Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:03.9150083Z Installing collected packages: urllib3, typing-inspection, tqdm, six, setuptools, safetensors, rpds-py, regex, PyYAML, pypdf, Pygments, pydantic_core, psutil, pluggy, packaging, numpy, MarkupSafe, jmespath, iniconfig, idna, hf-xet, h11, filelock, click, charset-normalizer, certifi, attrs, annotated-types, annotated-doc, uvicorn, requests, referencing, python-dateutil, pytest, pydantic, httpcore, anyio, starlette, jsonschema-specifications, huggingface-hub, httpx, botocore, tokenizers, s3transfer, jsonschema, fastapi, transformers, boto3
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:04.0410114Z   Attempting uninstall: setuptools
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:04.0430224Z     Found existing installation: setuptools 78.1.0
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:04.0723026Z     Uninstalling setuptools-78.1.0:
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:04.1458090Z       Successfully uninstalled setuptools-78.1.0
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:07.8082792Z   Attempting uninstall: MarkupSafe
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:07.8099412Z     Found existing installation: MarkupSafe 3.0.3
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:07.8113118Z     Uninstalling MarkupSafe-3.0.3:
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:07.8119470Z       Successfully uninstalled MarkupSafe-3.0.3
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:08.0373813Z   Attempting uninstall: filelock
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:08.0396646Z     Found existing installation: filelock 4.2.4
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:08.0420670Z     Uninstalling filelock-4.2.4:
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:08.0428809Z       Successfully uninstalled filelock-4.2.4
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:17.5220152Z 
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:17.5262627Z Successfully installed MarkupSafe-3.0.4 PyYAML-6.0.3 Pygments-2.21.0 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.16.0 attrs-26.1.0 boto3-1.43.123 botocore-1.43.123 certifi-2026.10.23 charset-normalizer-3.5.2 click-8.5.0 fastapi-0.121.0 filelock-4.2.8 h11-0.16.0 hf-xet-1.8.0 httpcore-1.0.9 httpx-0.28.1 huggingface-hub-0.36.0 idna-3.20 iniconfig-2.3.1 jmespath-1.1.0 jsonschema-4.25.1 jsonschema-specifications-2025.9.1 numpy-2.3.4 packaging-26.3 pluggy-1.7.0 psutil-7.1.3 pydantic-2.14.2 pydantic_core-2.50.2 pypdf-6.21.4 pytest-9.2.0 python-dateutil-2.9.0.post0 referencing-0.37.0 regex-2026.9.29 requests-2.34.2 rpds-py-2026.9.1 s3transfer-0.19.3 safetensors-0.6.2 setuptools-84.2.1 six-1.17.0 starlette-0.49.3 tokenizers-0.22.1 tqdm-4.70.1 transformers-4.57.2 typing-inspection-0.4.4 urllib3-2.8.0 uvicorn-0.38.0
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:17.5273163Z 
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:17.5273509Z [notice] A new release of pip is available: 26.2.2 -> 26.3
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:17.5274050Z [notice] To update, run: pip install --upgrade pip
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:17.9640086Z ##[group]Run python -m pytest -q
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:17.9640489Z ^[[36;1mpython -m pytest -q^[[0m
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:17.9662244Z shell: /usr/bin/bash -e {0}
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:17.9662460Z env:
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:17.9662680Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:17.9663037Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:17.9663380Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:17.9663680Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:17.9664063Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:17.9664368Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:17.9664623Z ##[endgroup]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:22.1831334Z .........................................................s.............. [ 55%]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:24.5796671Z ..........................................................               [100%]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:24.5797762Z =============================== warnings summary ===============================
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:24.5798950Z ../../../../../opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/starlette/testclient.py:51
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:24.5805766Z   /opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/starlette/testclient.py:51: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:24.5807206Z     _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:24.5807824Z 
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:24.5808217Z -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:24.5808865Z 129 passed, 1 skipped, 1 warning in 4.09s
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.2843050Z Post job cleanup.
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.3884833Z (node:2129) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.3886749Z (Use `node --trace-deprecation ...` to show where the warning was created)
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.4178938Z Post job cleanup.
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.5074490Z [command]/usr/bin/git version
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.5125059Z git version 2.56.0
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.5202499Z Temporarily overriding HOME='/home/runner/work/_temp/e5953705-0aa7-4b54-8b33-55a9065d2ecd' before making global git config changes
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.5230197Z Adding repository directory to the temporary git global config as a safe directory
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.5248582Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.5262546Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.5306411Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.5721314Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.5771887Z http.https://github.com/.extraheader
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.5774579Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.6086532Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.6351700Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.6493557Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.6933496Z Cleaning up orphan processes
+demonstrate / unit	UNKNOWN STEP	2026-11-05T12:50:25.7250440Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+demonstrate / model-evaluation	UNKNOWN STEP	﻿2026-11-05T12:50:31.4314048Z Current runner version: '2.338.2'
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4335474Z ##[group]Runner Image Provisioner
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4336392Z Hosted Compute Agent
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4336784Z Version: 20261028.624
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4337180Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4337669Z Build Date: 2026-10-28T21:51:42Z
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4338163Z Worker ID: {ec672e62-2cb5-49ed-83b3-43f23369d1cf}
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4338633Z Region: centralus
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4339005Z Cloud: Azure
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4339354Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4340291Z ##[group]Operating System
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4340717Z Ubuntu
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4341045Z 24.04.5
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4341426Z LTS
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4341761Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4342137Z ##[group]Runner Image
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4342596Z Image: ubuntu-24.04
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4342960Z Version: 20261101.360.1
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4343829Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4344829Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4345441Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4346253Z ##[group]GITHUB_TOKEN Permissions
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4347638Z Contents: read
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4347993Z Metadata: read
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4348455Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4349990Z Secret source: Actions
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4350635Z Cache mode: write
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4351084Z Prepare workflow directory
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4818213Z Prepare all required actions
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.4867354Z Getting action download info
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.7485812Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.8341440Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:31.9899118Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.2601631Z Uses: sencoders/cloud-mini-project/.github/workflows/ci.yml@refs/heads/master (68333d74b6e6d911108b74e638868e0821e4ba00)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.2604315Z ##[group] Inputs
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.2604619Z   release_tag: models-v1-v2
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.2605072Z   bad_model: true
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.2605329Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.2605617Z Complete job name: demonstrate / model-evaluation
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3112424Z ##[group]Run actions/checkout@v4
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3112878Z with:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3113143Z   repository: sencoders/cloud-mini-project
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3115223Z   token: ***
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3115468Z   ssh-strict: true
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3115715Z   ssh-user: git
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3116099Z   persist-credentials: true
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3116375Z   clean: true
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3116640Z   sparse-checkout-cone-mode: true
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3116937Z   fetch-depth: 1
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3117184Z   fetch-tags: false
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3117474Z   show-progress: true
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3117727Z   lfs: false
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3117969Z   submodules: false
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3118223Z   set-safe-directory: true
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3118508Z   allow-unsafe-pr-checkout: false
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3118876Z env:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3119109Z   RELEASE_TAG: models-v1-v2
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3121085Z   GH_TOKEN: ***
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3121382Z   RELEASE_REPO: sencoders/cloud-mini-project
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3121702Z   BAD_MODEL: true
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.3121949Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.5577740Z Syncing repository: sencoders/cloud-mini-project
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.5579870Z ##[group]Getting Git version info
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.5641811Z Working directory is '/home/runner/work/cloud-mini-project/cloud-mini-project'
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.5643361Z [command]/usr/bin/git version
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.5844749Z git version 2.56.0
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.5874739Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.5934872Z Temporarily overriding HOME='/home/runner/work/_temp/0a2c6f8d-c6b9-4615-82ee-f73c7f078dec' before making global git config changes
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.5937187Z Adding repository directory to the temporary git global config as a safe directory
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.5944621Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.6926860Z Deleting the contents of '/home/runner/work/cloud-mini-project/cloud-mini-project'
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.6937492Z ##[group]Initializing the repository
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.6938486Z [command]/usr/bin/git init /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7053977Z hint: Using 'master' as the name for the initial branch. This default branch name
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7054817Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7055343Z hint: to use in all of your new repositories, which will suppress this warning,
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7055831Z hint: call:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7057456Z hint:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7058001Z hint: 	git config --global init.defaultBranch <name>
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7058760Z hint:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7059318Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7060057Z hint: 'development'. The just-created branch can be renamed via this command:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7060567Z hint:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7060915Z hint: 	git branch -m <name>
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7061267Z hint:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7061690Z hint: Disable this message with "git config set advice.defaultBranchName false"
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7064430Z Initialized empty Git repository in /home/runner/work/cloud-mini-project/cloud-mini-project/.git/
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7078003Z [command]/usr/bin/git remote add origin https://github.com/sencoders/cloud-mini-project
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7143797Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7144616Z ##[group]Disabling automatic garbage collection
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7145319Z [command]/usr/bin/git config --local gc.auto 0
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7186813Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7187596Z ##[group]Setting up auth
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7193113Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7238667Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7612208Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7652382Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7928340Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.7979140Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.8321922Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.8465303Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.8466607Z ##[group]Fetching the repository
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:32.8468448Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +68333d74b6e6d911108b74e638868e0821e4ba00:refs/remotes/origin/master
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.7251154Z From https://github.com/sencoders/cloud-mini-project
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.7253484Z  * [new ref]         68333d74b6e6d911108b74e638868e0821e4ba00 -> origin/master
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.7258105Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.7259742Z ##[group]Determining the checkout info
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.7261358Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.7262563Z [command]/usr/bin/git sparse-checkout disable
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.7304552Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.7344699Z ##[group]Checking out the ref
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.7357160Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.8886274Z Reset branch 'master'
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.8897813Z branch 'master' set up to track 'origin/master'.
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.8931090Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.8981070Z [command]/usr/bin/git log -1 --format=%H
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.9016223Z 68333d74b6e6d911108b74e638868e0821e4ba00
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.9321011Z ##[group]Run actions/setup-python@v5
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.9321783Z with:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.9322332Z   python-version: 3.12
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.9322958Z   check-latest: false
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.9328787Z   token: ***
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.9329380Z   update-environment: true
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.9330063Z   allow-prereleases: false
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.9330724Z   freethreaded: false
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.9331308Z env:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.9331837Z   RELEASE_TAG: models-v1-v2
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.9337430Z   GH_TOKEN: ***
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.9338067Z   RELEASE_REPO: sencoders/cloud-mini-project
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.9338851Z   BAD_MODEL: true
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:33.9339401Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0456198Z ##[group]Installed versions
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0552985Z (node:1994) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0556161Z (Use `node --trace-deprecation ...` to show where the warning was created)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0557792Z Successfully set up CPython (3.12.16)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0560135Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0813456Z ##[group]Run pip install torch==2.8.0+cpu --index-url https://download.pytorch.org/whl/cpu
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0815714Z ^[[36;1mpip install torch==2.8.0+cpu --index-url https://download.pytorch.org/whl/cpu^[[0m
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0817804Z ^[[36;1mpip install -r requirements-service-dev.txt^[[0m
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0872852Z shell: /usr/bin/bash -e {0}
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0873904Z env:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0874701Z   RELEASE_TAG: models-v1-v2
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0883521Z   GH_TOKEN: ***
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0884398Z   RELEASE_REPO: sencoders/cloud-mini-project
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0885420Z   BAD_MODEL: true
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0886715Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0888327Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0889958Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0891386Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0893071Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0894678Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:34.0896062Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.1402928Z Looking in indexes: https://download.pytorch.org/whl/cpu
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.3063110Z Collecting torch==2.8.0+cpu
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.4020330Z   Downloading torch-2.8.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (29 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.4354992Z Collecting filelock (from torch==2.8.0+cpu)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.5439603Z   Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.5816558Z Collecting typing-extensions>=4.10.0 (from torch==2.8.0+cpu)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.5976701Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.6189724Z Collecting setuptools (from torch==2.8.0+cpu)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.6343839Z   Downloading setuptools-78.1.0-py3-none-any.whl.metadata (6.6 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.6623083Z Collecting sympy>=1.13.3 (from torch==2.8.0+cpu)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.6780314Z   Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.7142552Z Collecting networkx (from torch==2.8.0+cpu)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.7300167Z   Downloading networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.7730793Z Collecting jinja2 (from torch==2.8.0+cpu)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.7875356Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.8150715Z Collecting fsspec (from torch==2.8.0+cpu)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.8326854Z   Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.8656911Z Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch==2.8.0+cpu)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.8811207Z   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.9083444Z Collecting MarkupSafe>=2.0 (from jinja2->torch==2.8.0+cpu)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.9225872Z   Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:35.9457042Z Downloading torch-2.8.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl (183.9 MB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:40.2337894Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 183.9/183.9 MB 43.0 MB/s  0:00:04
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:40.2491027Z Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:40.7153136Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 14.1 MB/s  0:00:00
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:40.7313798Z Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:40.7361728Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 112.9 MB/s  0:00:00
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:40.7508754Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:40.7678352Z Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:40.7850095Z Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:40.8036336Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:40.8204344Z Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:40.8396570Z Downloading networkx-3.7-py3-none-any.whl (2.1 MB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:40.8634151Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 86.3 MB/s  0:00:00
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:40.8778028Z Downloading setuptools-78.1.0-py3-none-any.whl (1.3 MB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:40.9147351Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 33.1 MB/s  0:00:00
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:41.1775405Z Installing collected packages: mpmath, typing-extensions, sympy, setuptools, networkx, MarkupSafe, fsspec, filelock, jinja2, torch
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:53.3728099Z 
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:53.3740446Z Successfully installed MarkupSafe-3.0.3 filelock-4.2.4 fsspec-2026.9.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.7 setuptools-78.1.0 sympy-1.14.0 torch-2.8.0+cpu typing-extensions-4.16.0
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:53.9984018Z Collecting boto3==1.43.123 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 1))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.0929278Z   Downloading boto3-1.43.123-py3-none-any.whl.metadata (6.6 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.2259626Z Collecting botocore==1.43.123 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 2))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.2415029Z   Downloading botocore-1.43.123-py3-none-any.whl.metadata (5.6 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.2652954Z Collecting certifi==2026.10.23 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 3))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.2806349Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.3813492Z Collecting charset-normalizer==3.5.2 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 4))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.3968857Z   Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.4371957Z Collecting filelock==4.2.8 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 5))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.4537783Z   Downloading filelock-4.2.8-py3-none-any.whl.metadata (2.3 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.4568186Z Requirement already satisfied: fsspec==2026.9.0 in /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 6)) (2026.9.0)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.4923938Z Collecting hf-xet==1.8.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 7))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.5080469Z   Downloading hf_xet-1.8.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.5462336Z Collecting huggingface-hub==0.36.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 8))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.5622091Z   Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.5903848Z Collecting idna==3.20 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 9))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.6061903Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.6271532Z Collecting iniconfig==2.3.1 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 10))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.6428516Z   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.6458924Z Requirement already satisfied: Jinja2==3.1.6 in /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 11)) (3.1.6)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.6647416Z Collecting jmespath==1.1.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 12))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.6803008Z   Downloading jmespath-1.1.0-py3-none-any.whl.metadata (7.6 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.7236202Z Collecting MarkupSafe==3.0.4 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 13))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.7390095Z   Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.7418577Z Requirement already satisfied: mpmath==1.3.0 in /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 14)) (1.3.0)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.7421403Z Requirement already satisfied: networkx==3.7 in /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 15)) (3.7)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.8562318Z Collecting numpy==2.3.4 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 16))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.8726876Z   Downloading numpy-2.3.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.9045275Z Collecting packaging==26.3 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 17))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.9189897Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.9410766Z Collecting pluggy==1.7.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 18))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:54.9565671Z   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.0034838Z Collecting psutil==7.1.3 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 19))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.0193075Z   Downloading psutil-7.1.3-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (23 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.0459448Z Collecting Pygments==2.21.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 20))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.0612538Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.0870606Z Collecting pypdf==6.21.4 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 21))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.1023287Z   Downloading pypdf-6.21.4-py3-none-any.whl.metadata (7.6 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.1308222Z Collecting pytest==9.2.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 22))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.1476495Z   Downloading pytest-9.2.0-py3-none-any.whl.metadata (7.9 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.1689246Z Collecting python-dateutil==2.9.0.post0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 23))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.1839429Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.2161692Z Collecting PyYAML==6.0.3 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 24))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.2312433Z   Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.4730783Z Collecting regex==2026.9.29 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 25))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.4888861Z   Downloading regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.5152541Z Collecting requests==2.34.2 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 26))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.5308251Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.5533242Z Collecting s3transfer==0.19.3 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 27))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.5689072Z   Downloading s3transfer-0.19.3-py3-none-any.whl.metadata (1.7 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.6430587Z Collecting safetensors==0.6.2 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 28))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.6596947Z   Downloading safetensors-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.7135322Z Collecting setuptools==84.2.1 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 29))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.7410910Z   Downloading setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.7644225Z Collecting six==1.17.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 30))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.7849707Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.7875288Z Requirement already satisfied: sympy==1.14.0 in /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 31)) (1.14.0)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.8726748Z Collecting tokenizers==0.22.1 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 32))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.9257425Z   Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.9294049Z Requirement already satisfied: torch==2.8.0 in /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 33)) (2.8.0+cpu)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.9542395Z Collecting tqdm==4.70.1 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 34))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:55.9769023Z   Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.0448711Z Collecting transformers==4.57.2 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 35))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.0617479Z   Downloading transformers-4.57.2-py3-none-any.whl.metadata (43 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.1243319Z Requirement already satisfied: typing_extensions==4.16.0 in /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 36)) (4.16.0)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.1479537Z Collecting urllib3==2.8.0 (from -r /home/runner/work/cloud-mini-project/cloud-mini-project/requirements-training-lock.txt (line 37))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.1638650Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.1841737Z Collecting annotated-doc==0.0.5 (from -r requirements-service-dev.txt (line 2))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.1998826Z   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.2202094Z Collecting annotated-types==0.8.0 (from -r requirements-service-dev.txt (line 3))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.2363236Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.2618977Z Collecting anyio==4.16.0 (from -r requirements-service-dev.txt (line 4))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.2773089Z   Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.3013765Z Collecting attrs==26.1.0 (from -r requirements-service-dev.txt (line 5))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.3165396Z   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.3481131Z Collecting click==8.5.0 (from -r requirements-service-dev.txt (line 10))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.3650093Z   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.4204526Z Collecting fastapi==0.121.0 (from -r requirements-service-dev.txt (line 11))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.4368936Z   Downloading fastapi-0.121.0-py3-none-any.whl.metadata (28 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.4599000Z Collecting h11==0.16.0 (from -r requirements-service-dev.txt (line 14))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.4751449Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.5002665Z Collecting jsonschema==4.25.1 (from -r requirements-service-dev.txt (line 20))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.5157033Z   Downloading jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.5377135Z Collecting jsonschema-specifications==2025.9.1 (from -r requirements-service-dev.txt (line 21))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.5528963Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.6275915Z Collecting pydantic==2.14.2 (from -r requirements-service-dev.txt (line 27))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:56.6449119Z   Downloading pydantic-2.14.2-py3-none-any.whl.metadata (137 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.1601759Z Collecting pydantic_core==2.50.2 (from -r requirements-service-dev.txt (line 28))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.1766968Z   Downloading pydantic_core-2.50.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.5 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.2030108Z Collecting referencing==0.37.0 (from -r requirements-service-dev.txt (line 31))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.2183055Z   Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.3746799Z Collecting rpds-py==2026.9.1 (from -r requirements-service-dev.txt (line 34))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.3921042Z   Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.4190045Z Collecting starlette==0.49.3 (from -r requirements-service-dev.txt (line 39))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.4344015Z   Downloading starlette-0.49.3-py3-none-any.whl.metadata (6.4 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.4752210Z Collecting typing-inspection==0.4.4 (from -r requirements-service-dev.txt (line 44))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.4905433Z   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.5385333Z Collecting uvicorn==0.38.0 (from -r requirements-service-dev.txt (line 47))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.5538474Z   Downloading uvicorn-0.38.0-py3-none-any.whl.metadata (6.8 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.5973070Z Collecting httpx==0.28.1 (from -r requirements-service-dev.txt (line 48))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.6756123Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.7615227Z Collecting httpcore==1.* (from httpx==0.28.1->-r requirements-service-dev.txt (line 48))
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.7771114Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.8064555Z Downloading boto3-1.43.123-py3-none-any.whl (140 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:57.8270432Z Downloading botocore-1.43.123-py3-none-any.whl (16.2 MB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:58.0722482Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.2/16.2 MB 66.6 MB/s  0:00:00
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:58.0879292Z Downloading jmespath-1.1.0-py3-none-any.whl (20 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:58.4336903Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:59.0640305Z Downloading s3transfer-0.19.3-py3-none-any.whl (90 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:59.1547002Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:59.2657396Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:59.3751404Z Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:59.4977178Z Downloading filelock-4.2.8-py3-none-any.whl (164 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:59.5780121Z Downloading hf_xet-1.8.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.3 MB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:59.8505035Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 15.0 MB/s  0:00:00
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:59.8671021Z Downloading huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:59.8780309Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.1/566.1 kB 34.2 MB/s  0:00:00
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:59.8957891Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:59.9137372Z Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:59.9312644Z Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:50:59.9497220Z Downloading numpy-2.3.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.1345760Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 90.0 MB/s  0:00:00
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.1506952Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.1685394Z Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.1867596Z Downloading psutil-7.1.3-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (263 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.2067815Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.2213191Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 89.5 MB/s  0:00:00
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.2382983Z Downloading pypdf-6.21.4-py3-none-any.whl (410 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.2574513Z Downloading pytest-9.2.0-py3-none-any.whl (411 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.2772202Z Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.2822000Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 184.7 MB/s  0:00:00
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.2984981Z Downloading regex-2026.9.29-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.3033723Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.8/807.8 kB 182.9 MB/s  0:00:00
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.3199505Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.3409427Z Downloading safetensors-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (485 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.3597031Z Downloading setuptools-84.2.1-py3-none-any.whl (876 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.3707864Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 876.3/876.3 kB 70.6 MB/s  0:00:00
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.3929406Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.4110998Z Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.4518772Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 79.5 MB/s  0:00:00
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.4679013Z Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.4876161Z Downloading transformers-4.57.2-py3-none-any.whl (12.0 MB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.7032135Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 54.9 MB/s  0:00:00
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.7195112Z Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.7371420Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.7548302Z Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.7726978Z Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.7907099Z Downloading click-8.5.0-py3-none-any.whl (125 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.8086680Z Downloading fastapi-0.121.0-py3-none-any.whl (109 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.8267342Z Downloading pydantic-2.14.2-py3-none-any.whl (490 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.8454741Z Downloading starlette-0.49.3-py3-none-any.whl (74 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.8648688Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.8830186Z Downloading jsonschema-4.25.1-py3-none-any.whl (90 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.9010842Z Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.9207381Z Downloading pydantic_core-2.50.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.2 MB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.9425870Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 104.0 MB/s  0:00:00
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.9582982Z Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.9755124Z Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:00.9943280Z Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:01.0147855Z Downloading uvicorn-0.38.0-py3-none-any.whl (68 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:01.0366774Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:01.0617493Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:01.2950071Z Installing collected packages: urllib3, typing-inspection, tqdm, six, setuptools, safetensors, rpds-py, regex, PyYAML, pypdf, Pygments, pydantic_core, psutil, pluggy, packaging, numpy, MarkupSafe, jmespath, iniconfig, idna, hf-xet, h11, filelock, click, charset-normalizer, certifi, attrs, annotated-types, annotated-doc, uvicorn, requests, referencing, python-dateutil, pytest, pydantic, httpcore, anyio, starlette, jsonschema-specifications, huggingface-hub, httpx, botocore, tokenizers, s3transfer, jsonschema, fastapi, transformers, boto3
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:01.3976989Z   Attempting uninstall: setuptools
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:01.3995071Z     Found existing installation: setuptools 78.1.0
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:01.4208700Z     Uninstalling setuptools-78.1.0:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:01.4883550Z       Successfully uninstalled setuptools-78.1.0
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:04.4387163Z   Attempting uninstall: MarkupSafe
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:04.4389877Z     Found existing installation: MarkupSafe 3.0.3
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:04.4401658Z     Uninstalling MarkupSafe-3.0.3:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:04.4407956Z       Successfully uninstalled MarkupSafe-3.0.3
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:04.5471494Z   Attempting uninstall: filelock
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:04.5489979Z     Found existing installation: filelock 4.2.4
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:04.5509822Z     Uninstalling filelock-4.2.4:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:04.5517141Z       Successfully uninstalled filelock-4.2.4
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:11.6848123Z 
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:11.6881202Z Successfully installed MarkupSafe-3.0.4 PyYAML-6.0.3 Pygments-2.21.0 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.16.0 attrs-26.1.0 boto3-1.43.123 botocore-1.43.123 certifi-2026.10.23 charset-normalizer-3.5.2 click-8.5.0 fastapi-0.121.0 filelock-4.2.8 h11-0.16.0 hf-xet-1.8.0 httpcore-1.0.9 httpx-0.28.1 huggingface-hub-0.36.0 idna-3.20 iniconfig-2.3.1 jmespath-1.1.0 jsonschema-4.25.1 jsonschema-specifications-2025.9.1 numpy-2.3.4 packaging-26.3 pluggy-1.7.0 psutil-7.1.3 pydantic-2.14.2 pydantic_core-2.50.2 pypdf-6.21.4 pytest-9.2.0 python-dateutil-2.9.0.post0 referencing-0.37.0 regex-2026.9.29 requests-2.34.2 rpds-py-2026.9.1 s3transfer-0.19.3 safetensors-0.6.2 setuptools-84.2.1 six-1.17.0 starlette-0.49.3 tokenizers-0.22.1 tqdm-4.70.1 transformers-4.57.2 typing-inspection-0.4.4 urllib3-2.8.0 uvicorn-0.38.0
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:11.6891078Z 
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:11.6891583Z [notice] A new release of pip is available: 26.2.2 -> 26.3
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:11.6892129Z [notice] To update, run: pip install --upgrade pip
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0464757Z ##[group]Run test -n "$RELEASE_TAG" || { echo 'Configure MODEL_RELEASE_TAG or dispatch with release_tag'; exit 1; }
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0465218Z ^[[36;1mtest -n "$RELEASE_TAG" || { echo 'Configure MODEL_RELEASE_TAG or dispatch with release_tag'; exit 1; }^[[0m
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0465501Z ^[[36;1mmkdir -p .local/release-download^[[0m
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0465825Z ^[[36;1mgh release download "$RELEASE_TAG" --repo "$RELEASE_REPO" --dir .local/release-download --pattern 'pythia-70m-v1.tar.gz*'^[[0m
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0483602Z shell: /usr/bin/bash -e {0}
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0483751Z env:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0483866Z   RELEASE_TAG: models-v1-v2
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0485244Z   GH_TOKEN: ***
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0485384Z   RELEASE_REPO: sencoders/cloud-mini-project
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0485545Z   BAD_MODEL: true
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0485705Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0486109Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0486345Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0486565Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0486777Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0486989Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:12.0487169Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3861703Z ##[group]Run extra=()
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3861967Z ^[[36;1mextra=()^[[0m
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3862213Z ^[[36;1mif [ "$BAD_MODEL" = true ]; then extra+=(--bad-model); fi^[[0m
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3862721Z ^[[36;1mpython -m ci.evaluate_release --archive .local/release-download/pythia-70m-v1.tar.gz "${extra[@]}"^[[0m
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3863378Z ^[[36;1mpython tools/score.py results/ci/predictions.jsonl data/validation.jsonl --out results/ci/evaluation.json^[[0m
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3886030Z shell: /usr/bin/bash -e {0}
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3886242Z env:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3886417Z   RELEASE_TAG: models-v1-v2
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3888639Z   GH_TOKEN: ***
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3888779Z   RELEASE_REPO: sencoders/cloud-mini-project
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3888956Z   BAD_MODEL: true
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3889112Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3889349Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3889612Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3889825Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3890036Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3890247Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:16.3890427Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:22.1976974Z 
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:22.3373479Z Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:29.2561681Z Fetching 5 files:  20%|██        | 1/5 [00:00<00:00,  7.17it/s]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:29.2576861Z Fetching 5 files: 100%|██████████| 5/5 [00:07<00:00,  1.41s/it]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:29.2577510Z Fetching 5 files: 100%|██████████| 5/5 [00:07<00:00,  1.41s/it]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:51:30.7068554Z `torch_dtype` is deprecated! Use `dtype` instead!
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3329045Z {
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3329524Z   "json_validity": 0.0,
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3329848Z   "intent_accuracy": 0.0,
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3330185Z   "date_accuracy": 0.0,
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3330452Z   "time_accuracy": 0.0,
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3330726Z   "place_accuracy": 0.0,
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3331002Z   "full_frame": 0.0,
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3331261Z   "examples": 100,
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3331527Z   "missing_predictions": 0
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3331795Z }
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3412440Z ##[group]Run actions/upload-artifact@v4
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3412606Z with:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3412717Z   name: evaluation
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3412831Z   path: results/ci/
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3412952Z   if-no-files-found: warn
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3413084Z   compression-level: 6
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3413206Z   overwrite: false
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3413329Z   include-hidden-files: false
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3413480Z env:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3413592Z   RELEASE_TAG: models-v1-v2
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3414955Z   GH_TOKEN: ***
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3415092Z   RELEASE_REPO: sencoders/cloud-mini-project
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3415249Z   BAD_MODEL: true
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3415403Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3415640Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3415870Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3416289Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3416499Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3416710Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.3416887Z ##[endgroup]
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.4569435Z (node:2170) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.4570264Z (Use `node --trace-deprecation ...` to show where the warning was created)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.4686526Z With the provided path, there will be 3 files uploaded
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.4703899Z Artifact name is valid!
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.4704302Z Root directory input is valid!
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.7500698Z Beginning upload of artifact content to blob storage
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.7781003Z (node:2170) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.9194066Z Uploaded bytes 3680
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.9610997Z Finished uploading artifact content to blob storage!
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.9611889Z SHA256 digest of uploaded artifact zip is 3c36405065e65181efe9dde8b3d1ad45db16ce8da5574559cdb784d74df6815f
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:26.9612534Z Finalizing artifact upload
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.4808969Z Artifact evaluation.zip successfully finalized. Artifact ID 13416765607
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.4809735Z Artifact evaluation has been successfully uploaded! Final size is 3680 bytes. Artifact ID is 13416765607
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.4812209Z Artifact download URL: https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782/artifacts/13416765607
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.4975187Z Post job cleanup.
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.5810276Z (node:2188) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.5811210Z (Use `node --trace-deprecation ...` to show where the warning was created)
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.6072120Z Post job cleanup.
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.6741651Z [command]/usr/bin/git version
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.6826746Z git version 2.56.0
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.6859012Z Temporarily overriding HOME='/home/runner/work/_temp/f6d63d2e-3dc1-4c21-bfe4-6f9e7f3f48bf' before making global git config changes
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.6859906Z Adding repository directory to the temporary git global config as a safe directory
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.6861152Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.6927864Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.7013179Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.7367024Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.7383740Z http.https://github.com/.extraheader
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.7409797Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.7511237Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.7730764Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.7772237Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.8245710Z Cleaning up orphan processes
+demonstrate / model-evaluation	UNKNOWN STEP	2026-11-05T12:55:27.8480418Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+demonstrate / quality-gate	UNKNOWN STEP	﻿2026-11-05T12:55:32.5387763Z Current runner version: '2.338.2'
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5412279Z ##[group]Runner Image Provisioner
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5413124Z Hosted Compute Agent
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5413742Z Version: 20261021.618
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5414330Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5414994Z Build Date: 2026-10-21T00:45:21Z
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5415735Z Worker ID: {7cc5a4ef-1e13-4829-8c92-0f4e71ccd5a0}
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5416387Z Region: northcentralus
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5416904Z Cloud: Azure
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5417482Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5419098Z ##[group]Operating System
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5419804Z Ubuntu
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5420349Z 24.04.5
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5420800Z LTS
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5421345Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5421843Z ##[group]Runner Image
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5422475Z Image: ubuntu-24.04
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5423000Z Version: 20261025.353.1
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5424235Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5425695Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5426704Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5427740Z ##[group]GITHUB_TOKEN Permissions
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5429633Z Contents: read
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5430176Z Metadata: read
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5430678Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5432892Z Secret source: Actions
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5433689Z Cache mode: write
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5434407Z Prepare workflow directory
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5732764Z Prepare all required actions
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.5812818Z Getting action download info
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:32.9219817Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.0436908Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.1814110Z Download action repository 'actions/download-artifact@v4' (SHA:d3f86a106a0bac45b974a628896c90dbdf5c8093)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.5227156Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.8089073Z Uses: sencoders/cloud-mini-project/.github/workflows/ci.yml@refs/heads/master (68333d74b6e6d911108b74e638868e0821e4ba00)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.8094722Z ##[group] Inputs
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.8096020Z   release_tag: models-v1-v2
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.8097484Z   bad_model: true
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.8097765Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.8098066Z Complete job name: demonstrate / quality-gate
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9587416Z ##[group]Run actions/checkout@v4
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9587876Z with:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9588293Z   repository: sencoders/cloud-mini-project
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9590539Z   token: ***
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9590793Z   ssh-strict: true
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9591049Z   ssh-user: git
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9591313Z   persist-credentials: true
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9591598Z   clean: true
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9591882Z   sparse-checkout-cone-mode: true
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9592235Z   fetch-depth: 1
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9592489Z   fetch-tags: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9592753Z   show-progress: true
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9593020Z   lfs: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9593268Z   submodules: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9593533Z   set-safe-directory: true
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9593830Z   allow-unsafe-pr-checkout: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:33.9594225Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1705478Z Syncing repository: sencoders/cloud-mini-project
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1707222Z ##[group]Getting Git version info
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1709818Z Working directory is '/home/runner/work/cloud-mini-project/cloud-mini-project'
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1719546Z [command]/usr/bin/git version
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1819287Z git version 2.56.0
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1823204Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1830899Z Temporarily overriding HOME='/home/runner/work/_temp/00f8bc55-c133-48bb-8b68-29f209a47803' before making global git config changes
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1833075Z Adding repository directory to the temporary git global config as a safe directory
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1835438Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1932001Z Deleting the contents of '/home/runner/work/cloud-mini-project/cloud-mini-project'
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1942353Z ##[group]Initializing the repository
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.1946168Z [command]/usr/bin/git init /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2039075Z hint: Using 'master' as the name for the initial branch. This default branch name
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2049144Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2051162Z hint: to use in all of your new repositories, which will suppress this warning,
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2052375Z hint: call:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2065783Z hint:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2066809Z hint: 	git config --global init.defaultBranch <name>
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2067981Z hint:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2069119Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2070829Z hint: 'development'. The just-created branch can be renamed via this command:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2071957Z hint:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2072794Z hint: 	git branch -m <name>
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2073480Z hint:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2074585Z hint: Disable this message with "git config set advice.defaultBranchName false"
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2076141Z Initialized empty Git repository in /home/runner/work/cloud-mini-project/cloud-mini-project/.git/
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2079365Z [command]/usr/bin/git remote add origin https://github.com/sencoders/cloud-mini-project
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2144176Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2145248Z ##[group]Disabling automatic garbage collection
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2147833Z [command]/usr/bin/git config --local gc.auto 0
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2222687Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2223751Z ##[group]Setting up auth
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2225070Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2276027Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2652206Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2692686Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2895753Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.2935224Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.3136683Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.3182295Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.3183660Z ##[group]Fetching the repository
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.3192216Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +68333d74b6e6d911108b74e638868e0821e4ba00:refs/remotes/origin/master
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.9864981Z From https://github.com/sencoders/cloud-mini-project
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.9900665Z  * [new ref]         68333d74b6e6d911108b74e638868e0821e4ba00 -> origin/master
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.9973904Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.9975586Z ##[group]Determining the checkout info
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.9977149Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.9978345Z [command]/usr/bin/git sparse-checkout disable
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:34.9981306Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.0038029Z ##[group]Checking out the ref
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.0053760Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.2619771Z Reset branch 'master'
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.2650341Z branch 'master' set up to track 'origin/master'.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.2666057Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.2715035Z [command]/usr/bin/git log -1 --format=%H
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.2749486Z 68333d74b6e6d911108b74e638868e0821e4ba00
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3101393Z ##[group]Run actions/setup-python@v5
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3102122Z with:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3102652Z   python-version: 3.12
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3103244Z   check-latest: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3108767Z   token: ***
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3109328Z   update-environment: true
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3109951Z   allow-prereleases: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3110561Z   freethreaded: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.3111117Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4101770Z ##[group]Installed versions
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4164303Z (node:1973) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4166699Z Successfully set up CPython (3.12.15)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4168539Z (Use `node --trace-deprecation ...` to show where the warning was created)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4170741Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4484183Z ##[group]Run actions/download-artifact@v4
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4484921Z with:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4485471Z   name: evaluation
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4486009Z   path: results/ci/
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4486529Z   merge-multiple: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4487149Z   repository: sencoders/cloud-mini-project
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4487834Z   run-id: 42030357782
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4488573Z env:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4489181Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4490243Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4491291Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4492235Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4493187Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4494162Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.4494964Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.5630314Z Downloading single artifact
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.5775370Z (node:1981) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.5778008Z (Use `node --trace-deprecation ...` to show where the warning was created)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.7183065Z Preparing to download the following artifacts:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.7183855Z - evaluation (ID: 13416765607, Size: 3680, Expected Digest: sha256:3c36405065e65181efe9dde8b3d1ad45db16ce8da5574559cdb784d74df6815f)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.9217324Z Redirecting to blob download url: https://productionresultssa11.blob.core.windows.net/actions-results/61556198-283d-4bcb-956d-c1db4d18017e/workflow-job-run-b965ae41-e854-533d-9f2b-6de669d44a14/artifacts/efe77b201dc216c0edf435a227df2b2898d3f6ea1ff16e5d4d0d4ec0cf593271.zip
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:35.9218905Z Starting download of artifact to: /home/runner/work/cloud-mini-project/cloud-mini-project/results/ci
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0252556Z (node:1981) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0320178Z SHA256 digest of downloaded artifact is 3c36405065e65181efe9dde8b3d1ad45db16ce8da5574559cdb784d74df6815f
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0320781Z Artifact download completed successfully.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0329321Z Total of 1 artifact(s) downloaded
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0329804Z Download artifact has finished successfully
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0447310Z ##[group]Run set -o pipefail
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0447526Z ^[[36;1mset -o pipefail^[[0m
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0447915Z ^[[36;1mpython tools/score.py results/ci/predictions.jsonl data/validation.jsonl --min-validity 95 --out results/ci/gate.json 2>&1 | tee results/ci/gate.log^[[0m
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0473604Z shell: /usr/bin/bash -e {0}
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0473913Z env:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0474075Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0474326Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0474569Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0474785Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0475007Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0475226Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0475409Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0989220Z QUALITY GATE FAILED: json_validity 0.0 < 95.0
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0989958Z {
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0990661Z   "json_validity": 0.0,
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0991118Z   "intent_accuracy": 0.0,
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0991778Z   "date_accuracy": 0.0,
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0992263Z   "time_accuracy": 0.0,
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0992887Z   "place_accuracy": 0.0,
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0994284Z   "full_frame": 0.0,
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0994775Z   "examples": 100,
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0995435Z   "missing_predictions": 0
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.0995845Z }
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1029084Z ##[error]Process completed with exit code 1.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1080304Z ##[group]Run printf '%s\n' "$RUN_URL" > results/ci/run-url.txt
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1080581Z ^[[36;1mprintf '%s\n' "$RUN_URL" > results/ci/run-url.txt^[[0m
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1096623Z shell: /usr/bin/bash -e {0}
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1096771Z env:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1096935Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1097194Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1097448Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1097677Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1097908Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1098471Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1098793Z   RUN_URL: https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1099033Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1173238Z ##[group]Run actions/upload-artifact@v4
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1173407Z with:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1173532Z   name: quality-gate-evidence
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1173674Z   path: results/ci/
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1173809Z   if-no-files-found: warn
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1173951Z   compression-level: 6
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1174080Z   overwrite: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1174208Z   include-hidden-files: false
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1174344Z env:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1174498Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1174750Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1174994Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1175217Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1175452Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1175679Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.1175887Z ##[endgroup]
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.2377997Z (node:1997) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.2384160Z (Use `node --trace-deprecation ...` to show where the warning was created)
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.2853150Z With the provided path, there will be 6 files uploaded
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.2853640Z Artifact name is valid!
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.2853884Z Root directory input is valid!
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.5254385Z Beginning upload of artifact content to blob storage
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.5530773Z (node:1997) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.6486874Z Uploaded bytes 4325
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.6814316Z Finished uploading artifact content to blob storage!
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.6815776Z SHA256 digest of uploaded artifact zip is c5ee6fdf755ab3310fee6e044cb1f5b6fb68a00991abe215c572bb6262119967
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:36.6817971Z Finalizing artifact upload
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.1516317Z Artifact quality-gate-evidence.zip successfully finalized. Artifact ID 13416371996
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.1517158Z Artifact quality-gate-evidence has been successfully uploaded! Final size is 4325 bytes. Artifact ID is 13416371996
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.1518269Z Artifact download URL: https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782/artifacts/13416371996
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.1707922Z Post job cleanup.
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.2539023Z [command]/usr/bin/git version
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.2599022Z git version 2.56.0
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.2634262Z Temporarily overriding HOME='/home/runner/work/_temp/b3714d2c-a38e-4353-bf7d-0d3df6c1154f' before making global git config changes
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.2635170Z Adding repository directory to the temporary git global config as a safe directory
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.2637054Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.2728785Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.2776323Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.3126934Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.3177219Z http.https://github.com/.extraheader
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.3179906Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.3244293Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.3604741Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.3684026Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.3988626Z Cleaning up orphan processes
+demonstrate / quality-gate	UNKNOWN STEP	2026-11-05T12:55:37.4226337Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/download-artifact@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+demonstrate / secret-scan	UNKNOWN STEP	﻿2026-11-05T12:55:48.1820889Z Current runner version: '2.338.2'
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1841037Z ##[group]Runner Image Provisioner
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1841592Z Hosted Compute Agent
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1842250Z Version: 20261028.624
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1842702Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1843172Z Build Date: 2026-10-28T21:51:42Z
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1843620Z Worker ID: {0accd2ea-e2b9-4e8a-9767-057f4f999ec9}
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1844113Z Region: westus2
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1844442Z Cloud: Azure
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1844847Z ##[endgroup]
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1845738Z ##[group]Operating System
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1846149Z Ubuntu
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1846473Z 24.04.5
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1846781Z LTS
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1847145Z ##[endgroup]
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1847517Z ##[group]Runner Image
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1847902Z Image: ubuntu-24.04
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1848263Z Version: 20261101.360.1
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1849086Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1849993Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1850573Z ##[endgroup]
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1851282Z ##[group]GITHUB_TOKEN Permissions
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1852786Z Contents: read
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1853221Z Metadata: read
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1853548Z ##[endgroup]
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1855177Z Secret source: Actions
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1855719Z Cache mode: write
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.1856210Z Prepare workflow directory
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.2075855Z Prepare all required actions
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.2107665Z Getting action download info
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.5805648Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.6971796Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.9724788Z Uses: sencoders/cloud-mini-project/.github/workflows/ci.yml@refs/heads/master (68333d74b6e6d911108b74e638868e0821e4ba00)
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.9727693Z ##[group] Inputs
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.9727997Z   release_tag: models-v1-v2
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.9728452Z   bad_model: true
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.9728698Z ##[endgroup]
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:48.9728960Z Complete job name: demonstrate / secret-scan
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0343537Z ##[group]Run actions/checkout@v4
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0344312Z with:
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0344664Z   fetch-depth: 0
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0345035Z   repository: sencoders/cloud-mini-project
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0348257Z   token: ***
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0348619Z   ssh-strict: true
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0348984Z   ssh-user: git
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0349338Z   persist-credentials: true
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0349739Z   clean: true
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0350101Z   sparse-checkout-cone-mode: true
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0350492Z   fetch-tags: false
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0350732Z   show-progress: true
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0350994Z   lfs: false
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0351261Z   submodules: false
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0351524Z   set-safe-directory: true
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0351847Z   allow-unsafe-pr-checkout: false
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.0352584Z ##[endgroup]
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.2887556Z Syncing repository: sencoders/cloud-mini-project
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.2901600Z ##[group]Getting Git version info
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.2903012Z Working directory is '/home/runner/work/cloud-mini-project/cloud-mini-project'
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.2905097Z [command]/usr/bin/git version
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3005961Z git version 2.56.0
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3009460Z ##[endgroup]
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3025598Z Temporarily overriding HOME='/home/runner/work/_temp/2f8985c5-3cfa-4f83-b77d-cee801b1f807' before making global git config changes
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3027174Z Adding repository directory to the temporary git global config as a safe directory
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3047183Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3141454Z Deleting the contents of '/home/runner/work/cloud-mini-project/cloud-mini-project'
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3144189Z ##[group]Initializing the repository
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3145004Z [command]/usr/bin/git init /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3293509Z hint: Using 'master' as the name for the initial branch. This default branch name
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3343413Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3349838Z hint: to use in all of your new repositories, which will suppress this warning,
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3404378Z hint: call:
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3415263Z hint:
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3443167Z hint: 	git config --global init.defaultBranch <name>
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3445984Z hint:
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3446495Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3447246Z hint: 'development'. The just-created branch can be renamed via this command:
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3447824Z hint:
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3448146Z hint: 	git branch -m <name>
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3448567Z hint:
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3449051Z hint: Disable this message with "git config set advice.defaultBranchName false"
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3449946Z Initialized empty Git repository in /home/runner/work/cloud-mini-project/cloud-mini-project/.git/
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3451576Z [command]/usr/bin/git remote add origin https://github.com/sencoders/cloud-mini-project
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3453005Z ##[endgroup]
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3453589Z ##[group]Disabling automatic garbage collection
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3454100Z [command]/usr/bin/git config --local gc.auto 0
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3455348Z ##[endgroup]
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3456019Z ##[group]Setting up auth
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3456602Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.3504125Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.4524355Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.4530866Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.4533678Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.4535679Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.4686826Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.4740866Z ##[endgroup]
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.4741734Z ##[group]Fetching the repository
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:49.4752758Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.1412355Z From https://github.com/sencoders/cloud-mini-project
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.1417283Z  * [new branch]      master       -> origin/master
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.1418209Z  * [new tag]         models-v1-v2 -> models-v1-v2
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.1422918Z [command]/usr/bin/git branch --list --remote origin/master
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.1473524Z   origin/master
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.1511875Z [command]/usr/bin/git rev-parse refs/remotes/origin/master
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.1532725Z 68333d74b6e6d911108b74e638868e0821e4ba00
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.1563536Z ##[endgroup]
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.1564559Z ##[group]Determining the checkout info
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.1565641Z ##[endgroup]
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.1566468Z [command]/usr/bin/git sparse-checkout disable
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.1652241Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.1696098Z ##[group]Checking out the ref
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.1698909Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.3180615Z Reset branch 'master'
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.3193522Z branch 'master' set up to track 'origin/master'.
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.3220468Z ##[endgroup]
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.3272148Z [command]/usr/bin/git log -1 --format=%H
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.3310889Z 68333d74b6e6d911108b74e638868e0821e4ba00
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.3533964Z ##[group]Run mkdir -p results/ci
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.3534764Z ^[[36;1mmkdir -p results/ci^[[0m
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.3536567Z ^[[36;1mdocker run --rm --user "$(id -u):$(id -g)" -v "$PWD:/repo" -w /repo ghcr.io/gitleaks/gitleaks:v8.24.3 git --no-banner --redact --report-format json --report-path results/ci/gitleaks.json^[[0m
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.3557275Z shell: /usr/bin/bash -e {0}
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.3557908Z ##[endgroup]
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:50.4456905Z Unable to find image 'ghcr.io/gitleaks/gitleaks:v8.24.3' locally
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:51.0453431Z v8.24.3: Pulling from gitleaks/gitleaks
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:51.1798633Z 83abf496f1b8: Pulling fs layer
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:51.1803381Z 7042bd605ed9: Pulling fs layer
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:51.1804074Z 0bde1133c0bf: Pulling fs layer
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:51.1804696Z f1c9435e03c7: Pulling fs layer
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:51.1805460Z f1c9435e03c7: Waiting
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:51.4228098Z 83abf496f1b8: Verifying Checksum
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:51.4228661Z 83abf496f1b8: Download complete
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:51.4719263Z 0bde1133c0bf: Verifying Checksum
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:51.4720004Z 0bde1133c0bf: Download complete
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:51.5385945Z 83abf496f1b8: Pull complete
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:51.5395942Z 7042bd605ed9: Verifying Checksum
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:51.6442755Z 7042bd605ed9: Download complete
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:51.6443621Z f1c9435e03c7: Verifying Checksum
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:51.6444993Z f1c9435e03c7: Download complete
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:52.7659795Z 7042bd605ed9: Pull complete
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:52.9671773Z 0bde1133c0bf: Pull complete
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:52.9844122Z f1c9435e03c7: Pull complete
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:52.9898951Z Digest: sha256:e1b35e12a8c6fa8901f060459cfb6b2fc4c484d3afbe3b029733a3bbfab07055
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:55:52.9919717Z Status: Downloaded newer image for ghcr.io/gitleaks/gitleaks:v8.24.3
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.2523145Z ^[[90m12:56PM^[[0m ^[[32mINF^[[0m ^[[1m8 commits scanned.^[[0m
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.2524343Z ^[[90m12:56PM^[[0m ^[[32mINF^[[0m ^[[1mscanned ~47990933 bytes (47.99 MB) in 11.1s^[[0m
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.2542976Z ^[[90m12:56PM^[[0m ^[[32mINF^[[0m ^[[1mno leaks found^[[0m
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.3803865Z ##[group]Run actions/upload-artifact@v4
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.3804049Z with:
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.3804165Z   name: secret-scan
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.3804292Z   path: results/ci/gitleaks.json
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.3804446Z   if-no-files-found: warn
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.3804576Z   compression-level: 6
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.3804700Z   overwrite: false
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.3804823Z   include-hidden-files: false
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.3804960Z ##[endgroup]
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.5109261Z (node:2405) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.5110268Z (Use `node --trace-deprecation ...` to show where the warning was created)
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.5192651Z With the provided path, there will be 1 file uploaded
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.5232599Z Artifact name is valid!
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.5245104Z Root directory input is valid!
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.9177738Z Beginning upload of artifact content to blob storage
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:04.9337670Z (node:2405) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.2089581Z Uploaded bytes 145
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.2823761Z Finished uploading artifact content to blob storage!
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.2824660Z SHA256 digest of uploaded artifact zip is 740a40667054afe93ef94e4fffad0969276697c8f8faab9526ac3fd52494369b
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.2825312Z Finalizing artifact upload
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.7435348Z Artifact secret-scan.zip successfully finalized. Artifact ID 13415773396
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.7436886Z Artifact secret-scan has been successfully uploaded! Final size is 145 bytes. Artifact ID is 13415773396
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.7439871Z Artifact download URL: https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782/artifacts/13415773396
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.7655419Z Post job cleanup.
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.8328272Z [command]/usr/bin/git version
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.8382684Z git version 2.56.0
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.8444101Z Temporarily overriding HOME='/home/runner/work/_temp/1e17694e-cfcf-4644-8daa-e2cb2b5c6be6' before making global git config changes
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.8462706Z Adding repository directory to the temporary git global config as a safe directory
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.8482669Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cloud-mini-project/cloud-mini-project
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.8507938Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.8509458Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.8923069Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.8952729Z http.https://github.com/.extraheader
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.8987423Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.9014508Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.9235769Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.9275369Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.9619462Z Cleaning up orphan processes
+demonstrate / secret-scan	UNKNOWN STEP	2026-11-05T12:56:05.9896637Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

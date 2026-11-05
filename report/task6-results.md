@@ -1,6 +1,26 @@
 # Task 6: local reproducibility and CI/CD
 
 Historical Task 6 milestone: local checks and publication state below describe that stage. Current remote verification is recorded in results/publication/outcome.json and docs/publication-audit.md.
+## Verified remote execution
+
+The source is private at https://github.com/sencoders/cloud-mini-project. V1 is
+published and independently checksum/member/version verified at
+https://github.com/sencoders/cloud-mini-project/releases/tag/models-v1-v2;
+V2 upload remains pending.
+
+Normal CI passed all five jobs, with 100% JSON validity on all 100 actual predictions:
+https://github.com/sencoders/cloud-mini-project/actions/runs/42029372903
+
+The separate real-untrained-model run passed model evaluation and failed precisely
+at the unchanged 95% quality gate, with 0% validity over all 100 IDs; lint/unit/secret
+scan passed:
+https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782
+
+Original failure: Release download returned `release not found` after a network
+reset interrupted publication. No model, data, workflow or threshold change was
+needed. Actual artifacts and logs: results/publication/. The remaining text below
+is the preserved pre-publication local milestone, not current remote status.
+
 
 The ordered workflow is `.github/workflows/ci.yml`: lint → unit → Release-backed
 CPU evaluation → `score.py --min-validity 95` → gitleaks. The secret scan runs even

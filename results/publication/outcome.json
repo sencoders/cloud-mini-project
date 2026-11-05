@@ -4,10 +4,36 @@
   "branch": "master",
   "release_tag": "models-v1-v2",
   "release_verified": false,
-  "release_url": null,
-  "passing_ci_url": null,
-  "bad_model_ci_url": null,
+  "release_url": "https://github.com/sencoders/cloud-mini-project/releases/tag/models-v1-v2",
+  "passing_ci_url": "https://github.com/sencoders/cloud-mini-project/actions/runs/42029372903",
+  "bad_model_ci_url": "https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782",
   "initial_failed_ci_url": "https://github.com/sencoders/cloud-mini-project/actions/runs/41866415146",
   "root_cause": "Release download step failed with release not found after interrupted asset upload",
-  "final_tag_created": false
+  "final_tag_created": false,
+  "release_published": true,
+  "v1_server_checksum_verified": true,
+  "v2_remote_verified": false,
+  "published_source_commit": "68333d74b6e6d911108b74e638868e0821e4ba00",
+  "normal_ci_score": {
+    "json_validity": 100.0,
+    "intent_accuracy": 80.0,
+    "date_accuracy": 66.0,
+    "time_accuracy": 70.0,
+    "place_accuracy": 77.0,
+    "full_frame": 26.0,
+    "examples": 100,
+    "missing_predictions": 0
+  },
+  "v1_remote_download_verified": true,
+  "bad_model_ci_score": {
+    "json_validity": 0.0,
+    "intent_accuracy": 0.0,
+    "date_accuracy": 0.0,
+    "time_accuracy": 0.0,
+    "place_accuracy": 0.0,
+    "full_frame": 0.0,
+    "examples": 100,
+    "missing_predictions": 0
+  },
+  "bad_model_failure_at_quality_gate_verified": true
 }
