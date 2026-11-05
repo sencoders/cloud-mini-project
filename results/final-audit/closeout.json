@@ -1,0 +1,19 @@
+{
+  "scorecard_maximum": 100,
+  "supported_marks": 84,
+  "conditional_ceiling": 96,
+  "not_official_grade": true,
+  "tests_passed": 154,
+  "tests_skipped": 1,
+  "main_report_pages": 7,
+  "checkpoints_and_manifests_unchanged": true,
+  "real_scan_present": false,
+  "final_zip_created": false,
+  "final_tag_created": false,
+  "remaining_blockers": [
+    "Real 230101089.pdf and manual review",
+    "Final ZIP verification and matching final tag",
+    "V2 Release/fresh bootstrap",
+    "Unmet rolling/local error thresholds and unverified hidden/assessor criteria"
+  ]
+}

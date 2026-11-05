@@ -1,0 +1,19 @@
+{
+  "source_commit": "2381683af1e0b7fe6962dc13e106615c757a7da9",
+  "clone_source": "local Git repository; exact committed file tree, no hardlinks or private state",
+  "fresh_clone": true,
+  "single_build_command": "docker build -t command-parser:exam-audit -f service/Dockerfile .",
+  "build_seconds": 0.6949144578538835,
+  "docker_layer_cache_used": true,
+  "existing_service_image_tag_not_replaced": true,
+  "image_id": "sha256:791e51ba2011ac7fd27f63f28014f0a0bb78dbfc124ba660642806ede6029444",
+  "image_size_bytes": 274895073,
+  "image_size_under_2gb": true,
+  "probe": {
+    "app_weight_files": [],
+    "private_dirs": [],
+    "torch": "2.8.0+cpu",
+    "cuda_version": null
+  },
+  "running_cluster_untouched": true
+}

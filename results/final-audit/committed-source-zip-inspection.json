@@ -1,0 +1,11 @@
+{
+  "source_commit": "2381683af1e0b7fe6962dc13e106615c757a7da9",
+  "source_files": 753,
+  "source_snapshot_crc_verified": true,
+  "forbidden_entries": [],
+  "required_source_and_report_files_present": true,
+  "actual_final_zip_created": false,
+  "actual_reflection_added": false,
+  "reason_final_zip_not_built": "Required real handwritten scan is absent",
+  "inspection_method": "In-memory git archive snapshot, not a final submission artifact"
+}

@@ -1,15 +1,22 @@
 {
   "phase_A": "complete: genuine training strongly supported; numerical and replay evidence saved",
-  "phase_B": "complete: every criterion scored; supported 83, conditional ceiling 96, not guaranteed",
+  "phase_B": "complete: every criterion scored; supported 84, conditional ceiling 96, not guaranteed",
   "phase_C": [
-    "CPU build guard fixed without retraining",
-    "isolated make down verified with working SeaweedFS preserved"
+    "Official CPU build guard fixed and seven focused audit/environment tests passed",
+    "Real isolated teardown passed; SeaweedFS Pod UIDs preserved",
+    "One-command fresh-clone image build and CPU/no-weights probe passed"
   ],
-  "phase_D": "in progress: scan/ZIP/final tag blocked; final source checks and push pending",
+  "phase_D": "Source safety/tests/report checks passed; final ZIP and tag blocked by missing actual scan",
   "reflection_present": false,
   "final_zip_created": false,
   "final_tag_created": false,
   "main_audit": "report/final-rubric-audit.md",
   "v2_upload_retried": false,
-  "reason_no_v2_retry": "Latest measured bounded attempt was 27 KB/s; current Release still lacks V2; deadline priority"
+  "reason_no_v2_retry": "Latest measured bounded attempt was 27 KB/s; current Release still lacks V2; deadline priority",
+  "local_tests_passed": 154,
+  "local_tests_skipped": 1,
+  "report_pages": 7,
+  "supported_marks": 84,
+  "conditional_ceiling": 96,
+  "official_grade": false
 }

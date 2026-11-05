@@ -316,13 +316,13 @@
       "task": 3,
       "criterion": "One-command fresh-clone image build",
       "maximum": 1,
-      "status": "UNVERIFIED",
-      "supported_marks": 0,
+      "status": "PASS",
+      "supported_marks": 1,
       "conditional_ceiling": 1,
-      "marks_at_risk": 1,
-      "evidence": "service/Dockerfile; Makefile; results/task3/docker-runs/",
-      "result": "One-command local build succeeded from source-only context; independent clean-clone build not executed",
-      "fastest_legitimate_fix": "Build in disposable clean checkout without changing existing cluster"
+      "marks_at_risk": 0,
+      "evidence": "results/final-audit/fresh-clone-image.json; fresh-clone-image-commands.log",
+      "result": "Actual fresh local Git clone at 2381683; one Docker build succeeded in 0.695 s using cached layers; CPU/no-weights probe passed; original tag untouched",
+      "fastest_legitimate_fix": "Fresh clone uses existing Docker cache; not a claim of a cache-free build on assessor hardware"
     },
     {
       "task": 4,
@@ -770,7 +770,7 @@
     },
     "3": {
       "maximum": 14,
-      "evidence_supported": 13,
+      "evidence_supported": 14,
       "conditional_ceiling": 14
     },
     "4": {
@@ -794,7 +794,7 @@
       "conditional_ceiling": 12.0
     }
   },
-  "supported_total": 83.0,
+  "supported_total": 84.0,
   "conditional_ceiling": 96.0,
   "official_grade": false,
   "condition": "Only meaningful after the required reflection, ZIP checks and assessed final tag exist; examiner can reject evidence or find additional issues."

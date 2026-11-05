@@ -45,18 +45,18 @@ Quantitative evidence: `results/final-audit/training-authenticity.json`, `optimi
 
 ## B. Criterion-by-criterion 100-mark scorecard
 
-**Provisional evidence-supported total: 83/100. Conditional working range: 83–96/100, assuming existing evidence is accepted and a valid final submission is completed. This is not a guaranteed floor or awarded mark.** Four points are currently unavailable under this audit (rolling threshold 2; blocked fresh bootstrap 2). Thirteen further points depend on hidden or assessor-machine tests; they are not awarded here. The Task 7 performance row is bundled for two marks, so no invented one-mark split is assumed. Its local error threshold fails, although assessor-machine behavior is unverified. If the examiner treats that bundle as a local all-or-nothing failure, the conditional ceiling is lower.
+**Provisional evidence-supported total: 84/100. Conditional working range: 84–96/100, assuming existing evidence is accepted and a valid final submission is completed. This is not a guaranteed floor or awarded mark.** Four points are currently unavailable under this audit (rolling threshold 2; blocked fresh bootstrap 2). Twelve further points depend on hidden or assessor-machine tests; they are not awarded here. The Task 7 performance row is bundled for two marks, so no invented one-mark split is assumed. Its local error threshold fails, although assessor-machine behavior is unverified. If the examiner treats that bundle as a local all-or-nothing failure, the conditional ceiling is lower.
 
 | Task | Max | Supported by current evidence | Conditional ceiling |
 |---|---:|---:|---:|
 | 1 | 12 | 12 | 12 |
 | 2 | 20 | 14 | 20 |
-| 3 | 14 | 13 | 14 |
+| 3 | 14 | 14 | 14 |
 | 4 | 22 | 20 | 20 |
 | 5 | 10 | 6 | 10 |
 | 6 | 10 | 8 | 8 |
 | 7 | 12 | 10 | 12 |
-| **Total** | **100** | **83** | **96** |
+| **Total** | **100** | **84** | **96** |
 
 At-risk marks below mean maximum minus supported marks, including unverified points; they are not all definite deductions. A missing required final tag means there is currently no assessed final commit. Reflection/submission requirements have no separate numeric allocation in the seven-task tables, so no invented reflection mark is added or subtracted.
 
@@ -88,7 +88,7 @@ At-risk marks below mean maximum minus supported marks, including unverified poi
 | 3: Image <=2 GB | 1 | PASS | 1–1 | 0 | results/task3/docker-results.json: Docker disk size 1.33 GB | Preserve real Docker evidence |
 | 3: 50 sequential requests at 1 CPU/1 GiB, no OOM | 2 | PASS | 2–2 | 0 | results/task3/docker-results.json: 50/50 HTTP 200; cgroup memory limit 1073741824; zero OOM events | Preserve real Docker evidence |
 | 3: Measured peak memory evidence | 1 | PASS | 1–1 | 0 | results/task3/docker-results.json: 845602816 bytes = 806.43 MiB | Preserve real Docker evidence |
-| 3: One-command fresh-clone image build | 1 | UNVERIFIED | 0–1 | 1 | service/Dockerfile; Makefile; results/task3/docker-runs/: One-command local build succeeded from source-only context; independent clean-clone build not executed | Build in disposable clean checkout without changing existing cluster |
+| 3: One-command fresh-clone image build | 1 | PASS | 1–1 | 0 | results/final-audit/fresh-clone-image.json; fresh-clone-image-commands.log: Actual fresh local Git clone at 2381683; one Docker build succeeded in 0.695 s using cached layers; CPU/no-weights probe passed; original tag untouched | Fresh clone uses existing Docker cache; not a claim of a cache-free build on assessor hardware |
 | 4: App namespace, Deployment, Service, Ingress | 4 | PASS | 4–4 | 0 | cluster/app.yaml; results/task4/initial/; ingress-probe.json: Two replicas initially deployed; /parse through Traefik | Preserve existing successful measurements |
 | 4: Requests and limits set | 2 | PASS | 2–2 | 0 | cluster/app.yaml; results/task4/load-balancing/before/resources.json: Per app Pod: 1 CPU/1 GiB limit; requests configured | Preserve existing successful measurements |
 | 4: No ready endpoints during loading | 2 | PASS | 2–2 | 0 | results/task4/cold-starts/; initial-readiness.json: Zero ready endpoints during measured S3/model loads | Preserve existing successful measurements |
@@ -129,7 +129,7 @@ At-risk marks below mean maximum minus supported marks, including unverified poi
 ## C. Confirmed failures versus unverified criteria
 
 **Confirmed:** rolling 24/308 failures = 7.792% >0.5%; baseline 4/378 = 1.058% >1%; the 99% SLO is not met. These are model-validation HTTP 500s, not excluded requests. Fresh bootstrap currently requests absent `pythia-70m-v2.tar.gz`; actual CLI check returns `no assets match the file pattern` before a new cluster could be started. V2 remains valid in SeaweedFS, so this is not a failure of the separate Task 2 two-S3-version criterion. The PDF explicitly requires V1 publication; missing V2 Release is not automatically an additional Task 2 Release deduction.
-**Unverified:** hidden 300-command service validity/full-frame scores; hidden 20 NACL packet outcomes; assessor-machine smoke run; clean-clone Docker build; assessor-machine latency/error bundle; full fresh-clone deployment. Validation 26% full frame exceeds the teacher-derived 22% target only on the provided 100, not the hidden set. Raw scorer JSON 100% differs from strict runtime schema 99/100.
+**Unverified:** hidden 300-command service validity/full-frame scores; hidden 20 NACL packet outcomes; assessor-machine smoke run; assessor-machine latency/error bundle; full fresh-clone deployment. Validation 26% full frame exceeds the teacher-derived 22% target only on the provided 100, not the hidden set. Raw scorer JSON 100% differs from strict runtime schema 99/100.
 **Submission blocked:** actual handwritten `230101089.pdf` is missing; no real final `230101089.zip` exists; no `final` tag is created. Temporary synthetic PDF unit fixtures are not reflections or submission files. Report is seven pages with real identity and clickable verified links; performance gaps remain disclosed.
 
 ## D. Prioritized improvements and executed work
@@ -141,7 +141,7 @@ At-risk marks below mean maximum minus supported marks, including unverified poi
 | 3 | Previously unexecuted make down, 1 mark | Under a minute after setup; high confidence | Low with isolated name and memory limit | Real disposable cluster created in 15.852 s; make down deleted it in 0.850 s; working cluster names and SeaweedFS Pod UIDs preserved. First minimal-configuration k3d failure retained; standard-settings retry succeeded |
 | 4 | Fresh bootstrap blocked by V2 Release, 2 marks | Connection-dependent; poor likelihood on measured uplink | Low model risk, high deadline risk | Current Release checked; no more retries after prior 27 KB/s / timeout evidence. Use faster connection, verify SHA and then test fresh deployment on disposable resources |
 | 5 | Hidden validity/full-frame, 4 marks; rolling 2; performance bundle 2 | Hours, uncertain improvement | Moderate/high | Proper schema-constrained token generation may help without gold fallback, but would require shared-runtime evaluation, CPU/memory Docker tests and new rollout/baseline evidence. Not rushed into the validated runtime |
-| 6 | Clean-clone image build, 1 mark; hidden NACL 4 | Build minutes/network-dependent; hidden cases inaccessible | Low for isolated build | Existing pinned immutable base/source-only context and boundary tests give confidence, not proof of assessor outcomes |
+| 6 | Hidden NACL 4; independent hardware variation | Build minutes/network-dependent; hidden cases inaccessible | Low for isolated build | Fresh-clone one-command image build now passed in 0.695 s with cached layers and a separate image tag; hidden NACL outcomes remain inaccessible |
 
 No model training, teacher generation, schema relaxation, frame repair, threshold weakening, relabelling of failed requests, or lucky-run selection was performed. The oldest successful cold-start/load/HPA experiments were preserved. New work is a read-only authenticity audit, version-guard fix, isolated teardown verification, regression tests and truthful documentation.
 

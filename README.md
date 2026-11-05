@@ -218,7 +218,7 @@ payload hashes/CRC, and creates no tag. No reflection or final ZIP is fabricated
 
 [Criterion-by-criterion 100-mark audit](report/final-rubric-audit.md) records the
 training-authenticity proof, every marking row, remaining risks and ranked fixes.
-Current evidence provisionally supports 83 marks with a conditional 83–96 range,
+Current evidence provisionally supports 84 marks with a conditional 84–96 range,
 not a guarantee or awarded grade; 100/100 is not justified by current evidence.
 The missing real handwritten reflection, final ZIP and assessed final tag remain
 submission blockers. Hidden-test criteria remain unverified.

@@ -11,7 +11,7 @@
   },
   "3": {
     "maximum": 14,
-    "evidence_supported": 13,
+    "evidence_supported": 14,
     "conditional_ceiling": 14
   },
   "4": {
@@ -35,4 +35,4 @@
     "conditional_ceiling": 12.0
   }
 }
-TOTAL 83.0 96.0
+TOTAL 84.0 96.0
