@@ -1,0 +1,26 @@
+{
+  "required_files_present": [
+    "AI_USE.md",
+    "README.md",
+    "Makefile",
+    "report/report.pdf",
+    "training/config.yaml",
+    "training/loss.csv",
+    "service/Dockerfile",
+    "worker/Dockerfile",
+    "student/runtime.py",
+    "network/subnets.md",
+    "network/nacl.json",
+    "cluster/k3d.yaml",
+    "cluster/app.yaml",
+    "cluster/hpa.yaml",
+    "prompts/teacher_prompt.txt",
+    ".github/workflows/ci.yml",
+    ".github/workflows/bad-model-gate.yml",
+    "results/teacher_validation.json",
+    "results/untrained_validation.json",
+    "results/student_v1_validation.json"
+  ],
+  "missing": [],
+  "source_tree_has_models_only_as_public_metadata": true
+}

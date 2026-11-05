@@ -1,4 +1,5 @@
 """Typeset seven task sections from preserved results; never invent remote evidence."""
+import json
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -8,6 +9,8 @@ from reportlab.lib.units import mm
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, Table, TableStyle
 
 ROOT = Path(__file__).resolve().parents[1]
+publication_path = ROOT / 'results/publication/outcome.json'
+publication = json.loads(publication_path.read_text()) if publication_path.exists() else {}
 styles = getSampleStyleSheet()
 styles['BodyText'].fontSize = 10
 styles['BodyText'].leading = 13
@@ -51,7 +54,7 @@ text('The downloaded cleaned dataset SHA-256 was verified before selecting the f
 text('Measured V1 full-run elapsed: 147.99 s, three epochs. Distinct V2: 50.98 s, an additional epoch. Smoke runs were isolated from full artifacts. Actual losses are in training/loss.csv; detailed timings, smoke runtime and provenance remain results/task2/. Checkpoints reload on CPU and match their manifests.')
 table([['All 100 validation records (%)', 'JSON', 'Intent', 'Date', 'Time', 'Place', 'Full'], ['Teacher phi3.5', 83, 74, 64, 64, 76, 44], ['Untrained Pythia', 0, 0, 0, 0, 0, 0], ['Student V1', 100, 80, 66, 70, 77, 26]], [190, 48, 50, 48, 48, 48, 48])
 text('Raw completions and unchanged score.py reports are preserved. The scorer checks JSON shape but not the permitted-intent enum: strict runtime validation accepts 99/100 V1 validation completions. No invalid prediction is replaced by a gold frame.')
-text('Both versions, tokenizer, config, metadata and SHA-256 are in s3://models/v1/ and s3://models/v2/. Local release archives each have nine verified members and match committed models/v*/release.sha256. GitHub Release publication is pending; no remote publication is claimed.')
+text('Both versions, tokenizer, config, metadata and SHA-256 are in s3://models/v1/ and s3://models/v2/. Local release archives each have nine verified members and match committed models/v*/release.sha256. ' + ('Both archives are remotely verified at ' + publication['release_url'] if publication.get('release_verified') else 'GitHub Release publication is pending; no remote publication is claimed.'))
 text('Limitation: 26% full-frame accuracy and occasional invalid model outputs remain. More representative clean data and constrained decoding are proposed future experiments, not claimed improvements. See report/task2-results.md and results/task2/evaluation/.')
 
 title('Task 3 — CPU inference service')
@@ -83,10 +86,13 @@ title('Task 6 — Reproducibility, tests and CI/CD')
 text('Ordered GitHub Actions: lint → unit tests → actual GitHub Release download and CPU model evaluation → score.py --min-validity 95 → Gitleaks. The secret scan runs even after earlier failure. Release archives and every model/tokenizer member must match committed hashes; there is no cached-weight fallback. A separate deliberate-bad-model workflow evaluates the real untrained pinned Pythia after verifying the downloaded Release.')
 text('Local measured verification: 129 tests passed, one optional S3 integration test skipped. Ruff 0.14.4 critical correctness checks pass. Tests exercise network decisions, cost arithmetic, strict artifact integrity/path traversal, preservation of an existing cluster and the exact teardown command.')
 text('make up genuinely verified the existing storage and app without restarting SeaweedFS or changing the HPA replica policy. The fresh-clone path downloads both released models, creates storage, builds/imports images, restores verified models to S3 and deploys the app. It uses at most three documented setup commands after system prerequisites and Release configuration.')
-text('Fresh-clone deployment is implemented but NOT end-to-end verified because no GitHub remote/Release is configured. make down invokes k3d cluster delete command-parser; only its dry run and unit test were executed, deliberately preserving the working cluster and its data.')
+text('Fresh-clone deployment is implemented but NOT end-to-end verified. Publication evidence does not establish a fresh-clone deployment. make down invokes k3d cluster delete command-parser; only its dry run and unit test were executed, deliberately preserving the working cluster and its data.')
 text('Both actual local archives passed archive and nine-member verification. The unchanged scorer accepted genuine preserved V1 predictions at 100% validity (exit 0) and rejected untrained predictions at 0% (exit 1). The new evaluator also ran all 100 V1 examples from the actual local archive in 12.441 seconds; all raw outputs matched Task 2. This proves local evaluation and gating only, not a remote workflow run.')
 text('Gitleaks 8.24.3 initially reported six public Docker signing-fingerprint matches. Original diagnostics are retained; a narrowly scoped exception for that exact public GPG fingerprint preserves all default rules. Configured history and current-source scans each reported zero findings; scope and outputs are recorded under results/task6/. AI_USE.md describes assistance and verification.')
-text('Remote blockers: no workflows executed, no published Release, and no genuine failed-run URL. Configure/authenticate the repository, separately authorize push/publication, publish both verified versions, set MODEL_RELEASE_TAG, run normal and bad-model CI, and cite the verified failed-quality-gate URL. A workflow file alone is not claimed to earn execution marks.')
+if publication.get('passing_ci_url') and publication.get('bad_model_ci_url'):
+    text('Verified normal CI: ' + publication['passing_ci_url'] + '. Verified deliberate untrained-model failure at the unchanged 95% quality gate: ' + publication['bad_model_ci_url'] + '. Raw predictions, scores, job logs and GitHub status responses are in results/publication/. The initial Release-download failure is retained; it is not the bad-model demonstration.')
+else:
+    text('Private source repository: https://github.com/sencoders/cloud-mini-project. Initial CI passed lint, unit and secret scanning but failed at model-evaluation / Release download: release not found. Run: https://github.com/sencoders/cloud-mini-project/actions/runs/41866415146. The archive upload was interrupted by connection reset; publication/retry evidence is in results/publication/. Normal gate success and the separate bad-model gate-failure URL remain unverified.')
 text('Submission also requires the student’s own three-page handwritten reflection, scanned as exactly <roll_number>.pdf with name, roll number and actual GitHub URL. This report does not impersonate that reflection. Create/publish the final tag only after the submission is reviewed. See report/submission-checklist.md.')
 
 title('Task 7 — Performance, cost, SLO and review')
@@ -100,7 +106,7 @@ text('Evidence/calculations: report/task7-results.md, results/task7/summary.json
 
 def footer(canvas, doc):
     canvas.setFont('Helvetica', 8)
-    canvas.drawString(18 * mm, 12 * mm, 'CS3081 | local measured evidence; remote publication pending')
+    canvas.drawString(18 * mm, 12 * mm, 'CS3081 | measured evidence; verified publication status in Task 6')
     canvas.drawRightString(192 * mm, 12 * mm, str(doc.page))
 
 

@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/sencoders/cloud-mini-project",
+  "private": true,
+  "branch": "master",
+  "release_tag": "models-v1-v2",
+  "release_verified": false,
+  "release_url": null,
+  "passing_ci_url": null,
+  "bad_model_ci_url": null,
+  "initial_failed_ci_url": "https://github.com/sencoders/cloud-mini-project/actions/runs/41866415146",
+  "root_cause": "Release download step failed with release not found after interrupted asset upload",
+  "final_tag_created": false
+}

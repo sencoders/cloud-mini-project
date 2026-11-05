@@ -1,5 +1,7 @@
 # Task 2 measured results
 
+Historical Task 2 milestone: local checks and publication state below describe that stage. Current remote verification is recorded in results/publication/outcome.json and docs/publication-audit.md.
+
 CPU-only full fine-tuning of exactly EleutherAI/pythia-70m; no adapters or substitute student.
 The execution Mac reports Apple M5. Python 3.12.16; exact libraries and the source revision are in training/config.yaml.
 

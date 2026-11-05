@@ -1,0 +1,16 @@
+[
+  {
+    "version": "v1",
+    "archive_sha256": "9ad3cdb774d6f88a55205ad4b11f1b3c8163e2e6733fded288ee4cc43cb5a109",
+    "verified_members": 9,
+    "published": false,
+    "version_metadata_matches_committed": true
+  },
+  {
+    "version": "v2",
+    "archive_sha256": "76fc7cacaa2cbad573307fd303f3d41344295b1c18c060618c43423714b0d230",
+    "verified_members": 9,
+    "published": false,
+    "version_metadata_matches_committed": true
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "failed_run": "https://github.com/sencoders/cloud-mini-project/actions/runs/41866415146",
+  "job": "model-evaluation",
+  "step": "Download actual published Release asset (no fallback)",
+  "error": "release not found",
+  "exit_code": 1,
+  "release_tag": "models-v1-v2",
+  "requested_pattern": "pythia-70m-v1.tar.gz*",
+  "upload_failure": "connection reset by peer",
+  "release_api_on_resume": [],
+  "training_or_gate_fault": false
+}

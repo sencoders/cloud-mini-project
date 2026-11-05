@@ -1,5 +1,7 @@
 # Task 6: local reproducibility and CI/CD
 
+Historical Task 6 milestone: local checks and publication state below describe that stage. Current remote verification is recorded in results/publication/outcome.json and docs/publication-audit.md.
+
 The ordered workflow is `.github/workflows/ci.yml`: lint → unit → Release-backed
 CPU evaluation → `score.py --min-validity 95` → gitleaks. The secret scan runs even
 when preceding jobs fail. Raw predictions, scores, gate logs and the actual run URL

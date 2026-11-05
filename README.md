@@ -94,6 +94,11 @@ Detailed task reports distinguish historical milestone checks from current statu
 
 ## Training and storage
 
+Task 1 operations are `make smoke`, `make label`, `make status`, then `make clean`
+after all IDs finish. The Jobs use deterministic line-number modulo sharding and
+restart-safe S3 checkpoints. Run them only when intentionally reproducing Task 1;
+the existing labels and genuine evidence are already complete.
+
 `training/config.yaml` pins seed, learning rate, batch size, epochs, sequence length,
 CPU settings, exact versions and source checksums. Training uses the first 1,500
 cleaned records in ID order and masks prompt/padding loss. Validation is never

@@ -1,0 +1,19 @@
+model-evaluation	Download actual published Release asset (no fallback)	﻿2026-11-04T16:23:36.8041079Z ##[group]Run test -n "$RELEASE_TAG" || { echo 'Configure MODEL_RELEASE_TAG or dispatch with release_tag'; exit 1; }
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:36.8041831Z ^[[36;1mtest -n "$RELEASE_TAG" || { echo 'Configure MODEL_RELEASE_TAG or dispatch with release_tag'; exit 1; }^[[0m
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:36.8042322Z ^[[36;1mmkdir -p .local/release-download^[[0m
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:36.8042875Z ^[[36;1mgh release download "$RELEASE_TAG" --repo "$RELEASE_REPO" --dir .local/release-download --pattern 'pythia-70m-v1.tar.gz*'^[[0m
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:36.8057486Z shell: /usr/bin/bash -e {0}
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:36.8058004Z env:
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:36.8058239Z   RELEASE_TAG: models-v1-v2
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:36.8060656Z   GH_TOKEN: ***
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:36.8060926Z   RELEASE_REPO: sencoders/cloud-mini-project
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:36.8061209Z   BAD_MODEL: false
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:36.8061486Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:36.8061916Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:36.8062391Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:36.8062753Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:36.8063108Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:36.8063475Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:36.8063779Z ##[endgroup]
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:37.4519056Z release not found
+model-evaluation	Download actual published Release asset (no fallback)	2026-11-04T16:23:37.4549843Z ##[error]Process completed with exit code 1.
