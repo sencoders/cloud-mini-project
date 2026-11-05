@@ -5,7 +5,7 @@
   "audited_published_commit": "17cbb49745026a4c0b2221c79708bf9fa8fcd0b9",
   "remote_source_tree_verified": true,
   "release_tag": "models-v1-v2",
-  "release_state": "published, V1 server checksum verified; V2 retry uploading after DNS outage/HTTP 408",
+  "release_state": "Published V1 and two checksum sidecars; V2 archive absent, transfer blocked",
   "initial_ci_run": "https://github.com/sencoders/cloud-mini-project/actions/runs/41866415146",
   "initial_ci_status": "completed: lint/unit/secret-scan passed, model-evaluation download failed, quality-gate skipped",
   "final_tag_created": false,
@@ -16,12 +16,14 @@
   "quality_gate_unchanged": true,
   "normal_ci_run": "https://github.com/sencoders/cloud-mini-project/actions/runs/42029372903",
   "recovery_commit_pushed": "68333d74b6e6d911108b74e638868e0821e4ba00",
-  "normal_ci_status": "all five jobs passed",
+  "normal_ci_status": "passed all five jobs, 100% JSON validity",
   "normal_ci_validity_percent": 100,
   "bad_model_run": "https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782",
-  "bad_model_status": "verified: only quality-gate failed; actual untrained validity 0%, all 100 IDs",
+  "bad_model_status": "verified quality-gate failure at 0% JSON validity; other four jobs passed",
   "v1_remote_download_and_metadata_verified": true,
-  "v2_status": "third sequential upload active after user confirmed stable connection; prior attempts retained",
+  "v2_status": "No upload remains active; bounded HTTP/1.1 attempt returned curl 28 after 600 seconds",
   "bad_model_failed_url": "https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782",
-  "normal_ci_passed_url": "https://github.com/sencoders/cloud-mini-project/actions/runs/42029372903"
+  "normal_ci_passed_url": "https://github.com/sencoders/cloud-mini-project/actions/runs/42029372903",
+  "evidence_commit_pushed": "b695db6",
+  "latest_pushed_source_ci_url": "https://github.com/sencoders/cloud-mini-project/actions/runs/42034879848"
 }

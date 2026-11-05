@@ -1,0 +1,11 @@
+{
+  "report_pages": 7,
+  "actual_pass_and_failed_gate_urls_in_report": true,
+  "v2_blocker_disclosed": true,
+  "tests_passed": 129,
+  "tests_skipped": 1,
+  "lint_passed": true,
+  "forbidden_git_files": [],
+  "core_code_unchanged": true,
+  "final_tag_created": false
+}

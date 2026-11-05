@@ -1,0 +1,10 @@
+{
+  "reason": "Stopped own stalled client after measured 01:17:26 elapsed without a completed server asset",
+  "actual_exec_result": {
+    "chunk_id": "960d80",
+    "wall_time_seconds": 0.000009917,
+    "exit_code": 130,
+    "original_token_count": 0,
+    "output": ""
+  }
+}

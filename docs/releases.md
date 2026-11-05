@@ -3,8 +3,8 @@
 Private Release: https://github.com/sencoders/cloud-mini-project/releases/tag/models-v1-v2
 
 V1 is published, independently downloaded, and checked against the committed archive
-and every member checksum plus version metadata. V2 is still uploading; its archive
-is not yet claimed remotely available. Current verification: results/publication/outcome.json.
+and every member checksum plus version metadata. V2 archive upload is blocked by recorded network timeouts; its archive
+is not remotely available. Current verification: results/publication/outcome.json.
 No model weights or credentials are committed to Git.
 
 After full training and S3 upload:

@@ -6,7 +6,7 @@ Historical Task 6 milestone: local checks and publication state below describe t
 The source is private at https://github.com/sencoders/cloud-mini-project. V1 is
 published and independently checksum/member/version verified at
 https://github.com/sencoders/cloud-mini-project/releases/tag/models-v1-v2;
-V2 upload remains pending.
+V2 archive upload is blocked by network timeouts; it is not available in the Release.
 
 Normal CI passed all five jobs, with 100% JSON validity on all 100 actual predictions:
 https://github.com/sencoders/cloud-mini-project/actions/runs/42029372903

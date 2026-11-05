@@ -18,6 +18,42 @@
     ]
   },
   {
+    "oid": "c1731e4c8805214cbf1a9b9506b14da8b3b6f579",
+    "paths": [
+      "results/publication/bad-model-ci-full.log"
+    ]
+  },
+  {
+    "oid": "dfa4ed707b62b5acb4042783fbdc0ef10d8eb8a4",
+    "paths": [
+      "results/publication/bad-model-quality-gate-failure.log"
+    ]
+  },
+  {
+    "oid": "83a7486a5d34ae1d1ebee52b4da5d0e7a0113673",
+    "paths": [
+      "results/publication/final-tests.log"
+    ]
+  },
+  {
+    "oid": "1950564c7554d8ceac0b231b46a2fa6080d1e0fe",
+    "paths": [
+      "results/publication/normal-ci-full.log"
+    ]
+  },
+  {
+    "oid": "9735e3217ca256159bfce3b032ab7d073f60e953",
+    "paths": [
+      "results/publication/resumed-tests.log"
+    ]
+  },
+  {
+    "oid": "b2474123a922770ea704887f2934f9d662baaf90",
+    "paths": [
+      "results/publication/tests.log"
+    ]
+  },
+  {
     "oid": "9d3dfd90fce089d28432b37c6baefd828a724c6a",
     "paths": [
       "results/task2/dependencies.log"
@@ -184,6 +220,12 @@
     "oid": "70a2ad76a47fab7097ebc8a50bc370f450de7409",
     "paths": [
       "results/task6/unit-tests.log"
+    ]
+  },
+  {
+    "oid": "8af8e5acf0f7bb077f9536720a13123ccd8063fc",
+    "paths": [
+      "scripts/audit_publication.py"
     ]
   },
   {

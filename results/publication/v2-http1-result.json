@@ -1,0 +1,9 @@
+{
+  "transport": "HTTP/1.1",
+  "maximum_seconds": 600,
+  "returncode": 28,
+  "elapsed_seconds": 600.1553685420658,
+  "transfer_summary": "HTTP 100; uploaded 30670848 bytes; 51117 bytes/s; 600.002530 seconds\n",
+  "error": "curl: (28) Operation timed out after 600002 milliseconds with 0 bytes received\n",
+  "archive_sha256": "76fc7cacaa2cbad573307fd303f3d41344295b1c18c060618c43423714b0d230"
+}

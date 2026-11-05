@@ -94,3 +94,13 @@ URL are recorded separately as they execute. Fresh-clone bootstrap and destructi
 teardown still need a disposable-environment check. The handwritten reflection and
 final reviewed commit/tag remain the student's final submission actions. Threshold
 gaps are documented, not concealed or reclassified as passing.
+
+## Verified remote closeout
+
+Private source and V1 Release are published. V1 download/member/version checks
+passed. Normal CI passed all jobs at runs 42029372903 and 42034879848. The real
+untrained-model run 42030357782 evaluated all 100 IDs, then failed precisely at
+the unchanged 95% gate with 0% validity; its other jobs passed. Actual URLs and
+artifacts are in results/publication/. V2 Release upload is blocked by recorded
+transport failures; no V2 archive or complete two-version Release is claimed.
+Source publication passed the safety audit; final submission remains incomplete.

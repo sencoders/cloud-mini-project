@@ -2,8 +2,8 @@
 
 - Private GitHub source is published; normal CI passed and the separate untrained
   run failed at the quality gate. Actual URLs/logs are in results/publication/.
-- V1 Release is downloaded/hash/member/version verified. Complete and independently
-  verify the remaining V2 upload before claiming both versions available.
+- V1 Release is downloaded/hash/member/version verified. On a faster reliable uplink, complete and independently
+  verify the blocked V2 upload before claiming both versions available.
 - Verify fresh-clone make up and actual destructive make down on a separate
   disposable environment. The working cluster was deliberately preserved.
 - Task 4 rolling error rate is 7.792%, exceeding 0.5%; Task 7 baseline errors
