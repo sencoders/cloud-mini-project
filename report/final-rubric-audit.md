@@ -148,7 +148,8 @@ No model training, teacher generation, schema relaxation, frame repair, threshol
 ## E. GitHub, model Release and security
 
 - Repository: https://github.com/sencoders/cloud-mini-project (private). Ordinary source pushes are allowed; no `final` tag is authorized until the real scan and ZIP are verified.
-- Latest verified pre-audit source CI: https://github.com/sencoders/cloud-mini-project/actions/runs/42048768489 (c320e3a, all jobs passed).
+- Audit-code CI passed all five jobs (including the real installed CPU-build environment regression): https://github.com/sencoders/cloud-mini-project/actions/runs/42078320293 at 69d569a.
+- Verified pre-audit source CI: https://github.com/sencoders/cloud-mini-project/actions/runs/42048768489 (c320e3a, all jobs passed).
 - Normal Release-backed evaluation/gate proof: https://github.com/sencoders/cloud-mini-project/actions/runs/42034879848 (all jobs passed).
 - Genuine deliberately failed gate: https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782 (real untrained model, all 100 evaluated, 0% validity; evaluation and secret scan passed, only quality gate failed).
 - Release: https://github.com/sencoders/cloud-mini-project/releases/tag/models-v1-v2. V1 is published/download/member/version verified. V2 archive is absent; its checksum sidecar alone is not a model upload. V2 S3 and local model manifests remain valid.

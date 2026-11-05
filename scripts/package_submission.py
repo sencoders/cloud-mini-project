@@ -112,7 +112,7 @@ def plan(root, roll_number, reflection, reviewed=False):
             'all_rubric_thresholds_met': False,
             'limitations': ['Rolling failures 7.792% exceed 0.5%',
                             'Baseline failures 1.058% exceed 1%; 99% SLO not met',
-                            'Fresh-clone deployment/destructive teardown not end-to-end verified',
+                            'Fresh-clone deployment not end-to-end verified; isolated teardown is verified',
                             'Check current V2 Release availability in results/submission/']}
 
 
