@@ -30,6 +30,12 @@
     ]
   },
   {
+    "oid": "cd973d275a9042484d9736142b0bea0f6d299d22",
+    "paths": [
+      "results/publication/closeout-tests.log"
+    ]
+  },
+  {
     "oid": "83a7486a5d34ae1d1ebee52b4da5d0e7a0113673",
     "paths": [
       "results/publication/final-tests.log"
@@ -51,6 +57,12 @@
     "oid": "b2474123a922770ea704887f2934f9d662baaf90",
     "paths": [
       "results/publication/tests.log"
+    ]
+  },
+  {
+    "oid": "5230b47b4b808c5819d78c7e177779ae7b13ef7f",
+    "paths": [
+      "results/submission/full-tests.log"
     ]
   },
   {

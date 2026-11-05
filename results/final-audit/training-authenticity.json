@@ -1,0 +1,1476 @@
+{
+  "device": "cpu",
+  "model_name": "EleutherAI/pythia-70m",
+  "revision": "a39f36b100fe8a5377810d56c3f4789b9c53ac42",
+  "data_sha256": "1865c9ddc2a723247e96336c0ef966cd3b669aa904ae03d29f77ef4fe92b03e5",
+  "selected_count": 1500,
+  "first_id": "C0001",
+  "last_id": "C2004",
+  "selection_id_order": true,
+  "training_minibatches_shuffled_deterministically": true,
+  "selected_source_sha256": "71ea7545a081a521335121b75da6d10d220591ad7b1593f4ec72faa26d8b2bc2",
+  "teacher_targets_sha256": "926f678e62e4ae750608c40a1b1bfb63b57c3c0ced3bc56db36d388972a3d27c",
+  "target_field": "teacher_raw",
+  "validation_id_or_text_overlap": false,
+  "input_tokens_per_epoch_recomputed": 54313,
+  "supervised_tokens_per_epoch_recomputed": 34511,
+  "min_sequence_tokens": 28,
+  "max_sequence_tokens": 66,
+  "mean_sequence_tokens": 36.208666666666666,
+  "sequence_limit": 256,
+  "truncation_policy": "raise, never truncate",
+  "truncated_examples": 0,
+  "prompt_completion_boundary_crossing_token_ids": [],
+  "batch_size": 4,
+  "gradient_accumulation": 1,
+  "learning_rate": 0.0003,
+  "seed": 42,
+  "optimizer": "AdamW",
+  "cpu_threads": 4,
+  "runs": {
+    "v1": {
+      "epochs": [
+        {
+          "epoch": 1,
+          "recorded_optimizer_steps": 375,
+          "recorded_supervised_tokens": 34511,
+          "loss_recomputed_from_step_logs": 1.546307488630853,
+          "logged_epoch_seconds": 48.02940975013189,
+          "reconstructed_padded_input_tokens": 61936,
+          "reconstructed_padding_tokens": 7623
+        },
+        {
+          "epoch": 2,
+          "recorded_optimizer_steps": 375,
+          "recorded_supervised_tokens": 34511,
+          "loss_recomputed_from_step_logs": 0.68133655231379,
+          "logged_epoch_seconds": 47.93061266699806,
+          "reconstructed_padded_input_tokens": 61864,
+          "reconstructed_padding_tokens": 7551
+        },
+        {
+          "epoch": 3,
+          "recorded_optimizer_steps": 375,
+          "recorded_supervised_tokens": 34511,
+          "loss_recomputed_from_step_logs": 0.3643500274987187,
+          "logged_epoch_seconds": 49.29876091587357,
+          "reconstructed_padded_input_tokens": 61932,
+          "reconstructed_padding_tokens": 7619
+        }
+      ],
+      "optimizer_steps": 1125,
+      "logged_supervised_tokens_total": 103533,
+      "unpadded_input_tokens_total_recomputed": 162939,
+      "recorded_training_seconds": 145.25878333300352,
+      "recorded_function_elapsed_seconds": 145.92291116598062,
+      "steps_per_second": 7.744798449956412,
+      "mean_step_seconds_from_logs": 0.12888999390788378,
+      "weight_sha256": "f549d5c34cc91d9d79dbe593f6ab14d50f43d4e49cf0e507894bb306c6cb0ce7",
+      "manifest_verified": true
+    },
+    "v2": {
+      "epochs": [
+        {
+          "epoch": 1,
+          "recorded_optimizer_steps": 375,
+          "recorded_supervised_tokens": 34511,
+          "loss_recomputed_from_step_logs": 0.3197736657086669,
+          "logged_epoch_seconds": 48.47167529189028,
+          "reconstructed_padded_input_tokens": 61936,
+          "reconstructed_padding_tokens": 7623
+        }
+      ],
+      "optimizer_steps": 375,
+      "logged_supervised_tokens_total": 34511,
+      "unpadded_input_tokens_total_recomputed": 54313,
+      "recorded_training_seconds": 48.47167529189028,
+      "recorded_function_elapsed_seconds": 49.182709583081305,
+      "steps_per_second": 7.736476978396096,
+      "mean_step_seconds_from_logs": 0.12903364288248123,
+      "weight_sha256": "eb82b1e71d1109ee34fddc150bb53c417bf0ae17a9c1c44bd56dc103efdbb6e2",
+      "manifest_verified": true
+    }
+  },
+  "official_base_sha256": "ebfa4e2f18696ebd83716a0d39fe2c025f2ff8483f72a83ca59c475692fc9d15",
+  "base_to_v1": {
+    "shared_tensors": 76,
+    "compared_elements": 70426624,
+    "changed_elements_after_float32_cast": 70426401,
+    "changed_percent": 99.99968335838446,
+    "changed_tensors": 76,
+    "max_absolute_delta": 0.22367095947265625,
+    "l2_delta": 43.92605231863251,
+    "left_only_state_entries": [
+      {
+        "name": "gpt_neox.layers.0.attention.bias",
+        "shape": [
+          1,
+          1,
+          2048,
+          2048
+        ],
+        "dtype": "torch.uint8"
+      },
+      {
+        "name": "gpt_neox.layers.0.attention.masked_bias",
+        "shape": [],
+        "dtype": "torch.float16"
+      },
+      {
+        "name": "gpt_neox.layers.0.attention.rotary_emb.inv_freq",
+        "shape": [
+          8
+        ],
+        "dtype": "torch.float16"
+      },
+      {
+        "name": "gpt_neox.layers.1.attention.bias",
+        "shape": [
+          1,
+          1,
+          2048,
+          2048
+        ],
+        "dtype": "torch.uint8"
+      },
+      {
+        "name": "gpt_neox.layers.1.attention.masked_bias",
+        "shape": [],
+        "dtype": "torch.float16"
+      },
+      {
+        "name": "gpt_neox.layers.1.attention.rotary_emb.inv_freq",
+        "shape": [
+          8
+        ],
+        "dtype": "torch.float16"
+      },
+      {
+        "name": "gpt_neox.layers.2.attention.bias",
+        "shape": [
+          1,
+          1,
+          2048,
+          2048
+        ],
+        "dtype": "torch.uint8"
+      },
+      {
+        "name": "gpt_neox.layers.2.attention.masked_bias",
+        "shape": [],
+        "dtype": "torch.float16"
+      },
+      {
+        "name": "gpt_neox.layers.2.attention.rotary_emb.inv_freq",
+        "shape": [
+          8
+        ],
+        "dtype": "torch.float16"
+      },
+      {
+        "name": "gpt_neox.layers.3.attention.bias",
+        "shape": [
+          1,
+          1,
+          2048,
+          2048
+        ],
+        "dtype": "torch.uint8"
+      },
+      {
+        "name": "gpt_neox.layers.3.attention.masked_bias",
+        "shape": [],
+        "dtype": "torch.float16"
+      },
+      {
+        "name": "gpt_neox.layers.3.attention.rotary_emb.inv_freq",
+        "shape": [
+          8
+        ],
+        "dtype": "torch.float16"
+      },
+      {
+        "name": "gpt_neox.layers.4.attention.bias",
+        "shape": [
+          1,
+          1,
+          2048,
+          2048
+        ],
+        "dtype": "torch.uint8"
+      },
+      {
+        "name": "gpt_neox.layers.4.attention.masked_bias",
+        "shape": [],
+        "dtype": "torch.float16"
+      },
+      {
+        "name": "gpt_neox.layers.4.attention.rotary_emb.inv_freq",
+        "shape": [
+          8
+        ],
+        "dtype": "torch.float16"
+      },
+      {
+        "name": "gpt_neox.layers.5.attention.bias",
+        "shape": [
+          1,
+          1,
+          2048,
+          2048
+        ],
+        "dtype": "torch.uint8"
+      },
+      {
+        "name": "gpt_neox.layers.5.attention.masked_bias",
+        "shape": [],
+        "dtype": "torch.float16"
+      },
+      {
+        "name": "gpt_neox.layers.5.attention.rotary_emb.inv_freq",
+        "shape": [
+          8
+        ],
+        "dtype": "torch.float16"
+      }
+    ],
+    "right_only_state_entries": [],
+    "per_tensor": [
+      {
+        "tensor": "embed_out.weight",
+        "elements": 25755648,
+        "changed_elements": 25755617,
+        "max_absolute_delta": 0.08939844369888306,
+        "mean_absolute_delta": 0.003017890975921511,
+        "squared_l2_delta": 575.8795328909533
+      },
+      {
+        "tensor": "gpt_neox.embed_in.weight",
+        "elements": 25755648,
+        "changed_elements": 25755459,
+        "max_absolute_delta": 0.05094126611948013,
+        "mean_absolute_delta": 0.0002889903995068801,
+        "squared_l2_delta": 62.83352092592965
+      },
+      {
+        "tensor": "gpt_neox.final_layer_norm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.12694358825683594,
+        "mean_absolute_delta": 0.02740538727312014,
+        "squared_l2_delta": 0.45688735268121006
+      },
+      {
+        "tensor": "gpt_neox.final_layer_norm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.1600818634033203,
+        "mean_absolute_delta": 0.0581705654039979,
+        "squared_l2_delta": 1.7794345568765948
+      },
+      {
+        "tensor": "gpt_neox.layers.0.attention.dense.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.05465245246887207,
+        "mean_absolute_delta": 0.004828753767412763,
+        "squared_l2_delta": 0.024020941844086728
+      },
+      {
+        "tensor": "gpt_neox.layers.0.attention.dense.weight",
+        "elements": 262144,
+        "changed_elements": 262144,
+        "max_absolute_delta": 0.0661936104297638,
+        "mean_absolute_delta": 0.007583430810352454,
+        "squared_l2_delta": 24.077131687132884
+      },
+      {
+        "tensor": "gpt_neox.layers.0.attention.query_key_value.bias",
+        "elements": 1536,
+        "changed_elements": 1536,
+        "max_absolute_delta": 0.07415962219238281,
+        "mean_absolute_delta": 0.007113463089012839,
+        "squared_l2_delta": 0.15162472889165235
+      },
+      {
+        "tensor": "gpt_neox.layers.0.attention.query_key_value.weight",
+        "elements": 786432,
+        "changed_elements": 786432,
+        "max_absolute_delta": 0.05500715225934982,
+        "mean_absolute_delta": 0.008231156822876118,
+        "squared_l2_delta": 85.04384647159114
+      },
+      {
+        "tensor": "gpt_neox.layers.0.input_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.033354878425598145,
+        "mean_absolute_delta": 0.0074129326367256,
+        "squared_l2_delta": 0.04849103846131918
+      },
+      {
+        "tensor": "gpt_neox.layers.0.input_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.03245949745178223,
+        "mean_absolute_delta": 0.008242388488724828,
+        "squared_l2_delta": 0.05523835232016694
+      },
+      {
+        "tensor": "gpt_neox.layers.0.mlp.dense_4h_to_h.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.05465245246887207,
+        "mean_absolute_delta": 0.004828753767412763,
+        "squared_l2_delta": 0.024020941844086728
+      },
+      {
+        "tensor": "gpt_neox.layers.0.mlp.dense_4h_to_h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.0873706191778183,
+        "mean_absolute_delta": 0.007520949223438647,
+        "squared_l2_delta": 94.10424378503075
+      },
+      {
+        "tensor": "gpt_neox.layers.0.mlp.dense_h_to_4h.bias",
+        "elements": 2048,
+        "changed_elements": 2048,
+        "max_absolute_delta": 0.037958890199661255,
+        "mean_absolute_delta": 0.00930100057553318,
+        "squared_l2_delta": 0.2581033152453289
+      },
+      {
+        "tensor": "gpt_neox.layers.0.mlp.dense_h_to_4h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.05370587855577469,
+        "mean_absolute_delta": 0.008431794465223741,
+        "squared_l2_delta": 117.96747276849635
+      },
+      {
+        "tensor": "gpt_neox.layers.0.post_attention_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.06199660897254944,
+        "mean_absolute_delta": 0.012185380979644833,
+        "squared_l2_delta": 0.12570853053052417
+      },
+      {
+        "tensor": "gpt_neox.layers.0.post_attention_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.06329399347305298,
+        "mean_absolute_delta": 0.02879364788532257,
+        "squared_l2_delta": 0.4835682238660013
+      },
+      {
+        "tensor": "gpt_neox.layers.1.attention.dense.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.07827889919281006,
+        "mean_absolute_delta": 0.004445003866521802,
+        "squared_l2_delta": 0.02329708045245725
+      },
+      {
+        "tensor": "gpt_neox.layers.1.attention.dense.weight",
+        "elements": 262144,
+        "changed_elements": 262144,
+        "max_absolute_delta": 0.08493784070014954,
+        "mean_absolute_delta": 0.0070854135545447006,
+        "squared_l2_delta": 21.216818154496742
+      },
+      {
+        "tensor": "gpt_neox.layers.1.attention.query_key_value.bias",
+        "elements": 1536,
+        "changed_elements": 1536,
+        "max_absolute_delta": 0.10514259338378906,
+        "mean_absolute_delta": 0.008828547776109493,
+        "squared_l2_delta": 0.2902279988617843
+      },
+      {
+        "tensor": "gpt_neox.layers.1.attention.query_key_value.weight",
+        "elements": 786432,
+        "changed_elements": 786432,
+        "max_absolute_delta": 0.05563104897737503,
+        "mean_absolute_delta": 0.007745867135050891,
+        "squared_l2_delta": 75.91775496195955
+      },
+      {
+        "tensor": "gpt_neox.layers.1.input_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.022523492574691772,
+        "mean_absolute_delta": 0.005748380392674335,
+        "squared_l2_delta": 0.026915592625233402
+      },
+      {
+        "tensor": "gpt_neox.layers.1.input_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.04272615909576416,
+        "mean_absolute_delta": 0.011868131929077208,
+        "squared_l2_delta": 0.10819085438416565
+      },
+      {
+        "tensor": "gpt_neox.layers.1.mlp.dense_4h_to_h.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.07827889919281006,
+        "mean_absolute_delta": 0.004445003866521802,
+        "squared_l2_delta": 0.02329708045245725
+      },
+      {
+        "tensor": "gpt_neox.layers.1.mlp.dense_4h_to_h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.07139094173908234,
+        "mean_absolute_delta": 0.0067229050227231735,
+        "squared_l2_delta": 76.20061458001712
+      },
+      {
+        "tensor": "gpt_neox.layers.1.mlp.dense_h_to_4h.bias",
+        "elements": 2048,
+        "changed_elements": 2048,
+        "max_absolute_delta": 0.023906543850898743,
+        "mean_absolute_delta": 0.006019790310332951,
+        "squared_l2_delta": 0.11405867461145647
+      },
+      {
+        "tensor": "gpt_neox.layers.1.mlp.dense_h_to_4h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.04799631983041763,
+        "mean_absolute_delta": 0.006841605722129921,
+        "squared_l2_delta": 78.45470609907116
+      },
+      {
+        "tensor": "gpt_neox.layers.1.post_attention_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.04155552387237549,
+        "mean_absolute_delta": 0.009257665737095522,
+        "squared_l2_delta": 0.07085345175092882
+      },
+      {
+        "tensor": "gpt_neox.layers.1.post_attention_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.03333282470703125,
+        "mean_absolute_delta": 0.010312667116522789,
+        "squared_l2_delta": 0.08016787221824728
+      },
+      {
+        "tensor": "gpt_neox.layers.2.attention.dense.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.05815625190734863,
+        "mean_absolute_delta": 0.003761458900953585,
+        "squared_l2_delta": 0.014014553838791105
+      },
+      {
+        "tensor": "gpt_neox.layers.2.attention.dense.weight",
+        "elements": 262144,
+        "changed_elements": 262144,
+        "max_absolute_delta": 0.08727969229221344,
+        "mean_absolute_delta": 0.0068605441635731235,
+        "squared_l2_delta": 20.13363118574216
+      },
+      {
+        "tensor": "gpt_neox.layers.2.attention.query_key_value.bias",
+        "elements": 1536,
+        "changed_elements": 1536,
+        "max_absolute_delta": 0.12445449829101562,
+        "mean_absolute_delta": 0.009538404727924407,
+        "squared_l2_delta": 0.41770369385119327
+      },
+      {
+        "tensor": "gpt_neox.layers.2.attention.query_key_value.weight",
+        "elements": 786432,
+        "changed_elements": 786432,
+        "max_absolute_delta": 0.05765998736023903,
+        "mean_absolute_delta": 0.007427414047684926,
+        "squared_l2_delta": 70.69495823963638
+      },
+      {
+        "tensor": "gpt_neox.layers.2.input_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.03439420461654663,
+        "mean_absolute_delta": 0.006265073959639267,
+        "squared_l2_delta": 0.03321153965414885
+      },
+      {
+        "tensor": "gpt_neox.layers.2.input_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.04048222303390503,
+        "mean_absolute_delta": 0.011295989505015314,
+        "squared_l2_delta": 0.09521116774785199
+      },
+      {
+        "tensor": "gpt_neox.layers.2.mlp.dense_4h_to_h.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.05815625190734863,
+        "mean_absolute_delta": 0.003761458900953585,
+        "squared_l2_delta": 0.014014553838791105
+      },
+      {
+        "tensor": "gpt_neox.layers.2.mlp.dense_4h_to_h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.08243703842163086,
+        "mean_absolute_delta": 0.0054918445862647425,
+        "squared_l2_delta": 50.973020512744256
+      },
+      {
+        "tensor": "gpt_neox.layers.2.mlp.dense_h_to_4h.bias",
+        "elements": 2048,
+        "changed_elements": 2048,
+        "max_absolute_delta": 0.026759445667266846,
+        "mean_absolute_delta": 0.006139304861960682,
+        "squared_l2_delta": 0.11280692127909703
+      },
+      {
+        "tensor": "gpt_neox.layers.2.mlp.dense_h_to_4h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.04697881639003754,
+        "mean_absolute_delta": 0.005792978890301019,
+        "squared_l2_delta": 56.34591903824702
+      },
+      {
+        "tensor": "gpt_neox.layers.2.post_attention_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.06400102376937866,
+        "mean_absolute_delta": 0.00960465779826336,
+        "squared_l2_delta": 0.08687125333648159
+      },
+      {
+        "tensor": "gpt_neox.layers.2.post_attention_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.04703211784362793,
+        "mean_absolute_delta": 0.013043393264524639,
+        "squared_l2_delta": 0.12308850374573055
+      },
+      {
+        "tensor": "gpt_neox.layers.3.attention.dense.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.1395108699798584,
+        "mean_absolute_delta": 0.0034646698102278606,
+        "squared_l2_delta": 0.027756090899591176
+      },
+      {
+        "tensor": "gpt_neox.layers.3.attention.dense.weight",
+        "elements": 262144,
+        "changed_elements": 262144,
+        "max_absolute_delta": 0.15778672695159912,
+        "mean_absolute_delta": 0.006553100836306933,
+        "squared_l2_delta": 20.964456431138018
+      },
+      {
+        "tensor": "gpt_neox.layers.3.attention.query_key_value.bias",
+        "elements": 1536,
+        "changed_elements": 1536,
+        "max_absolute_delta": 0.22367095947265625,
+        "mean_absolute_delta": 0.031899203093644246,
+        "squared_l2_delta": 6.965191299479442
+      },
+      {
+        "tensor": "gpt_neox.layers.3.attention.query_key_value.weight",
+        "elements": 786432,
+        "changed_elements": 786432,
+        "max_absolute_delta": 0.05479758232831955,
+        "mean_absolute_delta": 0.006789188472355233,
+        "squared_l2_delta": 59.44299406927877
+      },
+      {
+        "tensor": "gpt_neox.layers.3.input_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.021844863891601562,
+        "mean_absolute_delta": 0.007088841294944359,
+        "squared_l2_delta": 0.039076511338521594
+      },
+      {
+        "tensor": "gpt_neox.layers.3.input_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.045697569847106934,
+        "mean_absolute_delta": 0.009010156732983887,
+        "squared_l2_delta": 0.06647200273779319
+      },
+      {
+        "tensor": "gpt_neox.layers.3.mlp.dense_4h_to_h.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.1395108699798584,
+        "mean_absolute_delta": 0.0034646698102278606,
+        "squared_l2_delta": 0.027756090899591176
+      },
+      {
+        "tensor": "gpt_neox.layers.3.mlp.dense_4h_to_h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048575,
+        "max_absolute_delta": 0.14537091553211212,
+        "mean_absolute_delta": 0.005678156272866809,
+        "squared_l2_delta": 58.26123257121279
+      },
+      {
+        "tensor": "gpt_neox.layers.3.mlp.dense_h_to_4h.bias",
+        "elements": 2048,
+        "changed_elements": 2048,
+        "max_absolute_delta": 0.03691038489341736,
+        "mean_absolute_delta": 0.006779743186825726,
+        "squared_l2_delta": 0.14533579366990496
+      },
+      {
+        "tensor": "gpt_neox.layers.3.mlp.dense_h_to_4h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.05263181030750275,
+        "mean_absolute_delta": 0.005878644682197381,
+        "squared_l2_delta": 58.26297446744259
+      },
+      {
+        "tensor": "gpt_neox.layers.3.post_attention_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.033567845821380615,
+        "mean_absolute_delta": 0.008118204455513478,
+        "squared_l2_delta": 0.05433274160806366
+      },
+      {
+        "tensor": "gpt_neox.layers.3.post_attention_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.03586113452911377,
+        "mean_absolute_delta": 0.01090294646564871,
+        "squared_l2_delta": 0.08708798962697628
+      },
+      {
+        "tensor": "gpt_neox.layers.4.attention.dense.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.13464009761810303,
+        "mean_absolute_delta": 0.003394949836319938,
+        "squared_l2_delta": 0.026168848260785124
+      },
+      {
+        "tensor": "gpt_neox.layers.4.attention.dense.weight",
+        "elements": 262144,
+        "changed_elements": 262144,
+        "max_absolute_delta": 0.16530832648277283,
+        "mean_absolute_delta": 0.0050891643459193975,
+        "squared_l2_delta": 12.554328688337955
+      },
+      {
+        "tensor": "gpt_neox.layers.4.attention.query_key_value.bias",
+        "elements": 1536,
+        "changed_elements": 1536,
+        "max_absolute_delta": 0.20599365234375,
+        "mean_absolute_delta": 0.03777456519577527,
+        "squared_l2_delta": 7.737492078952731
+      },
+      {
+        "tensor": "gpt_neox.layers.4.attention.query_key_value.weight",
+        "elements": 786432,
+        "changed_elements": 786431,
+        "max_absolute_delta": 0.044717855751514435,
+        "mean_absolute_delta": 0.0052005076848142635,
+        "squared_l2_delta": 34.90443106129605
+      },
+      {
+        "tensor": "gpt_neox.layers.4.input_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.0765920877456665,
+        "mean_absolute_delta": 0.009915164903304685,
+        "squared_l2_delta": 0.08617829137864136
+      },
+      {
+        "tensor": "gpt_neox.layers.4.input_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.05487591028213501,
+        "mean_absolute_delta": 0.01614426646847278,
+        "squared_l2_delta": 0.17444096417959187
+      },
+      {
+        "tensor": "gpt_neox.layers.4.mlp.dense_4h_to_h.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.13464009761810303,
+        "mean_absolute_delta": 0.003394949836319938,
+        "squared_l2_delta": 0.026168848260785124
+      },
+      {
+        "tensor": "gpt_neox.layers.4.mlp.dense_4h_to_h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.17889311909675598,
+        "mean_absolute_delta": 0.0045530522301809526,
+        "squared_l2_delta": 44.04573275197292
+      },
+      {
+        "tensor": "gpt_neox.layers.4.mlp.dense_h_to_4h.bias",
+        "elements": 2048,
+        "changed_elements": 2048,
+        "max_absolute_delta": 0.0592726469039917,
+        "mean_absolute_delta": 0.005760256784242301,
+        "squared_l2_delta": 0.11004605718591574
+      },
+      {
+        "tensor": "gpt_neox.layers.4.mlp.dense_h_to_4h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.08021266758441925,
+        "mean_absolute_delta": 0.004998883445167289,
+        "squared_l2_delta": 43.28948150550811
+      },
+      {
+        "tensor": "gpt_neox.layers.4.post_attention_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.0364336222410202,
+        "mean_absolute_delta": 0.011961955389779177,
+        "squared_l2_delta": 0.10877632505697715
+      },
+      {
+        "tensor": "gpt_neox.layers.4.post_attention_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.0441591739654541,
+        "mean_absolute_delta": 0.00888836826197803,
+        "squared_l2_delta": 0.06245556422241805
+      },
+      {
+        "tensor": "gpt_neox.layers.5.attention.dense.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.1260128617286682,
+        "mean_absolute_delta": 0.0038281655654373026,
+        "squared_l2_delta": 0.02587972555932953
+      },
+      {
+        "tensor": "gpt_neox.layers.5.attention.dense.weight",
+        "elements": 262144,
+        "changed_elements": 262144,
+        "max_absolute_delta": 0.15390385687351227,
+        "mean_absolute_delta": 0.004933033528503654,
+        "squared_l2_delta": 11.666349901496229
+      },
+      {
+        "tensor": "gpt_neox.layers.5.attention.query_key_value.bias",
+        "elements": 1536,
+        "changed_elements": 1536,
+        "max_absolute_delta": 0.21027374267578125,
+        "mean_absolute_delta": 0.05039064344623512,
+        "squared_l2_delta": 12.88571326344114
+      },
+      {
+        "tensor": "gpt_neox.layers.5.attention.query_key_value.weight",
+        "elements": 786432,
+        "changed_elements": 786432,
+        "max_absolute_delta": 0.05362805724143982,
+        "mean_absolute_delta": 0.005699953584597242,
+        "squared_l2_delta": 42.302241880373124
+      },
+      {
+        "tensor": "gpt_neox.layers.5.input_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.05214962363243103,
+        "mean_absolute_delta": 0.013440228001854848,
+        "squared_l2_delta": 0.1343092353359513
+      },
+      {
+        "tensor": "gpt_neox.layers.5.input_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.08622360229492188,
+        "mean_absolute_delta": 0.020431147189810872,
+        "squared_l2_delta": 0.2748708921438521
+      },
+      {
+        "tensor": "gpt_neox.layers.5.mlp.dense_4h_to_h.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.1260128617286682,
+        "mean_absolute_delta": 0.0038281655654373026,
+        "squared_l2_delta": 0.02587972555932953
+      },
+      {
+        "tensor": "gpt_neox.layers.5.mlp.dense_4h_to_h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048575,
+        "max_absolute_delta": 0.17941352725028992,
+        "mean_absolute_delta": 0.00445298164342098,
+        "squared_l2_delta": 45.08716410491276
+      },
+      {
+        "tensor": "gpt_neox.layers.5.mlp.dense_h_to_4h.bias",
+        "elements": 2048,
+        "changed_elements": 2048,
+        "max_absolute_delta": 0.07369638979434967,
+        "mean_absolute_delta": 0.0070533937138748115,
+        "squared_l2_delta": 0.18716509089530786
+      },
+      {
+        "tensor": "gpt_neox.layers.5.mlp.dense_h_to_4h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.09780757129192352,
+        "mean_absolute_delta": 0.005442269558571536,
+        "squared_l2_delta": 54.27296871265993
+      },
+      {
+        "tensor": "gpt_neox.layers.5.post_attention_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.06838014721870422,
+        "mean_absolute_delta": 0.016582492825818917,
+        "squared_l2_delta": 0.21058581060138049
+      },
+      {
+        "tensor": "gpt_neox.layers.5.post_attention_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.04515671730041504,
+        "mean_absolute_delta": 0.009118145680986345,
+        "squared_l2_delta": 0.07037683605858902
+      }
+    ],
+    "audit_seconds": 0.10249591595493257
+  },
+  "v1_to_v2": {
+    "shared_tensors": 76,
+    "compared_elements": 70426624,
+    "changed_elements_after_float32_cast": 70426233,
+    "changed_percent": 99.99944481223464,
+    "changed_tensors": 76,
+    "max_absolute_delta": 0.074371337890625,
+    "l2_delta": 21.847713587788494,
+    "left_only_state_entries": [],
+    "right_only_state_entries": [],
+    "per_tensor": [
+      {
+        "tensor": "embed_out.weight",
+        "elements": 25755648,
+        "changed_elements": 25755452,
+        "max_absolute_delta": 0.05436484515666962,
+        "mean_absolute_delta": 0.000705869956898162,
+        "squared_l2_delta": 77.56112836649989
+      },
+      {
+        "tensor": "gpt_neox.embed_in.weight",
+        "elements": 25755648,
+        "changed_elements": 25755459,
+        "max_absolute_delta": 0.025780178606510162,
+        "mean_absolute_delta": 0.00013013358457210705,
+        "squared_l2_delta": 13.820139164064582
+      },
+      {
+        "tensor": "gpt_neox.final_layer_norm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.04950714111328125,
+        "mean_absolute_delta": 0.0065070880664279684,
+        "squared_l2_delta": 0.031111473918177757
+      },
+      {
+        "tensor": "gpt_neox.final_layer_norm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.049805641174316406,
+        "mean_absolute_delta": 0.015620286576449871,
+        "squared_l2_delta": 0.13542063524096193
+      },
+      {
+        "tensor": "gpt_neox.layers.0.attention.dense.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.018138647079467773,
+        "mean_absolute_delta": 0.0020958459408575436,
+        "squared_l2_delta": 0.0036993860310076125
+      },
+      {
+        "tensor": "gpt_neox.layers.0.attention.dense.weight",
+        "elements": 262144,
+        "changed_elements": 262144,
+        "max_absolute_delta": 0.022309020161628723,
+        "mean_absolute_delta": 0.00366576030722824,
+        "squared_l2_delta": 5.582048666078247
+      },
+      {
+        "tensor": "gpt_neox.layers.0.attention.query_key_value.bias",
+        "elements": 1536,
+        "changed_elements": 1536,
+        "max_absolute_delta": 0.01682904362678528,
+        "mean_absolute_delta": 0.0029233171462692553,
+        "squared_l2_delta": 0.02444763248822291
+      },
+      {
+        "tensor": "gpt_neox.layers.0.attention.query_key_value.weight",
+        "elements": 786432,
+        "changed_elements": 786432,
+        "max_absolute_delta": 0.027950838208198547,
+        "mean_absolute_delta": 0.004233807914237056,
+        "squared_l2_delta": 22.43989945540993
+      },
+      {
+        "tensor": "gpt_neox.layers.0.input_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.010392069816589355,
+        "mean_absolute_delta": 0.0022524813678046485,
+        "squared_l2_delta": 0.004195546554953477
+      },
+      {
+        "tensor": "gpt_neox.layers.0.input_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.015884757041931152,
+        "mean_absolute_delta": 0.003975603962317109,
+        "squared_l2_delta": 0.013166610520919164
+      },
+      {
+        "tensor": "gpt_neox.layers.0.mlp.dense_4h_to_h.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.018138647079467773,
+        "mean_absolute_delta": 0.0020958459408575436,
+        "squared_l2_delta": 0.0036993860310076125
+      },
+      {
+        "tensor": "gpt_neox.layers.0.mlp.dense_4h_to_h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.023273825645446777,
+        "mean_absolute_delta": 0.0036799052196438012,
+        "squared_l2_delta": 22.47025882827955
+      },
+      {
+        "tensor": "gpt_neox.layers.0.mlp.dense_h_to_4h.bias",
+        "elements": 2048,
+        "changed_elements": 2048,
+        "max_absolute_delta": 0.015619739890098572,
+        "mean_absolute_delta": 0.0031550662186532463,
+        "squared_l2_delta": 0.032026169710934256
+      },
+      {
+        "tensor": "gpt_neox.layers.0.mlp.dense_h_to_4h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.02551814168691635,
+        "mean_absolute_delta": 0.003991174332150859,
+        "squared_l2_delta": 26.335743580906122
+      },
+      {
+        "tensor": "gpt_neox.layers.0.post_attention_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.011356718838214874,
+        "mean_absolute_delta": 0.0029347340857270865,
+        "squared_l2_delta": 0.006706664499063089
+      },
+      {
+        "tensor": "gpt_neox.layers.0.post_attention_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.019181668758392334,
+        "mean_absolute_delta": 0.005179833038710058,
+        "squared_l2_delta": 0.021031316771598085
+      },
+      {
+        "tensor": "gpt_neox.layers.1.attention.dense.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.018513917922973633,
+        "mean_absolute_delta": 0.0018024657427986313,
+        "squared_l2_delta": 0.0029239859775757188
+      },
+      {
+        "tensor": "gpt_neox.layers.1.attention.dense.weight",
+        "elements": 262144,
+        "changed_elements": 262144,
+        "max_absolute_delta": 0.028389886021614075,
+        "mean_absolute_delta": 0.0037289996652159867,
+        "squared_l2_delta": 5.802054058531497
+      },
+      {
+        "tensor": "gpt_neox.layers.1.attention.query_key_value.bias",
+        "elements": 1536,
+        "changed_elements": 1536,
+        "max_absolute_delta": 0.03504753112792969,
+        "mean_absolute_delta": 0.003568057652008368,
+        "squared_l2_delta": 0.03929237194660923
+      },
+      {
+        "tensor": "gpt_neox.layers.1.attention.query_key_value.weight",
+        "elements": 786432,
+        "changed_elements": 786431,
+        "max_absolute_delta": 0.028747715055942535,
+        "mean_absolute_delta": 0.004126062909087802,
+        "squared_l2_delta": 21.346017854967606
+      },
+      {
+        "tensor": "gpt_neox.layers.1.input_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.010909516364336014,
+        "mean_absolute_delta": 0.0025230731640704107,
+        "squared_l2_delta": 0.005036589605094258
+      },
+      {
+        "tensor": "gpt_neox.layers.1.input_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.017267942428588867,
+        "mean_absolute_delta": 0.004346573259681463,
+        "squared_l2_delta": 0.015023587190484022
+      },
+      {
+        "tensor": "gpt_neox.layers.1.mlp.dense_4h_to_h.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.018513917922973633,
+        "mean_absolute_delta": 0.0018024657427986313,
+        "squared_l2_delta": 0.0029239859775757188
+      },
+      {
+        "tensor": "gpt_neox.layers.1.mlp.dense_4h_to_h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.024735786020755768,
+        "mean_absolute_delta": 0.0035827126443353074,
+        "squared_l2_delta": 21.48830435167897
+      },
+      {
+        "tensor": "gpt_neox.layers.1.mlp.dense_h_to_4h.bias",
+        "elements": 2048,
+        "changed_elements": 2048,
+        "max_absolute_delta": 0.016558563336730003,
+        "mean_absolute_delta": 0.0031028696345458684,
+        "squared_l2_delta": 0.03101063820956425
+      },
+      {
+        "tensor": "gpt_neox.layers.1.mlp.dense_h_to_4h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.027189020067453384,
+        "mean_absolute_delta": 0.0037318422691432103,
+        "squared_l2_delta": 23.272409906606512
+      },
+      {
+        "tensor": "gpt_neox.layers.1.post_attention_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.014233171939849854,
+        "mean_absolute_delta": 0.003495344010161716,
+        "squared_l2_delta": 0.010144811527067067
+      },
+      {
+        "tensor": "gpt_neox.layers.1.post_attention_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.019136548042297363,
+        "mean_absolute_delta": 0.004735377384349704,
+        "squared_l2_delta": 0.017086563288600587
+      },
+      {
+        "tensor": "gpt_neox.layers.2.attention.dense.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.015967965126037598,
+        "mean_absolute_delta": 0.001497901909885968,
+        "squared_l2_delta": 0.0019982160756958542
+      },
+      {
+        "tensor": "gpt_neox.layers.2.attention.dense.weight",
+        "elements": 262144,
+        "changed_elements": 262144,
+        "max_absolute_delta": 0.02248021587729454,
+        "mean_absolute_delta": 0.003565587529174505,
+        "squared_l2_delta": 5.303553581727543
+      },
+      {
+        "tensor": "gpt_neox.layers.2.attention.query_key_value.bias",
+        "elements": 1536,
+        "changed_elements": 1536,
+        "max_absolute_delta": 0.041484832763671875,
+        "mean_absolute_delta": 0.0038571520482690858,
+        "squared_l2_delta": 0.054234537964981025
+      },
+      {
+        "tensor": "gpt_neox.layers.2.attention.query_key_value.weight",
+        "elements": 786432,
+        "changed_elements": 786431,
+        "max_absolute_delta": 0.027001995593309402,
+        "mean_absolute_delta": 0.004010647204231689,
+        "squared_l2_delta": 20.188177803706303
+      },
+      {
+        "tensor": "gpt_neox.layers.2.input_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.011230701580643654,
+        "mean_absolute_delta": 0.002815631271005259,
+        "squared_l2_delta": 0.006122784802522244
+      },
+      {
+        "tensor": "gpt_neox.layers.2.input_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.018508315086364746,
+        "mean_absolute_delta": 0.0039205828215926886,
+        "squared_l2_delta": 0.01313128866267732
+      },
+      {
+        "tensor": "gpt_neox.layers.2.mlp.dense_4h_to_h.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.015967965126037598,
+        "mean_absolute_delta": 0.001497901909885968,
+        "squared_l2_delta": 0.0019982160756958542
+      },
+      {
+        "tensor": "gpt_neox.layers.2.mlp.dense_4h_to_h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.02596050500869751,
+        "mean_absolute_delta": 0.003225600873975578,
+        "squared_l2_delta": 17.57422630812927
+      },
+      {
+        "tensor": "gpt_neox.layers.2.mlp.dense_h_to_4h.bias",
+        "elements": 2048,
+        "changed_elements": 2048,
+        "max_absolute_delta": 0.01791822910308838,
+        "mean_absolute_delta": 0.003562554694241271,
+        "squared_l2_delta": 0.04074547974758405
+      },
+      {
+        "tensor": "gpt_neox.layers.2.mlp.dense_h_to_4h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048575,
+        "max_absolute_delta": 0.02652750536799431,
+        "mean_absolute_delta": 0.003700775148044155,
+        "squared_l2_delta": 22.893844845121052
+      },
+      {
+        "tensor": "gpt_neox.layers.2.post_attention_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.027457237243652344,
+        "mean_absolute_delta": 0.0051141029589416576,
+        "squared_l2_delta": 0.023092979411009868
+      },
+      {
+        "tensor": "gpt_neox.layers.2.post_attention_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.026358842849731445,
+        "mean_absolute_delta": 0.006005853181704879,
+        "squared_l2_delta": 0.026836719591905478
+      },
+      {
+        "tensor": "gpt_neox.layers.3.attention.dense.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.019970715045928955,
+        "mean_absolute_delta": 0.0012920340527671215,
+        "squared_l2_delta": 0.0016433370832889932
+      },
+      {
+        "tensor": "gpt_neox.layers.3.attention.dense.weight",
+        "elements": 262144,
+        "changed_elements": 262144,
+        "max_absolute_delta": 0.021692022681236267,
+        "mean_absolute_delta": 0.0031400762832008086,
+        "squared_l2_delta": 4.267877847020182
+      },
+      {
+        "tensor": "gpt_neox.layers.3.attention.query_key_value.bias",
+        "elements": 1536,
+        "changed_elements": 1536,
+        "max_absolute_delta": 0.074371337890625,
+        "mean_absolute_delta": 0.011401934119826743,
+        "squared_l2_delta": 0.7820140389062222
+      },
+      {
+        "tensor": "gpt_neox.layers.3.attention.query_key_value.weight",
+        "elements": 786432,
+        "changed_elements": 786432,
+        "max_absolute_delta": 0.027595341205596924,
+        "mean_absolute_delta": 0.00401288766348729,
+        "squared_l2_delta": 20.376428955368496
+      },
+      {
+        "tensor": "gpt_neox.layers.3.input_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.008765220642089844,
+        "mean_absolute_delta": 0.002077933098689755,
+        "squared_l2_delta": 0.0034525449637034396
+      },
+      {
+        "tensor": "gpt_neox.layers.3.input_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.01589345932006836,
+        "mean_absolute_delta": 0.004160196869634092,
+        "squared_l2_delta": 0.01354274944621281
+      },
+      {
+        "tensor": "gpt_neox.layers.3.mlp.dense_4h_to_h.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.019970715045928955,
+        "mean_absolute_delta": 0.0012920340527671215,
+        "squared_l2_delta": 0.0016433370832889932
+      },
+      {
+        "tensor": "gpt_neox.layers.3.mlp.dense_4h_to_h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.02713601291179657,
+        "mean_absolute_delta": 0.003104537935408545,
+        "squared_l2_delta": 16.474333553859744
+      },
+      {
+        "tensor": "gpt_neox.layers.3.mlp.dense_h_to_4h.bias",
+        "elements": 2048,
+        "changed_elements": 2048,
+        "max_absolute_delta": 0.016207203269004822,
+        "mean_absolute_delta": 0.0031038302586239297,
+        "squared_l2_delta": 0.03191827545107888
+      },
+      {
+        "tensor": "gpt_neox.layers.3.mlp.dense_h_to_4h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.028377918526530266,
+        "mean_absolute_delta": 0.0035949961279720163,
+        "squared_l2_delta": 21.63977975205336
+      },
+      {
+        "tensor": "gpt_neox.layers.3.post_attention_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.012384548783302307,
+        "mean_absolute_delta": 0.0031316213733134646,
+        "squared_l2_delta": 0.008119747474977946
+      },
+      {
+        "tensor": "gpt_neox.layers.3.post_attention_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.018311381340026855,
+        "mean_absolute_delta": 0.004606293980032206,
+        "squared_l2_delta": 0.01665442374001458
+      },
+      {
+        "tensor": "gpt_neox.layers.4.attention.dense.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.014496088027954102,
+        "mean_absolute_delta": 0.0013616675981893422,
+        "squared_l2_delta": 0.0016415033870918864
+      },
+      {
+        "tensor": "gpt_neox.layers.4.attention.dense.weight",
+        "elements": 262144,
+        "changed_elements": 262144,
+        "max_absolute_delta": 0.02655225805938244,
+        "mean_absolute_delta": 0.003404586877685724,
+        "squared_l2_delta": 4.917535388350854
+      },
+      {
+        "tensor": "gpt_neox.layers.4.attention.query_key_value.bias",
+        "elements": 1536,
+        "changed_elements": 1536,
+        "max_absolute_delta": 0.06866455078125,
+        "mean_absolute_delta": 0.013600220758140344,
+        "squared_l2_delta": 0.870947687670254
+      },
+      {
+        "tensor": "gpt_neox.layers.4.attention.query_key_value.weight",
+        "elements": 786432,
+        "changed_elements": 786431,
+        "max_absolute_delta": 0.029869865626096725,
+        "mean_absolute_delta": 0.003993019034097468,
+        "squared_l2_delta": 20.491323286065246
+      },
+      {
+        "tensor": "gpt_neox.layers.4.input_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.02450716495513916,
+        "mean_absolute_delta": 0.006083923701226013,
+        "squared_l2_delta": 0.028107013609050067
+      },
+      {
+        "tensor": "gpt_neox.layers.4.input_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.02517390251159668,
+        "mean_absolute_delta": 0.007190748350694776,
+        "squared_l2_delta": 0.037227132820035536
+      },
+      {
+        "tensor": "gpt_neox.layers.4.mlp.dense_4h_to_h.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.014496088027954102,
+        "mean_absolute_delta": 0.0013616675981893422,
+        "squared_l2_delta": 0.0016415033870918864
+      },
+      {
+        "tensor": "gpt_neox.layers.4.mlp.dense_4h_to_h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.021581459790468216,
+        "mean_absolute_delta": 0.0023848800779660215,
+        "squared_l2_delta": 9.959577675618341
+      },
+      {
+        "tensor": "gpt_neox.layers.4.mlp.dense_h_to_4h.bias",
+        "elements": 2048,
+        "changed_elements": 2048,
+        "max_absolute_delta": 0.012859508395195007,
+        "mean_absolute_delta": 0.002557818550258162,
+        "squared_l2_delta": 0.022098567212813332
+      },
+      {
+        "tensor": "gpt_neox.layers.4.mlp.dense_h_to_4h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.024300754070281982,
+        "mean_absolute_delta": 0.003291773995113623,
+        "squared_l2_delta": 18.20025477240177
+      },
+      {
+        "tensor": "gpt_neox.layers.4.post_attention_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.017840415239334106,
+        "mean_absolute_delta": 0.005016068217628344,
+        "squared_l2_delta": 0.0191675074738002
+      },
+      {
+        "tensor": "gpt_neox.layers.4.post_attention_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.015173554420471191,
+        "mean_absolute_delta": 0.0042420621030032635,
+        "squared_l2_delta": 0.014017183868759275
+      },
+      {
+        "tensor": "gpt_neox.layers.5.attention.dense.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.018265902996063232,
+        "mean_absolute_delta": 0.0016907430060655315,
+        "squared_l2_delta": 0.002491304475073124
+      },
+      {
+        "tensor": "gpt_neox.layers.5.attention.dense.weight",
+        "elements": 262144,
+        "changed_elements": 262144,
+        "max_absolute_delta": 0.021077869459986687,
+        "mean_absolute_delta": 0.0030758103296296135,
+        "squared_l2_delta": 4.092435883815327
+      },
+      {
+        "tensor": "gpt_neox.layers.5.attention.query_key_value.bias",
+        "elements": 1536,
+        "changed_elements": 1536,
+        "max_absolute_delta": 0.07012939453125,
+        "mean_absolute_delta": 0.017754164341615326,
+        "squared_l2_delta": 1.441838284294154
+      },
+      {
+        "tensor": "gpt_neox.layers.5.attention.query_key_value.weight",
+        "elements": 786432,
+        "changed_elements": 786432,
+        "max_absolute_delta": 0.026834353804588318,
+        "mean_absolute_delta": 0.003976762371903717,
+        "squared_l2_delta": 20.028880575746673
+      },
+      {
+        "tensor": "gpt_neox.layers.5.input_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.01794835925102234,
+        "mean_absolute_delta": 0.004597777257004054,
+        "squared_l2_delta": 0.01722526981432597
+      },
+      {
+        "tensor": "gpt_neox.layers.5.input_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.024847030639648438,
+        "mean_absolute_delta": 0.006482037249952555,
+        "squared_l2_delta": 0.03156344955235113
+      },
+      {
+        "tensor": "gpt_neox.layers.5.mlp.dense_4h_to_h.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.018265902996063232,
+        "mean_absolute_delta": 0.0016907430060655315,
+        "squared_l2_delta": 0.002491304475073124
+      },
+      {
+        "tensor": "gpt_neox.layers.5.mlp.dense_4h_to_h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048576,
+        "max_absolute_delta": 0.025047138333320618,
+        "mean_absolute_delta": 0.002358993237272419,
+        "squared_l2_delta": 9.76955902846835
+      },
+      {
+        "tensor": "gpt_neox.layers.5.mlp.dense_h_to_4h.bias",
+        "elements": 2048,
+        "changed_elements": 2048,
+        "max_absolute_delta": 0.01708410680294037,
+        "mean_absolute_delta": 0.0026689447270591415,
+        "squared_l2_delta": 0.024582127856613508
+      },
+      {
+        "tensor": "gpt_neox.layers.5.mlp.dense_h_to_4h.weight",
+        "elements": 1048576,
+        "changed_elements": 1048575,
+        "max_absolute_delta": 0.02601166069507599,
+        "mean_absolute_delta": 0.003175001869971843,
+        "squared_l2_delta": 17.050193444552782
+      },
+      {
+        "tensor": "gpt_neox.layers.5.post_attention_layernorm.bias",
+        "elements": 512,
+        "changed_elements": 512,
+        "max_absolute_delta": 0.020264053717255592,
+        "mean_absolute_delta": 0.005726523994781019,
+        "squared_l2_delta": 0.02460140484428269
+      },
+      {
+        "tensor": "gpt_neox.layers.5.post_attention_layernorm.weight",
+        "elements": 512,
+        "changed_elements": 511,
+        "max_absolute_delta": 0.013115882873535156,
+        "mean_absolute_delta": 0.003741474822163582,
+        "squared_l2_delta": 0.010864802298812037
+      }
+    ],
+    "audit_seconds": 0.09553329180926085
+  },
+  "limitations": [
+    "Step logs do not store individual gradient tensors or optimizer state; historical execution is supported by source ordering, logs, exact token/loss reconstruction and changed checkpoints, not independent hardware attestation.",
+    "Reconstructed input/padding totals are labelled as recomputation, not historical telemetry."
+  ]
+}

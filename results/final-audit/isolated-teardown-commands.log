@@ -1,0 +1,49 @@
+$ docker image inspect rancher/k3s:v1.35.5-k3s1 --format {{.Id}}
+sha256:2074403abe1bded11ef3dde09d457e13be8e0b64c218b1c4f8269b4565cfbc65
+
+$ k3d cluster create cs3081-teardown-audit --servers 1 --agents 0 --image rancher/k3s:v1.35.5-k3s1 --servers-memory 1g --no-lb --no-image-volume --api-port 127.0.0.1:0 --kubeconfig-update-default=false --kubeconfig-switch-context=false --k3s-arg --disable=traefik,servicelb,metrics-server,coredns,local-storage@server:0 --wait --timeout 90s
+[36mINFO[0m[0000] Prep: Network                                
+[36mINFO[0m[0000] Created network 'k3d-cs3081-teardown-audit'  
+[36mINFO[0m[0001] Creating node 'k3d-cs3081-teardown-audit-server-0' 
+[36mINFO[0m[0001] Deleting cluster 'cs3081-teardown-audit'     
+[36mINFO[0m[0001] Deleting cluster network 'k3d-cs3081-teardown-audit' 
+[36mINFO[0m[0001] Deleting 0 attached volumes...               
+[31mERRO[0m[0001] failed to ensure tools node: failed to retrieve cluster: No nodes found for given cluster 
+[31mERRO[0m[0001] Failed to create cluster >>> Rolling Back    
+[31mFATA[0m[0001] Cluster creation FAILED, all changes have been rolled back! 
+
+$ docker image inspect rancher/k3s:v1.35.5-k3s1 --format {{.Id}}
+sha256:2074403abe1bded11ef3dde09d457e13be8e0b64c218b1c4f8269b4565cfbc65
+
+$ k3d cluster create cs3081-teardown-audit --servers 1 --agents 0 --image rancher/k3s:v1.35.5-k3s1 --servers-memory 1g --api-port 127.0.0.1:0 --kubeconfig-update-default=false --kubeconfig-switch-context=false --k3s-arg --disable=traefik,servicelb,metrics-server,coredns,local-storage@server:0 --wait --timeout 90s
+[36mINFO[0m[0000] Prep: Network                                
+[36mINFO[0m[0000] Created network 'k3d-cs3081-teardown-audit'  
+[36mINFO[0m[0000] Created image volume k3d-cs3081-teardown-audit-images 
+[36mINFO[0m[0000] Starting new tools node...                   
+[36mINFO[0m[0000] Starting node 'k3d-cs3081-teardown-audit-tools' 
+[36mINFO[0m[0001] Creating node 'k3d-cs3081-teardown-audit-server-0' 
+[36mINFO[0m[0001] Creating LoadBalancer 'k3d-cs3081-teardown-audit-serverlb' 
+[36mINFO[0m[0001] Using the k3d-tools node to gather environment information 
+[36mINFO[0m[0001] Starting new tools node...                   
+[36mINFO[0m[0001] Starting node 'k3d-cs3081-teardown-audit-tools' 
+[36mINFO[0m[0002] Starting cluster 'cs3081-teardown-audit'     
+[36mINFO[0m[0002] Starting servers...                          
+[36mINFO[0m[0002] Starting node 'k3d-cs3081-teardown-audit-server-0' 
+[36mINFO[0m[0007] All agents already running.                  
+[36mINFO[0m[0007] Starting helpers...                          
+[36mINFO[0m[0007] Starting node 'k3d-cs3081-teardown-audit-serverlb' 
+[36mINFO[0m[0013] Injecting records for hostAliases (incl. host.k3d.internal) and for 3 network members into CoreDNS configmap... 
+[36mINFO[0m[0015] Cluster 'cs3081-teardown-audit' created successfully! 
+[36mINFO[0m[0015] You can now use it like this:                
+export KUBECONFIG=$(k3d kubeconfig write cs3081-teardown-audit)
+kubectl cluster-info
+
+$ CLUSTER_NAME=cs3081-teardown-audit make down
+PYTHONPATH=. .venv312/bin/python scripts/system.py down
+[36mINFO[0m[0000] Deleting cluster 'cs3081-teardown-audit'     
+[36mINFO[0m[0000] Deleting cluster network 'k3d-cs3081-teardown-audit' 
+[36mINFO[0m[0000] Deleting 1 attached volumes...               
+[36mINFO[0m[0000] Removing cluster details from default kubeconfig... 
+[36mINFO[0m[0000] Removing standalone kubeconfig file (if there is one)... 
+[36mINFO[0m[0000] Successfully deleted cluster cs3081-teardown-audit! 
+

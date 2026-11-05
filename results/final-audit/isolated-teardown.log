@@ -1,0 +1,11 @@
+{
+  "test_cluster": "cs3081-teardown-audit",
+  "healthy_cluster_created": true,
+  "create_seconds": 15.851913042133674,
+  "make_down_delete_seconds": 0.8497739159502089,
+  "disposable_cluster_absent_after": true,
+  "working_cluster_names_preserved": true,
+  "seaweedfs_pod_uids_preserved": true,
+  "default_working_cluster_delete_was_not_executed": true
+}
+

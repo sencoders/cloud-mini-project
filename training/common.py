@@ -27,8 +27,13 @@ def read_config():
         raise ValueError('The training pool must be exactly the first 1500 records')
     for name, expected in cfg['libraries'].items():
         actual = importlib.metadata.version(name)
-        if actual != str(expected):
-            raise RuntimeError(f'{name}: expected {expected}, installed {actual}')
+        allowed = {str(expected)}
+        if name == 'torch':
+            # The official Linux CPU wheel has this build suffix; reject CUDA
+            # variants and all differing upstream versions.
+            allowed.add(str(expected) + '+cpu')
+        if actual not in allowed:
+            raise RuntimeError(f'{name}: expected {sorted(allowed)}, installed {actual}')
     return cfg
 
 

@@ -1,0 +1,37 @@
+[
+  {
+    "uri": "s3://models/v1/model.sha256",
+    "sha256": "5ca810f5ab7cf55c2daafbfee6c224362641243dfe8c792e88ecea60de0a49ae",
+    "matches_committed": true
+  },
+  {
+    "uri": "s3://models/v1/version.json",
+    "sha256": "c7f439277c68529e21cf6271a8f0fa44e9f60652bf8e5b1a38338aaa332d0ada",
+    "matches_committed": true
+  },
+  {
+    "uri": "s3://models/v1/model.safetensors",
+    "head_size": 281715176,
+    "head_sha256_metadata_matches_manifest": true,
+    "body_was_not_redownloaded_in_this_check": true
+  },
+  {
+    "uri": "s3://models/v2/model.sha256",
+    "sha256": "2488102dc97e94c5439b152d0470687bed921305fd6779b402865b52952d22eb",
+    "matches_committed": true
+  },
+  {
+    "uri": "s3://models/v2/version.json",
+    "sha256": "e8c82a5bbe002ec1d05af1b7ea5e91eb39f468c7581fb09ca48bc71819e87003",
+    "matches_committed": true
+  },
+  {
+    "uri": "s3://models/v2/model.safetensors",
+    "head_size": 281715176,
+    "head_sha256_metadata_matches_manifest": true,
+    "body_was_not_redownloaded_in_this_check": true
+  },
+  {
+    "datasets_checksum": "1865c9ddc2a723247e96336c0ef966cd3b669aa904ae03d29f77ef4fe92b03e5  train.jsonl"
+  }
+]

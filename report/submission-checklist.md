@@ -4,8 +4,9 @@
   run failed at the quality gate. Actual URLs/logs are in results/publication/.
 - V1 Release is downloaded/hash/member/version verified. On a faster reliable uplink, complete and independently
   verify the blocked V2 upload before claiming both versions available.
-- Verify fresh-clone make up and actual destructive make down on a separate
-  disposable environment. The working cluster was deliberately preserved.
+- Verify full fresh-clone make up on a disposable environment once V2 is available.
+  Actual make down passed on an isolated audit cluster; the working cluster and
+  SeaweedFS Pod identities were preserved.
 - Task 4 rolling error rate is 7.792%, exceeding 0.5%; Task 7 baseline errors
   1.058%, exceeding 1%. These are genuine model validation failures, not hidden.
   Improvements would need a separately validated candidate model and new evidence;

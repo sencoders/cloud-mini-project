@@ -74,3 +74,14 @@ def test_fresh_bootstrap_requires_release_before_mutation(monkeypatch):
     monkeypatch.delenv('MODEL_RELEASE_TAG', raising=False)
     with pytest.raises(RuntimeError, match='publish verified assets first'):
         system.up()
+
+
+def test_down_override_targets_only_disposable_cluster(monkeypatch):
+    monkeypatch.setenv('CLUSTER_NAME', 'cs3081-teardown-audit')
+    assert system.down_command() == ['k3d', 'cluster', 'delete', 'cs3081-teardown-audit']
+
+
+def test_empty_down_override_cannot_delete_all_clusters(monkeypatch):
+    monkeypatch.setenv('CLUSTER_NAME', '')
+    with pytest.raises(ValueError, match='one explicit cluster'):
+        system.down_command()

@@ -1,0 +1,20 @@
+[
+  {
+    "left": ".local/hf/pythia-70m/model.safetensors",
+    "right": ".local/models/v1/model.safetensors",
+    "recorded_optimizer_steps": 1125,
+    "pure_weight_decay_factor_if_no_gradient_updates": 0.9966306838652507,
+    "actual_weight_residual_max_vs_decay_only": 0.17993204641076682,
+    "actual_weight_residual_rms_vs_decay_only": 0.005141431266924224,
+    "changed_values_not_explained_by_dtype_or_uniform_weight_decay_only": true
+  },
+  {
+    "left": ".local/models/v1/model.safetensors",
+    "right": ".local/models/v2/model.safetensors",
+    "recorded_optimizer_steps": 375,
+    "pure_weight_decay_factor_if_no_gradient_updates": 0.9988756308896654,
+    "actual_weight_residual_max_vs_decay_only": 0.054459114890678534,
+    "actual_weight_residual_rms_vs_decay_only": 0.0025942531745659723,
+    "changed_values_not_explained_by_dtype_or_uniform_weight_decay_only": true
+  }
+]

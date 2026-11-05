@@ -3,6 +3,7 @@ import argparse
 import json
 import os
 from pathlib import Path
+import re
 import subprocess
 import sys
 
@@ -16,7 +17,10 @@ def run(args, capture=False):
 
 
 def down_command():
-    return ['k3d', 'cluster', 'delete', 'command-parser']
+    name = os.environ.get('CLUSTER_NAME', 'command-parser')
+    if not re.fullmatch(r'[a-z0-9][a-z0-9-]{0,62}', name):
+        raise ValueError('CLUSTER_NAME must name one explicit cluster')
+    return ['k3d', 'cluster', 'delete', name]
 
 
 def up():

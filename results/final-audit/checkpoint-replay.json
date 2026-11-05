@@ -1,0 +1,50 @@
+[
+  {
+    "version": "v1",
+    "parameters": 70426624,
+    "all_cpu": true,
+    "all_float32": true,
+    "trainable_parameters": 70426624,
+    "num_layers": 6,
+    "hidden_size": 512,
+    "manifest_verified": true,
+    "predictions": [
+      {
+        "id": "V001",
+        "raw": " {\"intent\":\"calendar_remove\",\"date\":null,\"time\":null,\"place\":null}",
+        "matches_original_raw": true,
+        "strict_schema_valid": true
+      },
+      {
+        "id": "V066",
+        "raw": " {\"intent\":\"datetime_set\",\"date\":\"this day\",\"time\":\"this day\",\"place\":null}",
+        "matches_original_raw": true,
+        "strict_schema_valid": false
+      },
+      {
+        "id": "V100",
+        "raw": " {\"intent\":\"calendar_remove\",\"date\":null,\"time\":null,\"place\":null}",
+        "matches_original_raw": true,
+        "strict_schema_valid": true
+      }
+    ]
+  },
+  {
+    "version": "v2",
+    "parameters": 70426624,
+    "all_cpu": true,
+    "all_float32": true,
+    "trainable_parameters": 70426624,
+    "num_layers": 6,
+    "hidden_size": 512,
+    "manifest_verified": true,
+    "predictions": [
+      {
+        "text": "what is the weather in london",
+        "raw": " {\"intent\":\"weather_query\",\"date\":null,\"time\":null,\"place\":\"london timelondon time of thelondon time of the day\",\"time\":null,\"place\":\"london timeulsais time time time time time time time time time time time time time time time of the day\",\"time\":null,\"place\":\"london timeulsais time of the day of the day of the day of the day\",\"time\":null,\"place\":\"london\"}",
+        "matches_saved_task4_diagnostic": true,
+        "strict_schema_valid": false
+      }
+    ]
+  }
+]

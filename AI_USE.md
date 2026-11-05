@@ -49,3 +49,13 @@ ZIP packager and tests for exclusions, reflection page/name/review requirements,
 ZIP membership and hashes. Generated blank PDFs exist only as temporary unit-test
 fixtures; no personal reflection or handwritten scan was generated. The final ZIP
 and final tag remain blocked until the student's actual scan is supplied and reviewed.
+
+Examiner-style audit: Codex assisted with criterion-by-criterion scoring and a
+read-only training audit. It reconstructed every batch's supervised-token counts
+and epoch losses, checked selection/checksums and CPU reloads, compared numeric
+checkpoint tensors after dtype normalization and replayed saved predictions. It
+did not retrain. A narrowly scoped official-CPU-wheel version-guard fix and explicit
+cluster-name teardown override were regression-tested. A real isolated cluster
+was created/deleted while original storage Pod identities were verified unchanged;
+its first configuration failure is retained. Hidden results and full marks are
+not invented. No reflection, final ZIP or final tag has been fabricated.

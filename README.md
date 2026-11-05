@@ -21,7 +21,7 @@ fully disclosed in [AI_USE.md](AI_USE.md).
 | Rolling V1→V2→V1 | Version changes verified; 24/308 failures (7.792%) |
 | HPA | Observed 1→2→1; min 1, max 2, CPU target 70% |
 | Networking | Supplied simulator 6/6; 25 focused networking tests |
-| Unit suite | 145 passed, 1 optional live-S3 test skipped |
+| Unit suite | 154 passed, 1 optional live-S3 test skipped |
 | Estimated cost | INR 0.6586 per 1,000 attempts at the measured two-replica rate |
 
 The **rolling ≤0.5% error criterion is unmet**. The **baseline ≤1% error criterion
@@ -152,7 +152,7 @@ This prints the tested command `k3d cluster delete command-parser`.
 **`make down` actually deletes the cluster and local persistent storage**. It has
 not been executed for verification on this preserved deployment. Export necessary
 data before an intentional shutdown; `scripts/storage_snapshot.py` supports
-verified export/restore. Test destructive teardown on a separate disposable cluster.
+verified export/restore. A real isolated teardown has now been verified: `CLUSTER_NAME=cs3081-teardown-audit make down` deleted only the separately created audit cluster in 0.850 s and preserved working-cluster/storage identities. `CLUSTER_NAME` overrides teardown only; the default remains `command-parser`. See results/final-audit/isolated-teardown.json.
 
 ## CI, releases and submission
 
@@ -213,3 +213,19 @@ received, visually reviewed and placed at `.local/submission-input/230101089.pdf
 with clean committed source, `make submission-zip REVIEWED=1` builds the source-only
 ZIP under ignored `submission/`. It excludes private state and weights, verifies
 payload hashes/CRC, and creates no tag. No reflection or final ZIP is fabricated.
+
+## Final examiner-style audit
+
+[Criterion-by-criterion 100-mark audit](report/final-rubric-audit.md) records the
+training-authenticity proof, every marking row, remaining risks and ranked fixes.
+Current evidence provisionally supports 83 marks with a conditional 83–96 range,
+not a guarantee or awarded grade; 100/100 is not justified by current evidence.
+The missing real handwritten reflection, final ZIP and assessed final tag remain
+submission blockers. Hidden-test criteria remain unverified.
+
+The read-only audit verifies 1,125 V1 plus 375 V2 optimizer steps, all 1,500 selected
+teacher targets, exact token/loss reconstruction and numerical checkpoint changes.
+No retraining was needed. The training startup guard now accepts the official
+`2.8.0+cpu` build of configured PyTorch 2.8.0 while still rejecting differing
+upstream versions/explicit CUDA suffixes. Future training metadata records the
+actual Torch runtime string; existing checkpoint metadata and weights are unchanged.

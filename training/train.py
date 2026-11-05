@@ -168,6 +168,7 @@ def run(version='v1', subset=None):
         metadata = {'status': 'complete', 'version': version, 'run_id': run_id,
                     'smoke': smoke, 'subset': count, 'model_name': cfg['model']['name'],
                     'base_revision': cfg['model']['revision'], 'device': 'cpu', 'dtype': 'float32',
+                    'torch_runtime_version': torch.__version__,
                     'seed': cfg['training']['seed'], 'epochs_this_run': epochs,
                     'total_epochs': (parent['total_epochs'] if parent else 0) + epochs,
                     'initialize': init, 'libraries': cfg['libraries'],

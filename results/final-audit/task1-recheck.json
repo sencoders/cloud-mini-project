@@ -1,0 +1,16 @@
+{
+  "offline_only_no_teacher_calls": true,
+  "source_ids": 3000,
+  "unique_sharded_ids": 3000,
+  "counts": {
+    "input": 3000,
+    "a_invalid_json": 2,
+    "b_wrong_keys": 2,
+    "c_invalid_intent": 526,
+    "d_invalid_slot": 202,
+    "duplicates": 43,
+    "kept": 2225
+  },
+  "recomputed_cleaned_sha256": "1865c9ddc2a723247e96336c0ef966cd3b669aa904ae03d29f77ef4fe92b03e5",
+  "matches_original_checksum": true
+}

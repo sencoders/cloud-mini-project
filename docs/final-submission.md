@@ -105,8 +105,10 @@ Verify its nine members/version metadata against models/v2/model.sha256, then up
 Release title/notes and the reports to mark both versions available. A successful
 V1 upload or a V2 checksum sidecar alone is not a complete V2 archive upload.
 Current fresh bootstrap needs both versions, so missing V2 also blocks that path.
-Fresh-clone make up and destructive make down remain unverified end to end; use a
-separate disposable environment, preserving the working cluster and SeaweedFS.
+Fresh-clone make up remains blocked/unverified. Real make down was verified on a
+separate disposable cluster via the explicit CLUSTER_NAME override, preserving the
+working cluster and SeaweedFS. Default teardown still deletes command-parser; do not
+execute it unintentionally. See results/final-audit/isolated-teardown.json.
 
 Measured rolling errors 7.792% exceed 0.5%; baseline errors 1.058% exceed 1%, and the
 99% success SLO was not met. These remain disclosed grading gaps; packaging does

@@ -1,0 +1,5 @@
+{
+  "cpu_wheel_guard": "rejected",
+  "actual_error": "torch: expected 2.8.0, installed 2.8.0+cpu",
+  "problem": "Existing exact-string check rejects the official CPU wheel already used in CI."
+}

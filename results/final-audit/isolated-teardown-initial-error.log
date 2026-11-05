@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/shreeja/Projects/cloud-mini-project/.local/test-isolated-teardown.py", line 14, in <module>
+    _,created=run(['k3d','cluster','create',name,'--servers','1','--agents','0','--image','rancher/k3s:v1.35.5-k3s1','--servers-memory','1g','--no-lb','--no-image-volume','--api-port','127.0.0.1:0','--kubeconfig-update-default=false','--kubeconfig-switch-context=false','--k3s-arg','--disable=traefik,servicelb,metrics-server,coredns,local-storage@server:0','--wait','--timeout','90s'])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shreeja/Projects/cloud-mini-project/.local/test-isolated-teardown.py", line 9, in run
+    if p.returncode:raise RuntimeError(f'Command failed ({p.returncode}): {cmd}')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Command failed (1): ['k3d', 'cluster', 'create', 'cs3081-teardown-audit', '--servers', '1', '--agents', '0', '--image', 'rancher/k3s:v1.35.5-k3s1', '--servers-memory', '1g', '--no-lb', '--no-image-volume', '--api-port', '127.0.0.1:0', '--kubeconfig-update-default=false', '--kubeconfig-switch-context=false', '--k3s-arg', '--disable=traefik,servicelb,metrics-server,coredns,local-storage@server:0', '--wait', '--timeout', '90s']
