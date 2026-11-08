@@ -21,11 +21,13 @@
 ## Student and archive procedure
 
 Student-provided details: **Shreeja Chaudhary**, **230101089**. The actual scan
-`230101089.pdf` is still missing. Please supply the real three-page handwritten
-reflection with name, roll number and repository URL; do not substitute the typeset
-report or generated test PDFs. No final ZIP or final tag is created while it is missing.
+`230101089.pdf` has been supplied and visually reviewed on all three handwritten pages. Page 1 contains the correct name, roll number and repository URL. The unchanged scan is ZIP-only. Final ZIP integrity, hashes, manifest/commit equality and remote tag verification are saved under `submission/` after committing the source. No commits follow the final tag.
 
 Follow docs/final-submission.md. `make submission-plan` is safe now;
 `make submission-zip REVIEWED=1` is reserved for a real reviewed scan and clean,
 committed source. Final outputs are ignored `submission/230101089.zip` and its hash.
 The PDF does not specify ZIP format; this filename follows the student's added request.
+
+## Verified closeout update
+
+The receipt/review supersedes the earlier request for a missing scan. Main report: seven pages/seven task sections. Latest verified pre-closeout normal CI: https://github.com/sencoders/cloud-mini-project/actions/runs/42080057058. Failed gate: https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782. V2 Release archive is still absent after the final bounded retry; V1 fulfills the PDF model Release requirement, and the V2-dependent fresh bootstrap remains a disclosed grading gap. The one-ZIP instruction places the real reflection at ZIP root. Portal upload remains the student's action.

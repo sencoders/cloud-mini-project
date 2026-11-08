@@ -31,3 +31,5 @@ kubeconfig.*
 credentials.json
 # Separate student reflection/submission staging; not source or model assets.
 /submission/
+# Real student reflection is ZIP-only; preserve the original outside Git.
+/230101089.pdf

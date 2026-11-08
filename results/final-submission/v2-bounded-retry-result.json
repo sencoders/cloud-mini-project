@@ -1,0 +1,11 @@
+{
+  "transport": "HTTP/1.1",
+  "maximum_seconds": 120,
+  "minimum_transfer_bytes_per_second": 400000,
+  "slow_transfer_abort_seconds": 45,
+  "returncode": 28,
+  "elapsed_seconds": 45.820525833871216,
+  "transfer_summary": "HTTP 100; uploaded 1376256 bytes; 30086 bytes/s; 45.743315 seconds\n",
+  "error": "curl: (28) Operation too slow. Less than 400000 bytes/sec transferred the last 45 seconds\n",
+  "archive_sha256": "76fc7cacaa2cbad573307fd303f3d41344295b1c18c060618c43423714b0d230"
+}

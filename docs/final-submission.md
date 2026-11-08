@@ -11,8 +11,8 @@ meeting every rubric threshold.
 ## Current verified state
 
 - Repository: https://github.com/sencoders/cloud-mini-project (private).
-- Latest completed source CI at 5b710dd passed all five jobs:
-  https://github.com/sencoders/cloud-mini-project/actions/runs/42045212518
+- Latest completed source CI at 355c5a7 passed all five jobs:
+  https://github.com/sencoders/cloud-mini-project/actions/runs/42080057058
 - Genuine untrained-model failure, specifically at the unchanged 95% gate:
   https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782
 - Release: https://github.com/sencoders/cloud-mini-project/releases/tag/models-v1-v2
@@ -23,7 +23,7 @@ meeting every rubric threshold.
   clickable repository/Release/CI links and metrics checked against actual scores.
 - The source includes Dockerfiles, infrastructure, tests, runtime, training and
   evaluation scripts, network files, AI_USE.md and genuine results.
-- No final tag has been created. The handwritten reflection scan is missing.
+- The real `230101089.pdf` is received: exactly three unencrypted pages, all visually reviewed as legible handwriting, with name, roll number and the correct GitHub URL on page 1. No tag is created until final archive verification.
 
 ## Required reflection: user-provided scan only
 
@@ -59,7 +59,7 @@ source. The handwritten reflection and ZIP are separate submission files and are
 committed to Git. The final source commit recorded in the manifest must be the one
 later tagged `final`.
 
-## Commands — planning is safe now; actual packaging waits for the scan
+## Commands — real scan received and visually verified
 
 ```sh
 make submission-plan
@@ -115,11 +115,10 @@ Measured rolling errors 7.792% exceed 0.5%; baseline errors 1.058% exceed 1%, an
 not repair or conceal them. Private repository/Release access must be available to
 the assessor through the student's access settings.
 
-## Final tag — explicitly deferred
+## Final tag — after archive verification
 
 Do **not** execute these until the real reflection, mandatory files, ZIP checks,
-source/Release evidence and intended final commit have been reviewed. The student
-has explicitly withheld final-tag creation until then. Once ready, the intended
+source/Release evidence and intended final commit have been reviewed. The student has authorized final-tag creation after those checks pass. Once ready, the intended
 commands are:
 
 ```sh
@@ -131,6 +130,9 @@ git push origin final
 
 Confirm HEAD equals SUBMISSION_MANIFEST.json's source_commit **before** tagging.
 Review successful CI for that source commit and ensure `final` does not already
-exist. Never move/force-push an existing assessed final tag. Upload the ZIP and the
-separate `230101089.pdf` wherever the instructor's portal requests them, before the
+exist. Never move/force-push an existing assessed final tag. The student explicitly requests a one-ZIP submission: upload `submission/230101089.zip`, with `230101089.pdf` at its root, to the instructor's portal before the
 actual deadline; creating a ZIP or tag alone does not submit a portal upload.
+
+## Final closeout evidence
+
+See `results/final-submission/`: real scan review/hash, seven-page report and link checks, full-history secret/credential audit, 154 passing tests (one optional integration skip), and actual CI/Release responses. A final bounded V2 retry stopped after 45.821 s: 1,376,256 bytes at 30,086 B/s, curl exit 28 (slow transfer). V2 remains unpublished; no full fresh-clone deployment is claimed. ZIP size, SHA-256, extracted manifest and remote tag verification are saved under ignored `submission/` after the final source commit, avoiding a self-referential archive. No commit may follow the final tag.

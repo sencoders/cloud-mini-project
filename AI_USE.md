@@ -47,8 +47,7 @@ Final submission preparation: Codex assisted with checklist/metric/link checks,
 identity fields supplied by the student, clickable report links, a safe Git-snapshot
 ZIP packager and tests for exclusions, reflection page/name/review requirements,
 ZIP membership and hashes. Generated blank PDFs exist only as temporary unit-test
-fixtures; no personal reflection or handwritten scan was generated. The final ZIP
-and final tag remain blocked until the student's actual scan is supplied and reviewed.
+fixtures; no personal reflection or handwritten scan was generated. The student's actual three-page scan was subsequently supplied and visually reviewed on all pages; its name, roll number and repository URL were verified. Codex assisted with final archive validation and user-authorized publication/tagging after the checks. The scan was not generated or rewritten.
 
 Examiner-style audit: Codex assisted with criterion-by-criterion scoring and a
 read-only training audit. It reconstructed every batch's supervised-token counts

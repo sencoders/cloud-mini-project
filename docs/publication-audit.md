@@ -103,4 +103,4 @@ untrained-model run 42030357782 evaluated all 100 IDs, then failed precisely at
 the unchanged 95% gate with 0% validity; its other jobs passed. Actual URLs and
 artifacts are in results/publication/. V2 Release upload is blocked by recorded
 transport failures; no V2 archive or complete two-version Release is claimed.
-Source publication passed the safety audit; final submission remains incomplete.
+Source publication passed the safety audit. The real three-page reflection has now been received and visually verified; final packaging/tag verification follows docs/final-submission.md. Isolated teardown is verified; fresh-clone bootstrap remains blocked by missing V2.

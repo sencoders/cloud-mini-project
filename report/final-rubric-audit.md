@@ -1,6 +1,6 @@
 # Final examiner-style audit — Shreeja Chaudhary, 230101089
 
-This audit uses ASSIGNMENT.pdf Sections 6–8 and every marking table. PASS means the recorded local/remote evidence supports that criterion, not an official awarded grade. UNVERIFIED criteria receive no evidence-supported credit. Hidden tests are unavailable. A complete assessed submission does not yet exist: the real handwritten reflection, final ZIP and `final` tag are absent.
+This audit uses ASSIGNMENT.pdf Sections 6–8 and every marking table. PASS means the recorded local/remote evidence supports that criterion, not an official awarded grade. UNVERIFIED criteria receive no evidence-supported credit. Hidden tests are unavailable. This scorecard is the pre-closeout assessment. The real handwritten reflection has now been received and visually verified; final archive/tag checks follow the procedure in docs/final-submission.md.
 
 ## A. Training authenticity verdict
 
@@ -58,7 +58,7 @@ Quantitative evidence: `results/final-audit/training-authenticity.json`, `optimi
 | 7 | 12 | 10 | 12 |
 | **Total** | **100** | **84** | **96** |
 
-At-risk marks below mean maximum minus supported marks, including unverified points; they are not all definite deductions. A missing required final tag means there is currently no assessed final commit. Reflection/submission requirements have no separate numeric allocation in the seven-task tables, so no invented reflection mark is added or subtracted.
+At-risk marks below mean maximum minus supported marks, including unverified points; they are not all definite deductions. Only the verified commit ultimately tagged final is the assessed source snapshot. Reflection/submission requirements have no separate numeric allocation in the seven-task tables, so no invented reflection mark is added or subtracted.
 
 | Task / criterion | Max | Status | Supported–conditional | At risk | Evidence and measured result | Fastest legitimate fix |
 |---|---:|---|---:|---:|---|---|
@@ -130,7 +130,7 @@ At-risk marks below mean maximum minus supported marks, including unverified poi
 
 **Confirmed:** rolling 24/308 failures = 7.792% >0.5%; baseline 4/378 = 1.058% >1%; the 99% SLO is not met. These are model-validation HTTP 500s, not excluded requests. Fresh bootstrap currently requests absent `pythia-70m-v2.tar.gz`; actual CLI check returns `no assets match the file pattern` before a new cluster could be started. V2 remains valid in SeaweedFS, so this is not a failure of the separate Task 2 two-S3-version criterion. The PDF explicitly requires V1 publication; missing V2 Release is not automatically an additional Task 2 Release deduction.
 **Unverified:** hidden 300-command service validity/full-frame scores; hidden 20 NACL packet outcomes; assessor-machine smoke run; assessor-machine latency/error bundle; full fresh-clone deployment. Validation 26% full frame exceeds the teacher-derived 22% target only on the provided 100, not the hidden set. Raw scorer JSON 100% differs from strict runtime schema 99/100.
-**Submission blocked:** actual handwritten `230101089.pdf` is missing; no real final `230101089.zip` exists; no `final` tag is created. Temporary synthetic PDF unit fixtures are not reflections or submission files. Report is seven pages with real identity and clickable verified links; performance gaps remain disclosed.
+**Submission closeout:** actual handwritten `230101089.pdf` is now received and visually verified on all three pages, with correct name, roll number and GitHub link. Final archive/tag checks follow docs/final-submission.md. Temporary synthetic PDF unit fixtures are not reflections or submission files. Report is seven pages with real identity and clickable verified links; performance gaps remain disclosed.
 
 ## D. Prioritized improvements and executed work
 
@@ -158,11 +158,11 @@ No model training, teacher generation, schema relaxation, frame repair, threshol
 
 ## F. Final submission readiness and exact actions
 
-1. User supplies the actual handwritten **230101089.pdf** (three pages, legible, Shreeja Chaudhary, roll 230101089, actual repository URL). No such file was found in the project or named attachment search.
+1. User supplies the actual handwritten **230101089.pdf** (three pages, legible, Shreeja Chaudhary, roll 230101089, actual repository URL). This requirement is now fulfilled by the real scan received at project root.
 2. Receive/copy the real scan byte-for-byte to ignored `.local/submission-input/230101089.pdf`; visually review handwriting/content and page count. Do not generate or substitute a scan.
 3. Resolve V2 transfer/fresh bootstrap on a faster connection where practical; retain every old failure. Private repository/Release access must be available to the assessor.
 4. Commit/push only checked source/report/evidence. With a clean source snapshot and reviewed actual scan: `make submission-plan REVIEWED=1`, then `make submission-zip REVIEWED=1`.
 5. Verify `unzip -t submission/230101089.zip` and `(cd submission && shasum -a 256 -c 230101089.zip.sha256)`, and check the manifest commit matches HEAD. ZIP includes source/report/results plus actual scan and manifest; excludes Git internals, private state, environments, caches and weights.
 6. Only after complete file/ZIP/Release review and successful CI for the intended final source commit, create/push `final` at that exact manifest commit. No tag is created in this audit. Submit the correctly named PDF/ZIP through the required portal before the actual deadline.
 
-Current actual final ZIP: **not created**. Current final tag: **not created**. Current source commit and subsequent closeout CI are recorded in the progress checkpoint and final response.
+The final ZIP is built after committing this source snapshot; its exact hash, size, manifest and remote final-tag verification are retained in ignored submission/. No commits follow final tagging. The final response records the actual completion status.

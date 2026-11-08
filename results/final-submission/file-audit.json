@@ -1,0 +1,81 @@
+{
+  "reflection": {
+    "filename": "230101089.pdf",
+    "pages": 3,
+    "handwriting_and_identity_manually_reviewed": true,
+    "sha256": "d17abe421ab37581c69df4e426789655ab1d539181220f5daa3228677d747f97",
+    "visible_information": {
+      "name": "Shreeja Chaudhary",
+      "roll_number": "230101089",
+      "github": "https://github.com/sencoders/cloud-mini-project",
+      "location": "page 1",
+      "all_three_pages_legible_handwriting": true
+    },
+    "bytes": 300054
+  },
+  "report": {
+    "pages": 7,
+    "seven_sections": true,
+    "links": [
+      "https://github.com/sencoders/cloud-mini-project",
+      "https://github.com/sencoders/cloud-mini-project/releases/tag/models-v1-v2",
+      "https://github.com/sencoders/cloud-mini-project/actions/runs/42029372903",
+      "https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782"
+    ],
+    "measured_metrics_and_limits_preserved": true
+  },
+  "readme_commands_present": true,
+  "required_source_present": true,
+  "supplied_files_unchanged": 9,
+  "tracked_source_forbidden_files": [],
+  "normal_ci_url": "https://github.com/sencoders/cloud-mini-project/actions/runs/42080057058",
+  "bad_gate_url": "https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782",
+  "bad_gate_only_failed_job": "quality-gate",
+  "release_url": "https://github.com/sencoders/cloud-mini-project/releases/tag/models-v1-v2",
+  "model_packages": [
+    {
+      "version": "v1",
+      "archive_sha256": "9ad3cdb774d6f88a55205ad4b11f1b3c8163e2e6733fded288ee4cc43cb5a109",
+      "bytes": 234159749,
+      "members": [
+        "config.json",
+        "generation_config.json",
+        "model.safetensors",
+        "model.sha256",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "training_config.yaml",
+        "version.json"
+      ],
+      "manifest_matches": true,
+      "remote_uploaded": true
+    },
+    {
+      "version": "v2",
+      "archive_sha256": "76fc7cacaa2cbad573307fd303f3d41344295b1c18c060618c43423714b0d230",
+      "bytes": 234137342,
+      "members": [
+        "config.json",
+        "generation_config.json",
+        "model.safetensors",
+        "model.sha256",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "training_config.yaml",
+        "version.json"
+      ],
+      "manifest_matches": true,
+      "remote_uploaded": false
+    }
+  ],
+  "final_tag_condition": "Only after final commit, CI, ZIP/hash checks; no later commits",
+  "unmet_requirements": [
+    "V2 Release archive absent; fresh-clone bootstrap blocked/unverified",
+    "Rolling failure rate 7.792% exceeds 0.5%",
+    "Baseline failure rate 1.058% exceeds 1%; 99% success SLO unmet",
+    "Hidden and assessor-machine tests unverified"
+  ],
+  "portal_upload": "Student must upload the single ZIP; no portal submission is claimed"
+}

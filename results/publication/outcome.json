@@ -38,7 +38,7 @@
   "bad_model_failure_at_quality_gate_verified": true,
   "v2_status": "blocked",
   "v2_blocker": "Archive absent after upload transport failures; bounded HTTP/1.1 request timed out after 600 s at 51,117 bytes/s (30,670,848 bytes sent)",
-  "latest_pushed_source_ci_url": "https://github.com/sencoders/cloud-mini-project/actions/runs/42034879848",
+  "latest_pushed_source_ci_url": "https://github.com/sencoders/cloud-mini-project/actions/runs/42080057058",
   "v2_final_attempt": {
     "transport": "HTTP/1.1",
     "maximum_seconds": 600,
@@ -47,5 +47,6 @@
     "transfer_summary": "HTTP 100; uploaded 30670848 bytes; 51117 bytes/s; 600.002530 seconds\n",
     "error": "curl: (28) Operation timed out after 600002 milliseconds with 0 bytes received\n",
     "archive_sha256": "76fc7cacaa2cbad573307fd303f3d41344295b1c18c060618c43423714b0d230"
-  }
+  },
+  "v2_closeout_attempt_evidence": "results/final-submission/v2-bounded-retry-result.json"
 }

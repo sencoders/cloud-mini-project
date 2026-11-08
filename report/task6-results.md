@@ -58,7 +58,7 @@ the genuine untrained pinned Pythia-70M on all 100 validation records.
   is documented in `results/task6/secret-scan-notes.md`; configured history and current-source scans each reported **zero findings**,
   recorded separately in gitleaks-history-configured.json and gitleaks-current-source.json. It does not exclude secrets or whole evidence paths.
 
-## Pending remote evidence and rubric gaps
+## Historical pre-publication status and rubric gaps
 
 There is no configured Git remote. No workflows have run, no Release has been
 published, and there is no failed-run URL. `results/task6/github-status.json` records
@@ -80,3 +80,7 @@ The three fresh-clone commands, after exporting Release configuration, are:
 `python3.12 -m venv .venv312`; `.venv312/bin/pip install -r requirements-service-dev.txt`;
 `make up`. Bootstrap starts storage, imports the worker image, restores released
 models to S3 and deploys the CPU service. It does not regenerate labels or train.
+
+## Verified publication closeout (supersedes historical status above)
+
+Private source and V1 Release are published at https://github.com/sencoders/cloud-mini-project and https://github.com/sencoders/cloud-mini-project/releases/tag/models-v1-v2. Normal CI passed all five jobs: https://github.com/sencoders/cloud-mini-project/actions/runs/42080057058. The real bad-model run failed only at the unchanged 95% quality gate: https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782. Isolated `make down` passed; original storage was preserved. V2 archive remains absent after bounded transfer retries, so fresh-clone `make up` is still blocked/unverified. Actual final reflection has been received and reviewed. See results/final-submission/ for closeout evidence and docs/final-submission.md for ZIP/tag verification.

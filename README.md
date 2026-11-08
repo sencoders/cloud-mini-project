@@ -160,7 +160,7 @@ Verified private repository: https://github.com/sencoders/cloud-mini-project
 
 - Published V1: https://github.com/sencoders/cloud-mini-project/releases/tag/models-v1-v2
   (V1 archive/member/version checks pass; V2 archive upload is blocked by recorded transport timeouts).
-- Passing normal CI: https://github.com/sencoders/cloud-mini-project/actions/runs/42029372903
+- Passing normal CI: https://github.com/sencoders/cloud-mini-project/actions/runs/42080057058
 - Deliberate untrained-model gate failure: https://github.com/sencoders/cloud-mini-project/actions/runs/42030357782
   (100 evaluated records; 0% validity; unchanged 95% gate; other jobs passed).
 
@@ -188,7 +188,7 @@ The [seven-page report](report/report.pdf) has one section per task. Rebuild wit
 `requirements-report.txt` and `.venv312/bin/python report/build_report.py`.
 The mandatory three-page **handwritten** reflection must be supplied by the student
 as exactly `<roll_number>.pdf`, with name, roll number and the real GitHub link.
-No `final` tag is created during this publication stage.
+The real scan has been received and visually verified; it is included at the ZIP root, outside Git. The final tag is created only after archive verification.
 
 - [Task 1 design](report/task1-design.md) and [results](report/task1-results.md)
 - [Task 2 results](report/task2-results.md) and [distillation explanation](docs/distillation.md)
@@ -201,7 +201,7 @@ No `final` tag is created during this publication stage.
 Dataset attribution: SLURP, Bastianelli et al., EMNLP 2020, CC BY 4.0,
 https://github.com/pswietojanski/slurp. Base student: EleutherAI/pythia-70m, Apache 2.0.
 
-## Final submission packaging (blocked until the real reflection arrives)
+## Final submission packaging
 
 Student: **Shreeja Chaudhary**, roll number **230101089**. Required student filenames:
 `230101089.pdf` (actual three-page handwritten reflection) and `230101089.zip`.
@@ -220,8 +220,7 @@ payload hashes/CRC, and creates no tag. No reflection or final ZIP is fabricated
 training-authenticity proof, every marking row, remaining risks and ranked fixes.
 Current evidence provisionally supports 84 marks with a conditional 84–96 range,
 not a guarantee or awarded grade; 100/100 is not justified by current evidence.
-The missing real handwritten reflection, final ZIP and assessed final tag remain
-submission blockers. Hidden-test criteria remain unverified.
+The real three-page reflection has been visually verified. Final archive and tag verification are recorded beside `submission/230101089.zip`; these generated artifacts are ignored by Git. Hidden-test criteria remain unverified.
 
 The read-only audit verifies 1,125 V1 plus 375 V2 optimizer steps, all 1,500 selected
 teacher targets, exact token/loss reconstruction and numerical checkpoint changes.
